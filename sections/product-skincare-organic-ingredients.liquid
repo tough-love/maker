@@ -1,3 +1,4 @@
+{% if product.metafields.ingredient.section %}
 <section class="organic-ingredients">
   <div class="small-container">
     <h2>{{ product.metafields.ingredient.section_above_title }}</h2>
@@ -33,26 +34,27 @@
           />
         </div>
         <h3>{{ product.metafields.ingredient.section_col3_text_1 }}</h3>
-        <p>{{ product.metafields.ingredient.section_col3_text_1 }}</p>
+        <p>{{ product.metafields.ingredient.section_col3_text_2 }}</p>
       </div>
     </div>
   </div>
   <div class="container-fluid full-transp-container">
     <div class="row">
       <div class="col-4 real-ingredient-text">
-        <h3>{{ section.settings.center_real_ingredient_title }}</h3>
-        <p>{{ section.settings.center_real_ingredient_description }}</p>
-        <a href="#">{{ section.settings.center_real_ingredient_button }}</a>
+        <h3>{{ product.metafields.ingredient.section_below_left_title }}</h3>
+        <p>{{ product.metafields.ingredient.section_below_left_description }}</p>
+        <a href="#">VIEW INGREDIENTS</a>
       </div>
       <div class="col-8 real-ingredient-img">
         <img
-          src="{{ section.settings.right_banner_image | img_url: 'master' }}"
+          src="{{ product.metafields.ingredient.section_below_right_image | img_url: 'master' }}"
           alt="organic 1"
         />
       </div>
     </div>
   </div>
 </section>
+{% endif %}
 {% schema %}
 {
   "name": "Organic Ingredients",
