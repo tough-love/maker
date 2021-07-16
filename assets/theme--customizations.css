@@ -10,7 +10,7 @@
 }
 
 .font--section-heading{
- text-transform: uppercase; 
+ text-transform: uppercase;
 }
 
 @media screen and (min-width: 620px) {
@@ -50,7 +50,7 @@
 }
 
 .announcement--wrapper {
-    padding: 6px;  
+    padding: 6px;
 }
 .announcement--text {
     text-transform: none;
@@ -58,7 +58,7 @@
 }
 
 .footer--menu{
-	text-align: right; 
+	text-align: right;
 }
 
 .footer--root{
@@ -66,7 +66,7 @@
 }
 
 .footer--root p, .footer--root li{
- 	font-size: 12px; 
+ 	font-size: 12px;
 }
 
 .collection--title-no-image {
@@ -74,7 +74,7 @@
     text-align: left;
     padding-left: 32px;
 }
-  
+
 
 .layout--header.spacing--5x{
  padding-left: 32px;
@@ -147,7 +147,7 @@
 #newsletter-email{
   border: none;
   border-bottom: 0.07143em solid #000;
-  padding-bottom: 0px;  
+  padding-bottom: 0px;
   height: 44px;
   text-transform: uppercase;
   color: #000;
@@ -202,7 +202,7 @@ label {
     display: block;
 }
 .footer--subscribe .footer--form-container input[type='submit'] {
- 	border: 1px solid #000; 
+ 	border: 1px solid #000;
 }
 
 
@@ -226,9 +226,9 @@ label {
 }
 
 .skin_page--left{
- width: 50%; 
+ width: 50%;
   padding: 50px;
-  
+
    margin-top: 10px;
 }
 
@@ -249,30 +249,30 @@ display: flex;
   	font-size: 32px;
   	border-bottom: 4px solid transparent;
  	margin-right: 15px;
-  color: rgba(217,65,64, 0.6); 
+  color: rgba(217,65,64, 0.6);
   cursor: pointer;
 }
 
 .skin_page--right .layers h2:hover a{
-   border-bottom: 4px solid rgba(217,65,64, 1); 
+   border-bottom: 4px solid rgba(217,65,64, 1);
   font-weight: bold;
 }
 
 .skin_page--right .layers h2 .active-target{
-   border-bottom: 4px solid rgba(217,65,64, 1); 
+   border-bottom: 4px solid rgba(217,65,64, 1);
   font-weight: bold;
- color: rgba(217,65,64, 1); 
+ color: rgba(217,65,64, 1);
 }
 
 .skin_page--right .layers h2:hover a{
-   color: rgba(217,65,64, 1); 
+   color: rgba(217,65,64, 1);
   font-weight: bold;
 }
 
 
 .skin_page--right .layers h2 a{
 text-decoration: none;
-  color: rgba(217,65,64, 0.6); 
+  color: rgba(217,65,64, 0.6);
 }
 
 
@@ -286,35 +286,35 @@ display: flex;
   	font-size: 32px;
   	border-bottom: 4px solid transparent;
  	margin-right: 15px;
-  color: rgba(217,65,64, 0.6); 
+  color: rgba(217,65,64, 0.6);
   cursor: pointer;
 }
 
 .skin_page--right .formula h2:hover a{
-   border-bottom: 4px solid rgba(217,65,64, 1); 
+   border-bottom: 4px solid rgba(217,65,64, 1);
   font-weight: bold;
 }
 
 .skin_page--right .formula h2 .active-target{
-   border-bottom: 4px solid rgba(217,65,64, 1); 
+   border-bottom: 4px solid rgba(217,65,64, 1);
   font-weight: bold;
- color: rgba(217,65,64, 1); 
+ color: rgba(217,65,64, 1);
 }
 
 .skin_page--right .formula h2:hover a{
-   color: rgba(217,65,64, 1); 
+   color: rgba(217,65,64, 1);
   font-weight: bold;
 }
 
 
 .skin_page--right .formula h2 a{
 text-decoration: none;
-  color: rgba(217,65,64, 0.6); 
+  color: rgba(217,65,64, 0.6);
 }
 
 .skin_page--right{
 	width: 50%;
-  	text-align: left;    
+  	text-align: left;
  	margin-top: 50px;
 	position: relative;
 	min-height: 550px;
@@ -322,7 +322,7 @@ text-decoration: none;
 
 
 .skin_page--right img{
-   	padding: 20px; 
+   	padding: 20px;
   }
 .skin__header{
  background-image: url(https://cdn.shopify.com/s/files/1/0268/0356/8822/files/reyal_campaign-41_1.jpg?v=1609885307);
@@ -331,7 +331,7 @@ text-decoration: none;
   width: 100%;
  background-position: center center;
   position: relative;
-  
+
 }
 
 .page--about-us .about-page-header{
@@ -344,7 +344,7 @@ text-decoration: none;
 }
 
 .page--about-us .featured-content--title.font--section-heading{
- 
+
 }
 
 
@@ -378,14 +378,14 @@ text-decoration: none;
   bottom: 0px;
   right:0px;
   width:100%;
-  
+
 }
 
 .skin_arrows img{
- opacity: 0.5; 
+ opacity: 0.5;
 }
 .skin_arrows img:hover{
-  opacity: 1;  
+  opacity: 1;
 }
 
 
@@ -397,14 +397,14 @@ text-decoration: none;
   bottom: 0px;
   right:0px;
   width:100%;
-  
+
 }
 
 .fomula_arrows img{
- opacity: 0.5; 
+ opacity: 0.5;
 }
 .formula_arrows img:hover{
-  opacity: 1;  
+  opacity: 1;
 }
 
 
@@ -427,7 +427,7 @@ text-decoration: none;
 }
 
 .footer--root a{
- font-size: 12px !important; 
+ font-size: 12px !important;
 }
 
 p{
@@ -446,23 +446,23 @@ h1,h2,h3,h4,h5,h6{
 
 @media screen and (max-width: 620px) {
  .skin-page-content{
-  flex-direction: column 
+  flex-direction: column
  }
   .skin_page--right{
-   	width: 100%; 
+   	width: 100%;
     padding:10px;
   }
   .skin_page--left{
-   width: 100%; 
+   width: 100%;
     padding: 10px;
   	margin-top: 40px;
   }
   .newsletter--container {
         width: 80%;
   }
-  
+
   .featured-grid--item--title{
-   font-size:12px; 
+   font-size:12px;
   }
 }
 
@@ -478,12 +478,12 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #newsletter-email{
- 	background: transparent; 
+ 	background: transparent;
 
     border: none;
     border-bottom: 0.07143em solid #fff;
     padding-bottom: 0px;
-  
+
     text-transform: uppercase;
     color: #fff;
 }
@@ -533,7 +533,7 @@ display: flex;
 }
 
 #shopify-section-1604361432c1ef4ad2 .featured-grid--root{
-  padding-top: 0px; 
+  padding-top: 0px;
  }
 
 .no-touchevents a, .no-touchevents a:link, .no-touchevents a:visited {
@@ -544,7 +544,7 @@ display: flex;
 
 
 @media only screen and (min-width: 768px) { /* desktop */
-   
+
     .footer--menu {
         text-align: right;
         column-count: 2;
@@ -582,10 +582,10 @@ display: flex;
 
 
 .skin__header{
- position: relative; 
+ position: relative;
 }
 
-.skin__header .arrow-down{	
+.skin__header .arrow-down{
   	position: absolute;
   bottom: 20px;
   left: 50%;
@@ -611,11 +611,11 @@ display: flex;
 }
 
 .skin__middle--text a{
- color: #000; 
+ color: #000;
   font-size: 12px !important;
 }
 .newsletter--email{
- 	text-align: center; 
+ 	text-align: center;
 }
 
 
@@ -628,15 +628,15 @@ display: flex;
 }
 
 .skin_page--left li{
- font-size: 14px; 
+ font-size: 14px;
 }
 
 .skin_page--right, .skin_page--left{
-  text-transform: uppercase; 
+  text-transform: uppercase;
 }
 
 .blog--footer-rss{
- display: none; 
+ display: none;
 }
 @media only screen and (max-width: 767px){
 .blog--body{
@@ -647,13 +647,13 @@ display: flex;
 
 @media only screen and (max-width: 600px){
  .skin__middle--text{
-  	display:none; 
+  	display:none;
  }
 }
 
 
   .skin-page-content .content{
-   	display: none; 
+   	display: none;
   }
 
   .skin-page-content #layer-001{
@@ -662,7 +662,7 @@ display: flex;
   .skin-page-content #formula-001{
    display: block;
   }
-  
+
 
 .skin-page-content .content a{
 font-size: 12px;
@@ -688,4 +688,12 @@ font-size: 22px;
 @media (min-width: 1600px) {
 }
 @media (min-width: 1920px) {
+}
+
+/* Product Review Section */
+.spr-header {
+  text-align: center;
+}
+h2.spr-header-title {
+  font-weight: bold;
 }
