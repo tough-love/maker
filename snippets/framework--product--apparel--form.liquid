@@ -35,7 +35,7 @@
     data-low-stock-amount="{{ low_stock_amount }}"
   {% endif %}
 >
-  <div class="modal--root" data-js-class="FrameworkModal">
+  <div class="modal--root pdt-form-outer" data-js-class="FrameworkModal">
 
     {% form 'product', product, data-productid: product.id, class: 'product-form--container' %}
       <div class="product-form--price-container" style="display:none;">
@@ -45,6 +45,7 @@
           itemprop="offers"
           itemscope
           itemtype="https://schema.org/Offer"
+          
         >
           <div class="product-form--price" data-item='accent-text'>
             {{ current_variant.price | money }}
@@ -75,7 +76,7 @@
 
       </div>
 		<div class="product-variants">
-                      <span>SELECT SIZE</span><a href="">SIZE GUIDE</a>
+                      <span>SELECT SIZE</span> <span id="openSizeGuide">SIZE GUIDE</span>
                     </div>
       <div class="product-form--variants">
         {% unless product.has_only_default_variant %}
@@ -164,11 +165,22 @@
         {% endif %}
       >
         <button class="product-form--add-to-cart">
-          <span class="product-form--text">{{ add_to_cart_t }} - {{ current_variant.price | money }}</span>
-          <span
+          
+          <div
+          class="product-form--price-wrapper"
+          itemprop="offers"
+          itemscope
+          itemtype="https://schema.org/Offer"
+        >
+          <span class="product-form--text">{{ add_to_cart_t }} - </span>
+          <span class="product-form--price" >
+           {{ current_variant.price | money }}
+          </span>
+        </div>
+          <div
             class="fw--loading_animation tiny"
             data-js-class="FrameworkLoadingAnimation"
-          ></span>
+          ></div>
         </button>
       </div>
 
@@ -259,6 +271,71 @@
   </div>
 
 </div>
+<div id="sizeGuide" class="size-modal">
+  <div class="size-data">
+    <span class="close-size-modal">&times;</span>
+    <div class="size-inner-content">
+      <div class="left-side">
+        <img style="z-index: 3;" id="img{{forloop.index0}}" name="{{ image.alt }}" data-src="{{ product.featured_image | img_url: '100x100'}}" itemprop="image" src="{{ product.featured_image | img_url: '1000x1000'}}" class=" lazyloaded">
+      </div>
+      <div class="right-side">
+        <div class="pdt-sizes">
+          <table style="width:100%">
+            <tr>
+              <th>SIZE</th>
+              <th>HEIGHT (CM)</th> 
+              <th>CHEST (CM)</th>
+              <th>SLEEVE (CM)</th>
+            </tr>
+            <tr>
+              <td>XS</td>
+              <td>44</td>
+              <td>66</td>
+              <td>32</td>
+            </tr>
+             <tr>
+              <td>XS</td>
+              <td>44</td>
+              <td>66</td>
+              <td>32</td>
+            </tr>
+            <tr>
+              <td>S</td>
+              <td>44</td>
+              <td>66</td>
+              <td>32</td>
+            </tr>
+            <tr>
+              <td>M</td>
+              <td>44</td>
+              <td>66</td>
+              <td>32</td>
+            </tr>
+            <tr>
+              <td>L</td>
+              <td>44</td>
+              <td>66</td>
+              <td>32</td>
+            </tr>
+            <tr>
+              <td>XL</td>
+              <td>44</td>
+              <td>66</td>
+              <td>32</td>
+            </tr>
+          </table>
+        </div>
+        
+        <div class="wash-direction">
+          <h5>DIRECTIONS FOR WASH</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, ed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqui</p>
+        </div>
+
+      </div>
+    </div>
+    
+  </div>
+</div>
 
 {% if enable_callback and product.has_only_default_variant == false %}
   <script>
@@ -268,3 +345,30 @@
     };
   </script>
 {% endif %}
+<script>
+  // Get the modal
+var sizeBtn = document.getElementById("sizeGuide");
+
+// Get the button that opens the modal
+var openbtn = document.getElementById("openSizeGuide");
+
+// Get the element that closes the modal
+var closeBtn = document.getElementsByClassName("close-size-modal")[0];
+
+// When the user clicks the button, open the modal 
+openbtn.onclick = function() {
+  sizeBtn.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+closeBtn.onclick = function() {
+  sizeBtn.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == sizeBtn) {
+    sizeBtn.style.display = "none";
+  }
+}
+</script>
