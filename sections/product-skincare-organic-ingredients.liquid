@@ -1,0 +1,136 @@
+<section class="organic-ingredients">
+  <div class="small-container">
+    <h2>{{ product.metafields.ingredient.section_above_title }}</h2>
+    <div class="row organic-ingredients-row">
+      <div class="col-3">
+        <div class="organic-img">
+          <img
+            src="{{
+              product.metafields.ingredient.section_col1_image
+                | img_url: 'master'
+            }}"
+            alt="organic 1"
+          />
+        </div>
+        <h3>{{ product.metafields.ingredient.section_col1_text_1 }}</h3>
+        <p>{{ product.metafields.ingredient.section_col1_text_2 }}</p>
+      </div>
+      <div class="col-3">
+        <div class="organic-img">
+          <img
+            src="{{ product.metafields.ingredient.section_col2_image | img_url: 'master' }}"
+            alt="organic 2"
+          />
+        </div>
+        <h3>{{ product.metafields.ingredient.section_col2_text_1 }}</h3>
+        <p>{{ product.metafields.ingredient.section_col2_text_2 }}</p>
+      </div>
+      <div class="col-3">
+        <div class="organic-img">
+          <img
+            src="{{ product.metafields.ingredient.section_col3_image | img_url: 'master' }}"
+            alt="organic 3"
+          />
+        </div>
+        <h3>{{ product.metafields.ingredient.section_col3_text_1 }}</h3>
+        <p>{{ product.metafields.ingredient.section_col3_text_1 }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid full-transp-container">
+    <div class="row">
+      <div class="col-4 real-ingredient-text">
+        <h3>{{ section.settings.center_real_ingredient_title }}</h3>
+        <p>{{ section.settings.center_real_ingredient_description }}</p>
+        <a href="#">{{ section.settings.center_real_ingredient_button }}</a>
+      </div>
+      <div class="col-8 real-ingredient-img">
+        <img
+          src="{{ section.settings.right_banner_image | img_url: 'master' }}"
+          alt="organic 1"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Organic Ingredients",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Hero Center Content"
+    },
+    {
+      "type": "text",
+      "id": "center_organic_ingredient_title",
+      "label": "Center Organic Ingredient Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "left_image",
+      "label": "Left Image"
+    },
+    {
+      "type": "text",
+      "id": "center_organic_ingredient_title1",
+      "label": "Center Organic Ingredient Title"
+    },
+    {
+      "type": "text",
+      "id": "center_organic_ingredient_desc1",
+      "label": "Center Organic Ingredient Desc1"
+    },
+    {
+      "type": "image_picker",
+      "id": "center_image",
+      "label": "Center Image"
+    },
+    {
+      "type": "text",
+      "id": "center_organic_ingredient_title2",
+      "label": "Center Organic Ingredient Title"
+    },
+    {
+      "type": "text",
+      "id": "center_organic_ingredient_desc2",
+      "label": "Center Organic Ingredient Desc2"
+    },
+    {
+      "type": "image_picker",
+      "id": "right_image",
+      "label": "Right Image"
+    },
+    {
+      "type": "text",
+      "id": "center_organic_ingredient_title3",
+      "label": "Center Organic Ingredient Title"
+    },
+    {
+      "type": "text",
+      "id": "center_organic_ingredient_desc3",
+      "label": "Center Organic Ingredient Desc3"
+    },
+    {
+      "type": "text",
+      "id": "center_real_ingredient_title",
+      "label": "Center Real Ingredient Title"
+    },
+    {
+      "type": "text",
+      "id": "center_real_ingredient_description",
+      "label": "Center Real Ingredient Description"
+    },
+    {
+      "type": "text",
+      "id": "center_real_ingredient_button",
+      "label": "Center Real Ingredient Button"
+    },
+    {
+      "type": "image_picker",
+      "id": "right_banner_image",
+      "label": "Right Banner Image"
+    }
+  ]
+}
+{% endschema %}

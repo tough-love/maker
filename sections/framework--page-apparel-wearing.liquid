@@ -1,0 +1,132 @@
+<section class="organic-ingredients">
+         <div class="small-container">
+            <h2>{{ section.settings.wearing_title }}</h2>
+           <p>{{ section.settings.wearing_subtitle }}</p>
+            <div class="row organic-ingredients-row">   
+               <div class="one-fourth">
+                 <div class="wearing-data">
+                 	<div class="organic-img">
+                   	 <img src="{{ section.settings.wearing_image1 | img_url: 'master' }}" alt="organic 1">
+                  	</div>
+                   <p>{{ section.settings.wearing_image_title1 }}</p>
+                 </div>  
+               </div>
+               <div class="one-fourth">
+                 <div class="wearing-data">
+                 	<div class="organic-img">
+                   	 <img src="{{ section.settings.wearing_image2 | img_url: 'master' }}" alt="organic 1">
+                  	</div>
+                   <p>{{ section.settings.wearing_image_title2 }}</p>
+                 </div>  
+               </div>
+               <div class="one-fourth">
+                 <div class="wearing-data">
+                 	<div class="organic-img">
+                   	 <img src="{{ section.settings.wearing_image3 | img_url: 'master' }}" alt="organic 1">
+                  	</div>
+                   <p>{{ section.settings.wearing_image_title3 }}</p>
+                 </div>  
+               </div>
+              <div class="one-fourth">
+                 <div class="wearing-data">
+                 	<div class="organic-img">
+                   	 <img src="{{ section.settings.wearing_image4 | img_url: 'master' }}" alt="organic 1">
+                  	</div>
+                   <p>{{ section.settings.wearing_image_title4 }}</p>
+                 </div>  
+               </div>
+              
+            </div>
+         </div>
+         <div class="comfort-section-container">
+            <div class="row">  
+               <div class="comfort-section">
+                  <h3>{{ section.settings.comfort_title }}</h3>
+                  <p>{{ section.settings.comfort_subtitle }}</p>
+                 	<div class="comfort-bg-img">
+                  <img src="{{ section.settings.comfort_bg_image | img_url: 'master' }}" alt="real ingrident">
+               </div>
+               </div>
+               
+            </div>
+         </div>
+
+</section>
+{% schema %}
+  {
+    "name": "HOW OTHERS ARE WEARING IT",
+    "settings": [
+		{
+      		"type": "header",
+      		"content": "Hero Center Content"
+    	},
+		{
+      		"type": "text",
+			"id": "wearing_title",
+			"label": "Wearing Section Title"
+		},
+		{
+      		"type": "text",
+			"id": "wearing_subtitle",
+			"label": "Wearing Section Sub Title"
+		},
+		{
+			"type": "image_picker",
+			"id": "wearing_image1",
+			"label": "Wearing Image 1"
+		},
+		{
+      		"type": "text",
+			"id": "wearing_image_title1",
+			"label": "Wearing Image Title 1"
+		},
+		{
+			"type": "image_picker",
+			"id": "wearing_image2",
+			"label": "Wearing Image 2"
+		},
+		{
+      		"type": "text",
+			"id": "wearing_image_title2",
+			"label": "Wearing Image Title 2"
+		},
+		{
+			"type": "image_picker",
+			"id": "wearing_image3",
+			"label": "Wearing Image 3"
+		},
+		{
+      		"type": "text",
+			"id": "wearing_image_title3",
+			"label": "Wearing Image Title 3"
+		},
+		{
+			"type": "image_picker",
+			"id": "wearing_image4",
+			"label": "Wearing Image 4"
+		},
+		{
+      		"type": "text",
+			"id": "wearing_image_title4",
+			"label": "Wearing Image Title 4"
+		},
+		
+		{
+      		"type": "text",
+			"id": "comfort_title",
+			"label": "Comfort Section Title"
+		},
+		{
+      		"type": "text",
+			"id": "comfort_subtitle",
+			"label": "Comfort Section Sub Title"
+		},
+		{
+			"type": "image_picker",
+			"id": "comfort_bg_image",
+			"label": "Comfort Background Image"
+		}
+		
+		]
+  }
+{% endschema %}

@@ -1,0 +1,1330 @@
+<style>
+@media (min-width: 0) {
+  .concept-container {
+	display: flex;
+    width: 100%;
+  	padding-left: 14px;
+  	padding-right: 14px;
+    justify-content: center;
+  }
+  .concept-banner-img {
+    position: relative;
+  }
+  video {
+    object-fit: cover;
+    width: 100%;
+    height: 60vh; 
+    top: 0;
+    left: 0;
+  }
+  .radio_circle {display: none}
+  .concept-banner-text {
+    color: #ffffff;
+    font-family: aktiv-grotesk,sans-serif;
+    font-size: 75px;
+    font-weight: bold;
+    left: 50%;
+    letter-spacing: 3.5px;
+    line-height: 55px;
+    position: absolute;
+    top: 33%;
+    text-shadow: 5px 5px 6px #00000029;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+  }
+  .concept-type-wrp {
+  	padding: 30px 0;
+    background: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 109px;
+  }
+  .half-block .in-block{
+  	margin: auto;
+  	text-align: center;
+  }
+  .half-block .in-block button{
+    background-color:transparent;
+    border: none;
+  	padding: 0;
+	font-size: 16px;
+  	line-height: 24px;
+  	font-weight: 700;
+  	letter-spacing: 0.25px;
+  	color: #a5a5a5;
+  	margin-bottom: 0;
+  	text-decoration: none;
+  }
+  .block-row .half img {
+	object-fit: cover;
+  }
+  .half-block {
+	display: flex;
+    flex-grow: 1;
+    padding: 0 5px;
+	justify-content: center;
+    align-items: center;
+  }
+  .half-block:not(:first-child) {
+	border-left: 1px solid #b7b7b7;
+  }
+  .half-block:first-child .in-block button.active {
+  	color: #000000;
+  }
+  .half-block:not(:first-child) .in-block button.active {
+	color: #000000;
+  }
+  .layering-system {
+    padding-top: 40px;
+  }
+  .layring-container {
+  	padding-left: 14px;
+  	padding-right: 14px;
+  }
+  .layring-container:not(.show){
+  	display: none;
+  }
+  .layer> h3{
+  	color: #1D1D1D;
+  	font-family: "Basic Commercial";
+  	font-size: 28px;
+  	font-weight: 700;
+  	line-height:30px;
+  	letter-spacing: 0.76px;
+  	text-transform: uppercase;
+    margin-bottom: 44px;
+    position: relative;
+  }
+  .layer> h3::after {
+    content: '';
+    border-bottom: 3px solid #707070;
+    position: absolute;
+    width: 45px;
+    left: 0;
+    bottom: -25px;
+  }
+  .layring-inner p{
+  	font-family: aktiv-grotesk,sans-serif;
+  	font-size: 17px;
+  	font-weight: 300;
+  	line-height:28px;
+  	text-align: left;
+  }
+  .show-case {
+    margin-top: 101.54px;
+  }
+  .show-case-container {
+	padding-left: 14px;
+  	padding-right: 14px;
+    margin-bottom: 35px;
+  }
+  .show-case-container .block-row{
+	display: flex;
+  }
+  .block-row .half:first-child {
+	padding-right: 5px;
+  }
+  .block-row .half:last-child {
+	padding-left: 5px;
+  }
+  .conc-img-text {
+    padding-top: 14px;
+  }
+  .conc-img-text h4{
+	color: #000000;
+  	font-family: aktiv-grotesk,sans-serif;
+  	font-size: 16px;
+  	font-weight: 700;
+  	line-height:24px;
+  	letter-spacing: 0.22px;
+  	margin-bottom: 0px;
+  }
+  .conc-img-text p{
+	color: #000000;
+  	font-family: aktiv-grotesk,sans-serif;
+  	font-size: 16px;
+  	font-weight: 300;
+  	line-height:24px;
+  	letter-spacing: 0.22px;
+  }
+  .layring-inner{
+  	margin-bottom: 80.9px;
+  }
+  .layer-accordion {
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+  }
+  .accordion-panel:not(:first-child) .panel-heading {
+    border-top: 1px solid #707070;
+  }
+  .panel-heading{
+  	padding: 0px 0;
+  }
+  .panel-title {
+    height: 79px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .panel-title button {
+	font-family: aktiv-grotesk,sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 79px;
+    letter-spacing: 0px;
+    color: #000000;
+  	background-color: transparent;
+  	border: none;
+  	padding: 0;
+  	height: 100%;
+  	text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 85%;
+    overflow-x: hidden;
+  }
+  .accordion-panel.active .panel-title button {
+    color: #dc323c;
+  }
+  .toggle-icon{
+  	background-image: url({{ 'plus.svg' | asset_url }});
+	background-size: 29px;
+  	cursor: pointer;
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    transition: transform 0.2s;
+    transform: rotate(0deg);
+  }
+  .toggle-icon.open {
+    transform: rotate(45deg);
+  }
+  .panel-body:not(.show) {
+    display: none;
+    width: 100%!important;
+  }
+  .panel-shrink h3 {
+  	color: #000000;
+    font-family: aktiv-grotesk,sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .panel-right{
+  	display:flex;
+	flex-direction: column;
+    justify-content: space-between;
+  	height:100%;
+  }
+  .panel-body .inner-row {
+    display: flex;
+  }
+  .panel-body .inner-row:not(:first-child){
+    margin-top: auto;
+  }
+  .panel-grow .entry-txt p {
+    font-family: aktiv-grotesk,sans-serif;
+    color: #000000;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform:initial;
+  }
+  .panel-grow .secondary h4{
+  	font-family: aktiv-grotesk,sans-serif;
+    color: #000000;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 31px;
+  	margin-bottom: 16.68px;
+  }
+  .panel-grow .secondary h5{
+	font-family: aktiv-grotesk,sans-serif;
+    color: #000000;
+    font-size: 19px;
+  	font-weight: 700;
+    line-height: 21px;
+	vertical-align: top;
+	margin-bottom: 23.28px;
+    padding-top: 15.28px;
+    border-top: 3px solid #DC323C;
+    text-transform: uppercase;
+  }
+  .panel-grow .secondary p {
+    font-family: aktiv-grotesk,sans-serif;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+  	margin-bottom: 0;
+  }
+  .inner-row .inner-col.half:nth-child(1) {
+    padding-right: 20px;
+  }
+  .inner-row .inner-col.half:nth-child(2) {
+    padding-left: 20px;
+  }
+  .inner-col.secondary{
+    margin-top:0;
+  }
+  .inner-col.half.secondary{
+    margin-top:0px;
+  }
+}
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+  .concept-container {
+  	padding-left:0;
+  	padding-right:0;
+  }
+  .half-block:first-child {
+  	padding-right: 20px;
+  }
+  .accordion-panel {
+    padding: 0 5px;
+  }
+  .panel-body {
+    padding: 25px 0 50px;
+  }
+}
+@media (min-width: 992px) {
+  .concept-banner-wrp {
+    margin-bottom: calc(109px / 2);
+  }
+  .concept-banner-text {
+    font-size: 180px;
+    top: 57%;
+  }
+  .inner-col.secondary {
+    margin: 30px 0
+  }
+  .concept-type-wrp {
+	max-width: 852px;
+  }
+  .concept-banner-img {
+	display: inline-flex;
+  }
+  .concept-type-wrp {
+    position: absolute;
+  	bottom: calc(-109px / 2);
+    left: 50%;
+	transform: translateX(-50%);
+  	-webkit-box-shadow: 7px 3px 16px #00000017;
+    box-shadow: 7px 3px 16px #00000017;
+  }
+  .layering-system {
+    padding-top: 80px;
+  }
+  .layring-container{
+  	margin: 0 auto;
+	max-width: 1464px;
+  	padding: 0;
+  }
+  .layer > h3{
+	font-size: 38px;
+  	line-height: 46px;
+  	text-align: center;
+    max-width: 65%;
+    margin: 0 auto;
+    margin-bottom: 25px; 
+  }
+  .layer> h3::after {
+    display:none;
+  }
+  .layring-inner {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+  .layring-inner p{
+    text-align: center;
+  }
+  .accordion-container{
+	max-width: 1298px;
+  	margin: 80px auto;
+  }
+  .show-case {
+    margin-top: 0;
+  }
+  .show-case-container{
+	padding-left: 0;
+  	padding-right: 0;
+    margin-bottom: 70px;
+  }
+  .show-case-container .block-row {
+	justify-content: space-between;
+	width: 100%;
+  }
+  .block-row .half:first-child {
+	padding-right: 10px;
+  }
+  .block-row .half:last-child {
+	padding-left: 10px;
+  }
+  .conc-img-text {
+    padding-top: 17px;
+  }
+  .panel-heading{
+  	padding: 5px 0; 
+  }
+  .panel-title button {
+    font-size: 32px;
+  	max-width: unset;
+  }
+  .toggle-icon{
+	background-size: 40px;
+    width: 40px;
+    height: 40px;
+    margin-top: -8px
+  }
+  .panel-row {
+    display: flex;
+  }
+  .panel-shrink {
+    flex-shrink: 1;
+  }
+  .panel-grow {
+    flex-grow: 1;
+    padding-left: 68.4px;
+  }
+  .panel-shrink img {
+    width: auto;
+    max-width: unset;
+    height: 400px
+  }
+}
+@media (max-width: 640px) {
+  .inner-col.secondary {
+    margin: 30px 0
+  }
+  .block-row .half img {
+   	height: 250px 
+  }
+  video {
+    height: 28vh;
+  }
+  .concept-banner-text {
+    top: 36%; 
+  }
+  .panel-shrink img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto; 
+    margin-bottom: 15px
+  }
+}
+  @media (max-width: 992px) { 
+	.inner-col.secondary {
+     	margin: 30px 0
+    }  
+    .concept-type-wrp {
+      padding: 0;
+      background: #ffffff;
+      width: 100%;
+      display: table; 
+      height: 75px;
+      margin: 0 auto;
+      position: relative;
+      top: 0px;
+      box-shadow: none;
+      border: 1px solid black;
+      margin-top: 5px;
+    }
+    .half-block .in-block button {
+      font-size: 24px;
+      line-height: 36px;
+    }
+    .half-block:not(:first-child) {
+      border-left: 0;
+      border-top: 1px solid black;
+    }
+    .concept-type-wrp .half-block {position: relative;}
+    .concept-type-wrp .half-block .in-block {
+      padding: 10px 0
+    }
+    .concept-type-wrp .half-block.active {
+      background: #eee; 
+    }
+    .concept-banner-text {
+      top: 40%; 
+    }
+    .radio_circle {
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      border: 1px solid black;
+      display: block;
+      float: left;
+      position: absolute;
+      left: 25px;
+      top: 18px;
+      background: transparent;
+    }
+    .concept-type-wrp .half-block.active .radio_circle{
+      background: black
+    }
+ 	 .panel-shrink img{text-align: center}
+  }
+</style>
+<section class="concept-banner-wrp">
+  <div class="concept-container">
+    <div class="concept-banner-img">
+<!--       <img src="{{ section.settings.banner_image | img_url: 'master' }}" alt="banner image" /> -->
+      <video playsinline autoplay muted loop id="bgvid">
+         <source src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/brand_video.mp4?v=1622742854" type="video/mp4">
+      </video>
+
+      <h1 class="concept-banner-text">{{section.settings.hero_text}}</h1>
+      <div class="concept-type-wrp">
+        <div class="half-block">
+          <div class="in-block">
+            <div class="radio_circle"></div>
+            <button type="button" class="active" data-toggle="layer-1">{{section.settings.label_left}}</button>
+          </div>
+        </div>
+        <div class="half-block">
+          <div class="in-block">
+            <div class="radio_circle"></div>
+          	<button type="button" data-toggle="layer-2">{{section.settings.label_right}}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="layering-system">
+  <div class="layring-container show" id="layer-1">
+    <div class="layer">
+      	<h3>{{section.settings.layer_1_heading}}</h3>
+		<div class="layring-inner">
+          	{{section.settings.layer_1_description}}
+		</div>
+        <div class="accordion-container">
+          <div class="layer-accordion">
+            <div class="accordion-panel active">
+              <div class="panel-heading" role="tab">
+                <h4 class="panel-title">
+                  <button type="button" data-toggle="L1A1">{{section.settings.layer_1_accordion_1_panel_title}}</button>
+                  <i class="toggle-icon open"></i>
+                </h4>
+              </div>
+              <div id="L1A1" class="panel-body show">
+                <div class="panel-wrp">
+                  <div class="panel-row">
+                    <div class="panel-shrink">
+                      <h3>{{section.settings.layer_1_accordion_1_panel_left_heading}}</h3>
+                      <img src="{{ section.settings.layer_1_accordion_1_panel_left_image | img_url: 'master' }}" width="{{section.settings.layer_1_accordion_1_panel_left_image.width}}" height="{{section.settings.layer_1_accordion_1_panel_left_image.height}}" alt="L1A1-image" />
+                    </div>
+                    <div class="panel-grow">
+                      <div class="panel-right">
+                        <div class="inner-row">
+                          <div class="inner-col entry-txt">
+                            {{section.settings.layer_1_accordion_1_panel_right_entry_txt}}
+                          </div>
+                        </div>
+                        <div class="inner-row">
+                          <div class="inner-col secondary">
+                            <h4>001</h4>
+                            <h5>{{section.settings.layer_1_accordion_1_panel_right_r2_heading}}</h5>
+                            {{section.settings.layer_1_accordion_1_panel_right_r2_txt}}
+                          </div>
+                        </div>
+                        <div class="inner-row">
+                          <div class="inner-col half secondary">
+                            <h5>{{section.settings.layer_1_accordion_1_panel_right_r3_c1_heading}}</h5>
+                            {{section.settings.layer_1_accordion_1_panel_right_r3_c1_txt}}
+                          </div>
+                          <div class="inner-col half secondary">
+                            <h5>{{section.settings.layer_1_accordion_1_panel_right_r3_c2_heading}}</h5>
+                            {{section.settings.layer_1_accordion_1_panel_right_r3_c2_txt}}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-panel">
+              <div class="panel-heading" role="tab">
+                <h4 class="panel-title">
+                  <button type="button" data-toggle="L1A2">
+                    {{section.settings.layer_1_accordion_2_panel_title}}
+                  </button>
+                  <i class="toggle-icon"></i>
+                </h4>
+              </div>
+              <div id="L1A2" class="panel-body">
+                <div class="panel-wrp">
+                  <div class="panel-row">
+                    <div class="panel-shrink">
+                      <h3>{{section.settings.layer_1_accordion_2_panel_left_heading}}</h3>
+                      <img src="{{ section.settings.layer_1_accordion_2_panel_left_image | img_url: 'master' }}" width="{{section.settings.layer_1_accordion_2_panel_left_image.width}}" height="{{section.settings.layer_1_accordion_2_panel_left_image.height}}" alt="L1A2-image" />
+                    </div>
+                    <div class="panel-grow">
+                      <div class="panel-right">
+                        <div class="inner-row">
+                          <div class="inner-col entry-txt">
+                            {{section.settings.layer_1_accordion_2_panel_right_entry_txt}}
+                          </div>
+                        </div>
+                        <div class="inner-row">
+                          <div class="inner-col secondary">
+                            <h4>002</h4>
+                            <h5>{{section.settings.layer_1_accordion_2_panel_right_r2_heading}}</h5>
+                            {{section.settings.layer_1_accordion_2_panel_right_r2_txt}}
+                          </div>
+                        </div>
+                        <div class="inner-row">
+                          <div class="inner-col half secondary">
+                            <h5>{{section.settings.layer_1_accordion_2_panel_right_r3_c1_heading}}</h5>
+                            {{section.settings.layer_1_accordion_2_panel_right_r3_c1_txt}}
+                          </div>
+                          <div class="inner-col half secondary">
+                            <h5>{{section.settings.layer_1_accordion_2_panel_right_r3_c2_heading}}</h5>
+                            {{section.settings.layer_1_accordion_2_panel_right_r3_c2_txt}}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-panel">
+              <div class="panel-heading" role="tab">
+                <h4 class="panel-title">
+                  <button type="button" data-toggle="L1A3">
+                    {{section.settings.layer_1_accordion_3_panel_title}}
+                  </button>
+                  <i class="toggle-icon"></i>
+                </h4>
+              </div>
+              <div id="L1A3" class="panel-body">
+                <div class="panel-wrp">
+                  <div class="panel-row">
+                    <div class="panel-shrink">
+                      <h3>{{section.settings.layer_1_accordion_3_panel_left_heading}}</h3>
+                      <img src="{{ section.settings.layer_1_accordion_3_panel_left_image | img_url: 'master' }}" width="{{section.settings.layer_1_accordion_3_panel_left_image.width}}" height="{{section.settings.layer_1_accordion_3_panel_left_image.height}}" alt="L1A3-image" />
+                    </div>
+                    <div class="panel-grow">
+                      <div class="panel-right">
+                        <div class="inner-row">
+                          <div class="inner-col entry-txt">
+                            {{section.settings.layer_1_accordion_3_panel_right_entry_txt}}
+                          </div>
+                        </div>
+                        <div class="inner-row">
+                          <div class="inner-col secondary">
+                            <h4>003</h4>
+                            <h5>{{section.settings.layer_1_accordion_3_panel_right_r2_heading}}</h5>
+                            {{section.settings.layer_1_accordion_3_panel_right_r2_txt}}
+                          </div>
+                        </div>
+                        <div class="inner-row">
+                          <div class="inner-col half secondary">
+                            <h5>{{section.settings.layer_1_accordion_3_panel_right_r3_c1_heading}}</h5>
+                            {{section.settings.layer_1_accordion_3_panel_right_r3_c1_txt}}
+                          </div>
+                          <div class="inner-col half secondary">
+                            <h5>{{section.settings.layer_1_accordion_3_panel_right_r3_c2_heading}}</h5>
+                            {{section.settings.layer_1_accordion_3_panel_right_r3_c2_txt}}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      	  </div>
+      	</div>
+	</div>
+  </div>
+  <div class="layring-container" id="layer-2">
+    <div class="layer">
+      	<h3>{{section.settings.layer_2_heading}}</h3>
+		<div class="layring-inner">
+          	{{section.settings.layer_2_description}}
+		</div>
+        <div class="accordion-container">
+          <div class="layer-accordion">
+            <div class="accordion-panel active">
+              <div class="panel-heading" role="tab">
+                <h4 class="panel-title">
+                  <button type="button" data-toggle="L1A1">{{section.settings.layer_2_accordion_1_panel_title}}</button>
+                  <i class="toggle-icon open"></i>
+                </h4>
+              </div>
+              <div id="L1A1" class="panel-body show">
+                <div class="panel-wrp">
+                  <div class="panel-row">
+                    <div class="panel-shrink">
+                      <img src="{{ section.settings.layer_2_accordion_1_panel_left_image | img_url: 'master' }}" width="{{section.settings.layer_2_accordion_1_panel_left_image.width}}" height="{{section.settings.layer_2_accordion_1_panel_left_image.height}}" alt="L2A1-image" />
+                    </div>
+                    <div class="panel-grow">
+                      <div class="panel-right">
+                        <div class="inner-row">
+                          <div class="inner-col entry-txt">
+                            {{section.settings.layer_2_accordion_1_panel_right_entry_txt}}
+                          </div>
+                        </div>
+                        <div class="inner-row">
+                          <div class="inner-col secondary">
+                            <h4>001</h4>
+                            <h5>{{section.settings.layer_2_accordion_1_panel_right_r2_heading}}</h5>
+                            {{section.settings.layer_2_accordion_1_panel_right_r2_txt}}
+                            {{section.settings.layer_2_accordion_1_panel_right_r2_txt2}}
+                          </div>
+                        </div>
+                        <div class="inner-row">
+                          <div class="inner-col half secondary">
+                            <h5>{{section.settings.layer_2_accordion_1_panel_right_r3_c1_heading}}</h5>
+                            {{section.settings.layer_2_accordion_1_panel_right_r3_c1_txt}}
+                          </div>
+                          <div class="inner-col half secondary">
+                            <h5>{{section.settings.layer_2_accordion_1_panel_right_r3_c2_heading}}</h5>
+                            {{section.settings.layer_2_accordion_1_panel_right_r3_c2_txt}}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-panel">
+              <div class="panel-heading" role="tab">
+                <h4 class="panel-title">
+                  <button type="button" data-toggle="L1A2">
+                    {{section.settings.layer_2_accordion_2_panel_title}}
+                  </button>
+                  <i class="toggle-icon"></i>
+                </h4>
+              </div>
+              <div id="L1A2" class="panel-body">
+                <div class="panel-wrp">
+                  <div class="panel-row">
+                    <div class="panel-shrink">
+                      <img src="{{ section.settings.layer_2_accordion_2_panel_left_image | img_url: 'master' }}" width="{{section.settings.layer_2_accordion_2_panel_left_image.width}}" height="{{section.settings.layer_2_accordion_2_panel_left_image.height}}" alt="L2A2-image" />
+                    </div>
+                    <div class="panel-grow">
+                      <div class="panel-right">
+                        <div class="inner-row">
+                          <div class="inner-col entry-txt">
+                            {{section.settings.layer_2_accordion_2_panel_right_entry_txt}}
+                          </div>
+                        </div>
+                        <div class="inner-row">
+                          <div class="inner-col secondary">
+                            <h4>002</h4>
+                            <h5>{{section.settings.layer_2_accordion_2_panel_right_r2_heading}}</h5>
+                            {{section.settings.layer_2_accordion_2_panel_right_r2_txt}}
+                          </div>
+                        </div>
+                        <div class="inner-row">
+                          <div class="inner-col half secondary">
+                            <h5>{{section.settings.layer_2_accordion_2_panel_right_r3_c1_heading}}</h5>
+                            {{section.settings.layer_2_accordion_2_panel_right_r3_c1_txt}}
+                          </div>
+                          <div class="inner-col half secondary">
+                            <h5>{{section.settings.layer_2_accordion_2_panel_right_r3_c2_heading}}</h5>
+                            {{section.settings.layer_2_accordion_2_panel_right_r3_c2_txt}}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-panel">
+              <div class="panel-heading" role="tab">
+                <h4 class="panel-title">
+                  <button type="button" data-toggle="L1A3">
+                    {{section.settings.layer_2_accordion_3_panel_title}}
+                  </button>
+                  <i class="toggle-icon"></i>
+                </h4>
+              </div>
+              <div id="L1A3" class="panel-body">
+                <div class="panel-wrp">
+                  <div class="panel-row">
+                    <div class="panel-shrink">
+                      <img src="{{ section.settings.layer_2_accordion_3_panel_left_image | img_url: 'master' }}" width="{{section.settings.layer_2_accordion_3_panel_left_image.width}}" height="{{section.settings.layer_2_accordion_3_panel_left_image.height}}" alt="L2A3-image" />
+                    </div>
+                    <div class="panel-grow">
+                      <div class="panel-right">
+                        <div class="inner-row">
+                          <div class="inner-col entry-txt">
+                            {{section.settings.layer_2_accordion_3_panel_right_entry_txt}}
+                          </div>
+                        </div>
+                        <div class="inner-row">
+                          <div class="inner-col secondary">
+                            <h4>003</h4>
+                            <h5>{{section.settings.layer_2_accordion_3_panel_right_r2_heading}}</h5>
+                            {{section.settings.layer_2_accordion_3_panel_right_r2_txt}}
+                          </div>
+                        </div>
+                        <div class="inner-row">
+                          <div class="inner-col half secondary">
+                            <h5>{{section.settings.layer_2_accordion_3_panel_right_r3_c1_heading}}</h5>
+                            {{section.settings.layer_2_accordion_3_panel_right_r3_c1_txt}}
+                          </div>
+                          <div class="inner-col half secondary">
+                            <h5>{{section.settings.layer_2_accordion_3_panel_right_r3_c2_heading}}</h5>
+                            {{section.settings.layer_2_accordion_3_panel_right_r3_c2_txt}}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      	  </div>
+      	</div>
+	</div>
+  </div>
+</section>
+<section class="show-case">
+  <div class="show-case-container">
+    <div class="block-row">
+      <div class="half">
+        <a href="{{section.settings.url_left}}">
+          <img src="{{ section.settings.image_left | img_url: 'master' }}" alt="image-left" />
+          <div class="conc-img-text">
+            <h4>{{ section.settings.left_product_name }}</h4>
+            <p><span>$</span>{{ section.settings.left_product_price }}</p>
+          </div>
+        </a>
+      </div>
+      <div class="half">
+        <a href="{{section.settings.url_right}}">
+          <img src="{{ section.settings.image_right | img_url: 'master' }}" alt="image-right" />
+          <div class="conc-img-text">
+            <h4>{{ section.settings.right_product_name }}</h4>
+            <p><span>$</span>{{ section.settings.right_product_price }}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+$(document).ready(function(){
+ /* $(window).scroll(function(e){
+    if($(window).scrollTop() < ($('.concept-banner-img').offset().top + $('.concept-banner-img').height())){
+      $('.concept-type-wrp').removeAttr('style')
+    } else {
+      $('.concept-type-wrp').css({
+        width: $('.concept-type-wrp').width(),
+        position: 'fixed',
+        top: 0,
+        left: '50%',
+        transform: 'translateX(-50%)',
+        zIndex: 99,
+      })
+    }
+  });*/
+  
+  $(".concept-type-wrp .half-block:first-child").addClass('active');
+  
+  $(".in-block").click(function(){ 
+  	$(".concept-type-wrp .half-block.active").removeClass('active');
+    $(".in-block button.active").removeClass('active');
+    if(!$(this).hasClass('active')){
+      $("button", this).parents('.half-block.active').removeClass('active');
+      $("button", this).parents('.half-block').addClass('active');
+      $("button", this).addClass('active');
+      $('.layring-container.show').fadeOut('fast').removeClass('show');
+      $(`#${$("button", this).data('toggle')}`).fadeIn('fast').addClass('show');
+      if($(window).scrollTop() > ($('.concept-banner-img').offset().top + $('.concept-banner-img').height())){
+        $(window).scrollTop($('.layering-system').offset().top)
+      }
+    }
+  });
+  
+  $(".panel-title button").click(function(){
+    $(this).parents('.accordion-panel').toggleClass('active').find('.panel-body').slideToggle('fast');
+    $(this).next().toggleClass('open');
+    $(".layring-container.show .panel-title button").not(this).parents('.accordion-panel').removeClass('active').find('.panel-body').slideUp('fast');
+    $(".layring-container.show .panel-title button").not(this).next().removeClass('open');
+  });
+  $('.toggle-icon').click(function(){
+    $(this).prev().click();
+  });
+});
+</script>
+{% schema %}
+  {
+    "name": "Big hero",
+    "settings": [
+		{
+      		"type": "header",
+      		"content": "Hero Content"
+    	},
+		{
+      		"type": "text",
+			"id": "hero_text",
+			"label": "Hero Text",
+			"default": "RSCF™"
+		},
+		{
+			"type": "image_picker",
+			"id": "banner_image",
+			"label": "Image"
+		},
+		{
+      		"type": "text",
+			"id": "label_left",
+			"label": "Concept Label Left",
+			"default": "R&CF™ Formula"
+		},
+		{
+      		"type": "text",
+			"id": "label_right",
+			"label": "Concept Label Right",
+			"default": "LAYERING SYSTEM"
+		},
+		{
+      		"type": "header",
+      		"content": "Layer 1"
+    	},
+		{
+      		"type": "text",
+			"id": "layer_1_heading",
+			"label": "Layer 1 Heading",
+			"default": "REYAL’S SKINCARE FORMULA COMBINES THE BEST OF SCIENCE AND NATURE."
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_1_description",
+			"label": "Layer 1 Description",
+			"default": "<p>REYAL’S SKINCARE FORMULA COMBINES THE BEST OF SCIENCE AND NATURE. EVERY REYAL SKINCARE PRODUCT INCLUDES OUR PROPRIETARY RSCF™ TRI-BLEND. A CUSTOM COMBINATION OF ACTIVE INGREDIENTS: DRAGON'S BLOOD, TIGER</p>"
+		},
+		{
+      		"type": "header",
+      		"content": "Layer 1 Accordion 1"
+    	},
+		{
+      		"type": "text",
+			"id": "layer_1_accordion_1_panel_title",
+			"label": "Panel Title",
+			"default": "DRAGON’S BLOOD"
+		},
+		{
+      		"type": "text",
+			"id": "layer_1_accordion_1_panel_left_heading",
+			"label": "Panel Left Heading",
+			"default": "<strong>SANGRE DE GRADO</strong> (SAN ORE DE GRADO)"
+		},
+		{
+			"type": "image_picker",
+			"id": "layer_1_accordion_1_panel_left_image",
+			"label": "Panel Left Image"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_1_accordion_1_panel_right_entry_txt",
+			"label": "Panel Right Entry Text",
+			"default": "<p>a powerful and protective antioxidant found in sap from amazonian rainforest trees. dragon's blood is traditionally used as a topical aid for cuts, bites, burns, stings, and rashes. </p>"
+		},
+		{
+      		"type": "text",
+			"id": "layer_1_accordion_1_panel_right_r2_heading",
+			"label": "Panel Right 2nd Row Heading",
+			"default": "ANTI-BACTERIAL, ANTI-VIRAL, ANTI-FUNGAL"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_1_accordion_1_panel_right_r2_txt",
+			"label": "Panel Right 2nd Row Text",
+			"default": "<p>its rich protective antioxidant phenols and anti-inflammatory compounds help to protect the cells of the skin, reducing both redness and inflammation,</p>"
+		},
+		{
+      		"type": "text",
+			"id": "layer_1_accordion_1_panel_right_r3_c1_heading",
+			"label": "Panel Right 2nd Row 1st Col Heading",
+			"default": "REDUCED SKIN REDNESS"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_1_accordion_1_panel_right_r3_c1_txt",
+			"label": "Panel Right 2nd Row 1st Col Text",
+			"default": "<p>Performance actives (you can feel) that strengthen and up your game</p>"
+		},
+		{
+      		"type": "text",
+			"id": "layer_1_accordion_1_panel_right_r3_c2_heading",
+			"label": "Panel Right 2nd Row 2nd Col Heading",
+			"default": "REPAIRS COLLAGEN"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_1_accordion_1_panel_right_r3_c2_txt",
+			"label": "Panel Right 2nd Row 2nd Col Text",
+			"default": "<p>Performance actives (you can feel) that strengthen and up your game</p>"
+		},
+		{
+      		"type": "header",
+      		"content": "Layer 1 Accordion 2"
+    	},
+		{
+      		"type": "text",
+			"id": "layer_1_accordion_2_panel_title",
+			"label": "Panel Title",
+			"default": "TIGER GRASS"
+		},
+		{
+      		"type": "text",
+			"id": "layer_1_accordion_2_panel_left_heading",
+			"label": "Panel Left Heading",
+			"default": "<strong>SANGRE DE GRADO</strong> (SAN ORE DE GRADO)"
+		},
+		{
+			"type": "image_picker",
+			"id": "layer_1_accordion_2_panel_left_image",
+			"label": "Panel Left Image"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_1_accordion_2_panel_right_entry_txt",
+			"label": "Panel Right Entry Text",
+			"default": "<p>a powerful and protective antioxidant found in sap from amazonian rainforest trees. dragon's blood is traditionally used as a topical aid for cuts, bites, burns, stings, and rashes. </p>"
+		},
+		{
+      		"type": "text",
+			"id": "layer_1_accordion_2_panel_right_r2_heading",
+			"label": "Panel Right 2nd Row Heading",
+			"default": "ANTI-BACTERIAL, ANTI-VIRAL, ANTI-FUNGAL"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_1_accordion_2_panel_right_r2_txt",
+			"label": "Panel Right 2nd Row Text",
+			"default": "<p>its rich protective antioxidant phenols and anti-inflammatory compounds help to protect the cells of the skin, reducing both redness and inflammation,</p>"
+		},
+		{
+      		"type": "text",
+			"id": "layer_1_accordion_2_panel_right_r3_c1_heading",
+			"label": "Panel Right 2nd Row 1st Col Heading",
+			"default": "REDUCED SKIN REDNESS"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_1_accordion_2_panel_right_r3_c1_txt",
+			"label": "Panel Right 2nd Row 1st Col Text",
+			"default": "<p>Performance actives (you can feel) that strengthen and up your game</p>"
+		},
+		{
+      		"type": "text",
+			"id": "layer_1_accordion_2_panel_right_r3_c2_heading",
+			"label": "Panel Right 2nd Row 2nd Col Heading",
+			"default": "REPAIRS COLLAGEN"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_1_accordion_2_panel_right_r3_c2_txt",
+			"label": "Panel Right 2nd Row 2nd Col Text",
+			"default": "<p>Performance actives (you can feel) that strengthen and up your game</p>"
+		},
+		{
+      		"type": "header",
+      		"content": "Layer 1 Accordion 3"
+    	},
+		{
+      		"type": "text",
+			"id": "layer_1_accordion_3_panel_title",
+			"label": "Panel Title",
+			"default": "RSCF™ VITAMIN E"
+		},
+		{
+      		"type": "text",
+			"id": "layer_1_accordion_3_panel_left_heading",
+			"label": "Panel Left Heading",
+			"default": "<strong>SANGRE DE GRADO</strong> (SAN ORE DE GRADO)"
+		},
+		{
+			"type": "image_picker",
+			"id": "layer_1_accordion_3_panel_left_image",
+			"label": "Panel Left Image"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_1_accordion_3_panel_right_entry_txt",
+			"label": "Panel Right Entry Text",
+			"default": "<p>a powerful and protective antioxidant found in sap from amazonian rainforest trees. dragon's blood is traditionally used as a topical aid for cuts, bites, burns, stings, and rashes. </p>"
+		},
+		{
+      		"type": "text",
+			"id": "layer_1_accordion_3_panel_right_r2_heading",
+			"label": "Panel Right 2nd Row Heading",
+			"default": "ANTI-BACTERIAL, ANTI-VIRAL, ANTI-FUNGAL"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_1_accordion_3_panel_right_r2_txt",
+			"label": "Panel Right 2nd Row Text",
+			"default": "<p>its rich protective antioxidant phenols and anti-inflammatory compounds help to protect the cells of the skin, reducing both redness and inflammation,</p>"
+		},
+		{
+      		"type": "text",
+			"id": "layer_1_accordion_3_panel_right_r3_c1_heading",
+			"label": "Panel Right 2nd Row 1st Col Heading",
+			"default": "REDUCED SKIN REDNESS"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_1_accordion_3_panel_right_r3_c1_txt",
+			"label": "Panel Right 2nd Row 1st Col Text",
+			"default": "<p>Performance actives (you can feel) that strengthen and up your game</p>"
+		},
+		{
+      		"type": "text",
+			"id": "layer_1_accordion_3_panel_right_r3_c2_heading",
+			"label": "Panel Right 2nd Row 2nd Col Heading",
+			"default": "REPAIRS COLLAGEN"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_1_accordion_3_panel_right_r3_c2_txt",
+			"label": "Panel Right 2nd Row 2nd Col Text",
+			"default": "<p>Performance actives (you can feel) that strengthen and up your game</p>"
+		},
+		{
+      		"type": "header",
+      		"content": "Layer 2"
+    	},
+		{
+      		"type": "text",
+			"id": "layer_2_heading",
+			"label": "Layer 2 Heading",
+			"default": "REYAL’S LAYERING SYSTEM IS MADE UP OF THREE SIMPLE STEPS"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_2_description",
+			"label": "Layer 2 Description",
+			"default": "<p>Reyal’s skincare performance formula combines the best of science and nature. Every reyal skincare product includes our proprietary rscf™ tri-blend. A custom combination of active ingredients: dragon’s blood, tiger grass, and vitamin e that work together to fuel, strengthen and protect your skin.</p>"
+		},
+		{
+      		"type": "header",
+      		"content": "Layer 2 Accordion 1"
+    	},
+		{
+      		"type": "text",
+			"id": "layer_2_accordion_1_panel_title",
+			"label": "Panel Title",
+			"default": "LAYER 001 SUPREME FACE WASH"
+		},
+		{
+			"type": "image_picker",
+			"id": "layer_2_accordion_1_panel_left_image",
+			"label": "Panel Left Image"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_2_accordion_1_panel_right_entry_txt",
+			"label": "Panel Right Entry Text",
+			"default": "<p>a powerful and protective antioxidant found in sap from amazonian rainforest trees. dragon's blood is traditionally used as a topical aid for cuts, bites, burns, stings, and rashes. </p>"
+		},
+		{
+      		"type": "text",
+			"id": "layer_2_accordion_1_panel_right_r2_heading",
+			"label": "Panel Right 2nd Row Heading",
+			"default": "ANTI-BACTERIAL, ANTI-VIRAL, ANTI-FUNGAL"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_2_accordion_1_panel_right_r2_txt",
+			"label": "Panel Right 2nd Row Text",
+			"default": "<p>its rich protective antioxidant phenols and anti-inflammatory compounds help to protect the cells of the skin, reducing both redness and inflammation,</p>"
+		},
+		{
+      		"type": "text",
+			"id": "layer_2_accordion_1_panel_right_r3_c1_heading",
+			"label": "Panel Right 2nd Row 1st Col Heading",
+			"default": "REDUCED SKIN REDNESS"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_2_accordion_1_panel_right_r3_c1_txt",
+			"label": "Panel Right 2nd Row 1st Col Text",
+			"default": "<p>Performance actives (you can feel) that strengthen and up your game</p>"
+		},
+		{
+      		"type": "text",
+			"id": "layer_2_accordion_1_panel_right_r3_c2_heading",
+			"label": "Panel Right 2nd Row 2nd Col Heading",
+			"default": "REPAIRS COLLAGEN"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_2_accordion_1_panel_right_r3_c2_txt",
+			"label": "Panel Right 2nd Row 2nd Col Text",
+			"default": "<p>Performance actives (you can feel) that strengthen and up your game</p>"
+		},
+		{
+      		"type": "header",
+      		"content": "Layer 2 Accordion 2"
+    	},
+		{
+      		"type": "text",
+			"id": "layer_2_accordion_2_panel_title",
+			"label": "Panel Title",
+			"default": "LAYER 002 SELECT DAY SERUM"
+		},
+		{
+			"type": "image_picker",
+			"id": "layer_2_accordion_2_panel_left_image",
+			"label": "Panel Left Image"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_2_accordion_2_panel_right_entry_txt",
+			"label": "Panel Right Entry Text",
+			"default": "<p>a powerful and protective antioxidant found in sap from amazonian rainforest trees. dragon's blood is traditionally used as a topical aid for cuts, bites, burns, stings, and rashes. </p>"
+		},
+		{
+      		"type": "text",
+			"id": "layer_2_accordion_2_panel_right_r2_heading",
+			"label": "Panel Right 2nd Row Heading",
+			"default": "ANTI-BACTERIAL, ANTI-VIRAL, ANTI-FUNGAL"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_2_accordion_2_panel_right_r2_txt",
+			"label": "Panel Right 2nd Row Text",
+			"default": "<p>its rich protective antioxidant phenols and anti-inflammatory compounds help to protect the cells of the skin, reducing both redness and inflammation,</p>"
+		},
+		{
+      		"type": "text",
+			"id": "layer_2_accordion_2_panel_right_r3_c1_heading",
+			"label": "Panel Right 2nd Row 1st Col Heading",
+			"default": "REDUCED SKIN REDNESS"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_2_accordion_2_panel_right_r3_c1_txt",
+			"label": "Panel Right 2nd Row 1st Col Text",
+			"default": "<p>Performance actives (you can feel) that strengthen and up your game</p>"
+		},
+		{
+      		"type": "text",
+			"id": "layer_2_accordion_2_panel_right_r3_c2_heading",
+			"label": "Panel Right 2nd Row 2nd Col Heading",
+			"default": "REPAIRS COLLAGEN"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_2_accordion_2_panel_right_r3_c2_txt",
+			"label": "Panel Right 2nd Row 2nd Col Text",
+			"default": "<p>Performance actives (you can feel) that strengthen and up your game</p>"
+		},
+		{
+      		"type": "header",
+      		"content": "Layer 2 Accordion 3"
+    	},
+		{
+      		"type": "text",
+			"id": "layer_2_accordion_3_panel_title",
+			"label": "Panel Title",
+			"default": "LAYER 003 SUPER DAY MOISTURIZER"
+		},
+		{
+			"type": "image_picker",
+			"id": "layer_2_accordion_3_panel_left_image",
+			"label": "Panel Left Image"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_2_accordion_3_panel_right_entry_txt",
+			"label": "Panel Right Entry Text",
+			"default": "<p>a powerful and protective antioxidant found in sap from amazonian rainforest trees. dragon's blood is traditionally used as a topical aid for cuts, bites, burns, stings, and rashes. </p>"
+		},
+		{
+      		"type": "text",
+			"id": "layer_2_accordion_3_panel_right_r2_heading",
+			"label": "Panel Right 2nd Row Heading",
+			"default": "ANTI-BACTERIAL, ANTI-VIRAL, ANTI-FUNGAL"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_2_accordion_3_panel_right_r2_txt",
+			"label": "Panel Right 2nd Row Text",
+			"default": "<p>its rich protective antioxidant phenols and anti-inflammatory compounds help to protect the cells of the skin, reducing both redness and inflammation,</p>"
+		},
+		{
+      		"type": "text",
+			"id": "layer_2_accordion_3_panel_right_r3_c1_heading",
+			"label": "Panel Right 2nd Row 1st Col Heading",
+			"default": "REDUCED SKIN REDNESS"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_2_accordion_3_panel_right_r3_c1_txt",
+			"label": "Panel Right 2nd Row 1st Col Text",
+			"default": "<p>Performance actives (you can feel) that strengthen and up your game</p>"
+		},
+		{
+      		"type": "text",
+			"id": "layer_2_accordion_3_panel_right_r3_c2_heading",
+			"label": "Panel Right 2nd Row 2nd Col Heading",
+			"default": "REPAIRS COLLAGEN"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_2_accordion_3_panel_right_r3_c2_txt",
+			"label": "Panel Right 2nd Row 2nd Col Text",
+			"default": "<p>Performance actives (you can feel) that strengthen and up your game</p>"
+		},
+		{
+      		"type": "header",
+      		"content": "Show Case"
+    	},
+		{
+			"type": "url",
+			"id": "url_left",
+			"label": "Product URL Left"
+		},
+		{
+			"type": "image_picker",
+			"id": "image_left",
+			"label": "Product Image Left"
+		},
+		{
+      		"type": "text",
+			"id": "left_product_name",
+			"label": "Left Product Name"
+		},
+		{
+      		"type": "number",
+			"id": "left_product_price",
+			"label": "Left Product Price"
+		},
+		{
+			"type": "url",
+			"id": "url_right",
+			"label": "Product URL Right"
+		},
+		{
+			"type": "image_picker",
+			"id": "image_right",
+			"label": "Image Right"
+		},
+		{
+      		"type": "text",
+			"id": "right_product_name",
+			"label": "Right Product Name"
+		},
+		{
+      		"type": "number",
+			"id": "right_product_price",
+			"label": "Right Product Price"
+		}
+	]
+  }
+{% endschema %}

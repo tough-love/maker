@@ -1,0 +1,200 @@
+{% comment %} Translations {% endcomment %}
+{% assign product_media_t = 'products.product_media' | t %}
+{% assign image_modal_t = 'products.image_modal' | t %}
+{% assign products_view_ar_t = 'products.view_ar' | t %}
+{% comment %} Variables {% endcomment %}
+{% assign current_variant = product.selected_or_first_available_variant %}
+{% assign enable_size_chart = section.settings.product-size-chart-enabled %}
+{% assign enable_swatches = section.settings.swatches-enabled %}
+{% assign enable_video_looping = section.settings.loop-enabled %}
+{% assign enable_smart_payment = section.settings.smart-payment-button %}
+{% assign enable_modal = section.settings.modal-enabled %}
+{% assign featured_media = current_variant.featured_media | default: product.featured_media %}
+{% assign hide_variant_media = section.settings.hide-variant-media %}
+{% assign low_stock_amount = section.settings.low-in-stock-amount %}
+{% assign show_social_share = settings.social--share-products %}
+{% assign show_unavailable_form = section.settings.product-unavailable-form-show %}
+{% assign size_chart_content = section.settings.product-size-chart-page-content %}
+{% assign size_chart_option = section.settings.product-size-chart-option %}
+{% assign variant_style = section.settings.variant-style %}
+{%- capture variant_media_ids -%}
+  {%- for variant in product.variants -%}
+    '{{- variant.featured_media.id -}}',
+  {%- endfor -%}
+{%- endcapture -%}
+{% assign variant_media_ids = variant_media_ids | split: ',' %}
+{% unless media_size %}
+  {% assign media_size = '' %}
+{% endunless %}
+{% unless enable_image_zoom %}
+  {% assign enable_image_zoom = false %}
+{% endunless %}
+<section
+  class="layer-img-wrp"
+  data-section-id="{{ section.id }}"
+  data-section-type="product_page"
+  data-js-class="Product">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-2">
+        <div class="product-img-slider">
+          <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+              {% for image in product.images %}
+              <div class="swiper-slide">
+                <img src="{{ image.src | product_img_url: '512x512', crop: 'center' }}" alt="{{image.alt}}" />
+              </div>
+    		  {% endfor %}
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="layer-content">
+          <a href="{{ product.url }}">
+            {% assign title_split = product.title | split: " " %}
+            <h1>
+            	{% comment %}
+              		add line break after 2nd word
+              	{% endcomment %}
+            	{% for word in title_split %}
+                  {% if forloop.index == 2 %}
+                      {{word}}<br>
+                  {% else %}
+                     {{word}}
+                  {% endif %}
+              	{% endfor %}
+            </h1>
+          </a>
+          <div class="star pdt-star-rating grid-view-item{% unless product.available %} product-price--sold-out grid-view-item--sold-out{% endunless %}">
+            <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+          </div>
+          <div class="description">{{ product.description }}</div>
+          {%
+            render "framework--product--skincare--form",
+            product: product,
+            enable_callback: true,
+            enable_smart_payment: enable_smart_payment,
+            enable_swatches: enable_swatches,
+            variant_style: variant_style,
+            low_stock_amount: low_stock_amount,
+            enable_size_chart: enable_size_chart,
+            size_chart_content: size_chart_content,
+            size_chart_option: size_chart_option,
+            show_unavailable_form: show_unavailable_form
+          %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+$(document).ready(function(){
+ var swiper = new Swiper(".mySwiper", {
+   		loop: true,
+   		autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+         pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+});
+</script>
+{% schema %}
+{
+  "name": "Product Skincare page",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "smart-payment-button",
+      "label": "Show dynamic checkout button",
+      "info": "Lets customers check out directly using a familiar payment method. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "variant-style",
+      "label": "Product variant style",
+      "options": [
+        { "label": "Dropdowns", "value": "dropdowns" },
+        { "label": "Buttons", "value": "buttons" }
+      ],
+      "default": "dropdowns"
+    },
+    {
+      "type": "checkbox",
+      "id": "swatches-enabled",
+      "label": "Enable color swatches",
+      "default": false,
+      "info": "Automatically turn color options into swatches. [Learn more](https://support.troopthemes.com/guide/color-swatch-guide)"
+    },
+    {
+      "type": "checkbox",
+      "id": "product-unavailable-form-show",
+      "label": "Show notification form when product is unavailable"
+    },
+    {
+      "label": "Show low in stock notice when quantity is",
+      "id": "low-in-stock-amount",
+      "type": "range",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "default": 0,
+      "info": "Set to 0 to disable this feature. Updated for each variant."
+    },
+    {
+      "type": "header",
+      "content": "Media"
+    },
+    {
+      "type": "paragraph",
+      "content": "Learn more about [media types](https://help.shopify.com/en/manual/products/product-media)."
+    },
+    {
+      "type": "checkbox",
+      "id": "modal-enabled",
+      "label": "Enable image zoom",
+      "default": true,
+      "info": "Opens when clicking a product image"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide-variant-media",
+      "label": "Hide variant media",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "loop-enabled",
+      "label": "Enable video looping",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Size chart"
+    },
+    {
+      "type": "checkbox",
+      "id": "product-size-chart-enabled",
+      "label": "Enable",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "product-size-chart-option",
+      "label": "Link from option",
+      "default": "size"
+    },
+    {
+      "type": "page",
+      "id": "product-size-chart-page-content",
+      "label": "Page content"
+    }
+  ]
+}
+{% endschema %}

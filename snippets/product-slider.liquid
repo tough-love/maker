@@ -1,0 +1,83 @@
+{% comment %} Translations {% endcomment %}
+{% assign image_modal_t = 'products.image_modal' | t %}
+{% assign product_media_t = 'products.product_media' | t %}
+{% assign products_view_ar_t = 'products.view_ar' | t %}
+
+{% comment %} Variables {% endcomment %}
+{% assign current_variant = product.selected_or_first_available_variant %}
+{% assign featured_media = current_variant.featured_media | default: product.featured_media %}
+{% unless media_size %}
+  {% assign media_size = '' %}
+{% endunless %}
+{% unless enable_image_zoom %}
+  {% assign enable_image_zoom = false %}
+{% endunless %}
+
+ <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+<ul class="product-images-slider">
+  
+  	{% for image in product.images %}
+       
+  		<img src="{{ image.src | product_img_url: '1000x' }}">
+    {% endfor %}
+
+</ul>
+<ul class="product-images-slider-nav">
+  
+  	{% for image in product.images %}
+       
+  		<img src="{{ image.src | product_img_url: '300x' }}">
+    {% endfor %}
+
+</ul>
+
+<script>
+  $('.product-images-slider').slick({
+    arrows: true,
+    slidesToShow: 1,
+  	slidesToScroll: 1,
+    fade: true,
+    asNavFor: '.product-images-slider-nav'
+  });
+  
+  $('.product-images-slider-nav').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.product-images-slider',
+    dots: true,
+    focusOnSelect: true
+  });
+</script>
+
+<style>
+  	
+  
+  .product-images-slider img{
+   	width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+  .product-page--media-variant{
+    display: none;
+  }
+  
+  .product-images-slider-nav{
+    margin-top: 25px;
+  }
+  .product-images-slider-nav img{
+    height: 125px;
+    object-fit: cover;
+  	padding: 5px;
+    width: 25%;
+    
+  }
+  
+  .slick-arrow::before{
+   color: #515151; 
+  }
+  .slick-arrow::after{
+   background: #515151; 
+  }
+</style>

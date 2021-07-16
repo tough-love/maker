@@ -1,0 +1,94 @@
+
+<div class="featured-double-image" data-section-id="{{ section.id }}">
+  <div class="double--left">
+    <h2>Skin performance</h2>
+    <a href="/collections/frontpage">SHOP LAYERS</a>
+  </div>
+  <div class="double--right">
+    <h2>Supplements</h2>
+    <a href="/collections/supplements">SHOP ALL</a>
+  </div>
+</div>
+
+<style>
+.featured-double-image{
+height: 800px;
+  margin-left: -48px;
+    margin-right: -48px;
+  display: flex;
+  flex-direction: row;
+
+  color: white;
+}
+  
+.featured-double-image a{
+   color: #fff; 
+  text-decoration: underline;
+  margin-top: 10px;
+}
+  
+  .featured-double-image h2{
+    font-size: 26px;
+	text-transform: uppercase;
+  }
+  
+.double--left{
+
+  background-image: url(https://cdn.shopify.com/s/files/1/0268/0356/8822/files/SKIN_PERF_1.jpg?v=1612380408);
+background-size: cover;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+      background-position: bottom;
+}
+  .double--right{
+background-image: url(https://cdn.shopify.com/s/files/1/0268/0356/8822/files/SUPP_1.jpg?v=1612380408);
+background-size: cover;
+    width: 50%;
+     justify-content: center;
+  align-items: center;
+     display: flex;
+    flex-direction: column;
+      background-position: center;
+  }
+  
+@media screen and (max-width: 600px) {
+
+  .featured-double-image{
+   	height: 100%; 
+    flex-direction: column;
+  }
+  .double--left, .double--right{
+    width: 100%;
+    height: 800px;
+  }
+}
+</style>
+
+
+{% schema %}
+  {
+    "name": "Double Image Section",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Layout and Color"
+      }
+	],
+    "presets": [
+        {
+          "name": "Double Image",
+          "category": "Image"
+        }
+      ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

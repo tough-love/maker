@@ -1,0 +1,268 @@
+<section class="organic-ingredients">
+         <div class="small-container">
+            <h2>{{ section.settings.center_organic_ingredient_title }}</h2>
+            <div class="row organic-ingredients-row">   
+               <div class="col-3">
+                  <div class="organic-img">
+                     <img src="{{ section.settings.left_image | img_url: 'master' }}" alt="organic 1">
+                  </div>
+                  <h3>{{ section.settings.center_organic_ingredient_title1 }}</h3>
+                  <p>{{ section.settings.center_organic_ingredient_desc1 }}</p>
+               </div>
+               <div class="col-3">
+                  <div class="organic-img">
+                     <img src="{{ section.settings.center_image | img_url: 'master' }}" alt="organic 2">
+                  </div>
+                  <h3>{{ section.settings.center_organic_ingredient_title2 }}</h3>
+                  <p>{{ section.settings.center_organic_ingredient_desc2 }}</p>
+               </div>
+               <div class="col-3">
+                  <div class="organic-img">
+                     <img src="{{ section.settings.right_image | img_url: 'master' }}" alt="organic 3">
+                  </div>
+                  <h3>{{ section.settings.center_organic_ingredient_title3 }}</h3>
+                  <p>{{ section.settings.center_organic_ingredient_desc3 }}</p>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid full-transp-container">
+            <div class="row">  
+               <div class="col-4 real-ingredient-text">
+                  <h3>{{ section.settings.center_real_ingredient_title }}</h3>
+                  <p>{{ section.settings.center_real_ingredient_description }}</p>
+                  <a href="#">{{ section.settings.center_real_ingredient_button }}</a>
+               </div>
+               <div class="col-8 real-ingredient-img">
+                  <div class="row">
+                  <div class="col-7">
+                    <div class="ingredient-box-one">
+                      <ul>
+                        <li><strong>{{ section.settings.left_ingredient_list_title }}</strong></li>
+                        <li>
+                          <h5>{{ section.settings.left_ingredient_list_01 }}</h5>
+                          <h6>{{ section.settings.left_ingredient_list_value_01 }}</h6>
+                        </li>
+                        <li>
+                          <h5>{{ section.settings.left_ingredient_list_02 }}</h5>
+                          <h6>{{ section.settings.left_ingredient_list_value_02 }}</h6>
+                        </li>
+                        <li>
+                          <h5>{{ section.settings.left_ingredient_list_03 }}</h5>
+                          <h6>{{ section.settings.left_ingredient_list_value_03 }}</h6>
+                        </li>
+                        <li>
+                          <h5>{{ section.settings.left_ingredient_list_04 }}</h5>
+                          <h6>{{ section.settings.left_ingredient_list_value_04 }}</h6>
+                        </li>
+                        <li>
+                          <h5>{{ section.settings.left_ingredient_list_05 }}</h5>
+                          <h6>{{ section.settings.left_ingredient_list_value_05 }}</h6>
+                        </li>
+                        <li>
+                          <h5>{{ section.settings.left_ingredient_list_06 }}</h5>
+                          <h6>{{ section.settings.left_ingredient_list_value_06 }}</h6>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-5">
+                    <div class="ingredient-box">
+                      <ul>
+                        <li><strong>{{ section.settings.right_ingredient_list_title }}</strong></li>
+                        <li><a href="#">{{ section.settings.right_ingredient_list_01 }}</a></li>
+                        <li><a href="#">{{ section.settings.right_ingredient_list_02 }}</a></li>
+                        <li><a href="#">{{ section.settings.right_ingredient_list_03 }}</a></li>
+                        <li><a href="#">{{ section.settings.right_ingredient_list_04 }}</a></li>
+                        <li><a href="#">{{ section.settings.right_ingredient_list_05 }}</a></li>
+                        <li><a href="#">{{ section.settings.right_ingredient_list_06 }}</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+</section>
+{% schema %}
+  {
+    "name": "Organic Ingredients",
+    "settings": [
+		{
+      		"type": "header",
+      		"content": "Hero Center Content"
+    	},
+		{
+      		"type": "text",
+			"id": "center_organic_ingredient_title",
+			"label": "Center Organic Ingredient Title"
+		},
+		{
+			"type": "image_picker",
+			"id": "left_image",
+			"label": "Left Image"
+		},
+		{
+			"type": "text",
+			"id": "center_organic_ingredient_title1",
+			"label": "Center Organic Ingredient Title"
+		},
+		{
+			"type": "text",
+			"id": "center_organic_ingredient_desc1",
+			"label": "Center Organic Ingredient Desc1"
+		},
+		{
+			"type": "image_picker",
+			"id": "center_image",
+			"label": "Center Image"
+		},
+		{
+			"type": "text",
+			"id": "center_organic_ingredient_title2",
+			"label": "Center Organic Ingredient Title"
+		},
+		{
+			"type": "text",
+			"id": "center_organic_ingredient_desc2",
+			"label": "Center Organic Ingredient Desc2"
+		},
+		{
+			"type": "image_picker",
+			"id": "right_image",
+			"label": "Right Image"
+		},
+		{
+			"type": "text",
+			"id": "center_organic_ingredient_title3",
+			"label": "Center Organic Ingredient Title"
+		},
+		{
+			"type": "text",
+			"id": "center_organic_ingredient_desc3",
+			"label": "Center Organic Ingredient Desc3"
+		},
+		{
+			"type": "text",
+			"id": "center_real_ingredient_title",
+			"label": "Center Real Ingredient Title"
+		},
+		{
+			"type": "text",
+			"id": "center_real_ingredient_description",
+			"label": "Center Real Ingredient Description"
+		},
+		{
+			"type": "text",
+			"id": "center_real_ingredient_button",
+			"label": "Center Real Ingredient Button"
+		},
+		{
+			"type": "image_picker",
+			"id": "right_real_image",
+			"label": "Right Real Image"
+		},
+		{
+			"type": "text",
+			"id": "left_ingredient_list_title",
+			"label": "Left Ingredient List Title"
+		},
+		{
+			"type": "text",
+			"id": "left_ingredient_list_01",
+			"label": "Left Ingredient List 01"
+		},
+		{
+			"type": "text",
+			"id": "left_ingredient_list_value_01",
+			"label": "Left Ingredient List Value 01"
+		},
+		{
+			"type": "text",
+			"id": "left_ingredient_list_02",
+			"label": "Left Ingredient List 02"
+		},
+		{
+			"type": "text",
+			"id": "left_ingredient_list_value_02",
+			"label": "Left Ingredient List Value 02"
+		},
+		{
+			"type": "text",
+			"id": "left_ingredient_list_03",
+			"label": "Left Ingredient List 03"
+		},
+		{
+			"type": "text",
+			"id": "left_ingredient_list_value_03",
+			"label": "Left Ingredient List Value 03"
+		},
+		{
+			"type": "text",
+			"id": "left_ingredient_list_04",
+			"label": "Left Ingredient List 04"
+		},
+		{
+			"type": "text",
+			"id": "left_ingredient_list_value_04",
+			"label": "Left Ingredient List Value 04"
+		},
+		{
+			"type": "text",
+			"id": "left_ingredient_list_05",
+			"label": "Left Ingredient List 05"
+		},
+		{
+			"type": "text",
+			"id": "left_ingredient_list_value_05",
+			"label": "Left Ingredient List Value 05"
+		},
+		{
+			"type": "text",
+			"id": "left_ingredient_list_06",
+			"label": "Left Ingredient List 06"
+		},
+		{
+			"type": "text",
+			"id": "left_ingredient_list_value_06",
+			"label": "Left Ingredient List Value 06"
+		},
+		{
+			"type": "text",
+			"id": "right_ingredient_list_title",
+			"label": "Right Ingredient List Title"
+		},
+		{
+			"type": "text",
+			"id": "right_ingredient_list_01",
+			"label": "Right Ingredient List 01"
+		},
+		{
+			"type": "text",
+			"id": "right_ingredient_list_02",
+			"label": "Right Ingredient List 02"
+		},
+		{
+			"type": "text",
+			"id": "right_ingredient_list_03",
+			"label": "Right Ingredient List 03"
+		},
+		{
+			"type": "text",
+			"id": "right_ingredient_list_04",
+			"label": "Right Ingredient List 04"
+		},
+		{
+			"type": "text",
+			"id": "right_ingredient_list_05",
+			"label": "Right Ingredient List 05"
+		},
+		{
+			"type": "text",
+			"id": "right_ingredient_list_06",
+			"label": "Right Ingredient List 06"
+		}
+		
+		]
+  }
+{% endschema %}

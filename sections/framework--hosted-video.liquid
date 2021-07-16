@@ -1,0 +1,140 @@
+<style>
+@media (max-width: 767px) {
+  .template--index .layout--main-content .shopify-section{
+  }
+  .shopify-section .featured-double-image,
+  .shopify-section .newsletter--root,
+  .shopify-section .featured-grid--item{
+    margin: 0;
+  }
+}
+  
+@media (min-width: 0) {
+  .feature-video--root {
+   position: relative; 
+  }
+  .feature-video--root video{
+    max-width: 100%;
+    display: flex;
+    height: {{section.settings.height}}px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+   .concept-banner-text {
+      font-size: 50px;
+      color: #ef3536;
+      font-family: aktiv-grotesk,sans-serif;
+      font-weight: bold;
+      letter-spacing: 3.5px;
+      line-height: 1.1;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      text-shadow: 5px 5px 6px #00000029;
+      text-transform: uppercase;
+      left: 0%;
+      transform: translate(0%, -50%);
+      z-index: 9999;
+      width: 100%;
+      padding: 0 10px;
+   }
+}
+@media (min-width: 576px) { 
+   .concept-banner-text { 
+   }
+}
+@media (min-width: 768px) { 
+   .concept-banner-text {
+      font-size: 65px;
+      color:#ef3536; 
+      font-family: aktiv-grotesk,sans-serif; 
+      font-weight: bold;
+      left: 50%;
+      letter-spacing: 3.5px;
+      line-height: 1.1;
+      position: absolute;
+      top: 50%;
+      text-shadow: 5px 5px 6px #00000029;
+      text-transform: uppercase;
+      transform: translate(-50%, -50%);
+      z-index: 9999
+   }
+}
+@media (min-width: 992px) {
+  .feature-video--root video{
+    height: auto;
+  }
+}
+@media (min-width: 1200px) {
+  
+  .concept-banner-text {
+  	font-size: 95px;
+    left: 0%;
+    transform: translate(0%, -50%);
+  }
+} 
+@media (min-width: 1400px) {
+  
+  .concept-banner-text {
+  	font-size: 95px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 680px) {
+ 
+   .concept-banner-text {
+      font-size: 50px;
+      color: #ef3536;
+      font-family: aktiv-grotesk,sans-serif;
+      font-weight: bold;
+      letter-spacing: 3.5px;
+      line-height: 1.1;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      text-shadow: 5px 5px 6px #00000029;
+      text-transform: uppercase;
+      left: 0%;
+      transform: translate(0%, -50%);
+      z-index: 9999;
+      width: 100%;
+   }
+ 
+}
+</style>
+<a href="/collections/all">
+  <div data-section-id="{{ section.id }}" class="feature-video--root">
+    <video playsinline autoplay muted loop>
+      <source src="{{section.settings.url}}" type="video/mp4">
+    </video>
+    <h1 class="concept-banner-text">BE GENTLE, MAN</h1>
+  </div>
+</a>
+{% schema %}
+  {
+    "name": "Hosted Video",
+    "settings": [
+      {
+        "type": "url",
+        "id": "url",
+        "label": "Video URL"
+      },
+      {
+        "type": "number",
+        "id": "height",
+        "label": "Height",
+        "info": "will be applied between 0px to 992px",
+		"default": 600
+      }
+    ],
+    "presets": [
+      {
+        "name": "Hosted Video",
+        "category": "Hosted Video"
+      }
+    ]
+  }
+{% endschema %}
