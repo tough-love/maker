@@ -71,8 +71,9 @@
             <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
           </div>
           <div class="description">{{ product.description }}</div>
+          <h3><a href="#" id="show-ingreditnts">ADDITIVES & INGREDIENTS</a></h3>
           {%
-            render "framework--product--skincare--form",
+            render "framework--product--supplements--form",
             product: product,
             enable_callback: true,
             enable_smart_payment: enable_smart_payment,
