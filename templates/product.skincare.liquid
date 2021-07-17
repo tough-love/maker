@@ -1,5 +1,116 @@
 <style>
   @media (min-width: 0) {
+    .organic-ingredients p{
+   
+    text-align: center;
+}
+    .spr-review-header-byline {
+    width: 100%;
+}
+    /* The Modal (background) */
+.size-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow:hidden; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.size-data {
+    background-color: #fff;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #000;
+    width: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 973px;
+    box-shadow: unset;
+    z-index: 9999;
+}
+/* The Close Button */
+.close-size-modal {
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: -25px;
+    right: -10px;
+}
+.close-size-modal:hover,
+.close-size-modal:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.size-inner-content {
+    display:block;
+    width:100%;
+}
+.size-inner-content .left-side{
+   width:100%;
+   text-align:center;
+}
+.size-inner-content .right-side{
+   width:100%;
+   border-left: 1px solid #000;
+}
+.pdt-sizes table {
+    border-right: 0 !important;
+    border-left: 0px !important;
+}
+.pdt-sizes table, .pdt-sizes table tr th, .pdt-sizes table tr td{
+    border: 1px solid #000;
+  border-collapse: collapse;
+  font-size:12px;
+  color: #000;
+}
+.pdt-sizes table td {
+    padding:5px;
+    font-weight: 500;
+}
+.pdt-sizes table th {
+    padding:5px;
+    font-weight:700;
+}
+.wash-direction {
+    width: 100%;
+    display: block;
+    clear: both;
+    margin-top:5px;
+}
+.wash-direction h5 {
+	font-size: 12px;
+	width: 100%;
+	text-align: left;
+	padding: 5px 25px;
+	color: #000;
+	font-weight: bold;
+	border-bottom: 1px solid #000;
+}
+.wash-direction p {
+	font-size: 12px;
+	width: 100%;
+	text-align: left;
+	padding:5px 25px;
+	color: #000;
+	font-weight: 700;
+  line-height: 19px;
+}
+.size-inner-content .left-side #img {
+    height: 150px;
+    width: auto;
+}
+
+
     .layer-img-wrp {
       margin: 106px auto 132px;
     }
@@ -37,21 +148,15 @@
       font-weight: bold;
     }
     .layer-img-wrp h3 {
+      padding-bottom: 2px;
+      margin: 10px auto 25px;
+    }
+    .layer-img-wrp h3 a{
+      text-decoration: underline;
+      color: #000;
       font-weight: bold;
       font-size: 14px;
       line-height: 24px;
-      padding-bottom: 2px;
-      position: relative;
-      margin: 10px auto 25px;
-    }
-    .layer-img-wrp h3::after {
-      position: absolute;
-      left: 0;
-      width: 195px;
-      background: #000;
-      height: 2px;
-      content: '';
-      bottom: 0;
     }
     .description img {
       width: auto;
@@ -203,7 +308,7 @@ height: auto;
       line-height: 20px;
       margin-top: 43px;
       margin-bottom: 15px;
-      text-align: left;
+      text-align:center;
     }
     .organic-img img:hover {
       box-shadow: 9px 9px;
@@ -622,7 +727,7 @@ height: auto;
     .organic-ingredients h3 {
       font-size: 26px;
       line-height: 20px;
-      text-align: left;
+      text-align:center;
     }
     .prod-name-row p {
       font-size: 17px;
@@ -655,6 +760,38 @@ height: auto;
     .real-ingredient-img .col-5 {
       flex-basis: 43%;
     }
+    .size-inner-content {
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+}
+.size-inner-content .left-side{
+   width:52%;
+   text-align:center;
+}
+.size-inner-content .right-side{
+   width:48%;
+   border-left: 1px solid #000;
+}
+.size-inner-content .left-side #img {
+    height:auto;
+    width:100%;
+}
+.pdt-sizes table, .pdt-sizes table tr th, .pdt-sizes table tr td{
+  font-size:17px;
+}
+.pdt-sizes table td,
+.pdt-sizes table th {
+  padding: 15px 18px;
+}
+.wash-direction h5 {
+	font-size: 17px;
+	padding: 16px 18px;
+}
+.wash-direction p {
+	font-size: 14px;
+	padding: 20px 18px;
+}
   }
   @media (max-width: 640px) {
   }
@@ -711,7 +848,7 @@ padding: 20px;
   }
 </style>
 {% section 'product-skincare' %}
-{% section 'product-skincare-organic-ingredients' %}
+{% section 'framework--page-sup-organic-ingredients' %}
 {% section 'framework--page-membership' %}
 {% section 'framework--page-review' %}
 {% section 'framework--product-recommendations' %}

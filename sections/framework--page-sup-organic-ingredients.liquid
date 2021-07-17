@@ -1,44 +1,192 @@
 <section class="organic-ingredients">
          <div class="small-container">
+           {% if product.metafields.ingredient.section_above_title != blank %}
+            <h2>{{ product.metafields.ingredient.section_above_title }}</h2>
+            {% else %}
             <h2>{{ section.settings.center_organic_ingredient_title }}</h2>
+            {% endif %}
             <div class="row organic-ingredients-row">   
                <div class="col-3">
                   <div class="organic-img">
+                    {% if product.metafields.ingredient.section_col1_image != blank %}
+                     <img src="{{ product.metafields.ingredient.section_col1_image | img_url: 'master' }}" alt="organic 1">
+                     {% else %}
                      <img src="{{ section.settings.left_image | img_url: 'master' }}" alt="organic 1">
+                     {% endif %}
                   </div>
-                  <h3>{{ section.settings.center_organic_ingredient_title1 }}</h3>
-                  <p>{{ section.settings.center_organic_ingredient_desc1 }}</p>
+                  <h3>
+                    {% if product.metafields.ingredient.section_col1_text_1 != blank %}
+                    {{ product.metafields.ingredient.section_col1_text_1 }}
+                    {% else %}
+                    {{ section.settings.center_organic_ingredient_title1 }}
+                    {% endif %}
+                  </h3>
+                  <p>
+                    {% if product.metafields.ingredient.section_col1_text_2 != blank %}
+                    {{ product.metafields.ingredient.section_col1_text_2 }}
+                    {% else %}
+                    {{ section.settings.center_organic_ingredient_desc1 }}
+                    {% endif %}
+                  </p>
+                 
                </div>
                <div class="col-3">
                   <div class="organic-img">
+                    {% if product.metafields.ingredient.section_col2_image != blank %}
+                    <img src="{{ product.metafields.ingredient.section_col2_image | img_url: 'master' }}" alt="organic 2">
+                    {% else %}
                      <img src="{{ section.settings.center_image | img_url: 'master' }}" alt="organic 2">
+                     {% endif %}
                   </div>
-                  <h3>{{ section.settings.center_organic_ingredient_title2 }}</h3>
-                  <p>{{ section.settings.center_organic_ingredient_desc2 }}</p>
+                  <h3>
+                    {% if product.metafields.ingredient.section_col2_text_1 != blank %}
+                    {{ product.metafields.ingredient.section_col2_text_1 }}
+                    {% else %}
+                    {{ section.settings.center_organic_ingredient_title2 }}
+                    {% endif %}
+                  </h3>
+                  <p>
+                    {% if product.metafields.ingredient.section_col2_text_2 != blank %}
+                    {{ product.metafields.ingredient.section_col2_text_2 }}
+                    {% else %}
+                    {{ section.settings.center_organic_ingredient_desc2 }}
+                    {% endif %}
+                  </p>
                </div>
                <div class="col-3">
                   <div class="organic-img">
+                    {% if product.metafields.ingredient.section_col3_image != blank %}
+                    <img src="{{ product.metafields.ingredient.section_col3_image | img_url: 'master' }}" alt="organic 3">
+                    {% else %}
                      <img src="{{ section.settings.right_image | img_url: 'master' }}" alt="organic 3">
+                     {% endif %}
                   </div>
-                  <h3>{{ section.settings.center_organic_ingredient_title3 }}</h3>
-                  <p>{{ section.settings.center_organic_ingredient_desc3 }}</p>
+                  <h3>
+                    {% if product.metafields.ingredient.section_col3_text_1 != blank %}
+                    {{ product.metafields.ingredient.section_col3_text_1 }}
+                    {% else %}
+                    {{ section.settings.center_organic_ingredient_title3 }}
+                    {% endif %}
+                  </h3>
+                  <p>
+                    {% if product.metafields.ingredient.section_col3_text_2 != blank %}
+                    {{ product.metafields.ingredient.section_col3_text_2 }}
+                    {% else %}
+                    {{ section.settings.center_organic_ingredient_desc3 }}
+                    {% endif %}
+                  </p>
                </div>
             </div>
          </div>
          <div class="container-fluid full-transp-container">
             <div class="row">  
                <div class="col-4 real-ingredient-text">
-                  <h3>{{ section.settings.center_real_ingredient_title }}</h3>
-                  <p>{{ section.settings.center_real_ingredient_description }}</p>
-                  <a href="#">{{ section.settings.center_real_ingredient_button }}</a>
+                 <h3>
+                   {% if product.metafields.real.ingredients_section_title != blank %}
+                   {{product.metafields.real.ingredients_section_title}}
+                   {% else %}
+                   {{ section.settings.center_real_ingredient_title }}
+                   {% endif %}
+                 </h3>
+                  <p>
+                    {% if product.metafields.real.ingredients_section_subtitle != blank %}
+                   {{product.metafields.real.ingredients_section_subtitle}}
+                   {% else %}
+                   {{ section.settings.center_real_ingredient_description }}
+                   {% endif %}
+                  </p>
+                 
+                  <a href="#" id="show-ingreditnts2">{{ section.settings.center_real_ingredient_button }}</a>
                </div>
                <div class="col-8 real-ingredient-img">
+                {% if product.metafields.real.ingredients_section_image != blank %}
+                <img src="{{ product.metafields.real.ingredients_section_image | img_url: 'master' }}" alt="organic 1">
+                {% else %}
                   <img src="{{ section.settings.right_banner_image | img_url: 'master' }}" alt="organic 1">
+                  {% endif %}
                </div>
             </div>
          </div>
 
 </section>
+<div id="ingreditnts-modal2" class="size-modal">
+  <div class="size-data">
+    <span id="close-modal" class="close-size-modal">&times;</span>
+    <div class="size-inner-content">
+      <div class="left-side">
+        <img style="z-index: 3;" id="img{{forloop.index0}}" name="{{ image.alt }}" data-src="{{ product.featured_image | img_url: '100x100'}}" itemprop="image" src="{{ product.featured_image | img_url: '721x736'}}" class=" lazyloaded">
+      </div>
+      <div class="right-side">
+        <div class="pdt-sizes">
+          <table style="width:100%">
+            <tr>
+              <th colspan="2" style="text-align:left">AMOUNT PER SCOOP (34g)</th>
+            </tr>
+            <tr>
+              <td>Calories</td>
+              <td>121g</td>
+            </tr>
+            <tr>
+              <td>Fat</td>
+              <td>1g</td>
+            </tr>
+            <tr>
+              <td>Protein</td>
+              <td>27g</td>
+            </tr>
+            <tr>
+              <td>Sugars</td>
+              <td>1g</td>
+            </tr>
+            <tr>
+              <td>Carbohydrates</td>
+              <td>1g</td>
+            </tr>
+            <tr>
+              <td>Sodium</td>
+              <td>45g</td>
+            </tr>
+          </table>
+        </div>
+        <div class="wash-direction">
+          <h5>INGREDIENTS</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  // Get the modal
+var sizeBtn = document.getElementById("ingreditnts-modal2");
+
+// Get the button that opens the modal
+var openbtn = document.getElementById("show-ingreditnts2");
+
+// Get the element that closes the modal
+var closeBtn = document.getElementById("close-modal");
+
+// When the user clicks the button, open the modal 
+openbtn.onclick = function(e) {
+  e.preventDefault();
+  sizeBtn.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+closeBtn.onclick = function() {
+  sizeBtn.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == sizeBtn) {
+    sizeBtn.style.display = "none";
+  }
+}
+</script>
 {% schema %}
   {
     "name": "Organic Ingredients",

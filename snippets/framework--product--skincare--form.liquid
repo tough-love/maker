@@ -206,6 +206,53 @@
 
   </div>
 </div>
+<div id="ingreditnts-modal" class="size-modal">
+  <div class="size-data">
+    <span id="close-modal" class="close-size-modal">&times;</span>
+    <div class="size-inner-content">
+      <div class="left-side">
+        <img style="z-index: 3;" id="img{{forloop.index0}}" name="{{ image.alt }}" data-src="{{ product.featured_image | img_url: '100x100'}}" itemprop="image" src="{{ product.featured_image | img_url: '721x736'}}" class=" lazyloaded">
+      </div>
+      <div class="right-side">
+        <div class="pdt-sizes">
+          <table style="width:100%">
+            <tr>
+              <th colspan="2" style="text-align:left">AMOUNT PER SCOOP (34g)</th>
+            </tr>
+            <tr>
+              <td>Calories</td>
+              <td>121g</td>
+            </tr>
+            <tr>
+              <td>Fat</td>
+              <td>1g</td>
+            </tr>
+            <tr>
+              <td>Protein</td>
+              <td>27g</td>
+            </tr>
+            <tr>
+              <td>Sugars</td>
+              <td>1g</td>
+            </tr>
+            <tr>
+              <td>Carbohydrates</td>
+              <td>1g</td>
+            </tr>
+            <tr>
+              <td>Sodium</td>
+              <td>45g</td>
+            </tr>
+          </table>
+        </div>
+        <div class="wash-direction">
+          <h5>INGREDIENTS</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 {% if enable_callback and product.has_only_default_variant == false %}
   <script>
@@ -215,3 +262,32 @@
     };
   </script>
 {% endif %}
+
+<script>
+  // Get the modal
+var sizeBtn = document.getElementById("ingreditnts-modal");
+
+// Get the button that opens the modal
+var openbtn = document.getElementById("show-ingreditnts");
+
+// Get the element that closes the modal
+var closeBtn = document.getElementById("close-modal");
+
+// When the user clicks the button, open the modal 
+openbtn.onclick = function(e) {
+  e.preventDefault();
+  sizeBtn.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+closeBtn.onclick = function() {
+  sizeBtn.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == sizeBtn) {
+    sizeBtn.style.display = "none";
+  }
+}
+</script>
