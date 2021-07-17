@@ -1,50 +1,120 @@
+
 <section class="organic-ingredients">
+       
          <div class="small-container">
-            <h2>{{ section.settings.wearing_title }}</h2>
-           <p>{{ section.settings.wearing_subtitle }}</p>
+           <h2>{% if product.metafields.feature.section_title != blank %}
+            {{ product.metafields.feature.section_title }}
+          {% else %}
+          HOW OTHERS ARE WEARING IT
+          {% endif %}</h2>
+            
+           <p>
+             {% if product.metafields.feature.section_subtitle != blank %}
+             {{ product.metafields.feature.section_subtitle }}
+             {% else %}
+             Tag us on Instagram @reyal-performance to have your look featured.
+          {% endif %}
+            </p>
             <div class="row organic-ingredients-row">   
                <div class="one-fourth">
                  <div class="wearing-data">
                  	<div class="organic-img">
-                   	 <img src="{{ section.settings.wearing_image1 | img_url: 'master' }}" alt="organic 1">
+                    {% if product.metafields.feature.section_card1_image != blank %}
+                   	 <img src="{{ product.metafields.feature.section_card1_image | img_url: 'master' }}" alt="organic 1">
+                      {% else %}
+                      <img src="{{ section.settings.wearing_image1 | img_url: 'master' }}" alt="organic 1">
+                      {% endif %}
                   	</div>
-                   <p>{{ section.settings.wearing_image_title1 }}</p>
+                   <p>
+                    {% if product.metafields.feature.section_card1_text != blank %} 
+                    {{ product.metafields.feature.section_card1_text }}
+                    {% else %}
+                    {{ section.settings.wearing_image_title1 }}
+                    {% endif %}
+                  </p>
                  </div>  
                </div>
                <div class="one-fourth">
                  <div class="wearing-data">
                  	<div class="organic-img">
-                   	 <img src="{{ section.settings.wearing_image2 | img_url: 'master' }}" alt="organic 1">
+                    {% if product.metafields.feature.section_card2_image != blank %}
+                    <img src="{{ product.metafields.feature.section_card2_image | img_url: 'master' }}" alt="organic 2">
+                    {% else %}
+                    <img src="{{ section.settings.wearing_image2 | img_url: 'master' }}" alt="organic 2">
+                    {% endif %}
                   	</div>
-                   <p>{{ section.settings.wearing_image_title2 }}</p>
+                   <p>
+                    {% if product.metafields.feature.section_card2_text != blank %} 
+                    {{ product.metafields.feature.section_card2_text }}
+                    {% else %}
+                    {{ section.settings.wearing_image_title2 }}
+                    {% endif %}
+                   </p>
                  </div>  
                </div>
                <div class="one-fourth">
-                 <div class="wearing-data">
-                 	<div class="organic-img">
-                   	 <img src="{{ section.settings.wearing_image3 | img_url: 'master' }}" alt="organic 1">
-                  	</div>
-                   <p>{{ section.settings.wearing_image_title3 }}</p>
-                 </div>  
+                <div class="wearing-data">
+                  <div class="organic-img">
+                   {% if product.metafields.feature.section_card3_image != blank %}
+                   <img src="{{ product.metafields.feature.section_card3_image | img_url: 'master' }}" alt="Feature 3">
+                   {% else %}
+                   <img src="{{ section.settings.wearing_image3 | img_url: 'master' }}" alt="Feature 3">
+                   {% endif %}
+                   </div>
+                  <p>
+                   {% if product.metafields.feature.section_card3_text != blank %} 
+                   {{ product.metafields.feature.section_card3_text }}
+                   {% else %}
+                   {{ section.settings.wearing_image_title3 }}
+                   {% endif %}
+                  </p>
+                </div> 
                </div>
               <div class="one-fourth">
-                 <div class="wearing-data">
-                 	<div class="organic-img">
-                   	 <img src="{{ section.settings.wearing_image4 | img_url: 'master' }}" alt="organic 1">
-                  	</div>
-                   <p>{{ section.settings.wearing_image_title4 }}</p>
-                 </div>  
+                <div class="wearing-data">
+                  <div class="organic-img">
+                   {% if product.metafields.feature.section_card4_image != blank %}
+                   <img src="{{ product.metafields.feature.section_card4_image | img_url: 'master' }}" alt="Feature 4">
+                   {% else %}
+                   <img src="{{ section.settings.wearing_image4 | img_url: 'master' }}" alt="Feature 4">
+                   {% endif %}
+                   </div>
+                  <p>
+                   {% if product.metafields.feature.section_card4_text != blank %} 
+                   {{ product.metafields.feature.section_card4_text }}
+                   {% else %}
+                   {{ section.settings.wearing_image_title4 }}
+                   {% endif %}
+                  </p>
+                </div> 
                </div>
               
             </div>
          </div>
+        
          <div class="comfort-section-container">
             <div class="row">  
                <div class="comfort-section">
-                  <h3>{{ section.settings.comfort_title }}</h3>
-                  <p>{{ section.settings.comfort_subtitle }}</p>
+                  <h3>
+                    {% if product.metafields.comfort.section_title != blank %}
+                    {{product.metafields.comfort.section_title}}
+                    {% else %}
+                    {{ section.settings.comfort_title }}
+                    {% endif %}
+                  </h3>
+                  <p>
+                    {% if product.metafields.comfort.section_subtitle != blank %}
+                    {{product.metafields.comfort.section_subtitle}}
+                    {% else %}
+                    {{ section.settings.comfort_subtitle }}
+                    {% endif %}
+                  </p>
                  	<div class="comfort-bg-img">
+                    {% if product.metafields.comfort.section_large_image != blank %}
+                    <img src="{{product.metafields.comfort.section_large_image | img_url: 'master'}}" alt="real ingrident">
+                    {% else %}
                   <img src="{{ section.settings.comfort_bg_image | img_url: 'master' }}" alt="real ingrident">
+                  {% endif %}
                </div>
                </div>
                
@@ -52,6 +122,7 @@
          </div>
 
 </section>
+
 {% schema %}
   {
     "name": "HOW OTHERS ARE WEARING IT",
