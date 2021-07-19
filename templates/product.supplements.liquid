@@ -1,5 +1,90 @@
 <style>
 @media (min-width: 0) {
+  .product-form-root .rc-template__legacy-radio .rc-radio {
+    padding: 0;
+}
+    .product-form-root .rc_widget__option__selector label{
+      width: 100%;
+      display: block;
+      position: relative;
+    }
+    .product-form-root .rc_widget__option__selector label::after{
+      content:"";
+      background: url('https://cdn.shopify.com/s/files/1/0268/0356/8822/files/square.png?v=1626710501');
+    position: absolute;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    top: 50%;
+    transform: translate(0%,-50%);
+    transition: all 0.2s;
+    }
+    .product-form-root .rc_widget__option__selector .rc-radio__input.rc_widget__option__input:checked + label::after{
+      content: "";
+    background: url('https://cdn.shopify.com/s/files/1/0268/0356/8822/files/check.png?v=1626710501');
+    position: absolute;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    top: 50%;
+    transform: translate(0%,-50%);
+    transition: all 0.2s;
+
+    }
+  .product-form-root .rc_widget__option__selector {
+    position: relative;
+    padding: 15px;
+}
+.product-form-root .rc-radio__input.rc_widget__option__input {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    appearance: none;
+    border:none;
+}
+
+.product-form-root .rc-template__legacy-radio .rc-option--active {
+    background-color:rgba(196, 196, 196, 0.37) !important;
+}
+.product-form-root .rc-template__legacy-radio .rc-radio{
+  background-color: rgba(242, 242, 242, 0.37);
+}
+  .you-may-know-also .swiper-wrapper {
+  -webkit-transition-timing-function:linear!important; 
+  -o-transition-timing-function:linear!important;
+  transition-timing-function:linear!important; 
+}
+  .organic-ingredients-row h3 {
+    font-weight: 700;
+}
+  .you-may-know-also .swiper-wrapper .swiper-slide{
+      text-align: right;
+    }
+    .you-may-know-also a {
+    font-size: 24px !important;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: initial;
+}
+.you-may-also p {
+    font-size: 18px !important;
+}
+    .you-know-slider{
+      display:block;
+    }
+    .you-may-also {
+    width: 100%;
+}
+.you-may-also-slider {
+    width:100%;
+}
+
+  
   .organic-ingredients p {
    text-align: center;
 }
@@ -670,9 +755,24 @@ height: auto;
 }
 }
 @media (min-width: 768px) {
+  .you-know-slider{
+      display:flex;
+    }
+    .you-may-also {
+    width: 25%;
+}
+.you-may-also-slider {
+    width: 75%;
+}
 
 }
 @media (min-width: 991px) {
+  .organic-ingredients .real-ingredient-text h3 {
+    text-align: left;
+}
+.organic-ingredients .real-ingredient-text p {
+    text-align: left;
+}
   .organic-ingredients, .membership-wrp {
 	margin: 0 -48px;
 }
@@ -733,6 +833,7 @@ height: auto;
 	font-size: 26px;
 	line-height: 20px;
   text-align:center;
+  font-weight:700;
 }
     .prod-name-row p {
 	font-size: 17px;
