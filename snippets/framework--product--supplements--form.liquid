@@ -217,37 +217,83 @@
         <div class="pdt-sizes">
           <table style="width:100%">
             <tr>
-              <th colspan="2" style="text-align:left">AMOUNT PER SCOOP (34g)</th>
+              {% if product.metafields.amount.per_scoop != blank %}
+              <th colspan="2" style="text-align:left">AMOUNT PER SCOOP ({{ product.metafields.amount.per_scoop }})</th>
+              {% else %}
+              <th colspan="2" style="text-align:left">AMOUNT PER SCOOP (NA)</th>
+              {% endif %}
             </tr>
             <tr>
               <td>Calories</td>
-              <td>121g</td>
+              <td>
+                {% if product.metafields.calories.value != blank %}
+                {{product.metafields.calories.value}}
+                {% else %}
+                NA
+                {% endif %}
+              </td>
             </tr>
             <tr>
               <td>Fat</td>
-              <td>1g</td>
+              <td>
+                {% if product.metafields.fat.value != blank %}
+                {{product.metafields.fat.value}}
+                {% else %}
+                NA
+                {% endif %}
+              </td>
             </tr>
             <tr>
               <td>Protein</td>
-              <td>27g</td>
+              <td>
+                {% if product.metafields.protein.value != blank %}
+                {{product.metafields.protein.value}}
+                {% else %}
+                NA
+                {% endif %}
+              </td>
             </tr>
             <tr>
               <td>Sugars</td>
-              <td>1g</td>
+              <td>
+                {% if product.metafields.sugars.value != blank %}
+                {{product.metafields.sugars.value}}
+                {% else %}
+                NA
+                {% endif %}
+              </td>
             </tr>
             <tr>
               <td>Carbohydrates</td>
-              <td>1g</td>
+              <td>
+                {% if product.metafields.carbohydrates.value != blank %}
+                {{product.metafields.carbohydrates.value}}
+                {% else %}
+                NA
+                {% endif %}
+              </td>
             </tr>
             <tr>
               <td>Sodium</td>
-              <td>45g</td>
+              <td>
+                {% if product.metafields.sodium.value != blank %}
+                {{product.metafields.sodium.value}}
+                {% else %}
+                NA
+                {% endif %}
+              </td>
             </tr>
           </table>
         </div>
         <div class="wash-direction">
           <h5>INGREDIENTS</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>
+            {% if product.metafields.ingredients.description != blank %}
+                {{product.metafields.ingredients.description}}
+                {% else %}
+                NA
+                {% endif %}
+          </p>
         </div>
       </div>
     </div>
