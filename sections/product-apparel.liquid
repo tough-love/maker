@@ -74,7 +74,7 @@
             
             </h1>
  			<div class="pdt-star-rating grid-view-item{% unless product.available %} product-price--sold-out grid-view-item--sold-out{% endunless %}">
-                 <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+        <a href="#pdt-rev"><span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span></a>
             </div>
        
                   <p class="product-desc">{{ product.description | truncate: 600, "..." }}</p>
@@ -113,7 +113,12 @@ $(document).ready(function(){
       });
 });
 
-
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 1000);
+  });
 </script>
 
 

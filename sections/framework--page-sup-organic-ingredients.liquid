@@ -98,12 +98,22 @@
                  
                   <a href="#" id="show-ingreditnts2">{{ section.settings.center_real_ingredient_button }}</a>
                </div>
-               <div class="col-8 real-ingredient-img">
-                {% if product.metafields.real.ingredients_section_image != blank %}
+
+               <div class="col-8 real-ingredient-img real-ingredients-video">
+                 {% if product.metafields.real.ingredients_viedo != blank %}
+                <video playsinline autoplay muted loop id="bgvid">
+                  <source src="{{product.metafields.real.ingredients_viedo}}" type="video/mp4">
+               </video>
+               {% else %}
+               <video playsinline autoplay muted loop id="bgvid">
+                <source src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/brand_video.mp4?v=1622742854" type="video/mp4">
+             </video>
+             {% endif %}
+                <!-- {% if product.metafields.real.ingredients_section_image != blank %}
                 <img src="{{ product.metafields.real.ingredients_section_image | img_url: 'master' }}" alt="organic 1">
                 {% else %}
                   <img src="{{ section.settings.right_banner_image | img_url: 'master' }}" alt="organic 1">
-                  {% endif %}
+                  {% endif %} -->
                </div>
             </div>
          </div>

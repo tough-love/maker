@@ -328,7 +328,13 @@
         
         <div class="wash-direction">
           <h5>DIRECTIONS FOR WASH</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, ed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqui</p>
+          <p>
+            {% if product.metafields.direction.for_wash != blank %}
+          {{product.metafields.direction.for_wash}}
+          {% else %}
+          NA
+          {% endif %}
+          </p> 
         </div>
 
       </div>

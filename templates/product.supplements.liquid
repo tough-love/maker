@@ -1,5 +1,27 @@
 <style>
 @media (min-width: 0) {
+  .product-accordian-summary {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    transition: all 0.3s;
+    margin-top: 15px;
+    font-style: normal;
+}
+    .product-accordian-summary .product-accordian-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #000;
+    transition: all 0.3s;
+    padding-bottom: 5px;
+    cursor: pointer;
+    font-style: normal;
+}
+
+#show-ingreditnts {
+    font-size: 16px;
+    text-decoration: underline;
+}
   .you-may-also p {
     color: #000;
 }
@@ -161,6 +183,7 @@
 .pdt-sizes table {
     border-right: 0 !important;
     border-left: 0px !important;
+    border-top: 0 !important;
 }
 .pdt-sizes table, .pdt-sizes table tr th, .pdt-sizes table tr td{
     border: 1px solid #000;
@@ -168,6 +191,17 @@
   font-size:12px;
   color: #000;
   font-style: normal;
+  border-left:0;
+}
+.pdt-sizes table tr td:last-child {
+    border-right: 0;
+}
+.pdt-sizes table tr:first-child {
+    border-right: 0;
+}
+.pdt-sizes table tr:first-child th {
+    border-right: 0;
+    border-top: 0;
 }
 .pdt-sizes table td {
     padding:5px;
@@ -243,16 +277,12 @@
 }
 .layer-img-wrp h3 {
 	font-weight: bold;
-	font-size: 14px;
 	line-height: 24px;
 	padding-bottom: 2px;
 	position: relative;
 	margin: 10px auto 25px;
 }
-.layer-img-wrp h3 #show-ingreditnts{
-  font-size: 14px;
-}
-.layer-img-wrp h3::after {
+/* .layer-img-wrp h3::after {
 	position: absolute;
 	left: 0;
 	width: 195px;
@@ -260,7 +290,7 @@
 	height: 2px;
 	content: '';
 	bottom: 0;
-}
+} */
 .description img{
   width: auto;
 }
