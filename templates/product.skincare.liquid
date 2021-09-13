@@ -1,258 +1,313 @@
 <style>
-  
   @media (min-width: 0) {
-    .real-ingredients-video video{
-      width:100%;
-      height: auto;
-    }
-    .product-accordian-summary {
-    font-size: 14px;
-    font-weight: 600;
-    color: #000;
-    transition: all 0.3s;
-    margin-top: 15px;
+    .pack-size strong {
+	font-size: 18px;
+	color: #000;
 }
-    .product-accordian-summary .product-accordian-title {
-    font-size: 17px;
-    font-weight: 700;
-    color: #000;
-    transition: all 0.3s;
-    padding-bottom: 5px;
-    cursor: pointer;
-}
-#show-ingreditnts {
-    font-size: 16px;
-}
-    .organic-ingredients .real-ingredient-text h3 {
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 35px !important;
-}
-    .product-form--root div.rc_popup {
-        display: none;
-    }
-    .product-form-root .rc-radio__label.rc_widget__option__label span{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-}
-    .product-form-root .rc-template__legacy-radio .rc-radio {
-    padding: 0;
-}
-    .product-form-root .rc_widget__option__selector label{
-      width: 100%;
-      display: block;
-      position: relative;
-    }
-    .product-form-root .rc_widget__option__selector label::after{
-      content:"";
-      background: url('https://cdn.shopify.com/s/files/1/0268/0356/8822/files/square.png?v=1626710501');
-    position: absolute;
-    right: 10px;
-    width: 20px;
-    height: 20px;
-    background-size: cover;
-    top: 50%;
-    transform: translate(0%,-50%);
-    transition: all 0.2s;
-    }
-    .product-form-root .rc_widget__option__selector .rc-radio__input.rc_widget__option__input:checked + label::after{
-      content: "";
-    background: url('https://cdn.shopify.com/s/files/1/0268/0356/8822/files/check.png?v=1626710501');
-    position: absolute;
-    right: 10px;
-    width: 20px;
-    height: 20px;
-    background-size: cover;
-    top: 50%;
-    transform: translate(0%,-50%);
-    transition: all 0.2s;
-
-    }
-    .you-may-know-also .swiper-wrapper {
-  -webkit-transition-timing-function:linear!important; 
-  -o-transition-timing-function:linear!important;
-  transition-timing-function:linear!important; 
-}
-    .row.organic-ingredients-row h3 {
-    font-weight: 700;
-}
-    .product-form-root .rc_widget__option__selector {
-    position: relative;
-    padding: 15px;
-}
-.product-form-root .rc-radio__input.rc_widget__option__input {
-    width: 100%;
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    appearance: none;
-    border:none;
-}
-
-.product-form-root .rc-template__legacy-radio .rc-option--active {
-    background-color:rgba(196, 196, 196, 0.37) !important;
-}
-.product-form-root .rc-template__legacy-radio .rc-radio{
-  background-color: rgba(242, 242, 242, 0.37);
-}
-
-
-
-
-    .you-may-know-also .swiper-wrapper .swiper-slide{
-      text-align: right;
-    }
-    .you-may-know-also a {
-    font-size: 18px !important;
-    font-weight: 700;
-    text-decoration: none;
-}
-.you-may-also p {
-    font-size: 18px !important;
-}
-    .you-know-slider{
-      display:block;
-    }
-    .you-may-also {
-    width: 100%;
-}
-.you-may-also-slider {
-    width:100%;
-}
-    .organic-ingredients .real-ingredient-text h3 {
-    text-align: left;
-}
-.organic-ingredients .real-ingredient-text p {
-    text-align: left;
-}
-    .organic-ingredients p{
-   
-    text-align: center;
-}
-    .spr-review-header-byline {
-    width: 100%;
-}
-    /* The Modal (background) */
-.size-modal {
+/* The Modal (background) */
+.modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 9999; /* Sit on top */
+  z-index:99; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow:hidden; /* Enable scroll if needed */
+  overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
 }
+
 /* Modal Content */
-.size-data {
-    background-color: #fff;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #000;
-    width: 95%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    max-width: 973px;
-    box-shadow: unset;
-    z-index: 9999;
+.modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+  width:95%;
+	max-width: 600px;
 }
+
 /* The Close Button */
-.close-size-modal {
-    color: #000;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    position: absolute;
-    top: -25px;
-    right: -10px;
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
-.close-size-modal:hover,
-.close-size-modal:focus {
+
+.close:hover,
+.close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
 }
-.size-inner-content {
-    display:block;
-    width:100%;
-}
-.size-inner-content .left-side{
-   width:100%;
-   text-align:center;
-}
-.size-inner-content .right-side{
-   width:100%;
-   border-left: 1px solid #000;
-}
 
-.pdt-sizes table {
-    border-right: 0 !important;
-    border-left: 0px !important;
-    border-top: 0 !important;
-}
-.pdt-sizes table, .pdt-sizes table tr th, .pdt-sizes table tr td{
-    border: 1px solid #000;
-  border-collapse: collapse;
-  font-size:12px;
-  color: #000;
-  font-style: normal;
-  border-left:0;
-}
-.pdt-sizes table tr td:last-child {
-    border-right: 0;
-}
-.pdt-sizes table tr:first-child {
-    border-right: 0;
-}
-.pdt-sizes table tr:first-child th {
-    border-right: 0;
-    border-top: 0;
-}
 
-.pdt-sizes table td {
-    padding:5px;
-    font-weight: 500;
-}
-.pdt-sizes table th {
-    padding:5px;
-    font-weight:700;
-}
-.wash-direction {
-    width: 100%;
-    display: block;
-    clear: both;
-    margin-top:5px;
-}
-.wash-direction h5 {
-	font-size: 12px;
-	width: 100%;
-	text-align: left;
-	padding: 5px 25px;
-	color: #000;
-	font-weight: bold;
-	border-bottom: 1px solid #000;
-}
-.wash-direction p {
-	font-size: 12px;
-	width: 100%;
-	text-align: left;
-	padding:5px 25px;
-	color: #000;
-	font-weight: 700;
-  line-height: 19px;
-}
-.size-inner-content .left-side #img {
-    height: 150px;
-    width: auto;
-}
 
+    .additives-ingredients strong {
+	display: block;
+	padding: 15px 0px 5px;
+}
+    .swiper-container.you-may-know-also {
+      overflow-x: hidden;
+    }
+    .product-img-slider .swiper-container {
+      overflow-x: hidden;
+    }
+    .real-ingredients-video video {
+      width: 100%;
+      height: auto;
+    }
+    .product-accordian-summary {
+      font-size: 14px;
+      font-weight: 600;
+      color: #000;
+      transition: all 0.3s;
+      margin-top: 15px;
+    }
+    .product-accordian-summary .product-accordian-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: #000;
+      transition: all 0.3s;
+      padding-bottom: 5px;
+      cursor: pointer;
+    }
+    #show-ingreditnts {
+      font-size: 16px;
+    }
+    .organic-ingredients .real-ingredient-text h3 {
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 35px !important;
+    }
+    .product-form--root div.rc_popup {
+      display: none;
+    }
+    .product-form-root .rc-radio__label.rc_widget__option__label span {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    .product-form-root .rc-template__legacy-radio .rc-radio {
+      padding: 0;
+    }
+    .product-form-root .rc_widget__option__selector label {
+      width: 100%;
+      display: block;
+      position: relative;
+    }
+    .product-form-root .rc_widget__option__selector label::after {
+      content: '';
+      background: url('https://cdn.shopify.com/s/files/1/0268/0356/8822/files/square.png?v=1626710501');
+      position: absolute;
+      right: 10px;
+      width: 20px;
+      height: 20px;
+      background-size: cover;
+      top: 50%;
+      transform: translate(0%, -50%);
+      transition: all 0.2s;
+    }
+    .product-form-root
+      .rc_widget__option__selector
+      .rc-radio__input.rc_widget__option__input:checked
+      + label::after {
+      content: '';
+      background: url('https://cdn.shopify.com/s/files/1/0268/0356/8822/files/check.png?v=1626710501');
+      position: absolute;
+      right: 10px;
+      width: 20px;
+      height: 20px;
+      background-size: cover;
+      top: 50%;
+      transform: translate(0%, -50%);
+      transition: all 0.2s;
+    }
+    .you-may-know-also .swiper-wrapper {
+      -webkit-transition-timing-function: linear !important;
+      -o-transition-timing-function: linear !important;
+      transition-timing-function: linear !important;
+    }
+    .row.organic-ingredients-row h3 {
+      font-weight: 700;
+    }
+    .product-form-root .rc_widget__option__selector {
+      position: relative;
+      padding: 15px;
+    }
+    .product-form-root .rc-radio__input.rc_widget__option__input {
+      width: 100%;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      appearance: none;
+      border: none;
+    }
+
+    .product-form-root .rc-template__legacy-radio .rc-option--active {
+      background-color: rgba(196, 196, 196, 0.37) !important;
+    }
+    .product-form-root .rc-template__legacy-radio .rc-radio {
+      background-color: rgba(242, 242, 242, 0.37);
+    }
+
+    .you-may-know-also .swiper-wrapper .swiper-slide {
+      text-align: right;
+    }
+    .you-may-know-also a {
+      font-size: 18px !important;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .you-may-also p {
+      font-size: 18px !important;
+    }
+    .you-know-slider {
+      display: block;
+    }
+    .you-may-also {
+      width: 100%;
+    }
+    .you-may-also-slider {
+      width: 100%;
+    }
+    .organic-ingredients .real-ingredient-text h3 {
+      text-align: left;
+    }
+    .organic-ingredients .real-ingredient-text p {
+      text-align: left;
+    }
+    .organic-ingredients p {
+      text-align: center;
+    }
+    .spr-review-header-byline {
+      width: 100%;
+    }
+    /* The Modal (background) */
+    .size-modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 9999; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: hidden; /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0); /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    }
+    /* Modal Content */
+    .size-data {
+      background-color: #fff;
+      margin: auto;
+      padding: 0;
+      border: 1px solid #000;
+      width: 95%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 973px;
+      box-shadow: unset;
+      z-index: 9999;
+    }
+    /* The Close Button */
+    .close-size-modal {
+      color: #000;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      position: absolute;
+      top: -25px;
+      right: -10px;
+    }
+    .close-size-modal:hover,
+    .close-size-modal:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .size-inner-content {
+      display: block;
+      width: 100%;
+    }
+    .size-inner-content .left-side {
+      width: 100%;
+      text-align: center;
+    }
+    .size-inner-content .right-side {
+      width: 100%;
+      border-left: 1px solid #000;
+    }
+
+    .pdt-sizes table {
+      border-right: 0 !important;
+      border-left: 0px !important;
+      border-top: 0 !important;
+    }
+    .pdt-sizes table,
+    .pdt-sizes table tr th,
+    .pdt-sizes table tr td {
+      border: 1px solid #000;
+      border-collapse: collapse;
+      font-size: 12px;
+      color: #000;
+      font-style: normal;
+      border-left: 0;
+    }
+    .pdt-sizes table tr td:last-child {
+      border-right: 0;
+    }
+    .pdt-sizes table tr:first-child {
+      border-right: 0;
+    }
+    .pdt-sizes table tr:first-child th {
+      border-right: 0;
+      border-top: 0;
+    }
+
+    .pdt-sizes table td {
+      padding: 5px;
+      font-weight: 500;
+    }
+    .pdt-sizes table th {
+      padding: 5px;
+      font-weight: 700;
+    }
+    .wash-direction {
+      width: 100%;
+      display: block;
+      clear: both;
+      margin-top: 5px;
+    }
+    .wash-direction h5 {
+      font-size: 12px;
+      width: 100%;
+      text-align: left;
+      padding: 5px 25px;
+      color: #000;
+      font-weight: bold;
+      border-bottom: 1px solid #000;
+    }
+    .wash-direction p {
+      font-size: 12px;
+      width: 100%;
+      text-align: left;
+      padding: 5px 25px;
+      color: #000;
+      font-weight: 700;
+      line-height: 19px;
+    }
+    .size-inner-content .left-side #img {
+      height: 150px;
+      width: auto;
+    }
 
     .layer-img-wrp {
       margin: 106px auto 132px;
@@ -294,12 +349,20 @@
       padding-bottom: 2px;
       margin: 10px auto 25px;
     }
-    .layer-img-wrp h3 a{
+    .layer-img-wrp h3 a {
       text-decoration: underline;
       color: #000;
       font-weight: bold;
       font-size: 14px;
       line-height: 24px;
+    }
+    .layer-img-wrp h3 span {
+      text-decoration: underline;
+      color: #000;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 24px;
+      cursor: pointer;
     }
     .description img {
       width: auto;
@@ -336,16 +399,16 @@
       margin-top: 45px;
       padding: 0;
     }
-    
+
     .layer-btn .black button {
-  font-size: 14px;
-line-height: 18px;
-color: #fff;
-background-color: #1F1F1F;
-padding: 15px;
-border: none;
-height: auto;
-}
+      font-size: 14px;
+      line-height: 18px;
+      color: #fff;
+      background-color: #1f1f1f;
+      padding: 15px;
+      border: none;
+      height: auto;
+    }
     .layer-btn .grey {
       background: rgba(196, 196, 196, 0.37);
       display: flex;
@@ -451,7 +514,7 @@ height: auto;
       line-height: 20px;
       margin-top: 43px;
       margin-bottom: 15px;
-      text-align:center;
+      text-align: center;
     }
     .organic-img img:hover {
       box-shadow: 9px 9px;
@@ -806,35 +869,34 @@ height: auto;
     .prod-name-row p {
       margin-bottom: 0;
     }
-    
   }
   @media (min-width: 768px) {
-    .you-know-slider{
-      display:flex;
+    .you-know-slider {
+      display: flex;
     }
     .you-may-also {
-    width: 25%;
-}
-.you-may-also-slider {
-    width: 75%;
-}
+      width: 25%;
+    }
+    .you-may-also-slider {
+      width: 75%;
+    }
   }
   @media (min-width: 991px) {
     .organic-ingredients .real-ingredient-text h3 {
-    font-size: 47px;
-    line-height: 55px !important;
-}
-  
+      font-size: 47px;
+      line-height: 55px !important;
+    }
+
     .organic-ingredients,
     .membership-wrp {
       margin: 0 -48px;
     }
     .organic-ingredients .real-ingredient-text h3 {
-    font-size: 47px;
-    font-weight: 700;
-    line-height: 55px !important;
-    margin-top: 0;
-}
+      font-size: 47px;
+      font-weight: 700;
+      line-height: 55px !important;
+      margin-top: 0;
+    }
     /* .real-ingredient-text h3 {
       margin-top: 0;
       line-height: 32px !important;
@@ -891,8 +953,8 @@ height: auto;
     .organic-ingredients h3 {
       font-size: 26px;
       line-height: 20px;
-      text-align:center;
-      font-weight:700;
+      text-align: center;
+      font-weight: 700;
     }
     .prod-name-row p {
       font-size: 17px;
@@ -926,46 +988,48 @@ height: auto;
       flex-basis: 43%;
     }
     .size-inner-content {
-    display:flex;
-    justify-content: space-between;
-    width:100%;
-}
-.size-inner-content .left-side{
-   width:52%;
-   text-align:center;
-}
-.size-inner-content .right-side{
-   width:48%;
-   border-left: 1px solid #000;
-}
-.size-inner-content .left-side #img {
-    height:auto;
-    width:100%;
-}
-.pdt-sizes table, .pdt-sizes table tr th, .pdt-sizes table tr td{
-  font-size:17px;
-}
-.pdt-sizes table td,
-.pdt-sizes table th {
-  padding: 15px 18px;
-}
-.wash-direction h5 {
-	font-size: 17px;
-	padding: 16px 18px;
-}
-.wash-direction p {
-	font-size: 14px;
-	padding: 20px 18px;
-}
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .size-inner-content .left-side {
+      width: 52%;
+      text-align: center;
+    }
+    .size-inner-content .right-side {
+      width: 48%;
+      border-left: 1px solid #000;
+    }
+    .size-inner-content .left-side #img {
+      height: auto;
+      width: 100%;
+    }
+    .pdt-sizes table,
+    .pdt-sizes table tr th,
+    .pdt-sizes table tr td {
+      font-size: 17px;
+    }
+    .pdt-sizes table td,
+    .pdt-sizes table th {
+      padding: 15px 18px;
+    }
+    .wash-direction h5 {
+      font-size: 17px;
+      padding: 16px 18px;
+    }
+    .wash-direction p {
+      font-size: 14px;
+      padding: 20px 18px;
+    }
   }
   @media (max-width: 640px) {
   }
-  @media (min-width:1024px){
+  @media (min-width: 1024px) {
     .layer-btn .black button {
-font-size: 20px;
-line-height: 24px;
-padding: 20px;
-}
+      font-size: 20px;
+      line-height: 24px;
+      padding: 20px;
+    }
   }
   @media (min-width: 1201px) {
   }
@@ -1013,9 +1077,8 @@ padding: 20px;
   }
 </style>
 
-
 {% section 'product-skincare' %}
-{% section 'framework--page-sup-organic-ingredients' %}
-{% section 'framework--page-membership' %}
-{% section 'framework--page-review' %}
-{% section 'framework--product-recommendations' %}
+ {% section 'framework--page-sup-organic-ingredients' %}
+ {% section 'framework--page-membership' %} 
+ {% section 'framework--page-review' %}
+  {% section 'framework--product-recommendations' %}

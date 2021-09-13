@@ -2,7 +2,14 @@
 	<div class="container-fluid ">
         <div class="prod-name-row you-know-slider">  
             <div class="you-may-also">
-              <p>{{ section.settings.product_category_title }}</p>
+              <p>
+                {% if product.metafields.products.you_may_also_like_title != blank %}
+                    {{ product.metafields.products.you_may_also_like_title }}
+                    {% else %}
+                    BUILD YOUR ROUTINE:
+                    {% endif %}
+
+              </p>
             </div>
             <div class="you-may-also-slider">
             <div class="swiper-container you-may-know-also">
@@ -73,8 +80,18 @@
          <div class="container-fluid ">
             <div class="row">
                <div class="col-7">
-                  <h2>{{ section.settings.tab01_membership_title_one }}</h2>
-                  <p>{{ section.settings.tab01_membership_desc_one }}</p>
+                 <h2>
+                  {% if product.metafields.products.membership_title != blank %}
+                  {{product.metafields.products.membership_title}}
+                  {% else %}
+                  REYAL MEMBERSHIP
+                  {% endif %}
+                 </h2>
+                  <p>{% if product.metafields.products.membership_descrption != blank %}
+                    {{product.metafields.products.membership_descrption}}
+                    {% else %}
+                    You can subscribe for automatic re-orders of REYAL's skin performance and supplement assortment. Never run dry, my guy. 
+                    {% endif %}</p>
                   <a href="#">{{ section.settings.tab01_membership_button_one }}</a>
                </div>
                <div class="col-5">
@@ -85,8 +102,16 @@
                            </svg>
                      </div>
                      <div class="member-text">
-                        <h5>{{ section.settings.tab01_service_title_one }}</h5>
-                        <p>{{ section.settings.tab01_service_desc_one }}</p>
+                        <h5>{% if product.metafields.products.membership_title1 != blank %}
+                          {{product.metafields.products.membership_title1}}
+                          {% else %}
+                          EASY TO RE-ORDER:  
+                          {% endif %}</h5>
+                        <p>{% if product.metafields.products.membership_desc1 != blank %}
+                          {{product.metafields.products.membership_desc1}}
+                          {% else %}
+                          It's not a subscription. We don't want product in excess taking up valuable counter top space.  
+                          {% endif %}</p>
                      </div>
                   </div>
                   <div class="member-icon-wrp">
@@ -99,8 +124,16 @@
                         </svg>
                      </div>
                      <div class="member-text">
-                        <h5>{{ section.settings.tab01_service_title_two }}</h5>
-                        <p>{{ section.settings.tab01_service_desc_two }}</p>
+                      <h5>{% if product.metafields.products.membership_title2 != blank %}
+                        {{product.metafields.products.membership_title2}}
+                        {% else %}
+                        WE REMIND YOU:   
+                        {% endif %}</h5>
+                      <p>{% if product.metafields.products.membership_desc2 != blank %}
+                        {{product.metafields.products.membership_desc2}}
+                        {% else %}
+                        We gently let you know when we think you might be running low, and with a click of button, you can re-order with ease. 
+                        {% endif %}</p>
                      </div>
                   </div>
                   <div class="member-icon-wrp">
@@ -111,8 +144,16 @@
                         </svg>
                      </div>
                      <div class="member-text">
-                        <h5>{{ section.settings.tab01_service_title_three }}</h5>
-                        <p>{{ section.settings.tab01_service_desc_three }} </p>
+                      <h5>{% if product.metafields.products.membership_title3 != blank %}
+                        {{product.metafields.products.membership_title3}}
+                        {% else %}
+                        SUBSCIPTION DISCOUNT:   
+                        {% endif %}</h5>
+                      <p>{% if product.metafields.products.membership_desc3 != blank %}
+                        {{product.metafields.products.membership_desc3}}
+                        {% else %}
+                        Re-ordering is more cost effective for you and helps us better plan production, so we pass the savings onto you.   
+                        {% endif %}</p>
                      </div>
                   </div>
                </div>

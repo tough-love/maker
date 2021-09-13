@@ -101,7 +101,7 @@
 
           {%endif%}
         </p>
-        <a id="learn-more" href="#">LEARN MORE</a>
+        <!-- <a id="learn-more" href="#">LEARN MORE</a> -->
       </div>
       <div class="col-8 real-ingredient-img">
         <div class="row">
@@ -203,7 +203,8 @@
                   <a href="#" target="_self">L-Valine</a>
                 </li>
                 <li>
-                  <a href="#" target="_self">VIEW MORE INGREDIENTS</a>
+                  <span id="additivesIngreditnts2">VIEW MORE INGREDIENTS</span>
+                  
                 </li>
               </ul>
               {%endif%}
@@ -214,12 +215,43 @@
     </div>
   </div>
 </section>
+<div id="additivesModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <di class="additives-ingredients">
+      {% if product.metafields.products.additives_ingredients != blank %}
+      {{product.metafields.products.additives_ingredients}}
+      {% else %}
+      Not Available
+      {% endif %}
+    </di>
+  </div>
+
+</div>
 <script>
   var learnMore = document.getElementById('learn-more');
   learnMore.onclick = function (e) {
     e.preventDefault();
     sizeBtn.style.display = 'block';
   };
+
+  // Get the modal
+var modal = document.getElementById("additivesModal");
+var btn = document.getElementById("additivesIngreditnts2");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 </script>
 
 {% schema %}

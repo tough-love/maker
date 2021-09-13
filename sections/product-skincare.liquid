@@ -72,6 +72,12 @@
             
           </div>
           <div class="description">{{ product.description | truncate: 600, "..." }}</div>
+          <div class="pack-size">
+            {% if product.metafields.products.pack_size != blank %}
+            <strong>SIZE:{{product.metafields.products.pack_size}}</strong>
+              {% endif %}
+            
+          </div>
           <details class="product-accordian-summary">
             <summary class="product-accordian-title">
               {% if product.metafields.products.accordian_title != blank %}
@@ -86,7 +92,8 @@
             Not Available
             {% endif %}
         </details>
-          <h3><a href="#" id="show-ingreditnts">ADDITIVES & INGREDIENTS</a></h3>
+          <h3><span id="additivesIngreditnts">ADDITIVES & INGREDIENTS</span></h3>
+          
           {%
             render "framework--product--skincare--form",
             product: product,
@@ -105,6 +112,21 @@
     </div>
   </div>
 </section>
+<div id="additivesModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <di class="additives-ingredients">
+      {% if product.metafields.products.additives_ingredients != blank %}
+      {{product.metafields.products.additives_ingredients}}
+      {% else %}
+      Not Available
+      {% endif %}
+    </di>
+  </div>
+
+</div>
 <script>
 $(document).ready(function(){
  var swiper = new Swiper(".mySwiper", {
@@ -125,6 +147,24 @@ $(document).on('click', 'a[href^="#"]', function (event) {
         scrollTop: $($.attr(this, 'href')).offset().top + 100
     }, 1000);
   });
+
+// Get the modal
+var modal = document.getElementById("additivesModal");
+var btn = document.getElementById("additivesIngreditnts");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
 </script>
 
 

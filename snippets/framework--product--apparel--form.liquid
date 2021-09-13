@@ -75,12 +75,12 @@
         </div>
 
       </div>
-		<div class="product-variants">
-                      <span>SELECT SIZE</span> <span id="openSizeGuide">SIZE GUIDE</span>
-                    </div>
+		
       <div class="product-form--variants">
         {% unless product.has_only_default_variant %}
-
+        <div class="product-variants">
+          <span>SELECT SIZE</span> <span id="openSizeGuide">SIZE GUIDE</span>
+        </div>
           {% for option in product.options_with_values %}
             {% assign option_name = option.name | trim | downcase %}
 
