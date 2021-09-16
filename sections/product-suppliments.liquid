@@ -73,25 +73,19 @@
           </div>
           <div class="description">{{ product.description | truncate: 600, "..." }}</div>
           <div class="pack-size">
-            {% if product.metafields.products.pack_size != blank %}
-            <strong>SIZE:{{product.metafields.products.pack_size}}</strong>
+            {% if product.metafields.products.flavour != blank %}
+            <strong>FLAVOUR:{{product.metafields.products.flavour}}</strong>
               {% endif %}
             
           </div>
-          <details class="product-accordian-summary">
-            <summary class="product-accordian-title">
-              {% if product.metafields.products.accordian_title != blank %}
+          <div class="extra-field">
+            <strong> {% if product.metafields.products.accordian_title != blank %}
               {{product.metafields.products.accordian_title}}
               {% else %}
               25 Servings (850g Total)
-              {% endif %}
-            </summary>
-            {% if product.metafields.products.accordian_summary != blank %}
-            {{product.metafields.products.accordian_summary}}
-            {% else %}
-            Not Available
-            {% endif %}
-        </details>
+              {% endif %}</strong>
+          </div>
+          
         <h3><span id="additivesIngreditnts">ADDITIVES & INGREDIENTS</span></h3>
           {%
             render "framework--product--supplements--form",

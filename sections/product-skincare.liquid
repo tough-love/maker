@@ -78,20 +78,13 @@
               {% endif %}
             
           </div>
-          <details class="product-accordian-summary">
-            <summary class="product-accordian-title">
-              {% if product.metafields.products.accordian_title != blank %}
-              {{product.metafields.products.accordian_title}}
-              {% else %}
-              25 Servings (850g Total)
-              {% endif %}
-            </summary>
-            {% if product.metafields.products.accordian_summary != blank %}
-            {{product.metafields.products.accordian_summary}}
-            {% else %}
-            Not Available
-            {% endif %}
-        </details>
+         <div class="extra-field">
+            <strong
+              >{% if product.metafields.products.accordian_title != blank %}
+              {{ product.metafields.products.accordian_title }}
+              {% else %} 25 Servings (850g Total) {% endif %}</strong
+            >
+          </div>
           <h3><span id="additivesIngreditnts">ADDITIVES & INGREDIENTS</span></h3>
           
           {%
