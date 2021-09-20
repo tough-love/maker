@@ -6530,6 +6530,11 @@ body {
   .footer--sub--container {
     margin: 0 auto;
   }
+  .product-form--add-to-cart.btn.text-center {
+	position: fixed;
+	bottom: 0;
+	z-index: 999;
+}
 }
 
 .footer--sub--block:nth-of-type(2) .footer--sub--container {
