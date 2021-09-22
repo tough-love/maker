@@ -1,75 +1,5 @@
 <style>
   @media (min-width: 0) {
-
-#News {
-	display: none;
-}
-.accordian-section {
-	width: 100%;
-  padding:50px 0px;
-}
- .accordian-section input {
-	 position: absolute;
-	 opacity: 0;
-	 z-index: -1;
-}
-
-/* Accordion styles */
- .accordian-section .tabs {
-	 overflow: hidden;
-}
- .accordian-section .tab {
-	 width: 100%;
-	 color: white;
-	 overflow: hidden;
-}
-.accordian-section .tab-label {
-	display: flex;
-	justify-content: space-between;
-	padding: 0;
-	font-weight: 700;
-	cursor: pointer;
-	font-size:20px;
-	color: #000;
-  line-height: 22px;
-}
-
- .accordian-section .tab-label::after {
-	 content: "\f067";
-    font-family: "FontAwesome";
-    font-size:20px;
-    right: 0;
-    color: #000;
-	 transition: all 0.35s;
-}
- .accordian-section .tab-content {
-	 max-height: 0;
-	 padding: 0;
-	 color: #000;
-	 transition: all 0.35s;
-   font-size: 18px;
-}
- .accordian-section .tab-close {
-	 display: flex;
-	 justify-content: flex-end;
-	 padding: 1em;
-	 font-size:20px;
-	 cursor: pointer;
-}
- .accordian-section input:checked + .tab-label{
-    color: #dc323c !important;
-}
-
- .accordian-section input:checked + .tab-label::after {
-	 content: "\f068";
-    color: #dc323c;
-}
- .accordian-section input:checked ~ .tab-content {
-	 max-height: 100%;
-	 padding:15px 0px;
-}
-
-
     .product-form--root .rc-template__checkbox {
 	padding: 0;
 }
@@ -314,12 +244,31 @@
       margin: auto;
       padding: 0;
       border: 1px solid #000;
-      width: 100%;
-     
+      width: 95%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 973px;
+      box-shadow: unset;
+      z-index: 9999;
     }
     /* The Close Button */
-    
-    
+    .close-size-modal {
+      color: #000;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      position: absolute;
+      top: -25px;
+      right: -10px;
+    }
+    .close-size-modal:hover,
+    .close-size-modal:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
     .size-inner-content {
       display: block;
       width: 100%;
@@ -980,22 +929,6 @@
 
   }
   @media (min-width: 991px) {
-    .accordian-section {
-  padding:0px 0px;
-}
-
-    .accordian-section .tab-label {
-	font-size: 32px;
-  line-height: 35px;
-}
-
- .accordian-section .tab-label::after {
-    font-size: 32px;
-}
-
- .accordian-section .tab-close {
-	 font-size:32px;
-}
     .review h2.spr-header-title {
 	font-weight: 700;
 	font-size: 35px;
@@ -1057,7 +990,7 @@
       margin-top: 0;
     }
     .real-ingredient-img {
-      padding-left:30px;
+      padding-left: 143px;
     }
     .prod-name-row .col-4 {
       margin-bottom: 0;
@@ -1200,19 +1133,14 @@
     }
   }
    @media (min-width: 1600px) {
-     .accordian-section {
-  padding:50px 0px;
-}
     .organic-ingredients .full-transp-container {
     padding: 111px 50px 84px 50px;
 }
   }
-  
- 
 </style>
 
 {% section 'product-skincare' %}
  {% section 'framework--page-sup-organic-ingredients' %}
- {% section 'framework--page-membership' %}
+ <!-- {% section 'framework--page-membership' %}  -->
  {% section 'framework--page-review' %}
   {% section 'framework--product-recommendations' %}
