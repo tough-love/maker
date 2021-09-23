@@ -96,8 +96,7 @@
                    {% endif %}
                   </p>
                  
-                  <!-- <a href="#" id="show-ingreditnts2">{{ section.settings.center_real_ingredient_button }}</a> -->
-                  
+                  <a href="#" id="show-ingreditnts2">{{ section.settings.center_real_ingredient_button }}</a>
                </div>
 
                <div class="col-8 real-ingredient-img real-ingredients-video">
@@ -117,17 +116,12 @@
                   {% endif %} -->
                </div>
             </div>
+         </div>
 
-            <div class="row">
-              <div class="accordian-section">
-                <div class="tabs">
-                  <div class="tab">
-                    <input type="checkbox" id="ac1">
-                    <label class="tab-label" for="ac1">{{ section.settings.center_real_ingredient_button }}</label>
-                    <div class="tab-content">
-                      <div id="ingreditnts-modal2" class="size-modals">
+</section>
+<div id="ingreditnts-modal2" class="size-modal">
   <div class="size-data">
-   
+    <span id="close-modal" class="close-size-modal">&times;</span>
     <div class="size-inner-content">
       <div class="left-side">
         <img style="z-index: 3;" id="img{{forloop.index0}}" name="{{ image.alt }}" data-src="{{ product.featured_image | img_url: '100x100'}}" itemprop="image" src="{{ product.featured_image | img_url: '721x736'}}" class=" lazyloaded">
@@ -218,16 +212,6 @@
     </div>
   </div>
 </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-         </div>
-         
-
-</section>
-
 
 
 
@@ -258,14 +242,6 @@ window.onclick = function(event) {
     sizeBtn.style.display = "none";
   }
 }
-
-  $(document).ready(function(){
-    $('.accordian-title').click(function(){
-      $(this).toggleClass('accordian-show');
-      $('.accordian-panel').toggleClass('panel-show');
-    })
-  });
-
 </script>
 {% schema %}
   {
