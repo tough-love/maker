@@ -272,7 +272,7 @@ transition: all 0.2s ease-in-out;
    color:#000;
    margin:0;
    font-weight:700;
-   font-family: 'Helvetica Neue', sans-serif;
+   {% comment %} font-family: 'Helvetica Neue', sans-serif; {% endcomment %}
 }
    #shopify-section-framework--page-apparel-wearing .organic-ingredients p{
     font-size:16px;
@@ -581,6 +581,9 @@ padding-right:0px;
 	flex-basis: 65%;
   margin-top: 0;
 }
+    .real-ingredient-text {
+      flex-basis: 37% !important;
+    }
     .real-ingredient-img {
 	padding-left: 100px;
 }
