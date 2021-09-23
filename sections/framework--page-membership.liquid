@@ -15,34 +15,7 @@
             <div class="swiper-container you-may-know-also">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <a href="{{ product.metafields.you.like_link1 }}">
-                    {% if product.metafields.you.like_text1 != blank %}
-                    {{ product.metafields.you.like_text1 }}
-                    {% else %}
-                    001 SUPREME FACE WASH
-                    {% endif %}
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="{{ product.metafields.you.like_link2 }}">
-                    {% if product.metafields.you.like_text2 != blank %}
-                    {{ product.metafields.you.like_text2 }}
-                    {% else %}
-                    002 SELECT DAY SERUM
-                    {% endif %}
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="{{ product.metafields.you.like_link3 }}">
-                    {% if product.metafields.you.like_text3 != blank %}
-                    {{ product.metafields.you.like_text3 }}
-                    {% else %}
-                      003 SUPER DAY MOISTURIZER
-                    {% endif %}
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="{{ product.metafields.you.like_link4 }}">
+                  <a href="{% if product.metafields.you.like_link4 != blank  %} {{ product.metafields.you.like_link4}} {% else %} https://www.reyalperformance.com/collections/mens-skincare/products/supreme-face-wash {% endif %} ">
                     {% if product.metafields.you.like_text4 != blank %}
                     {{ product.metafields.you.like_text4 }}
                     {% else %}
@@ -51,7 +24,34 @@
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a href="{{ product.metafields.you.like_link5 }}">
+                  <a href="{% if product.metafields.you.like_link2 != blank  %} {{ product.metafields.you.like_link2}} {% else %} https://www.reyalperformance.com/collections/mens-skincare/products/select-day-serum {% endif %}">
+                    {% if product.metafields.you.like_text2 != blank %}
+                    {{ product.metafields.you.like_text2 }}
+                    {% else %}
+                    002 SELECT DAY SERUM
+                    {% endif %}
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="{% if product.metafields.you.like_link3 != blank  %} {{ product.metafields.you.like_link3}} {% else %} https://www.reyalperformance.com/collections/mens-skincare/products/super-day-moisturizer {% endif %}">
+                    {% if product.metafields.you.like_text3 != blank %}
+                    {{ product.metafields.you.like_text3 }}
+                    {% else %}
+                      003 SUPER DAY MOISTURIZER
+                    {% endif %}
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="{% if product.metafields.you.like_link4 != blank  %} {{ product.metafields.you.like_link4}} {% else %} https://www.reyalperformance.com/collections/mens-skincare/products/supreme-face-wash {% endif %} ">
+                    {% if product.metafields.you.like_text4 != blank %}
+                    {{ product.metafields.you.like_text4 }}
+                    {% else %}
+                    001 SUPREME FACE WASH
+                    {% endif %}
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="{% if product.metafields.you.like_link5 != blank  %} {{ product.metafields.you.like_link5}} {% else %} https://www.reyalperformance.com/collections/mens-skincare/products/select-day-serum {% endif %}">
                     {% if product.metafields.you.like_text5 != blank %}
                     {{ product.metafields.you.like_text5 }}
                     {% else %}
@@ -60,7 +60,7 @@
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a href="{{ product.metafields.you.like_link6 }}">
+                  <a href="{% if product.metafields.you.like_link6 != blank  %} {{ product.metafields.you.like_link6}} {% else %} https://www.reyalperformance.com/collections/mens-skincare/products/super-day-moisturizer {% endif %}">
                     {% if product.metafields.you.like_text6 != blank %}
                     {{ product.metafields.you.like_text6 }}
                     {% else %}
@@ -183,7 +183,7 @@ function openPage(pageName,elmnt,color) {
  
 
  $(document).ready(function(){
-  new Swiper(".you-may-know-also", {
+  var mySwiper = new Swiper(".you-may-know-also", {
     loop: true,
   freeMode: true,
   spaceBetween: 0,
@@ -209,6 +209,7 @@ function openPage(pageName,elmnt,color) {
     },
   },
  });
+
 });
 </script>
 
