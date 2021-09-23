@@ -1,5 +1,46 @@
 <style>
   @media (min-width: 0) {
+    .ingredient-box-one table tr th, 
+.ingredient-box table tr th {
+	font-size: 17px;
+	font-weight: 700;
+	padding: 12px 16px;
+	text-align: left;
+}
+.ingredient-box-one table tr td, 
+.ingredient-box table tr td {
+	font-size: 17px;
+	font-weight: 500;
+	padding: 14px 16px;
+	text-align: left;
+}
+
+.ingredient-box-one table tr td:first-child {
+	width: 60%;
+}
+.ingredient-box-one table, 
+.ingredient-box table,
+.ingredient-box-one table tr th,
+.ingredient-box table tr th, 
+.ingredient-box-one table tr td{
+	border: 1px solid #000;
+}
+.ingredient-box-one table, .ingredient-box table{
+border-collapse: collapse;
+	width: 100%;
+  border-radius: 0;
+  height: 375px;
+}
+.ingredient-box table tr td span {
+	font-weight: 700;
+	text-decoration: underline;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+
+
+
     .extra-field strong {
 	text-transform: uppercase;
 }
@@ -312,8 +353,8 @@
       line-height: 19px;
     }
     .size-inner-content .left-side #img {
-      height: 150px;
-      width: auto;
+      height:auto;
+      width:100%;
     }
     .layer-img-wrp {
       margin: 106px auto 132px;
@@ -832,7 +873,7 @@
     }
     .ingredient-box-one {
       width: 100%;
-      border: 1px solid #000;
+      /* border: 1px solid #000; */
     }
 
     .ingredient-box-one ul li {
@@ -959,12 +1000,15 @@
     .full-transp-container .col-4 {
       flex-basis: 40%;
     }
+    .real-ingredient-text {
+	padding-right: 30px;
+}
     .full-transp-container .col-8 {
       flex-basis: 60%;
       margin-top: 0;
     }
     .real-ingredient-img {
-      padding-left: 143px;
+      padding-left:0px;
     }
     .prod-name-row .col-4 {
       margin-bottom: 0;

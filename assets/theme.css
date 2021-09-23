@@ -6188,7 +6188,7 @@ body {
   background: var(--bg-color--footer);
   color: var(--color--footer);
   padding: 48px;
-  z-index: 1;
+  z-index: unset;
   position: relative;
 }
 

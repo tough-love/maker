@@ -101,81 +101,68 @@
 
           {%endif%}
         </p>
-        <!-- <a id="learn-more" href="#">LEARN MORE</a> -->
+        <a id="learn-more" href="#">LEARN MORE</a>
       </div>
       <div class="col-8 real-ingredient-img">
         <div class="row">
           <div class="col-7">
             <div class="ingredient-box-one">
-              <ul>
-                <li>
-                  {% if product.metafields.amount.per_scoop != blank %}
-                  <strong>AMOUNT PER SCOOP ({{product.metafields.amount.per_scoop}})</strong>
+              <table>
+                <tr><th colspan="2">{% if product.metafields.amount.per_scoop != blank %}
+                  AMOUNT PER SCOOP ({{product.metafields.amount.per_scoop}})
                   {%else%}
-                  <strong>AMOUNT PER SCOOP (NA)</strong>
-                  {%endif%}
-                </li>
-                <li>
-                  <h5>Calories</h5>
-                  <h5>
-                    {% if product.metafields.calories.value != blank %}
+                  AMOUNT PER SCOOP (NA)
+                  {%endif%}</th></tr>
+                  <tr>
+                    <td>Calories</td>
+                    <td>{% if product.metafields.calories.value != blank %}
                     {{product.metafields.calories.value}}
                     {%else%}
                     NA
-                    {%endif%}
-                  </h5>
-                </li>
-                <li>
-                  <h5>Fat</h5>
-                  <h5>
-                    {% if product.metafields.fat.value != blank %}
+                    {%endif%}</td>
+                  </tr>
+                  <tr>
+                    <td>Fat</td>
+                    <td>{% if product.metafields.fat.value != blank %}
                     {{product.metafields.fat.value}}
                     {%else%}
                     NA
-                    {%endif%}
-                  </h5>
-                </li>
-                <li>
-                  <h5>Protein</h5>
-                  <h5>
-                    {% if product.metafields.protein.value != blank %}
+                    {%endif%}</td>
+                  </tr>
+                   <tr>
+                    <td>Protein</td>
+                    <td> {% if product.metafields.protein.value != blank %}
                     {{product.metafields.protein.value}}
                     {%else%}
                     NA
-                    {%endif%}
-                  </h5>
-                </li>
-                <li>
-                  <h5>Sugars</h5>
-                  <h5>
-                    {% if product.metafields.sugars.value != blank %}
+                    {%endif%}</td>
+                  </tr>
+                   <tr>
+                    <td>Sugars</td>
+                    <td> {% if product.metafields.sugars.value != blank %}
                     {{product.metafields.sugars.value}}
                     {%else%}
                     NA
-                    {%endif%}
-                  </h5>
-                </li>
-                <li>
-                  <h5>Carbohydrates</h5>
-                  <h5>
-                    {% if product.metafields.carbohydrates.value != blank %}
+                    {%endif%}</td>
+                  </tr>
+                  <tr>
+                    <td>Carbohydrates</td>
+                    <td> {% if product.metafields.carbohydrates.value != blank %}
                     {{product.metafields.carbohydrates.value}}
                     {%else%}
                     NA
-                    {%endif%}
-                  </h5>
-                </li>
-                <li>
-                  <h5>Sodium</h5>
-                  <h5>
-                    {% if product.metafields.sodium.value != blank %}
+                    {%endif%}</td>
+                  </tr>
+                  <tr>
+                    <td>Sodium</td>
+                    <td>{% if product.metafields.sodium.value != blank %}
                     {{product.metafields.sodium.value}}
                     {%else%}
                     NA
-                    {%endif%}
-                  </h5>
-                </li>
-              </ul>
+                    {%endif%}</td>
+                  </tr>
+              </table>
+             
             </div>
           </div>
           <div class="col-5">
@@ -183,30 +170,19 @@
               {% if product.metafields.ingredient.list != blank %}
               {{ product.metafields.ingredient.list }}
               {%else%}
-              <ul>
-                <li>
-                  <strong>INGREDIENTS LIST</strong>
-                </li>
-                <li>
-                  <a href="#" target="_self">Whey Protein Isolate</a>
-                </li>
-                <li>
-                  <a href="#" target="_self">Creatine Monohydrate</a>
-                </li>
-                <li>
-                  <a href="#" target="_self">L-Leucine</a>
-                </li>
-                <li>
-                  <a href="#" target="_self">L-Isoleucine</a>
-                </li>
-                <li>
-                  <a href="#" target="_self">L-Valine</a>
-                </li>
-                <li>
-                  <span id="additivesIngreditnts2">VIEW MORE INGREDIENTS</span>
-                  
-                </li>
-              </ul>
+
+              <table>
+                <tr>
+                  <th>INGREDIENTS LIST</th>
+                </tr>
+                <tr><td>Whey Protein Isolate</td></tr>
+                <tr><td>Creatine Monohydrate</td></tr>
+                <tr><td>L-Leucine</td></tr>
+                <tr><td>L-Isoleucine</td></tr>
+                <tr><td>L-Valine</td></tr>
+                <tr><td><span id="additivesIngreditnts2">VIEW MORE INGREDIENTS</span></td></tr>
+              </table>
+             
               {%endif%}
             </div>
           </div>
@@ -252,6 +228,17 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+$(document).ready(function(){
+  $("#learn-more").click(function(){
+        $(".size-modal").modal({
+            backdrop: 'static',
+            keyboard: false
+        });
+    });
+  $('.close-size-modal').click(function(){
+    $('.size-modal').fadeOut();
+  });
+});
 </script>
 
 {% schema %}
