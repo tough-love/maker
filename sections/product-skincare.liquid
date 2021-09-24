@@ -74,12 +74,12 @@
           <div class="description">{{ product.description | truncate: 600, "..." }}</div>
           <div class="pack-size">
             {% if product.metafields.products.pack_size != blank %}
-            <strong>SIZE:{{product.metafields.products.pack_size}}</strong>
+            <strong>SIZE: {{product.metafields.products.pack_size}}</strong>
               {% endif %}
             
           </div>
          
-          <h3><span id="additivesIngreditnts">ADDITIVES & INGREDIENTS</span></h3>
+          <h3><span id="additivesIngreditnts">{% if product.metafields.products.additives_ingredients_title != blank %}{{product.metafields.products.additives_ingredients_title}}{% else %}ADDITIVES & INGREDIENTS{% endif %}</span></h3>
           
           {%
             render "framework--product--skincare--form",
