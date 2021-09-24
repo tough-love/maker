@@ -1,5 +1,17 @@
 <style>
   @media (min-width: 0) {
+     .spr-summary-actions-newreview {
+	display: none !important;
+}
+.spr-review-reportreview {
+	display: none !important;
+}
+     .spr-pagination {
+    border-top: 1px solid #696969 !important;
+}
+    .spr-review, .spr-form {
+	border-color: #696969 !important;
+}
     .review h2.spr-header-title {
 	text-align: center;
 }
@@ -233,9 +245,10 @@
       left: 0;
       right: 0;
       margin: auto;
+      bottom:-30px;
     }
     .product-img-slider .swiper-pagination-bullet {
-      width: 60px;
+      width: 30px;
       height: 2px;
       display: inline-block;
       border-radius: 0;
@@ -493,7 +506,7 @@
       color: #000;
       margin: 0;
       font-weight: 700;
-      {% comment %} font-family: 'Helvetica Neue', sans-serif; {% endcomment %}
+      font-family: 'Helvetica Neue', sans-serif;
     }
     #shopify-section-framework--page-apparel-wearing .organic-ingredients p {
       font-size: 16px;
@@ -906,6 +919,13 @@
     #single-product-form .product-form--button-container {
       margin-top: 55px;
     }
+  }
+ @media (min-width: 1201px) {
+    .product-img-slider .swiper-pagination-bullet {
+      width: 60px;
+    }
+    
+    
   }
   @media (min-width: 1400px) {
     .pdt-variant .box {

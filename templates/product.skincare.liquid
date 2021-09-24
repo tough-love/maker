@@ -1,5 +1,17 @@
 <style>
   @media (min-width: 0) {
+     .spr-summary-actions-newreview {
+	display: none !important;
+}
+.spr-review-reportreview {
+	display: none !important;
+}
+    .spr-pagination {
+    border-top: 1px solid #696969 !important;
+}
+     .spr-review, .spr-form {
+	border-color: #696969 !important;
+}
   .real-ingredient-img.real-ingredients-video {
 	padding-bottom: 30px;
 }
@@ -814,9 +826,10 @@
       left: 0;
       right: 0;
       margin: auto;
+      bottom:-30px;
     }
     .product-img-slider .swiper-pagination-bullet {
-      width: 60px;
+      width: 30px;
       height: 2px;
       display: inline-block;
       border-radius: 0;
@@ -1105,6 +1118,10 @@
     }
   }
   @media (min-width: 1201px) {
+    .product-img-slider .swiper-pagination-bullet {
+      width:60px;
+      
+    }
   }
   @media screen and (min-width: 992px) and (max-width: 1200px) {
     .row {
