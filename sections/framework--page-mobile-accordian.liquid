@@ -1,0 +1,232 @@
+<div class="accordian-outer">
+    <div class="accordian-box">
+        <h2 class="accordian-title">
+          Additives & Ingredients
+        </h2>   
+
+        <div class="accordian-content-box">
+         <div class="accordian-data">
+            <div class="additives-ingredients">
+              {% if product.metafields.products.additives_ingredients != blank %}
+              {{product.metafields.products.additives_ingredients}}
+              {% else %}
+              Not Available
+              {% endif %}
+            </div>
+          </div>
+        </div>
+    </div> 
+    <div class="accordian-box">
+        <h2 class="accordian-title">
+          How to Use
+        </h2>   
+
+        <div class="accordian-content-box">
+         <div class="accordian-data">
+            <div class="how-to-use">
+              <ul>
+                <li>
+                  <h3>
+                    {% if product.metafields.ingredient.section_col1_text_1 != blank %}
+                    {{ product.metafields.ingredient.section_col1_text_1 }}
+                    {% else %}
+                    {{ section.settings.center_organic_ingredient_title1 }}
+                    {% endif %}
+                  </h3>
+                  <p>
+                    {% if product.metafields.ingredient.section_col1_text_2 != blank %}
+                    {{ product.metafields.ingredient.section_col1_text_2 }}
+                    {% else %}
+                    {{ section.settings.center_organic_ingredient_desc1 }}
+                    {% endif %}
+                  </p>
+                </li>
+                <li>
+                     <h3>
+                    {% if product.metafields.ingredient.section_col2_text_1 != blank %}
+                    {{ product.metafields.ingredient.section_col2_text_1 }}
+                    {% else %}
+                    {{ section.settings.center_organic_ingredient_title2 }}
+                    {% endif %}
+                  </h3>
+                  <p>
+                    {% if product.metafields.ingredient.section_col2_text_2 != blank %}
+                    {{ product.metafields.ingredient.section_col2_text_2 }}
+                    {% else %}
+                    {{ section.settings.center_organic_ingredient_desc2 }}
+                    {% endif %}
+                  </p>
+                </li>
+                <li>
+                  <h3>
+                    {% if product.metafields.ingredient.section_col3_text_1 != blank %}
+                    {{ product.metafields.ingredient.section_col3_text_1 }}
+                    {% else %}
+                    {{ section.settings.center_organic_ingredient_title3 }}
+                    {% endif %}
+                  </h3>
+                   <p>
+                    {% if product.metafields.ingredient.section_col3_text_2 != blank %}
+                    {{ product.metafields.ingredient.section_col3_text_2 }}
+                    {% else %}
+                    {{ section.settings.center_organic_ingredient_desc3 }}
+                    {% endif %}
+                  </p>
+                </li>
+              </ul>
+               
+            </div>
+          </div>
+          
+        </div>
+    </div>
+    <div class="accordian-box">
+        <h2 class="accordian-title">
+          Reviews
+        </h2>   
+
+        <div class="accordian-content-box">
+          <div class="accordian-data">
+            <div id="pdt-rev" class="pdt-rev-mob">
+           
+	{%- if product.metafields.spr.reviews contains 'class="spr-header-title"' -%}
+	{%- endif -%}
+	<div class="small-container">
+      	<div id="shopify-product-reviews" data-id="{{product.id}}" >
+          {{ product.metafields.spr.reviews }}
+      	</div>
+  </div>
+
+
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<style>
+
+  /* Mobile Accordian */
+   #shopify-section-framework--page-mobile-accordian {
+	padding:0px 17px 20px;
+}
+.accordian-box{
+   width:100%; 
+   height: auto; 
+   overflow: hidden; 
+   padding: 10px;
+  }
+.accordian-title{ 
+  width: 100%; 
+  text-align: left; 
+  background: #fff; 
+  color: #000; 
+  font-size: 21px; 
+  line-height:31px;
+  text-transform:capitalize; 
+  font-weight: bold; 
+  padding: 5px; 
+  cursor: pointer; 
+  margin: 0px !important;
+  position:relative; 
+}
+.accordian-content-box{ 
+  width: 100%; 
+  height: auto; 
+  overflow: hidden; 
+  background: #fff; 
+  padding:10px 5px; 
+  display: none; }
+.accordian-box {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 5px 0px;
+	border-bottom: 1px solid #B6B6B6;
+	padding: 16px 0px;
+}
+.accordian-outer{
+  border-top:1px solid #B6B6B6;
+}
+  .accordian-title::after {
+	content: "\f067";
+  font-family:"Fontawesome";
+	position: absolute;
+	top: 5px;
+  font-size:21px;
+	right: 0;
+}
+.accordian-title.active::after{
+  content:"\f00d";
+}
+.how-to-use h3 {
+	font-size: 17px;
+	line-height: 24px;
+	font-weight: 600;
+	color: #000;
+	margin-bottom: 6px;
+  margin-top:18px;
+}
+.how-to-use ul li p {
+	font-size: 14px;
+	line-height: 18px;
+	color: #575757;
+	font-weight: 400;
+}
+  #shopify-section-framework--page-sup-organic-ingredients {
+	display: none;
+}
+#shopify-section-framework--page-membership {
+	display: none;
+}
+#shopify-section-framework--page-review {
+	display: none;
+}
+
+#shopify-section-product-suppliments-ingredients {
+	display: none;
+}
+ @media (min-width: 768px) {
+   .layer-btn ul li {
+      padding:20px 35px;
+
+    }
+    .product-form--root {
+	display: block;
+}
+    #shopify-section-framework--page-sup-organic-ingredients {
+	display: block;
+}
+#shopify-section-framework--page-membership {
+	display: block;
+}
+#shopify-section-framework--page-review {
+	display: block;
+}
+    #shopify-section-framework--page-mobile-accordian {
+	display: none !important;
+}
+
+#shopify-section-product-suppliments-ingredients {
+	display: block;
+}
+ }
+</style>
+<script>
+  (function ($)
+ {
+  $(document).ready(function () {
+   
+    $('body').on('click', '.accordian-title', function(e) {
+    
+    $('.accordian-box').find('.accordian-content-box').stop().slideUp();
+    $('.accordian-box').find('.accordian-title').stop().removeClass('active');
+    $(this).closest('.accordian-box').find('.accordian-content-box').stop().slideToggle();
+    $(this).closest('.accordian-box').find('.accordian-title').toggleClass('active');
+   
+});
+
+ 
+  });
+})(jQuery);
+</script>
