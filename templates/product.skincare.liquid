@@ -1,5 +1,16 @@
 <style>
+  button.shopify-payment-button__button.shopify-payment-button__button--unbranded{
+    display:none !important;
+  }
   @media (min-width: 0) {
+
+    .spr-review-header-title {
+	margin: 25px 0px;
+	font-weight: 600;
+}
+    .spr-starratings.spr-review-header-starratings {
+	margin-bottom: 0;
+}
      .product-form--smart-payment-buttons{
       display: none;
     }
@@ -481,7 +492,7 @@
       text-transform: capitalize;
     }
     .layer-btn ul li {
-      padding: 20px 35px;
+      padding:0px 35px;
       display: block;
       text-align: center;
       letter-spacing: 0.07em;
@@ -1273,3 +1284,5 @@
 {% section 'framework--page-membership' %} 
  {% section 'framework--page-review' %}
   {% section 'framework--product-recommendations' %}
+
+  {% section 'framework--page-mobile-accordian' %}
