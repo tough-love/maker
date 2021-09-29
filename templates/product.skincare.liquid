@@ -411,9 +411,6 @@
 	width: 100%;
 }
 
-    .layer-img-wrp {
-      margin: 106px auto 0px;
-    }
     .small-container {
       max-width: 1212px;
       padding-left: 15px;
@@ -984,10 +981,6 @@
     }
   }
   @media (min-width: 768px) {
-     
-.layer-img-wrp {
-      margin: 106px auto 132px;
-    }
     .you-know-slider {
       display: flex;
     }
@@ -1000,6 +993,9 @@
 
   }
   @media (min-width: 991px) {
+    .layer-img-wrp {
+      margin: 106px auto 132px;
+    }
      .prod-name-row {
 	padding: 30px 0px;
 }
@@ -1228,9 +1224,59 @@
       padding: 30px 35px !important
     }
   }
-
-
-
+  @media (max-width: 990px) {
+    .template--product .layout--main-content {
+      padding: 0;
+    }
+    .product-img-slider {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+    .layer-content {
+      margin-top: 35px;
+    }
+    .layer-img-wrp h1 {
+      font-size: 23px;
+      line-height: 109%;
+      color: #000;
+    }
+    .star {
+      margin: 8px 0;
+    }
+    .star li p, .star .spr-badge-caption {
+      color: #000;
+      font-size: 13px;
+      font-weight: bold;
+      line-height: 185%;
+      letter-spacing: -0.01em;
+    }
+    .star .spr-badge-starrating .spr-icon {
+      font-size: 12px;
+    }
+    .description p {
+      color: #000;
+    }
+    .layer-btn .black button {
+      font-size: 18px;
+      line-height: 133%;
+      padding: 23px 68px;
+      letter-spacing: 0.02em;
+    }
+    .review {
+      padding: 20px 0;
+    }
+    .review a, .membership a {
+      margin-top: 20px;
+    }
+    #shopify-section-framework--page-sup-organic-ingredients, #shopify-section-framework--page-membership {
+      display: none;
+    }
+  }
+  @media (max-width: 767px) {
+    .swiper-pagination {
+      display: none;
+    }
+  }
 </style>
 
 {% section 'product-skincare' %}
@@ -1240,5 +1286,3 @@
   {% section 'framework--product-recommendations' %}
 
   {% section 'framework--page-mobile-accordian' %}
-
-
