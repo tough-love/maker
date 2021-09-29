@@ -71,7 +71,7 @@
                 </div>
         </li>
         <li class="default-mode">
-          <h3>Reviews</h3>
+          <h3 id="reviews-heading">Reviews</h3>
           <div class="answer">
             <div id="pdt-rev" class="pdt-rev-mob">   
               {%- if product.metafields.spr.reviews contains 'class="spr-header-title"' -%}
@@ -155,7 +155,7 @@ body .how-to-use h3 {
   font-family:"Fontawesome";
   font-weight: 100;
 	position: absolute;
-	top:0;
+	top:-2px;
   font-size:21px;
 	right: 0;
 }
@@ -179,12 +179,6 @@ body .how-to-use h3 {
   font-size: 14px;
 }
 
-
-
-
-
-
-
 /* Mobile Accordian */
   #shopify-section-framework--page-mobile-accordian {
 	padding: 30px 17px 20px;
@@ -203,6 +197,15 @@ body .how-to-use h3 {
 #shopify-section-product-suppliments-ingredients {
 	display: none;
 }
+#reviews-heading .spr-starrating {
+  line-height: 1;
+  position: relative;
+  left: 5px;
+  top: -1px;
+}
+#reviews-heading .spr-starrating .spr-icon {
+  font-size: 16px;
+}  
  @media (min-width: 768px) {
    .layer-btn ul li {
       padding:20px 35px;
@@ -236,6 +239,9 @@ body .how-to-use h3 {
 
 
   $(document).ready(function(){
+
+  $('#reviews-heading').append($('.spr-starrating')[0]);
+
   $('.accordion-list > li > .answer').hide();
     
   $('.accordion-list > li').click(function() {
