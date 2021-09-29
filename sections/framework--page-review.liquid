@@ -1,4 +1,4 @@
-<section id="pdt-rev" class="review">
+<div id="pdt-rev" class="review">
 	{%- if product.metafields.spr.reviews contains 'class="spr-header-title"' -%}
 	{%- endif -%}
 	<div class="small-container">
@@ -6,7 +6,7 @@
           {{ product.metafields.spr.reviews }}
       	</div>
   </div>
-</section>
+</div>
 {% schema %}
   {
     "name": "Review",
