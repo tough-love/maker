@@ -6533,7 +6533,7 @@ body {
   .product-form--add-to-cart.btn.text-center {
 	position: fixed;
 	bottom: 0;
-	z-index: 999999;
+	z-index: 999;
 }
 }
 
