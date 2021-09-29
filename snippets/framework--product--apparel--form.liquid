@@ -350,4 +350,31 @@
       // add your selectCallback code here...
     };
   </script>
-{% endif %} 
+{% endif %}
+<script>
+  // Get the modal
+var sizeBtn = document.getElementById("sizeGuide");
+
+// Get the button that opens the modal
+var openbtn = document.getElementById("openSizeGuide");
+
+// Get the element that closes the modal
+var closeBtn = document.getElementsByClassName("close-size-modal")[0];
+
+// When the user clicks the button, open the modal 
+openbtn.onclick = function() {
+  sizeBtn.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+closeBtn.onclick = function() {
+  sizeBtn.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == sizeBtn) {
+    sizeBtn.style.display = "none";
+  }
+}
+</script>

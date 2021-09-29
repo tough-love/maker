@@ -73,9 +73,15 @@
         <li class="default-mode">
           <h3>Reviews</h3>
           <div class="answer">
-           
-            {% section 'framework--page-review' %}
-
+            <div id="pdt-rev" class="pdt-rev-mob">   
+              {%- if product.metafields.spr.reviews contains 'class="spr-header-title"' -%}
+              {%- endif -%}
+              <div class="small-container">
+                <div id="shopify-product-reviews" data-id="{{product.id}}" >
+                  {{ product.metafields.spr.reviews }}
+                </div>
+              </div>
+            </div>
           </div>
         </li>
       </ul>
