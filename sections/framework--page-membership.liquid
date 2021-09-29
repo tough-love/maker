@@ -15,11 +15,11 @@
             <div class="swiper-container you-may-know-also">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <a href="{% if product.metafields.you.like_link4 != blank  %} {{ product.metafields.you.like_link4}} {% else %} https://www.reyalperformance.com/collections/mens-skincare/products/supreme-face-wash {% endif %} ">
-                    {% if product.metafields.you.like_text4 != blank %}
-                    {{ product.metafields.you.like_text4 }}
+                  <a href="{% if product.metafields.you.like_link1 != blank  %} {{ product.metafields.you.like_link1}} {% else %} https://www.reyalperformance.com/collections/mens-skincare/products/supreme-face-wash {% endif %} ">
+                    {% if product.metafields.you.like_text1 != blank %}
+                    {{ product.metafields.you.like_text1 }}
                     {% else %}
-                    001 SUPREME FACE WASH
+                    WHEY PROTEIN FORMULATION
                     {% endif %}
                   </a>
                 </div>
@@ -46,7 +46,7 @@
                     {% if product.metafields.you.like_text4 != blank %}
                     {{ product.metafields.you.like_text4 }}
                     {% else %}
-                    001 SUPREME FACE WASH
+                    WHEY PROTEIN FORMULATION
                     {% endif %}
                   </a>
                 </div>
@@ -75,7 +75,7 @@
             
         </div>
      </div>
-    <div style="display: none" id="News" class="tabcontent">
+    <div id="News" class="tabcontent">
       <section class="membership">
          <div class="container-fluid ">
             <div class="row">
@@ -186,7 +186,7 @@ function openPage(pageName,elmnt,color) {
   var mySwiper = new Swiper(".you-may-know-also", {
     loop: true,
   freeMode: true,
-  spaceBetween: 0,
+  spaceBetween:50,
   grabCursor: true,
   loop: true,
   autoplay: {
@@ -203,9 +203,11 @@ function openPage(pageName,elmnt,color) {
     },
     768: {
       slidesPerView: 2,
+      spaceBetween:75,
     },
     1024: {
       slidesPerView: 3,
+      spaceBetween:100,
     },
   },
  });
