@@ -1,8 +1,9 @@
 <style>
-  button.shopify-payment-button__button.shopify-payment-button__button--unbranded, .product-form--smart-payment-buttons{
+    button.shopify-payment-button__button.shopify-payment-button__button--unbranded, .product-form--smart-payment-buttons{
     display:none !important;
   }
   @media (min-width: 0) {
+    
 
     .spr-review-header-title {
 	margin: 25px 0px;
@@ -36,7 +37,7 @@
 	line-height: 24px;
 	font-weight: 400;
 }
-   .spr-review-header-byline strong {
+    .spr-review-header-byline strong {
     font-style: normal;
     padding-bottom: 14px;
     display: block;
@@ -44,55 +45,73 @@
     font-weight: 700;
     text-transform: uppercase;
 }
-     .spr-summary-actions-newreview {
+    .spr-summary-actions-newreview {
 	display: none !important;
 }
 .spr-review-reportreview {
 	display: none !important;
 }
-    .spr-pagination {
+     .spr-pagination {
     border-top: 1px solid #696969 !important;
 }
      .spr-review, .spr-form {
 	border-color: #696969 !important;
 }
-  .real-ingredient-img.real-ingredients-video {
-	padding-bottom: 30px;
-}
     .review h2.spr-header-title {
 	text-align: center;
 }
-    .product-form--root .rc-template__checkbox {
-	padding: 0;
+    .ingredient-box-one table tr th, 
+.ingredient-box table tr th {
+	font-size: 17px;
+	font-weight: 700;
+	padding: 12px 16px;
+	text-align: left;
 }
- .product-form--root .rc-selling-plans {
-	padding: 16px 42px;
-	background-color: rgba(246, 246, 246, 0.37)
+.ingredient-box-one table tr td, 
+.ingredient-box table tr td {
+	font-size: 17px;
+	font-weight: 500;
+	padding: 14px 16px;
+	text-align: left;
 }
-.product-form--root .rc-selling-plans__label {
-	padding: 0;
+
+.ingredient-box-one table tr td:first-child {
+	width: 60%;
 }
-  .product-form--root .rc-checkbox {
-	background-color: rgba(196, 196, 196, 0.37);
-	padding:16px 22px 16px 42px;
+.ingredient-box-one table, 
+.ingredient-box table,
+.ingredient-box-one table tr th,
+.ingredient-box table tr th, 
+.ingredient-box-one table tr td{
+	border: 1px solid #000;
+}
+.ingredient-box-one table, .ingredient-box table{
+border-collapse: collapse;
 	width: 100%;
-	font-size: 14px;
-	line-height: 24px;
-	display: flex;
-	flex-direction: row-reverse;
-	align-items: center;
-	justify-content: space-between;
+  border-radius: 0;
+  height: 375px;
 }
-    .product-form--root {
-	margin-top: 0px;
+.ingredient-box table tr td span {
+	font-weight: 700;
+	text-decoration: underline;
+	font-size: 16px;
+	cursor: pointer;
 }
-    .spr-summary-caption {
+
+
+
+
+    .extra-field strong {
+	text-transform: uppercase;
+}
+
+     .spr-summary-caption {
 	display: block;
 	font-size: 19px;
 	line-height: 24px;
 	margin-top: 18px;
 }
-    .extra-field {
+ .extra-field {
 	padding-top: 10px;
 }
 .pack-size {
@@ -101,7 +120,7 @@
     .pack-size strong {
     font-size: 16px;
     font-weight: 700;
-    color: #000;
+	color: #000;
 }
 /* The Modal (background) */
 .modal {
@@ -234,6 +253,7 @@
     .row.organic-ingredients-row h3 {
       font-weight: 700;
     }
+
     .product-form-root .rc_widget__option__selector {
       position: relative;
       padding: 15px;
@@ -257,8 +277,8 @@
     }
 
     .you-may-know-also .swiper-wrapper .swiper-slide {
-      text-align: right;
-    }
+	text-align: right;
+}
     .you-may-know-also a {
       font-size: 18px !important;
       font-weight: 700;
@@ -344,7 +364,6 @@
       width: 100%;
       border-left: 1px solid #000;
     }
-
     .pdt-sizes table {
       border-right: 0 !important;
       border-left: 0px !important;
@@ -370,7 +389,6 @@
       border-right: 0;
       border-top: 0;
     }
-
     .pdt-sizes table td {
       padding: 5px;
       font-weight: 500;
@@ -404,10 +422,10 @@
       line-height: 19px;
     }
     .size-inner-content .left-side #img {
-	height: auto;
-	width: 100%;
+    height: auto;
+	  width: 100%;
 }
-    .small-container {
+      .small-container {
       max-width: 1212px;
       padding-left: 15px;
       padding-right: 15px;
@@ -441,17 +459,17 @@
       font-weight: bold;
     }
     .layer-img-wrp h3 {
-      padding-bottom: 2px;
-      margin: 10px auto 25px;
-    }
-    .layer-img-wrp h3 a {
+    padding-bottom: 2px;
+    margin: 10px auto 25px;
+}
+.layer-img-wrp h3 a {
       text-decoration: underline;
       color: #000;
       font-weight: bold;
       font-size: 14px;
       line-height: 24px;
     }
-    .layer-img-wrp h3 span {
+   .layer-img-wrp h3 span {
       color: #000;
       font-weight: 700;
       font-size: 16px;
@@ -468,6 +486,15 @@
 	bottom: -5px;
 	left: 0;
 }
+    /* .layer-img-wrp h3::after {
+	position: absolute;
+	left: 0;
+	width: 195px;
+	background: #000;
+	height: 2px;
+	content: '';
+	bottom: 0;
+} */
     .description img {
       width: auto;
     }
@@ -488,7 +515,7 @@
       text-transform: capitalize;
     }
     .layer-btn ul li {
-      padding:0px 35px;
+      padding: 0px 35px;
       display: block;
       text-align: center;
       letter-spacing: 0.07em;
@@ -503,7 +530,6 @@
       margin-top:59px;
       padding: 0;
     }
-
     .layer-btn .black button {
       font-size: 14px;
       line-height: 18px;
@@ -650,7 +676,6 @@
       border-top: 1px solid #c4c4c4;
       border-bottom: 1px solid #c4c4c4;
     }
-    
     .small-container .organic-ingredients-row {
       padding-bottom: 141px;
     }
@@ -659,7 +684,7 @@
       font-weight: normal;
       font-size: 17px;
       line-height: 24px;
-      margin-bottom: 144px;
+      margin-bottom: 100px;
     }
     .full-transp-container a,
     .membership a,
@@ -833,10 +858,12 @@
       width: 100%;
       height: 100%;
     }
+
     .product-img-slider .swiper-slide {
       text-align: center;
       font-size: 18px;
       background: #fff;
+
       /* Center slide text vertically */
       display: -webkit-box;
       display: -ms-flexbox;
@@ -977,7 +1004,7 @@
     }
   }
   @media (min-width: 768px) {
-    #shopify-section-framework--page-mobile-accordian-new {
+   #shopify-section-framework--page-mobile-accordian-new {
 	display: none;
 }
     .you-know-slider {
@@ -989,19 +1016,18 @@
     .you-may-also-slider {
       width: 75%;
     }
-
   }
   @media (min-width: 991px) {
     .layer-img-wrp {
       margin: 106px auto 132px;
     }
-     .prod-name-row {
+    .prod-name-row {
 	padding: 30px 0px;
 }
-    .real-ingredient-img.real-ingredients-video {
+.real-ingredient-img.real-ingredients-video {
 	padding-bottom: 0px;
 }
-    .review h2.spr-header-title {
+.review h2.spr-header-title {
 	font-weight: 700;
 	font-size: 35px;
 	line-height: 24px;
@@ -1062,10 +1088,16 @@
       margin-top: 0;
     }
     .real-ingredient-text {
-      flex-basis: 37% !important;
-    }
+    flex-basis: 37% !important;
+    height: 375px;
+    position: relative;
+}
+.real-ingredient-text #learn-more {
+	position: absolute;
+	bottom: 10px;
+}
     .real-ingredient-img {
-      padding-left: 30px;
+      padding-left:30px;
     }
     .prod-name-row .col-4 {
       margin-bottom: 0;
@@ -1100,13 +1132,6 @@
     .full-transp-container {
       padding: 111px 0 84px 0;
     }
-    
-    /*     .ingredient-box-one {
-	width: 600px;
-}
-    .ingredient-box ul {
-	width: 320px;
-} */
     .ingredient-box {
       margin-top: 0;
       margin-bottom: 0;
@@ -1167,11 +1192,13 @@
   @media (min-width: 1201px) {
     .product-img-slider .swiper-pagination-bullet {
       width:60px;
-      
+
     }
      .spr-reviews {
     margin: 82px 0 0 0;
 }
+    
+    
   }
   @media screen and (min-width: 992px) and (max-width: 1200px) {
     .row {
@@ -1215,16 +1242,15 @@
       margin-top: 0;
     }
   }
-   @media (min-width: 1600px) {
+   @media (min-width:1600px) {
     .organic-ingredients .full-transp-container {
     padding: 111px 50px 84px 50px;
 }
-    .prod-name-row.you-know-slider { 
-      padding: 30px 35px !important
-    }
+  .prod-name-row.you-know-slider {
+    padding: 30px 35px !important
   }
-
-  .page--total-reyal-performance-kit .container-fluid.full-transp-container {
+}
+.page--total-reyal-performance-kit .container-fluid.full-transp-container {
     display: none;
   }
   .page--total-reyal-performance-kit .prod-name-row.you-know-slider{
@@ -1283,16 +1309,14 @@
     .swiper-pagination {
       display: none;
     }
-  }
+  } 
 </style>
-
-{% section 'product-skincare' %}
- {% section 'framework--page-sup-organic-ingredients' %}
-{% section 'framework--page-membership' %} 
+{% section 'product-suppliments' %} 
+{% section 'product-suppliments-ingredients'%}
+ {% section 'framework--page-membership' %}
  {% section 'framework--page-review' %}
-  {% section 'framework--product-recommendations' %}
-
-  {% section 'framework--page-mobile-accordian-new' %}
-  <!-- {% section 'framework--page-mobile-accordian' %} -->
+ {% section 'framework--product-recommendations' %}
+{% section 'framework--page-mobile-accordian-new' %}
+<!-- {% section 'framework--page-mobile-accordian' %} -->
 
 

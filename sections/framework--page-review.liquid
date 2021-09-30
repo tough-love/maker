@@ -2,7 +2,7 @@
 	{%- if product.metafields.spr.reviews contains 'class="spr-header-title"' -%}
 	{%- endif -%}
 	<div class="small-container">
-      	<div id="shopify-product-reviews" data-id="{{product.id}}" >
+      	<div id="shopify-product-reviews" class="large-rev" data-id="{{product.id}}" >
           {{ product.metafields.spr.reviews }}
       	</div>
   </div>

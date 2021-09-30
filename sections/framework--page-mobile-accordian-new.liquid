@@ -1,21 +1,22 @@
-<div class="accordian-outer">
-  <div class="final-accordian">
-      <ul class="accordion-list">
-        <li class="default-mode">
-          <h3 class="ac-title">Additives & Ingredients</h3>
-          <div class="answer">
-            <div class="additives-ingredients">
+<div class="accordian-mob">
+  
+  <ul id="accordion" class="accordion">
+  <li class="entry-title">
+    <div class="link"><p class="acr-title" style="margin-top: -9%;">Additives & Ingredients</p></div>
+    <div class="submenu">
+     <div class="additives-ingredients">
               {% if product.metafields.products.additives_ingredients != blank %}
               {{product.metafields.products.additives_ingredients}}
               {% else %}
               Not Available
               {% endif %}
             </div>
-          </div>
-        </li>
-        <li class="default-mode">
-          <h3 class="ac-title">How To Use</h3>
-          <div class="answer"><div class="how-to-use">
+    </div>
+  </li>
+  <li class="entry-title">
+    <div class="link"><p class="acr-title" style="margin-top: -9%;">How To Use</p></div>
+    <div class="submenu">
+      <div class="how-to-use">
                     <ul>
                       <li>
                         <h3>
@@ -68,54 +69,43 @@
                     </ul>
                     
                   </div>
-                </div>
-        </li>
-        <li class="default-mode">
-          <h3 id="reviews-heading" class="ac-title">Reviews</h3>
-          <div class="answer pdt-rev">
-            <div id="pdt-rev" class="pdt-rev-mob">   
-              {%- if product.metafields.spr.reviews contains 'class="spr-header-title"' -%}
-              {%- endif -%}
-              <div class="small-container">
-                <div id="shopify-product-reviews" data-id="{{product.id}}" >
-                  {{ product.metafields.spr.reviews }}
-                </div>
-              </div>
-            </div>
+    </div>
+  </li>
+  <li class="entry-title">
+   <div class="link"><p class="acr-title" style="margin-top: -9%;">Reviews</p></div>
+    <div class="submenu pdt-rev">
+      <div id="pdt-rev" class="pdt-rev-mob">   
+        {%- if product.metafields.spr.reviews contains 'class="spr-header-title"' -%}
+        {%- endif -%}
+        <div class="small-container">
+          <div id="shopify-product-reviews" data-id="{{product.id}}" >
+            {{ product.metafields.spr.reviews }}
           </div>
-        </li>
-      </ul>
-    </div>  
+        </div>
+      </div>
+    </div>
+  </li>
+  
+</ul>
+
 </div>
 
 <style>
-  .accordian-outer {
-	border-top: 1px solid #B6B6B6;
+  #shopify-section-framework--page-mobile-accordian-new {
+	padding: 30px 17px 20px;
 }
-.final-accordian .accordion-list {
-	position: relative;
-	display: block;
-	width: 100%;
-	height: auto;
-	padding: 0;
-	margin: 0;
-	list-style: none;
+
+.accordian-mob {
+	border-top: 1px solid #B6B6B6;
 	background-color: transparent;
 }
-.final-accordian .accordion-list li {
-	position: relative;
-	display: block;
-	width: 100%;
-	height: auto;
-	background-color: #FFF;
-	padding: 20px 0px;
-	margin: 0 auto 0px auto;
-	border-bottom: 1px solid #B6B6B6;
-	border-radius:0px;
-	cursor: pointer;
-
+.accordian-mob .small-container {
+	padding: 0;
 }
-body .how-to-use h3 {
+.accordian-mob .spr-container {
+	padding: 0;
+}
+.accordian-mob .how-to-use h3 {
 	font-size: 17px !important;
 	line-height: 24px !important;
 	font-weight: 600 !important;
@@ -123,79 +113,78 @@ body .how-to-use h3 {
 	margin-bottom: 6px !important;
 	margin-top: 18px !important;
 }
-.how-to-use ul li {
+.accordian-mob .how-to-use ul li {
 	border-bottom: none !important;
 }
-.how-to-use ul li,
+.accordian-mob .how-to-use ul li,
 .how-to-use ul li h3 {
 	position: unset !important;
   padding: 0 !important;
 }
-.how-to-use ul li .ac-title::after {
-	display:none;
+.accordian-mob ul { list-style-type: none; }
+
+
+/** =======================
+ * Contenedor Principal
+ ===========================*/
+
+.entry-title{
+	border-bottom: 1px solid #B6B6B6;
+	padding-bottom: 20px;
 }
-.final-accordian .accordion-list li.active .ac-title:after {
-  content:"\f00d";
+
+.accordion .link {
+	cursor: pointer;
+	display: block;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	padding: 50px 0px 0px;
 }
-.final-accordian .accordion-list li .ac-title {
-   width: 100%; 
-  text-align: left; 
-  background: #fff; 
-  color: #000; 
-  font-size: 21px; 
-  line-height:31px;
-  text-transform:capitalize; 
-  font-weight: bold; 
-  cursor: pointer; 
-  margin: 0px !important;
-  position:relative; 
+
+.accordion li:last-child .link { border-bottom: 0; }
+
+
+.link .acr-title {
+	color: #000;
+	font-size: 21px;
+	line-height: 31px;
+	text-transform: capitalize;
+	font-weight: bold;
+	position: relative;
 }
-.final-accordian .accordion-list li .ac-title:after {
- 	content: "\f067";
+.accordion li .link .acr-title::after{
+  content: "\f067";
   font-family:"Fontawesome";
   font-weight: 100;
 	position: absolute;
-	top:-2px;
+	top:0px;
   font-size:21px;
 	right: 0;
 }
-.final-accordian .accordion-list li div.answer {
-	position: relative;
-	display: block;
-	width: 100%;
-	height: auto;
-	margin: 30px 0px 0px;
-	padding: 0;
-	cursor: pointer;
+.accordion li.open .link .acr-title::after{
+  content:"\f00d";
 }
-.final-accordian .accordion-list li div.answer p {
-  position: relative;
-  display: block;
-  font-weight: 300;
-  padding: 10px 0 0 0;
-  cursor: pointer;
-  line-height: 150%;
-  margin: 0 0 15px 0;
-  font-size: 14px;
+.accordian-mob .spr-pagination{
+  padding:35px 0px 0px;
 }
-.pdt-rev .small-container {
-	padding: 0;
-}
-.pdt-rev .spr-container {
-	padding: 0;
-}
-.pdt-rev .spr-container h3{
-  position: unset !important;
-}
-.pdt-rev .spr-container h3::after{
+/* .entry-title:last-child{
+  padding-bottom:0;
+} */
+
+/**
+ * Submenu
+ -----------------------------*/
+
+
+.submenu {
   display: none;
+  margin-top:40px;
 }
 
-/* Mobile Accordian */
-  #shopify-section-framework--page-mobile-accordian {
-	padding: 30px 17px 20px;
-}
-
+#reviews-heading .spr-starrating .spr-icon {
+  font-size: 16px;
+} 
   #shopify-section-framework--page-sup-organic-ingredients {
 	display: none;
 }
@@ -208,16 +197,7 @@ body .how-to-use h3 {
 
 #shopify-section-product-suppliments-ingredients {
 	display: none;
-}
-#reviews-heading .spr-starrating {
-  line-height: 1;
-  position: relative;
-  left: 5px;
-  top: -1px;
-}
-#reviews-heading .spr-starrating .spr-icon {
-  font-size: 16px;
-}  
+} 
  @media (min-width: 768px) {
    .layer-btn ul li {
       padding:20px 35px;
@@ -243,30 +223,52 @@ body .how-to-use h3 {
 	display: block;
 }
  }
+
+
 </style>
+
 <script>
-  (function ($)
+
+
+
+ (function ($)
  {
 
 
 
   $(document).ready(function(){
+    if ($(window).width() < 768) {
+   $('#shopify-section-framework--page-review').empty();
+}
 
-  $('#reviews-heading').append($('.spr-starrating')[0]);
 
-  $('.accordion-list > li > .answer').hide();
-    
-  $('.accordion-list > li').click(function() {
-    if ($(this).hasClass("active")) {
-      $(this).removeClass("active").find(".answer").slideUp();
-    } else {
-      $(".accordion-list > li.active .answer").slideUp();
-      $(".accordion-list > li.active").removeClass("active");
-      $(this).addClass("active").find(".answer").slideDown();
-    }
-    return false;
-  });
+     $('#reviews-heading').append($('.spr-starrating')[0]);
+var Accordion = function(el, multiple) {
+		this.el = el || {};
+		this.multiple = multiple || false;
+
+		// Variables privadas
+		var links = this.el.find('.link');
+		// Evento
+		links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+	}
+
+	Accordion.prototype.dropdown = function(e) {
+		var $el = e.data.el;
+			$this = $(this),
+			$next = $this.next();
+
+		$next.slideToggle();
+		$this.parent().toggleClass('open');
+
+		if (!e.data.multiple) {
+			$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+		};
+	}	
+
+	var accordion = new Accordion($('#accordion'), false);
   
 });
 })(jQuery);
+
 </script>
