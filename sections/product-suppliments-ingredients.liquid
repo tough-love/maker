@@ -103,8 +103,7 @@
         </p>
         <!-- <a id="learn-more" href="#">LEARN MORE</a> -->
       </div>
-      <div class="col-8 real-ingredient-img"> 
-
+      <div class="col-8 real-ingredient-img">
         <div class="row">
           <div class="col-7">
             <div class="ingredient-box-one">
@@ -208,6 +207,17 @@
 
 </div>
 <script>
+$(document).ready(function(){
+  $("#learn-more").click(function(){
+        $(".size-modal").modal({
+            backdrop: 'static',
+            keyboard: false
+        });
+    });
+  $('.close-size-modal').click(function(){
+    $('.size-modal').fadeOut();
+  });
+
   var learnMore = document.getElementById('learn-more');
   learnMore.onclick = function (e) {
     e.preventDefault();
@@ -229,17 +239,8 @@
       modal.style.display = "none";
     }
   }
-  $(document).ready(function(){
-    $("#learn-more").click(function(){
-          $(".size-modal").modal({
-              backdrop: 'static',
-              keyboard: false
-          });
-      });
-    $('.close-size-modal').click(function(){
-      $('.size-modal').fadeOut();
-    });
-  });
+ 
+});
 </script>
 
 {% schema %}

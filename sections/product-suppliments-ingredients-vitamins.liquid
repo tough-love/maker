@@ -210,27 +210,6 @@
 
 </div>
 <script>
-  var learnMore = document.getElementById('learn-more');
-  learnMore.onclick = function (e) {
-    e.preventDefault();
-    sizeBtn.style.display = 'block';
-  };
-
-  // Get the modal
-var modal = document.getElementById("additivesModal");
-var btn = document.getElementById("additivesIngreditnts2");
-var span = document.getElementsByClassName("close")[0];
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-span.onclick = function() {
-  modal.style.display = "none";
-}
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
 $(document).ready(function(){
   $("#learn-more").click(function(){
         $(".size-modal").modal({
@@ -241,6 +220,28 @@ $(document).ready(function(){
   $('.close-size-modal').click(function(){
     $('.size-modal').fadeOut();
   });
+ 
+  var learnMore = document.getElementById('learn-more');
+  learnMore.onclick = function (e) {
+    e.preventDefault();
+    sizeBtn.style.display = 'block';
+  };
+
+  // Get the modal
+  var modal = document.getElementById("additivesModal");
+  var btn = document.getElementById("additivesIngreditnts2");
+  var span = document.getElementsByClassName("close")[0];
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
 });
 </script>
 
