@@ -77,45 +77,7 @@
         <a href="#pdt-rev"><span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span></a>
             </div>
        
-                  <p class="product-desc">{{ product.description | truncate: 600, "..." }}</p>
-                <div class="apparel-accordian">
-                  <details class="product-accordian-summary">
-                    <summary class="product-accordian-title">
-                      {% if product.metafields.products.athletic_poly_blend_title != blank %}
-                      {{product.metafields.products.athletic_poly_blend_title}}
-                      {% else %}
-                      100 Athletic Poly Blend
-                      {% endif %}
-                    </summary>
-                    <p>
-                      {% if product.metafields.products.athletic_poly_blend_details != blank %}
-                    {{product.metafields.products.athletic_poly_blend_details}}
-                    {% else %}
-                    Not Available
-                    {% endif %}
-                    </p>
-                    
-                </details>
-                <details class="product-accordian-summary">
-                  <summary class="product-accordian-title">
-                    {% if product.metafields.products.slim_athletic_fit_title != blank %}
-                    {{product.metafields.products.slim_athletic_fit_title}}
-                    {% else %}
-                    Slim Athletic Fit
-                    {% endif %}
-                  </summary>
-                  <p>
-                    {% if product.metafields.products.slim_athletic_fit_details != blank %}
-                    {{product.metafields.products.slim_athletic_fit_details}}
-                    {% else %}
-                    Not Available
-                    {% endif %}
-                  </p>
-                 
-              </details>
-                </div>
-                 
-                    
+                  <p class="product-desc">{{ product.description | truncate: 600, "..." }}</p>  
                    {%
             render "framework--product--apparel--form",
             product: product,
