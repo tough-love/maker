@@ -2,7 +2,7 @@
   <div class="final-accordian">
       <ul class="accordion-list">
         <li class="default-mode">
-          <h3 class="ac-title">Additives & Ingredients</h3>
+          <h3>Additives & Ingredients</h3>
           <div class="answer">
             <div class="additives-ingredients">
               {% if product.metafields.products.additives_ingredients != blank %}
@@ -14,7 +14,7 @@
           </div>
         </li>
         <li class="default-mode">
-          <h3 class="ac-title">How To Use</h3>
+          <h3>How To Use</h3>
           <div class="answer"><div class="how-to-use">
                     <ul>
                       <li>
@@ -71,8 +71,8 @@
                 </div>
         </li>
         <li class="default-mode">
-          <h3 id="reviews-heading" class="ac-title">Reviews</h3>
-          <div class="answer pdt-rev">
+          <h3 id="reviews-heading">Reviews</h3>
+          <div class="answer">
             <div id="pdt-rev" class="pdt-rev-mob">   
               {%- if product.metafields.spr.reviews contains 'class="spr-header-title"' -%}
               {%- endif -%}
@@ -131,13 +131,13 @@ body .how-to-use h3 {
 	position: unset !important;
   padding: 0 !important;
 }
-.how-to-use ul li .ac-title::after {
+.how-to-use ul li h3::after {
 	display:none;
 }
-.final-accordian .accordion-list li.active .ac-title:after {
+.final-accordian .accordion-list li.active h3:after {
   content:"\f00d";
 }
-.final-accordian .accordion-list li .ac-title {
+.final-accordian .accordion-list li h3 {
    width: 100%; 
   text-align: left; 
   background: #fff; 
@@ -150,7 +150,7 @@ body .how-to-use h3 {
   margin: 0px !important;
   position:relative; 
 }
-.final-accordian .accordion-list li .ac-title:after {
+.final-accordian .accordion-list li h3:after {
  	content: "\f067";
   font-family:"Fontawesome";
   font-weight: 100;
@@ -177,18 +177,6 @@ body .how-to-use h3 {
   line-height: 150%;
   margin: 0 0 15px 0;
   font-size: 14px;
-}
-.pdt-rev .small-container {
-	padding: 0;
-}
-.pdt-rev .spr-container {
-	padding: 0;
-}
-.pdt-rev .spr-container h3{
-  position: unset !important;
-}
-.pdt-rev .spr-container h3::after{
-  display: none;
 }
 
 /* Mobile Accordian */
