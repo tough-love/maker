@@ -12007,3 +12007,9 @@ body.template--customers--register input[type='password'] {
    	height: 500px !important 
   }
 }
+
+@media (max-width: 720px) {
+  .description {
+    margin-top: 25px
+  }
+}
