@@ -1,2 +1,1909 @@
-{"current":{"color--accent":"#ee3433","bg-color--body":"#ffffff","color--body":"#212121","color--alternative":"#ffffff","bg-color--panel":"rgba(0,0,0,0)","color--important":"#ee3433","color--button":"#ee3433","bg-color--button":"#000000","color--header":"#212121","color--footer":"","bg-color--footer":"","bg-color--announcement":"#000000","announcement--alternative-text":true,"color--collection--title":"#ffffff","typography--heading":"basic_commercial_n7","typography--heading--uppercase":false,"typography--heading--size":"medium","typography--accent":"basic_commercial_n7","typography--paragraph":"basic_commercial_n4","typography--paragraph--size":"small","product--show-vendor":false,"product--label-color":"light","product--show-sale-label":true,"search--show-in-header":true,"search--show-articles":true,"search--show-pages":true,"social--instagram--url":"https:\/\/www.instagram.com\/reyalperformance\/","social--facebook--url":"https:\/\/www.facebook.com\/reyalperformance","social--youtube--url":"","social--vimeo--url":"","social--pinterest--url":"","social--twitter--url":"","social--kickstarter--url":"","social--share-products":false,"social--share-facebook":false,"social--share-twitter":false,"social--share-pinterest":false,"social--share-email":true,"social--share-link":true,"popup--enabled":false,"popup--mode":"auto","popup--days-range":7,"popup--background-color":"light","popup--alternative-color":false,"popup--show-image":true,"popup--image":"","popup--newsletter-title--rt":"<p>Sign up to our newsletter and we'll keep you posted with news and deals each week!<\/p>","popup--social-title":"Follow us","popup--social-enabled":true,"favicon":"shopify:\/\/shop_images\/Reyal_Favicon.png","hide-tags":"featured, pinned","cart--type":"drawer","cart--show-note":true,"checkout_header_image":"","checkout_logo_image":"shopify:\/\/shop_images\/reyal_wordmark.png","checkout_logo_position":"left","checkout_logo_size":"small","checkout_body_background_image":"","checkout_body_background_color":"#fff","checkout_input_background_color_mode":"white","checkout_sidebar_background_image":"","checkout_sidebar_background_color":"#fafafa","checkout_heading_font":"-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'","checkout_body_font":"-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'","checkout_accent_color":"#dd323c","checkout_button_color":"#212121","checkout_error_color":"#e32c2b","sections":{"header":{"type":"header","settings":{"logo":"shopify:\/\/shop_images\/REYAL_-_official_logo.png","logo-height-range":25,"menu":"main-menu"}},"framework--footer":{"type":"framework--footer","blocks":{"1584642445690":{"type":"about","settings":{"about-title":"","text":"<p>REYAL CREATES PERFORMANCE SKINCARE AND SUPPLEMENTS THAT WORK TO FUEL, STRENGTHEN AND PROTECT. BE GENTLE, MAN.<br\/><br\/>Vancouver, Canada<\/p>","subscribe--show-social-icons":true}},"1584642448228":{"type":"menu","settings":{"menu-title":"","menu":"footer"}},"1602640402415":{"type":"subscribe","settings":{"newsletter--heading":"","newsletter--info":"<p>Subscribe to REYAL<\/p>","subscribe--show-newsletter":true}}},"block_order":["1584642445690","1584642448228","1602640402415"],"settings":{"show-currency-selector":true,"show-locale-selector":true,"show-payment-icons":false}},"product":{"type":"product","settings":{"smart-payment-button":true,"variant-style":"dropdowns","swatches-enabled":false,"product-unavailable-form-show":false,"low-in-stock-amount":10,"modal-enabled":true,"hide-variant-media":false,"loop-enabled":false,"product-size-chart-enabled":false,"product-size-chart-option":"size","product-size-chart-page-content":""}},"collection":{"type":"collection","settings":{"show-featured-image":true,"products-per-row-range":4}},"announcement":{"type":"announcement","settings":{"enabled":true,"home-page-only":true,"text":"15% OFF YOUR FIRST ORDER, USE CODE ' REYAL15 ' AT CHECKOUT","link":"shopify:\/\/pages\/about-us"}},"1522371405349":{"type":"framework--featured-content","disabled":true,"settings":{"full-width":true,"background-color":"accent","text-position":"left","text-width":"large","overlap":false,"transparent-overlap":false,"alternative-color":false,"image":"shopify:\/\/shop_images\/SkTukeOg2.jpg","title":"REYAL PILOT PROJECT","description":"<p><\/p><p>A TEMPORARY CONCEPT STORE<\/p><p>LOCATION: 2149 WEST 4TH AVENUE<\/p><p>VANCOUVER, BC, CANADA<\/p><p>OPEN: DECEMBER 5TH TO 24TH 2020<\/p><p><strong>11AM TO 6PM<\/strong><br\/><br\/><\/p>","link-url":"shopify:\/\/pages\/about-us","link-text":"READ OUR STORY →"}},"1522371573233":{"type":"framework--featured-content","disabled":true,"settings":{"full-width":true,"background-color":"accent","text-position":"left","text-width":"large","overlap":false,"transparent-overlap":false,"alternative-color":false,"image":"shopify:\/\/shop_images\/Reyal_Pilot.png","title":"REYAL SUPPLEMENTS","description":"<p><br\/>HIGH-PERFORMANCE SUPPLEMENT FORMULATIONS WITH ADDED BCAAS, CREATINE, GLUTAMINE AND COLLAGEN.  <\/p><p>DESIGNED TO OPTIMIZE RECOVERY TIME, STRENGTHEN MUSCLES AND PROTECT SKIN.<\/p><p><\/p>","link-url":"shopify:\/\/collections\/supplements","link-text":"SHOP SUPPLEMENTS →"}},"1522371666643":{"type":"framework--newsletter","settings":{"background-color":"accent","heading":"SUBSCRIBE TO REYAL","newsletter--subheading":"<p><\/p><p>SIGN UP FOR REYAL UPDATES, NEW PRODUCT RELEASES, TRAINING TIPS, <br\/>AND 15% OFF YOUR FIRST ORDER. ENTER YOUR E-MAIL HERE:<\/p><p><br\/><\/p>"}},"1522371696540":{"type":"framework--featured-video","disabled":true,"settings":{"video-url":"https:\/\/vimeo.com\/466755579","image":"shopify:\/\/shop_images\/home_banner.jpg","full-width":true,"background-color":"light","section-height":"regular","darken-video":true,"alt-text":true,"heading":"","sub-heading":"","button-text":"","button-url":""}},"1602639580080":{"type":"framework--featured-product","disabled":true,"settings":{"background-color":"none","smart_payment_button":true,"heading":"","featured_product":"reyal-whey-protein","show_vendor":true,"variant-style":"dropdowns","swatches-enabled":true,"product-unavailable-form-show":true,"low-in-stock-amount":0,"loop-enabled":false,"product-size-chart-enabled":false,"product-size-chart-option":"size","product-size-chart-page-content":""}},"framework--product-recommendations":{"type":"framework--product-recommendations","settings":{"product-similar-products-show":false,"product-similar-products-heading":"You may also like"}},"1604361432c1ef4ad2":{"type":"framework--featured-grid","blocks":{"1604361432c1ef4ad2-0":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/FACEWASh.jpg","title":"SUPREME FACEWASH","link-url":"shopify:\/\/products\/layer-001-supreme-facewash","link-text":"SHOP NOW"}},"1604361432c1ef4ad2-1":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/PROTEIN.jpg","title":"WHEY PROTEIN FORMULATION","link-url":"shopify:\/\/products\/reyal-whey-protein","link-text":"SHOP NOW"}},"1604361432c1ef4ad2-2":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/LAYER_002c_Copy.jpg","title":"SUPER DAY MOISTURIZER","link-url":"shopify:\/\/products\/layer-003-super-day-moisturizer","link-text":"SHOP NOW"}},"1604361432c1ef4ad2-3":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/BCAA_a.jpg","title":"DAILY VITAMIN FORMULATION","link-url":"shopify:\/\/products\/daily-vitamin-formulation","link-text":"SHOP NOW"}},"8ce580f3-4fe1-41d2-9020-2ddcf86ee298":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/BWASH_a.jpg","title":"SUPREME BODY WASH","link-url":"shopify:\/\/products\/supreme-bodywash","link-text":"View more"}},"02032323-103c-4b0c-ad07-9ecc222a0414":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Skin_kit.jpg","title":"TOTAL SKINCARE KIT","link-url":"shopify:\/\/products\/skincare-kit","link-text":"SHOP NOW"}}},"block_order":["1604361432c1ef4ad2-0","1604361432c1ef4ad2-1","1604361432c1ef4ad2-2","1604361432c1ef4ad2-3","8ce580f3-4fe1-41d2-9020-2ddcf86ee298","02032323-103c-4b0c-ad07-9ecc222a0414"],"settings":{"background-color":"none","spacing":true,"alternative-color":false,"text-position":"center","container-width":5,"width":3,"mobile-width":"2","title":"","subtitle":"‏‏‎ ‎\n‏‏‎ ‎\n‏‏‎ ‎","link-url":"","link-text":""}},"framework--blog":{"type":"framework--blog","settings":{"show-title":false,"show-tag-filter":true,"show-excerpt":true,"show-rss":false,"columns":2,"show-featured":false,"tag":"featured","image-height":"medium","alt-color":true,"apply-overlay":true}},"framework--article":{"type":"framework--article","settings":{"show-featured":false,"title-position":"below","show-date":true,"show-author":false,"show-share":true,"show-tags":true,"show-recent":true,"show-comments":true,"enable-disqus":false,"disqus-shortname":""}},"16046227238d2d0dea":{"type":"slideshow","disabled":true,"blocks":{"16046227238d2d0dea-0":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/reyal_campaign-51.jpg","slide-title":"REYAL SUPPLEMENTS","slide-tagline":"‏‏HIGH-PERFORMANCE SUPPLEMENT FORMULATIONS WITH ADDED BCAAS, CREATINE, GLUTAMINE AND COLLAGEN.    DESIGNED TO OPTIMIZE RECOVERY TIME, STRENGTHEN MUSCLES AND PROTECT SKIN. ‎‎‏‏‎ ‎","slide-link-url":"","slide-link-title":"‎SHOP SUPPLEMENTS →","slide-y-pos":"middle","slide-x-pos":"left","slide-text-pos":"text-left"}}},"block_order":["16046227238d2d0dea-0"],"settings":{"full-width":true,"autoplay":false,"transition_style":"fade","rotate-frequency-range":3}},"framework--featured-text":{"type":"framework--featured-text","settings":{"background-color":"none","heading":"REYAL IS A PERFORMANCE SKINCARE AND SUPPLEMENT COMPANY BUILDING PRODUCTS BY AND FOR ATHLETES.","text":"<p><\/p><p>We create men’s performance skincare and supplements that work to fuel, strengthen and protect skin. Skincare, like all health-driven initiatives, skincare is a long game, training for a better tomorrow. To be successful, one must be committed, regimented, diligent, and focused. Your skin, like your body, is a by-product of what you eat, how often you sweat, and how you take of yourself. We created REYAL for a man who’s committed to bettering himself, a man who’s not afraid to feel.<\/p><p><\/p><p><\/p>"}},"framework--featured-content":{"type":"framework--featured-content","settings":{"full-width":true,"background-color":"dark","text-position":"left","text-width":"large","overlap":false,"transparent-overlap":true,"alternative-color":true,"image":"shopify:\/\/shop_images\/FP2.png","title":"SKIN PERFORMANCE","description":"<p><\/p><p>Much like traditional training supplements, REYAL performance skincare products are designed to rebuild, protect and optimize. We developed an intelligent skincare assortment designing skincare supplements that aid in performance recovery. Our proprietary RSFC™ tri-blend is designed to maximize results — it hosts superior concentrations of active ingredients that are easily absorbed by your skin. We took the best of the training supplements we use like Creatine, BCAAs, Glutamine and Collagen and engineered them to be powerful additives to help your skin perform.  <\/p><p>We think of our skin in the same way we do our bodies, like an athlete. Skincare is a long game, where training now leads to a better tomorrow. Trust us, your face (and your partner) will thank you.<\/p><p><\/p>","link-url":"shopify:\/\/collections\/skinperformance","link-text":"SHOP SKIN PERFORMANCE"}},"framework--service-list":{"type":"framework--service-list","settings":{"section--title":"Add title here","show-description":false}},"1604825597485fc23a":{"type":"framework--featured-content","disabled":true,"settings":{"full-width":true,"background-color":"accent","text-position":"center","text-width":"large","overlap":false,"transparent-overlap":true,"alternative-color":true,"image":"shopify:\/\/shop_images\/ok.jpg","title":"REYAL SUPPLEMENTS","description":"<p><\/p><p>‏‏HIGH-PERFORMANCE SUPPLEMENT FORMULATIONS WITH ADDED BCAAS, CREATINE, GLUTAMINE AND COLLAGEN.    DESIGNED TO OPTIMIZE RECOVERY TIME, STRENGTHEN MUSCLES AND PROTECT SKIN. ‎‎‏‏‎ ‎<\/p><p><\/p>","link-url":"shopify:\/\/collections\/supplements","link-text":"SHOP SUPPLEMENTS →"}},"16048258340f345868":{"type":"framework--featured-video","disabled":true,"settings":{"video-url":"https:\/\/vimeo.com\/466755579","full-width":true,"background-color":"none","section-height":"regular","darken-video":true,"alt-text":true,"heading":"","sub-heading":"","button-text":"","button-url":""}},"16048314827d47c196":{"type":"framework--featured-content","settings":{"full-width":true,"background-color":"light","text-position":"center","text-width":"large","overlap":false,"transparent-overlap":true,"alternative-color":true,"image":"shopify:\/\/shop_images\/reyal_campaign-5_1.jpg","title":"","description":"","link-url":"shopify:\/\/pages\/about-us","link-text":"About"}},"framework--featured-contentcontact":{"type":"framework--featured-contentcontact","settings":{"full-width":true,"background-color":"accent","text-position":"left","text-width":"large","overlap":false,"transparent-overlap":false,"alternative-color":false,"image":"shopify:\/\/shop_images\/ADRIAN_conatc.jpg","title":"","description":"<p>FOR ALL INQUIRIES, CUSTOMER SERVICE, MEDIA RELATIONS, STOCKIST INFORMATION OR TECHNICAL SUPPORT, PLEASE EMAIL:<\/p><p><a href=\"mailto:INFO@REYALPERFORMANCE.COM\" title=\"mailto:INFO@REYALPERFORMANCE.COM\"> INFO@REYALPERFORMANCE.COM<\/a>  <\/p><p><\/p><p>YOU CAN FIND REYAL PERFORMANCE ON INSTAGRAM AND FACEBOOK HERE: <\/p><p><a href=\"https:\/\/www.facebook.com\/reyalperformance\" title=\"https:\/\/www.facebook.com\/reyalperformance\">FACEBOOK<\/a>   \/   <a href=\"https:\/\/www.instagram.com\/reyalperformance\" title=\"https:\/\/www.instagram.com\/reyalperformance\">INSTAGRAM<\/a><\/p>","link-text":""}},"framework--featured-contentabout":{"type":"framework--featured-contentabout","settings":{"full-width":true,"background-color":"dark","text-position":"right","text-width":"large","overlap":false,"transparent-overlap":true,"alternative-color":true,"image":"shopify:\/\/shop_images\/FP3.png","title":"PERFORMANCE SUPPLEMENTS","description":"<p><\/p><p>REYAL performance supplements are designed to simplify your routine, combining the best assortment of traditional ingredients into single-use products that help your body recover, refuel and build muscle. We’ve included what we believe to be the essentials, supplements that support any type of training program and that give your body the fuel it needs to consistently perform at its best. <\/p><p><\/p><p>Training is a critical part of anyone’s collective health and wellness. Like skincare, it’s a long game requiring diligence, commitment, and consistency. REYAL performance adds to your arsenal of tools to help you maximize results. <\/p><p><\/p>","link-url":"https:\/\/www.reyalperformance.com\/collections\/supplements","link-text":"SHOP SUPPLEMENTS"}},"16086695196803c9a6":{"type":"double-image-section","settings":{}},"framework--featured-contenttrain":{"type":"framework--featured-contenttrain","settings":{"full-width":true,"background-color":"light","text-position":"center","text-width":"large","overlap":false,"transparent-overlap":true,"alternative-color":false,"image":"shopify:\/\/shop_images\/RSCF_banner.jpg","title":"","description":"","link-text":""}},"160978762066fc8e6a":{"type":"framework--featured-video","disabled":true,"settings":{"video-url":"https:\/\/vimeo.com\/502782317","full-width":true,"background-color":"none","section-height":"regular","darken-video":false,"alt-text":true,"heading":"","sub-heading":"","button-text":"","button-url":""}},"framework--featured-contentheader":{"type":"framework--featured-contentheader","settings":{"full-width":true,"background-color":"accent","text-position":"center","text-width":"large","overlap":false,"transparent-overlap":true,"alternative-color":true,"image":"shopify:\/\/shop_images\/Screen_Shot_2021-01-18_at_11.20.57_AM.png","title":"","description":"<p>We create men’s performance skincare and supplements that work to fuel, strengthen and protect skin. Skincare, like all health-driven initiatives, skincare is a long game, training for a better tomorrow. To be successful, one must be committed, regimented, diligent, and focused. Your skin, like your body, is a by-product of what you eat, how often you sweat, and how you take of yourself. We created REYAL for a man who’s committed to bettering himself, a man who’s not afraid to feel.<\/p><p>‏‏<br\/>‏‏‎ ‎↓<\/p>","link-text":""}},"161049443034369103":{"type":"instafeed","settings":{"heading_font":"helvetica_n4","heading_size":10,"feed_width":100,"html_area":""}},"framework--featured-content-blog":{"type":"framework--featured-content-blog","settings":{"full-width":false,"background-color":"none","text-position":"right","text-width":"large","overlap":false,"transparent-overlap":true,"alternative-color":false,"image":"shopify:\/\/shop_images\/journ3_54603114-67a6-49cb-ac98-bd050ec1b571.jpg","title":"","description":"<p>THE REYAL JOURNAL IS A COLLECTIVE RESOURCE MERGING RELEVANT TOPICS ON FITNESS, CULTURE AND HEALTH. FEATURING STORIES, TRAINING PROGRAMS AND REYAL AMBASSADORS<\/p>","link-text":""}},"framework--featured-contentabout-banner":{"type":"framework--featured-contentabout-banner","settings":{"full-width":true,"background-color":"light","text-position":"center","text-width":"large","overlap":false,"transparent-overlap":true,"alternative-color":true,"image":"shopify:\/\/shop_images\/Alt.jpg","title":"","description":"<p>We create men’s performance skincare and supplements that work to fuel, strengthen and protect skin. Skincare, like all health-driven initiatives, skincare is a long game, training for a better tomorrow. To be successful, one must be committed, regimented, diligent, and focused. Your skin, like your body, is a by-product of what you eat, how often you sweat, and how you take of yourself. We created REYAL for a man who’s committed to bettering himself, a man who’s not afraid to feel.<\/p><p>‏‏<br\/>‏‏‎ ‎↓<\/p>","link-text":""}},"framework--login":{"type":"framework--login","settings":{}},"framework--register":{"type":"framework--register","settings":{}},"framework--account":{"type":"framework--account","settings":{}},"framework--featured-contentaboutabout":{"type":"framework--featured-contentaboutabout","settings":{"full-width":true,"background-color":"dark","text-position":"left","text-width":"large","overlap":false,"transparent-overlap":false,"alternative-color":true,"image":"shopify:\/\/shop_images\/FP4.png","title":"","description":"<p>THE REYAL JOURNAL IS A COLLECTIVE RESOURCE MERGING RELEVANT TOPICS ON FITNESS, CULTURE, AND HEALTH. FEATURING STORIES, TRAINING PROGRAMS, AND REYAL AMBASSADORS. <\/p>","link-url":"shopify:\/\/blogs\/journal","link-text":"READ JOURNAL"}},"framework--featured-contentaboutaboutabout":{"type":"framework--featured-contentaboutaboutabout","settings":{"full-width":true,"background-color":"dark","text-position":"right","text-width":"large","overlap":false,"transparent-overlap":false,"alternative-color":true,"image":"shopify:\/\/shop_images\/FP1_925b0f43-2a29-4839-88db-66c686ebaded.png","title":"","description":"<p>REYAL CREATES MEN’S PERFORMANCE SKINCARE AND SUPPLEMENTS THAT WORK TO FUEL, STRENGTHEN AND PROTECT. LIKE ANYTHING ELSE IN LIFE, IN ORDER TO BE SUCCESSFUL, YOU MUST BE COMMITTED, REGIMENTED, DILIGENT, AND FOCUSED. HOW YOUR SKIN LOOKS, AND HOW YOUR BODY FEELS, IS A DIRECT RESULT OF WHAT YOU EAT, HOW OFTEN YOU SWEAT, AND HOW YOU TAKE CARE OF YOURSELF. <\/p><p><\/p><p>WE CREATED REYAL FOR A MAN WHO’S COMMITTED TO CONTINUOUSLY BETTERING HIMSELF AND A MAN WHO’S NOT AFRAID TO FEEL. <\/p><p><\/p>","link-text":""}},"framework--feat-journal":{"type":"framework--feat-journal","settings":{}},"framework--page-skin-traning":{"type":"framework--page-skin-traning","settings":{"hero_text":"RSCF™","banner_image":"shopify:\/\/shop_images\/hero.jpg","label_left":"RSCF™ FORMULA","label_right":"LAYERING SYSTEM","layer_1_heading":"Reyal’s proprietary skincare formula uses three powerful ingredients","layer_1_description":"<p>Reyal’s skincare performance formula combines the best of science and nature. Every Reyal skincare product includes our proprietary RSCF™ tri-blend. A custom combination of active ingredients: Dragon’s Blood, Tiger grass, and Vitamin E that work together to fuel, strengthen and protect your skin.<\/p>","layer_1_accordion_1_panel_title":"DRAGON’S BLOOD","layer_1_accordion_1_panel_left_heading":"<strong>SANGRE DE GRADO<\/strong> (SAN.GRE DE GRA.DO)","layer_1_accordion_1_panel_left_image":"shopify:\/\/shop_images\/L1A1.jpg","layer_1_accordion_1_panel_right_entry_txt":"<p>A powerful and protective antioxidant found in sap from amazonian rainforest trees. Dragon's Blood is traditionally used as a topical aid for injuries to the skin such as cuts, bites, burns, stings and rashes.<\/p>","layer_1_accordion_1_panel_right_r2_heading":"ANTI-BACTERIAL, ANTI-VIRAL, ANTI-FUNGAL","layer_1_accordion_1_panel_right_r2_txt":"<p>Its rich protective antioxidant phenols and anti-inflammatory compounds help to protect the cells of the skin, reducing both redness and inflammation.<\/p>","layer_1_accordion_1_panel_right_r3_c1_heading":"REDUCED SKIN REDNESS","layer_1_accordion_1_panel_right_r3_c1_txt":"<p>Anti-inflammatory antioxidant compounds that cool the skin and reduce redness.<\/p>","layer_1_accordion_1_panel_right_r3_c2_heading":"REPAIRS COLLAGEN","layer_1_accordion_1_panel_right_r3_c2_txt":"<p>Contains Proanthocyanidins which work to repair collagen and Taspine, a known tissue-healing agent.<\/p>","layer_1_accordion_2_panel_title":"TIGER GRASS","layer_1_accordion_2_panel_left_heading":"<strong>Centella Asiatica<\/strong> (CEN·TELLA ASIA·TICA)","layer_1_accordion_2_panel_left_image":"shopify:\/\/shop_images\/tiger-grass.jpg","layer_1_accordion_2_panel_right_entry_txt":"<p>Legend has it that Centella Asiatica got its nickname from tigers that would roll around in this plant after battle to soothe their wounds and promote recovery.<\/p>","layer_1_accordion_2_panel_right_r2_heading":"POWERFUL AND PROTECTIVE ANTIOXIDANT","layer_1_accordion_2_panel_right_r2_txt":"<p>Its powerful antioxidant properties and branched-chain amino acids revitalize the skins protective barrier, mitigate the visible effects of environmental stressors (sun, pollution), and encourage new skin regeneration. <\/p>","layer_1_accordion_2_panel_right_r3_c1_heading":"Powerful Hydration","layer_1_accordion_2_panel_right_r3_c1_txt":"<p>Hydrates, moisturizes and nourishes skin<\/p>","layer_1_accordion_2_panel_right_r3_c2_heading":"REVERSES SIGNS OF AGING","layer_1_accordion_2_panel_right_r3_c2_txt":"<p>Strengthens and replenishes skin’s moisture barrier to resist and reverse the signs of aging.<\/p>","layer_1_accordion_3_panel_title":"RSCF™ VITAMIN E COMPLEX","layer_1_accordion_3_panel_left_heading":"","layer_1_accordion_3_panel_left_image":"shopify:\/\/shop_images\/vitamin-e.jpg","layer_1_accordion_3_panel_right_entry_txt":"<p>Vitamin E is a naturally occurring compound in human skin that depletes over time from constant environmental exposure in the absence of sun protection. Vitamin E is an important antioxidant protecting cell membranes and preventing damage to associated enzymes.<\/p>","layer_1_accordion_3_panel_right_r2_heading":"THE WORKHORSE OF THE RSCF™ TRI-BLEND","layer_1_accordion_3_panel_right_r2_txt":"<p>By adding additional antioxidant and anti-inflammatory properties, it helps defend the skin  from pollution and other environmental stressors that weaken skin. <\/p><p><\/p><p><br\/><\/p>","layer_1_accordion_3_panel_right_r3_c1_heading":"INCREASES SKIN FIRMNESS","layer_1_accordion_3_panel_right_r3_c1_txt":"<p>Positively affects blood circulation to prevent aging and increase firmness of skin.<\/p>","layer_1_accordion_3_panel_right_r3_c2_heading":"MINIMIZES WRINKLES","layer_1_accordion_3_panel_right_r3_c2_txt":"<p>Vitamin E helps fight the effect of free radicals that cause signs of aging like wrinkles and enlarged pores. <\/p>","layer_2_heading":"REYAL’S LAYERING SYSTEM IS MADE UP OF THREE SIMPLE STEPS","layer_2_description":"<p>The Reyal skincare assortment was designed to make skincare efficient. A simple 3-layered approach whereby each product adds value to the next, amplifying performance and long-term results. We think of our skin in the same way we do our bodies, like an athlete. So, train your skin.<\/p>","layer_2_accordion_1_panel_title":"LAYER 001 SUPREME FACE WASH","layer_2_accordion_1_panel_left_image":"shopify:\/\/shop_images\/L2A1.jpg","layer_2_accordion_1_panel_right_entry_txt":"<p>A detoxifying face gel wash delivering an invigorating and deep pore clean. <\/p>","layer_2_accordion_1_panel_right_r2_heading":"Designed to cleanse, fuel, and activate","layer_2_accordion_1_panel_right_r2_txt":"<p>Effectively exfoliates and removes debris, dirt, and oil without over drying or excessive tightness. Leaving skin feeling clean, refreshed, and smooth.<\/p>","layer_2_accordion_1_panel_right_r3_c1_heading":"How to use","layer_2_accordion_1_panel_right_r3_c1_txt":"<p>Massage over wet face and neck every morning, night, and post-sweat for 1 minute.<\/p>","layer_2_accordion_1_panel_right_r3_c2_heading":"Active Ingredients","layer_2_accordion_1_panel_right_r3_c2_txt":"<p>Actives include peppermint, caffeine, antioxidants, exfoliants and the RSCF™ tri-blend.<\/p>","layer_2_accordion_2_panel_title":"LAYER 002 SELECT DAY SERUM","layer_2_accordion_2_panel_left_image":"shopify:\/\/shop_images\/L2A2.jpg","layer_2_accordion_2_panel_right_entry_txt":"<p>A high performance, anti-aging and skin strengthening daily Vitamin C serum. <\/p>","layer_2_accordion_2_panel_right_r2_heading":"Designed to strengthen, hydrate and repair skin","layer_2_accordion_2_panel_right_r2_txt":"<p>Powerful antioxidant formulation combining Vitamin C, Ferulic and Hyaluronic acids that work together to defend against environmental aggressors, sweat, and combat visible signs of aging.<\/p>","layer_2_accordion_2_panel_right_r3_c1_heading":"How to use","layer_2_accordion_2_panel_right_r3_c1_txt":"<p>Smooth two pumps of Layer 002 Select Day Serum into face and neck.<\/p>","layer_2_accordion_2_panel_right_r3_c2_heading":"Active Ingredients","layer_2_accordion_2_panel_right_r3_c2_txt":"<p>Actives include Vitamin C, Hyaluronic Acid, Ferulic Acid, Antioxidants and the RSCF™ tri-blend.<\/p>","layer_2_accordion_3_panel_title":"LAYER 003 SUPER DAY MOISTURIZER","layer_2_accordion_3_panel_left_image":"shopify:\/\/shop_images\/L2A3.jpg","layer_2_accordion_3_panel_right_entry_txt":"<p>A lightweight, non-greasy, anti-shine daily moisturizer with UVA\/UVB protection. Packed with creatine, proteins and BCAA’s to strengthen skin.<\/p>","layer_2_accordion_3_panel_right_r2_heading":"Designed to protect against UVA\/UVB exposure and strengthen skin","layer_2_accordion_3_panel_right_r2_txt":"<p>Ultra-sheer and anti-shine, high antioxidant protection broad spectrum UVA\/UVB shield defending against high impact environmental elements: sun, sweat and pollution. Non-acnegenic.<\/p>","layer_2_accordion_3_panel_right_r3_c1_heading":"How To Use","layer_2_accordion_3_panel_right_r3_c1_txt":"<p>Smooth a small amount of Layer 003 Super Day Moisturizer into face and neck.<\/p>","layer_2_accordion_3_panel_right_r3_c2_heading":"Active Ingredients","layer_2_accordion_3_panel_right_r3_c2_txt":"<p>Actives include antioxidants, creatine, BCAAs, proteins and the RSCF™ tri-blend.<\/p>","url_left":"shopify:\/\/products\/layer-003-super-day-moisturizer","image_left":"shopify:\/\/shop_images\/resized-pic1_cropped.jpg","left_product_name":"LAYER 003 SUPER DAY MOISTURIZER","left_product_price":34,"url_right":"shopify:\/\/products\/supreme-bodywash","image_right":"shopify:\/\/shop_images\/resized-pic2_cropped.jpg","right_product_name":"SUPREME BODY WASH","right_product_price":58}},"162286023092906457":{"type":"framework--hosted-video","settings":{"url":"https:\/\/cdn.shopify.com\/s\/files\/1\/0268\/0356\/8822\/files\/Hero_video_cut.mp4","height":380}},"framework--page-product-hero":{"type":"framework--page-product-hero","settings":{"left_image01":"shopify:\/\/shop_images\/Rectangle_72.jpg","left_image02":"shopify:\/\/shop_images\/Rectangle_72.jpg","left_image03":"shopify:\/\/shop_images\/Rectangle_72.jpg","right_product_name":"WEIGH PROTEIN  FORMULATION","right_product_subheading":"FLAVOUR: CLASSIC VANILLA","right_product_description":"Bright and refreshing, this apéritif blends fresh grapefruit, Makrut lime leaves, pink peppercorn, and a subtle kick of fresh jalapeño. Try it on the rocks or with a squeeze of fresh citrus.","right_product_feature01":"25 Servings (850g Total)","right_product_feature02":"Additive and Ingredient","right_product_heading":"25 Servings (850g Total)","right_product_purchase_01":"ONE TIME PURCHASE - $34","right_product_purchase_02":"30 DAY SUBSCRIPTION - $34","right_product_purchase_view_more":"View Details","right_product_purchase_submenu_link_01":"Link 1","right_product_purchase_submenu_link_02":"Link 2","right_product_purchase_submenu_link_03":"Link 3","right_product_button":"ADD TO CART - $34"}},"framework--page-organic-ingredients":{"type":"framework--page-organic-ingredients","settings":{"center_organic_ingredient_title":"A FIVE IN ONE HIGH-PERFORMANCE PROTEIN SUPPLIMENT","left_image":"shopify:\/\/shop_images\/Rectangle_82.jpg","center_organic_ingredient_title1":"No Added Fillers","center_organic_ingredient_desc1":"Les 3 niveaux qui composent le boîtier donnent à la montre une silhouette fine et élancée. Chaque","center_image":"shopify:\/\/shop_images\/Rectangle_83.jpg","center_organic_ingredient_title2":"100% Dairy Free","center_organic_ingredient_desc2":"Les 3 niveaux qui composent le boîtier donnent à la montre une silhouette fine et élancée. Chaque","right_image":"shopify:\/\/shop_images\/Rectangle_84.jpg","center_organic_ingredient_title3":"Easy Mixing","center_organic_ingredient_desc3":"Les 3 niveaux qui composent le boîtier donnent à la montre une silhouette fine et élancée. Chaque","center_real_ingredient_title":"REAL INGREDIENTS.  FULL TRANSPARENCY.","center_real_ingredient_description":"","center_real_ingredient_button":"LEARN MORE","right_real_image":"shopify:\/\/shop_images\/Rectangle_114.jpg","left_ingredient_list_title":"AMOUNT PER SCOOP (34g)","left_ingredient_list_01":"Calories","left_ingredient_list_value_01":"121g","left_ingredient_list_02":"Fat","left_ingredient_list_value_02":"1g","left_ingredient_list_03":"Protein","left_ingredient_list_value_03":"27g","left_ingredient_list_04":"Sugars","left_ingredient_list_value_04":"1g","left_ingredient_list_05":"Carbohydrates","left_ingredient_list_value_05":"1g","left_ingredient_list_06":"Sodium","left_ingredient_list_value_06":"45mg","right_ingredient_list_title":"INGREDIENTS LIST","right_ingredient_list_01":"Whey Protein Isolate","right_ingredient_list_02":"Creatine Monohydrate","right_ingredient_list_03":"L-Leucine","right_ingredient_list_04":"L-Isoleucine","right_ingredient_list_05":"L-Valine","right_ingredient_list_06":"VIEW MORE INGREDIENTS"}},"framework--page-membership":{"type":"framework--page-membership","settings":{"product_category_title":"YOU MAY ALSO LIKE:","product_category_name1":"001 SUPREME FACE WASH","product_category_name2":"002 FACIAL CLEANSER","product_category_name3":"003 FACIAL MOISTURIZER","tab01_membership_title_one":"REYAL MEMBERSHIP","tab01_membership_desc_one":"Fresh jalapeño adds a subtle kick to every pour. (Don’t worry, it’s not that kind of hot.) We use jalapeños sourced nearby in California every pour. (Don’t worry, it’s not that kind of hot.)","tab01_membership_button_one":"LEARN MORE","tab01_service_title_one":"BOTTLE DISCOUNTS & FREE SHIPPING","tab01_service_desc_one":"Fresh jalapeño adds a subtle kick to every pour. (Don’t worry, it’s not that kind of hot.) We use","tab01_service_title_two":"BOTTLE DISCOUNTS & FREE SHIPPING","tab01_service_desc_two":"Fresh jalapeño adds a subtle kick to every pour. (Don’t","tab01_service_title_three":"BOTTLE DISCOUNTS & FREE SHIPPING","tab01_service_desc_three":"Fresh jalapeño adds a subtle kick to every pour. (Don’t worry, it’s not that kind of hot.) We use","tab02_membership_title_one":"REYAL MEMBERSHIP 2","tab02_membership_desc_one":"Fresh jalapeño adds a subtle kick to every pour. (Don’t worry, it’s not that kind of hot.) We use jalapeños sourced nearby in California every pour. (Don’t worry, it’s not that kind of hot.)","tab02_membership_button_one":"LEARN MORE","tab02_service_title_one":"BOTTLE DISCOUNTS & FREE SHIPPING","tab02_service_desc_one":"Fresh jalapeño adds a subtle kick to every pour. (Don’t worry, it’s not that kind of hot.) We use","tab02_service_title_two":"BOTTLE DISCOUNTS & FREE SHIPPING","tab02_service_desc_two":"Fresh jalapeño adds a subtle kick to every pour. (Don’t","tab02_service_title_three":"BOTTLE DISCOUNTS & FREE SHIPPING","tab02_service_desc_three":"Fresh jalapeño adds a subtle kick to every pour. (Don’t worry, it’s not that kind of hot.) We use","tab03_membership_title_one":"REYAL MEMBERSHIP 3","tab03_membership_desc_one":"Fresh jalapeño adds a subtle kick to every pour. (Don’t worry, it’s not that kind of hot.) We use jalapeños sourced nearby in California every pour. (Don’t worry, it’s not that kind of hot.)","tab03_membership_button_one":"LEARN MORE","tab03_service_title_one":"BOTTLE DISCOUNTS & FREE SHIPPING","tab03_service_desc_one":"Fresh jalapeño adds a subtle kick to every pour. (Don’t worry, it’s not that kind of hot.) We use","tab03_service_title_two":"BOTTLE DISCOUNTS & FREE SHIPPING","tab03_service_desc_two":"Fresh jalapeño adds a subtle kick to every pour. (Don’t","tab03_service_title_three":"BOTTLE DISCOUNTS & FREE SHIPPING","tab03_service_desc_three":"Fresh jalapeño adds a subtle kick to every pour. (Don’t worry, it’s not that kind of hot.) We use"}},"framework--page-review":{"type":"framework--page-review","settings":{"center_review_main_title":"WHAT PEOPLE ARE SAYING ABOUT US","center_review_star_count":"141 Reviews","review_coustomer_name1":"MITCH","review_coustomer_verified_acc1":"Verified Buyer","review_coustomer_review_title1":"Great skin cream!","review_coustomer_review_desc1":"Les 3 niveaux qui composent le boîtier donnent à la montre une silhouette fine et élancée. Chaque étage a une finition différente dont les reflets sous la lumière sont particulièrement captivants. Le taillage d’une extrême finesse des 120 crans de la couronne la rende précieuse comme un bijou. Le numéro de la collection est gravé sur le fond de la montre ainsi que la signature d’Apose : pure, automatique et très française."}},"framework--page-apparel-product":{"type":"framework--page-apparel-product","settings":{"left_image":"shopify:\/\/shop_images\/t-shirt.jpg","right_product_name":"LAYER 001 SUPREME FACE WASH","right_product_description":"Bright and refreshing, this apéritif blends fresh grapefruit, Makrut lime leaves, pink peppercorn, and a subtle kick of fresh jalapeño. Try it on the rocks or with a squeeze of fresh citrus.","right_product_feature1":"100% Athletic Poly Blend","right_product_feature2":"Slim Athletic Fit","right_product_variant1":"SELECT SIZE","right_product_variant2":"SIZE GUIDE","right_product_variant2_link":"#","right_product_heading":"","right_product_purchase_01":"","right_product_purchase_02":"","right_product_purchase_view_more":"","right_product_purchase_submenu_link_01":"","right_product_purchase_submenu_link_02":"","right_product_purchase_submenu_link_03":"","right_product_button":"ADD TO CART - $34"}},"framework--page-apparel-wearing":{"type":"framework--page-apparel-wearing","settings":{"wearing_title":"HOW OTHERS ARE WEARING IT","wearing_subtitle":"Tag us on Instagram @reyal-performance to have your look featured.","wearing_image1":"shopify:\/\/shop_images\/wearing1.jpg","wearing_image_title1":"@roanne.mah","wearing_image2":"shopify:\/\/shop_images\/wearing2.jpg","wearing_image_title2":"@jimmy.football","wearing_image3":"shopify:\/\/shop_images\/wearing3.jpg","wearing_image_title3":"@spud_mackenzie","wearing_image4":"shopify:\/\/shop_images\/wearing4.jpg","wearing_image_title4":"@terry_knowels","comfort_title":"COMFORT FOR ALL","comfort_subtitle":"Reyal's premium athletic gear and supply department is designed for an active life, prioritizing fit, fucntion and comfort. We select apparel partners, products, and styles that emphasize quality, design, and creativity. We wear our gear hard [in the gym] and chose products that's wash well, stretch right, and look better with age.
-","comfort_bg_image":"shopify:\/\/shop_images\/Rectangle_107.jpg"}},"framework--page-sup-product-hero":{"type":"framework--page-sup-product-hero","settings":{"left_image001":"shopify:\/\/shop_images\/Rectangle_58.png","left_image002":"shopify:\/\/shop_images\/Rectangle_58.png","left_image003":"shopify:\/\/shop_images\/Rectangle_58.png","right_product_name":"LAYER 001 SUPREME FACE WASH","right_product_description":"Bright and refreshing, this apéritif blends fresh grapefruit, Makrut lime leaves, pink peppercorn, and a subtle kick of fresh jalapeño. Try it on the rocks or with a squeeze of fresh citrus.","right_product_heading":"ADDITIVES & INGREDIENTS","right_product_purchase_01":"ONE TIME PURCHASE - $34","right_product_purchase_02":"30 DAY SUBSCRIPTION - $34","right_product_purchase_view_more":"View Details","right_product_purchase_submenu_link_01":"link 1","right_product_purchase_submenu_link_02":"link 1","right_product_purchase_submenu_link_03":"link 1","right_product_button":"ADD TO CART - $34"}},"framework--page-sup-organic-ingredients":{"type":"framework--page-sup-organic-ingredients","settings":{"center_organic_ingredient_title":"VIBRANT & FRESH, MADE WITH ALL ORGANIC INGREDIENTS","left_image":"shopify:\/\/shop_images\/The_Pour.jpg","center_organic_ingredient_title1":"The Pour","center_organic_ingredient_desc1":"Les 3 niveaux qui composent le boîtier donnent à la montre une silhouette fine et élancée. Chaque","center_image":"shopify:\/\/shop_images\/Cleansing.jpg","center_organic_ingredient_title2":"Cleansing","center_organic_ingredient_desc2":"Les 3 niveaux qui composent le boîtier donnent à la montre une silhouette fine et élancée. Chaque","right_image":"shopify:\/\/shop_images\/Vibrant_Fresh_Skin.jpg","center_organic_ingredient_title3":"Vibrant Fresh Skin","center_organic_ingredient_desc3":"Les 3 niveaux qui composent le boîtier donnent à la montre une silhouette fine et élancée. Chaque","center_real_ingredient_title":"REAL INGREDIENTS.  FULL TRANSPARENCY.","center_real_ingredient_description":"Les 3 niveaux qui composent le boîtier donnent à la montre une silhouette fine et élancée. Chaque Les 3 niveaux qui composent le boîtier donnent à la montre une silhouette fine et","center_real_ingredient_button":"VIEW INGREDIENTS","right_banner_image":"shopify:\/\/shop_images\/Rectangle_114.jpg"}},"framework--product-apparel":{"type":"framework--product-apparel","settings":{}},"product-apparel":{"type":"product-apparel","settings":{"smart-payment-button":true,"variant-style":"buttons","swatches-enabled":false,"product-unavailable-form-show":false,"low-in-stock-amount":0,"modal-enabled":true,"hide-variant-media":false,"loop-enabled":false,"product-size-chart-enabled":false,"product-size-chart-option":"size","product-size-chart-page-content":""}}},"content_for_index":["162286023092906457","160978762066fc8e6a","16086695196803c9a6","1522371696540","16046227238d2d0dea","1604825597485fc23a","1522371405349","1522371573233","1602639580080","1604361432c1ef4ad2","1522371666643","16048258340f345868","16048314827d47c196","161049443034369103"]},"presets":{"Bloom":{"color--accent":"#c499fb","bg-color--body":"#ffffff","color--body":"#212121","color--alternative":"#ffffff","bg-color--panel":"#f0ecea","color--important":"#ca2f01","color--button":"#ffffff","bg-color--button":"#212121","color--header":"#212121","color--footer":"","bg-color--footer":"","bg-color--announcement":"#e6d4ff","announcement--alternative-text":false,"color--collection--title":"#ffffff","typography--heading":"zurich_extended_n7","typography--heading--uppercase":false,"typography--heading--size":"small","typography--accent":"helvetica_n4","typography--paragraph":"karla_n4","typography--paragraph--size":"medium","sections":{"header":{"type":"header","settings":{"logo":"","logo-height-range":50,"menu":"main-menu"}},"framework--footer":{"type":"framework--footer","blocks":{"1584642445690":{"type":"about","settings":{"about-title":"","text":"<p>A short summary about your brand.<\/p>\n<p>&copy; Your brand name.<\/p>","subscribe--show-social-icons":true}},"1584642448228":{"type":"menu","settings":{"menu-title":"","menu":"footer"}},"1584642450700":{"type":"subscribe","settings":{"newsletter--heading":"","newsletter--info":"<p>Sign up to our mailing list<\/p>","subscribe--show-newsletter":true}}},"block_order":["1584642445690","1584642448228","1584642450700"],"settings":{"show-currency-selector":true,"show-locale-selector":true,"show-payment-icons":true}},"product":{"type":"product","settings":{"smart-payment-button":true,"variant-style":"dropdowns","swatches-enabled":false,"product-unavailable-form-show":false,"low-in-stock-amount":0,"modal-enabled":true,"hide-variant-media":false,"loop-enabled":false,"product-size-chart-enabled":false,"product-size-chart-option":"size","product-size-chart-page-content":""}},"collection":{"type":"collection","settings":{"show-featured-image":true,"products-per-row-range":3}},"announcement":{"type":"announcement","settings":{"enabled":true,"home-page-only":false,"icon":"","text":"Add your announcement message with a bit more length","link":""}},"1522371405349":{"type":"framework--featured-content","settings":{"full-width":true,"background-color":"accent","text-position":"left","text-width":"small","overlap":false,"transparent-overlap":false,"alternative-color":false,"image":"","title":"Image with text","description":"<p>Use a combination of image and text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store<\/p>","link-url":"","link-text":"View more"}},"1522371486135":{"type":"index--collection","settings":{"collection":"","max-products-range":5}},"1522371573233":{"type":"framework--featured-content","settings":{"full-width":false,"background-color":"light","text-position":"center","text-width":"large","overlap":true,"transparent-overlap":false,"alternative-color":false,"image":"","title":"Image with text","description":"<p>Use a combination of image and text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store<\/p>","link-url":"","link-text":"View more"}},"1522371666643":{"type":"framework--newsletter","settings":{"background-color":"none","heading":"Subscribe to our newsletter","newsletter--subheading":"<p>A short sentence describing what someone will receive by subscribing<\/p>"}},"1522371685670":{"type":"framework--featured-text","settings":{"background-color":"none","heading":"Talk about your brand","text":"<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"}},"1522371696540":{"type":"framework--featured-video","settings":{"video-url":"","image":"","full-width":true,"background-color":"light","section-height":"regular","darken-video":true,"alt-text":true,"heading":"Video","sub-heading":"Add a subheading here","button-text":"button","button-url":""}},"1522371710166":{"type":"framework--map","settings":{"api-key":"","map-address":"391 Sutter St, San Francisco","background-color":"light","theme":"grayscale","heading":"Map","address":"<p>391 Sutter St,<br>San Francisco<br>CA 94108, USA<br><br>(555) 555-5555<\/p>","hours":"<p><strong>Monday - Friday<\/strong><br>12pm - 8pm<br><br><strong>Saturday - Sunday<\/strong><br>12pm - 5pm<\/p>","image":""}},"1522371753814":{"type":"slideshow","blocks":{"1522371753814-0":{"type":"image","settings":{"image":"","slide-title":"Slideshow","slide-tagline":"Introduce your store or campaign with this slideshow section.","slide-link-url":"","slide-link-title":"Link to content","slide-y-pos":"middle","slide-x-pos":"left","slide-text-pos":"text-left"}},"1522371753814-1":{"type":"image","settings":{"image":"","slide-title":"Slideshow","slide-tagline":"Introduce your store or campaign with this slideshow section.","slide-link-url":"","slide-link-title":"Link to content","slide-y-pos":"middle","slide-x-pos":"left","slide-text-pos":"text-left"}}},"block_order":["1522371753814-0","1522371753814-1"],"settings":{"full-width":true,"autoplay":false,"transition_style":"default","rotate-frequency-range":7}},"1522371819571":{"type":"framework--featured-grid","blocks":{"1522371819571-0":{"type":"image","settings":{"image":"","title":"Grid image","link-url":"","link-text":"View more"}},"1522371819571-1":{"type":"image","settings":{"image":"","title":"Grid image","link-url":"","link-text":"View more"}},"1522371819571-2":{"type":"image","settings":{"image":"","title":"Grid image","link-url":"","link-text":"View more"}},"1522371819571-3":{"type":"image","settings":{"image":"","title":"Grid image","link-url":"","link-text":"View more"}},"1522371970926":{"type":"image","settings":{"image":"","title":"Grid image","link-url":"","link-text":"View more"}},"1522371976471":{"type":"image","settings":{"image":"","title":"Grid image","link-url":"","link-text":"View more"}}},"block_order":["1522371819571-0","1522371819571-1","1522371819571-2","1522371819571-3","1522371970926","1522371976471"],"settings":{"background-color":"light","spacing":true,"alternative-color":false,"text-position":"center","container-width":4,"width":3,"mobile-width":"2","title":"Featured grid","subtitle":"","link-url":"","link-text":"View more"}}},"content_for_index":["1522371753814","1522371573233","1522371819571","1522371696540","1522371685670","1522371486135","1522371405349","1522371666643","1522371710166"]},"Fashion":{"color--accent":"#f9cfd6","bg-color--body":"#ffffff","color--body":"#212121","color--alternative":"#ffffff","bg-color--panel":"rgba(0,0,0,0)","color--important":"#ca2f01","color--button":"#ffffff","bg-color--button":"#212121","color--header":"#212121","color--footer":"#212121","bg-color--footer":"","bg-color--announcement":"#f9cfd6","announcement--alternative-text":false,"color--collection--title":"#ffffff","typography--heading":"trade_gothic_n4","typography--heading--uppercase":true,"typography--heading--size":"small","typography--accent":"madera_n5","typography--paragraph":"roboto_n4","typography--paragraph--size":"medium","sections":{"header":{"type":"header","settings":{"logo":"","logo-height-range":50,"menu":"main-menu"}},"framework--footer":{"type":"framework--footer","blocks":{"1584642445690":{"type":"about","settings":{"about-title":"","text":"<p>A short summary about your brand.<\/p>\n<p>&copy; Your brand name.<\/p>","subscribe--show-social-icons":true}},"1584642448228":{"type":"menu","settings":{"menu-title":"","menu":"footer"}},"1584642450700":{"type":"subscribe","settings":{"newsletter--heading":"","newsletter--info":"<p>Sign up to our mailing list<\/p>","subscribe--show-newsletter":true}}},"block_order":["1584642445690","1584642448228","1584642450700"],"settings":{"show-currency-selector":true,"show-locale-selector":true,"show-payment-icons":true}},"product":{"type":"product","settings":{"smart-payment-button":true,"variant-style":"dropdowns","swatches-enabled":false,"product-unavailable-form-show":false,"low-in-stock-amount":0,"modal-enabled":true,"hide-variant-media":false,"loop-enabled":false,"product-size-chart-enabled":false,"product-size-chart-option":"size","product-size-chart-page-content":""}},"collection":{"type":"collection","settings":{"show-featured-image":true,"products-per-row-range":3}},"announcement":{"type":"announcement","settings":{"enabled":true,"home-page-only":false,"icon":"","text":"Add your announcement message with a bit more length","link":""}},"1522371405349":{"type":"framework--featured-content","settings":{"full-width":true,"background-color":"accent","text-position":"left","text-width":"small","overlap":false,"transparent-overlap":false,"alternative-color":false,"image":"","title":"Image with text","description":"<p>Use a combination of image and text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store<\/p>","link-url":"","link-text":"View more"}},"1522371486135":{"type":"index--collection","settings":{"collection":"","max-products-range":5}},"1522371573233":{"type":"framework--featured-content","settings":{"full-width":false,"background-color":"light","text-position":"center","text-width":"large","overlap":true,"transparent-overlap":false,"alternative-color":false,"image":"","title":"Image with text","description":"<p>Use a combination of image and text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store<\/p>","link-url":"","link-text":"View more"}},"1522371666643":{"type":"framework--newsletter","settings":{"background-color":"none","heading":"Subscribe to our newsletter","newsletter--subheading":"<p>A short sentence describing what someone will receive by subscribing<\/p>"}},"1522371685670":{"type":"framework--featured-text","settings":{"background-color":"none","heading":"Talk about your brand","text":"<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"}},"1522371696540":{"type":"framework--featured-video","settings":{"video-url":"","image":"","full-width":true,"background-color":"light","section-height":"regular","darken-video":true,"alt-text":true,"heading":"Video","sub-heading":"Add a subheading here","button-text":"button","button-url":""}},"1522371710166":{"type":"framework--map","settings":{"api-key":"","map-address":"391 Sutter St, San Francisco","background-color":"light","theme":"grayscale","heading":"Map","address":"<p>391 Sutter St,<br>San Francisco<br>CA 94108, USA<br><br>(555) 555-5555<\/p>","hours":"<p><strong>Monday - Friday<\/strong><br>12pm - 8pm<br><br><strong>Saturday - Sunday<\/strong><br>12pm - 5pm<\/p>","image":""}},"1522371753814":{"type":"slideshow","blocks":{"1522371753814-0":{"type":"image","settings":{"image":"","slide-title":"Slideshow","slide-tagline":"Introduce your store or campaign with this slideshow section.","slide-link-url":"","slide-link-title":"Link to content","slide-y-pos":"middle","slide-x-pos":"left","slide-text-pos":"text-left"}},"1522371753814-1":{"type":"image","settings":{"image":"","slide-title":"Slideshow","slide-tagline":"Introduce your store or campaign with this slideshow section.","slide-link-url":"","slide-link-title":"Link to content","slide-y-pos":"middle","slide-x-pos":"left","slide-text-pos":"text-left"}}},"block_order":["1522371753814-0","1522371753814-1"],"settings":{"full-width":true,"autoplay":false,"transition_style":"default","rotate-frequency-range":7}},"1522371819571":{"type":"framework--featured-grid","blocks":{"1522371819571-0":{"type":"image","settings":{"image":"","title":"Grid image","link-url":"","link-text":"View more"}},"1522371819571-1":{"type":"image","settings":{"image":"","title":"Grid image","link-url":"","link-text":"View more"}},"1522371819571-2":{"type":"image","settings":{"image":"","title":"Grid image","link-url":"","link-text":"View more"}},"1522371819571-3":{"type":"image","settings":{"image":"","title":"Grid image","link-url":"","link-text":"View more"}},"1522371970926":{"type":"image","settings":{"image":"","title":"Grid image","link-url":"","link-text":"View more"}},"1522371976471":{"type":"image","settings":{"image":"","title":"Grid image","link-url":"","link-text":"View more"}}},"block_order":["1522371819571-0","1522371819571-1","1522371819571-2","1522371819571-3","1522371970926","1522371976471"],"settings":{"background-color":"light","spacing":true,"alternative-color":false,"text-position":"center","container-width":4,"width":3,"mobile-width":"2","title":"Featured grid","subtitle":"","link-url":"","link-text":"View more"}}},"content_for_index":["1522371753814","1522371573233","1522371685670","1522371819571","1522371696540","1522371486135","1522371405349","1522371666643","1522371710166"]},"Books":{"color--accent":"#197bbd","bg-color--body":"#ffffff","color--body":"#212121","color--alternative":"#ffffff","bg-color--panel":"#ffffff","color--important":"#ca2f01","color--button":"#ffffff","bg-color--button":"#212121","color--header":"#212121","color--footer":"#212121","bg-color--footer":"","bg-color--announcement":"#212121","announcement--alternative-text":true,"color--collection--title":"#ffffff","typography--heading":"itc_caslon_no_224_n5","typography--heading--uppercase":false,"typography--heading--size":"large","typography--accent":"avenir_next_n5","typography--paragraph":"itc_gamma_n4","typography--paragraph--size":"large","sections":{"header":{"type":"header","settings":{"logo":"","logo-height-range":50,"menu":"main-menu"}},"framework--footer":{"type":"framework--footer","blocks":{"1584642445690":{"type":"about","settings":{"about-title":"","text":"<p>A short summary about your brand.<\/p>\n<p>&copy; Your brand name.<\/p>","subscribe--show-social-icons":true}},"1584642448228":{"type":"menu","settings":{"menu-title":"","menu":"footer"}},"1584642450700":{"type":"subscribe","settings":{"newsletter--heading":"","newsletter--info":"<p>Sign up to our mailing list<\/p>","subscribe--show-newsletter":true}}},"block_order":["1584642445690","1584642448228","1584642450700"],"settings":{"show-currency-selector":true,"show-locale-selector":true,"show-payment-icons":true}},"product":{"type":"product","settings":{"smart-payment-button":true,"variant-style":"dropdowns","swatches-enabled":false,"product-unavailable-form-show":false,"low-in-stock-amount":0,"modal-enabled":true,"hide-variant-media":false,"loop-enabled":false,"product-size-chart-enabled":false,"product-size-chart-option":"size","product-size-chart-page-content":""}},"collection":{"type":"collection","settings":{"show-featured-image":true,"products-per-row-range":3}},"announcement":{"type":"announcement","settings":{"enabled":true,"home-page-only":false,"icon":"","text":"Add your announcement message with a bit more length","link":""}},"1522371405349":{"type":"framework--featured-content","settings":{"full-width":true,"background-color":"accent","text-position":"left","text-width":"small","overlap":false,"transparent-overlap":false,"alternative-color":true,"image":"","title":"Image with text","description":"<p>Use a combination of image and text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store<\/p>","link-url":"","link-text":"View more"}},"1522371486135":{"type":"index--collection","settings":{"collection":"","max-products-range":5}},"1522371573233":{"type":"framework--featured-content","settings":{"full-width":false,"background-color":"light","text-position":"center","text-width":"large","overlap":true,"transparent-overlap":false,"alternative-color":false,"image":"","title":"Image with text","description":"<p>Use a combination of image and text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store<\/p>","link-url":"","link-text":"View more"}},"1522371666643":{"type":"framework--newsletter","settings":{"background-color":"none","heading":"Subscribe to our newsletter","newsletter--subheading":"<p>A short sentence describing what someone will receive by subscribing<\/p>"}},"1522371685670":{"type":"framework--featured-text","settings":{"background-color":"none","heading":"Talk about your brand","text":"<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"}},"1522371696540":{"type":"framework--featured-video","settings":{"video-url":"","image":"","full-width":true,"background-color":"light","section-height":"regular","darken-video":true,"alt-text":true,"heading":"Video","sub-heading":"Add a subheading here","button-text":"button","button-url":""}},"1522371710166":{"type":"framework--map","settings":{"api-key":"","map-address":"391 Sutter St, San Francisco","background-color":"light","theme":"grayscale","heading":"Map","address":"<p>391 Sutter St,<br>San Francisco<br>CA 94108, USA<br><br>(555) 555-5555<\/p>","hours":"<p><strong>Monday - Friday<\/strong><br>12pm - 8pm<br><br><strong>Saturday - Sunday<\/strong><br>12pm - 5pm<\/p>","image":""}},"1522371753814":{"type":"slideshow","blocks":{"1522371753814-0":{"type":"image","settings":{"image":"","slide-title":"Slideshow","slide-tagline":"Introduce your store or campaign with this slideshow section.","slide-link-url":"","slide-link-title":"Link to content","slide-y-pos":"middle","slide-x-pos":"left","slide-text-pos":"text-left"}},"1522371753814-1":{"type":"image","settings":{"image":"","slide-title":"Slideshow","slide-tagline":"Introduce your store or campaign with this slideshow section.","slide-link-url":"","slide-link-title":"Link to content","slide-y-pos":"middle","slide-x-pos":"left","slide-text-pos":"text-left"}}},"block_order":["1522371753814-0","1522371753814-1"],"settings":{"full-width":true,"autoplay":false,"transition_style":"default","rotate-frequency-range":7}},"1522371819571":{"type":"framework--featured-grid","blocks":{"1522371819571-0":{"type":"image","settings":{"image":"","title":"Grid image","link-url":"","link-text":"View more"}},"1522371819571-1":{"type":"image","settings":{"image":"","title":"Grid image","link-url":"","link-text":"View more"}},"1522371819571-2":{"type":"image","settings":{"image":"","title":"Grid image","link-url":"","link-text":"View more"}},"1522371819571-3":{"type":"image","settings":{"image":"","title":"Grid image","link-url":"","link-text":"View more"}},"1522371970926":{"type":"image","settings":{"image":"","title":"Grid image","link-url":"","link-text":"View more"}},"1522371976471":{"type":"image","settings":{"image":"","title":"Grid image","link-url":"","link-text":"View more"}}},"block_order":["1522371819571-0","1522371819571-1","1522371819571-2","1522371819571-3","1522371970926","1522371976471"],"settings":{"background-color":"light","spacing":true,"alternative-color":false,"text-position":"center","container-width":4,"width":3,"mobile-width":"2","title":"Featured grid","subtitle":"","link-url":"","link-text":"View more"}}},"content_for_index":["1522371753814","1522371573233","1522371819571","1522371685670","1522371696540","1522371486135","1522371405349","1522371666643","1522371710166"]}}}
+{
+  "current": {
+    "color--accent": "#ee3433",
+    "bg-color--body": "#ffffff",
+    "color--body": "#212121",
+    "color--alternative": "#ffffff",
+    "bg-color--panel": "rgba(0,0,0,0)",
+    "color--important": "#ee3433",
+    "color--button": "#ee3433",
+    "bg-color--button": "#000000",
+    "color--header": "#212121",
+    "color--footer": "",
+    "bg-color--footer": "",
+    "bg-color--announcement": "#000000",
+    "announcement--alternative-text": true,
+    "color--collection--title": "#ffffff",
+    "typography--heading": "basic_commercial_n7",
+    "typography--heading--uppercase": false,
+    "typography--heading--size": "medium",
+    "typography--accent": "basic_commercial_n7",
+    "typography--paragraph": "basic_commercial_n4",
+    "typography--paragraph--size": "small",
+    "product--show-vendor": false,
+    "product--label-color": "light",
+    "product--show-sale-label": true,
+    "search--show-in-header": true,
+    "search--show-articles": true,
+    "search--show-pages": true,
+    "social--instagram--url": "https:\/\/www.instagram.com\/reyalperformance\/",
+    "social--facebook--url": "https:\/\/www.facebook.com\/reyalperformance",
+    "social--youtube--url": "",
+    "social--vimeo--url": "",
+    "social--pinterest--url": "",
+    "social--twitter--url": "",
+    "social--kickstarter--url": "",
+    "social--share-products": false,
+    "social--share-facebook": false,
+    "social--share-twitter": false,
+    "social--share-pinterest": false,
+    "social--share-email": true,
+    "social--share-link": true,
+    "popup--enabled": false,
+    "popup--mode": "auto",
+    "popup--days-range": 7,
+    "popup--background-color": "light",
+    "popup--alternative-color": false,
+    "popup--show-image": true,
+    "popup--image": "",
+    "popup--newsletter-title--rt": "<p>Sign up to our newsletter and we'll keep you posted with news and deals each week!<\/p>",
+    "popup--social-title": "Follow us",
+    "popup--social-enabled": true,
+    "favicon": "shopify:\/\/shop_images\/Reyal_Favicon.png",
+    "hide-tags": "featured, pinned",
+    "cart--type": "drawer",
+    "cart--show-note": true,
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/reyal_wordmark.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "small",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#dd323c",
+    "checkout_button_color": "#212121",
+    "checkout_error_color": "#e32c2b",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/REYAL_-_official_logo.png",
+          "logo-height-range": 25,
+          "menu": "main-menu"
+        }
+      },
+      "framework--footer": {
+        "type": "framework--footer",
+        "blocks": {
+          "1584642445690": {
+            "type": "about",
+            "settings": {
+              "about-title": "",
+              "text": "<p>REYAL CREATES PERFORMANCE SKINCARE AND SUPPLEMENTS THAT WORK TO FUEL, STRENGTHEN AND PROTECT. BE GENTLE, MAN.<br\/><br\/>Vancouver, Canada<\/p>",
+              "subscribe--show-social-icons": true
+            }
+          },
+          "1584642448228": {
+            "type": "menu",
+            "settings": {
+              "menu-title": "",
+              "menu": "footer"
+            }
+          },
+          "1602640402415": {
+            "type": "subscribe",
+            "settings": {
+              "newsletter--heading": "",
+              "newsletter--info": "<p>Subscribe to REYAL<\/p>",
+              "subscribe--show-newsletter": true
+            }
+          }
+        },
+        "block_order": [
+          "1584642445690",
+          "1584642448228",
+          "1602640402415"
+        ],
+        "settings": {
+          "show-currency-selector": true,
+          "show-locale-selector": true,
+          "show-payment-icons": false
+        }
+      },
+      "product": {
+        "type": "product",
+        "settings": {
+          "smart-payment-button": true,
+          "variant-style": "dropdowns",
+          "swatches-enabled": false,
+          "product-unavailable-form-show": false,
+          "low-in-stock-amount": 10,
+          "modal-enabled": true,
+          "hide-variant-media": false,
+          "loop-enabled": false,
+          "product-size-chart-enabled": false,
+          "product-size-chart-option": "size",
+          "product-size-chart-page-content": ""
+        }
+      },
+      "collection": {
+        "type": "collection",
+        "settings": {
+          "show-featured-image": true,
+          "products-per-row-range": 4
+        }
+      },
+      "announcement": {
+        "type": "announcement",
+        "settings": {
+          "enabled": true,
+          "home-page-only": true,
+          "text": "15% OFF YOUR FIRST ORDER, USE CODE ' REYAL15 ' AT CHECKOUT",
+          "link": "shopify:\/\/pages\/about-us"
+        }
+      },
+      "1522371405349": {
+        "type": "framework--featured-content",
+        "disabled": true,
+        "settings": {
+          "full-width": true,
+          "background-color": "accent",
+          "text-position": "left",
+          "text-width": "large",
+          "overlap": false,
+          "transparent-overlap": false,
+          "alternative-color": false,
+          "image": "shopify:\/\/shop_images\/SkTukeOg2.jpg",
+          "title": "REYAL PILOT PROJECT",
+          "description": "<p><\/p><p>A TEMPORARY CONCEPT STORE<\/p><p>LOCATION: 2149 WEST 4TH AVENUE<\/p><p>VANCOUVER, BC, CANADA<\/p><p>OPEN: DECEMBER 5TH TO 24TH 2020<\/p><p><strong>11AM TO 6PM<\/strong><br\/><br\/><\/p>",
+          "link-url": "shopify:\/\/pages\/about-us",
+          "link-text": "READ OUR STORY →"
+        }
+      },
+      "1522371573233": {
+        "type": "framework--featured-content",
+        "disabled": true,
+        "settings": {
+          "full-width": true,
+          "background-color": "accent",
+          "text-position": "left",
+          "text-width": "large",
+          "overlap": false,
+          "transparent-overlap": false,
+          "alternative-color": false,
+          "image": "shopify:\/\/shop_images\/Reyal_Pilot.png",
+          "title": "REYAL SUPPLEMENTS",
+          "description": "<p><br\/>HIGH-PERFORMANCE SUPPLEMENT FORMULATIONS WITH ADDED BCAAS, CREATINE, GLUTAMINE AND COLLAGEN.  <\/p><p>DESIGNED TO OPTIMIZE RECOVERY TIME, STRENGTHEN MUSCLES AND PROTECT SKIN.<\/p><p><\/p>",
+          "link-url": "shopify:\/\/collections\/supplements",
+          "link-text": "SHOP SUPPLEMENTS →"
+        }
+      },
+      "1522371666643": {
+        "type": "framework--newsletter",
+        "settings": {
+          "background-color": "accent",
+          "heading": "SUBSCRIBE TO REYAL",
+          "newsletter--subheading": "<p><\/p><p>SIGN UP FOR REYAL UPDATES, NEW PRODUCT RELEASES, TRAINING TIPS, <br\/>AND 15% OFF YOUR FIRST ORDER. ENTER YOUR E-MAIL HERE:<\/p><p><br\/><\/p>"
+        }
+      },
+      "1522371696540": {
+        "type": "framework--featured-video",
+        "disabled": true,
+        "settings": {
+          "video-url": "https:\/\/vimeo.com\/466755579",
+          "image": "shopify:\/\/shop_images\/home_banner.jpg",
+          "full-width": true,
+          "background-color": "light",
+          "section-height": "regular",
+          "darken-video": true,
+          "alt-text": true,
+          "heading": "",
+          "sub-heading": "",
+          "button-text": "",
+          "button-url": ""
+        }
+      },
+      "1602639580080": {
+        "type": "framework--featured-product",
+        "disabled": true,
+        "settings": {
+          "background-color": "none",
+          "smart_payment_button": true,
+          "heading": "",
+          "featured_product": "reyal-whey-protein",
+          "show_vendor": true,
+          "variant-style": "dropdowns",
+          "swatches-enabled": true,
+          "product-unavailable-form-show": true,
+          "low-in-stock-amount": 0,
+          "loop-enabled": false,
+          "product-size-chart-enabled": false,
+          "product-size-chart-option": "size",
+          "product-size-chart-page-content": ""
+        }
+      },
+      "framework--product-recommendations": {
+        "type": "framework--product-recommendations",
+        "settings": {
+          "product-similar-products-show": false,
+          "product-similar-products-heading": "You may also like"
+        }
+      },
+      "1604361432c1ef4ad2": {
+        "type": "framework--featured-grid",
+        "blocks": {
+          "1604361432c1ef4ad2-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/FACEWASh.jpg",
+              "title": "SUPREME FACEWASH",
+              "link-url": "shopify:\/\/products\/layer-001-supreme-facewash",
+              "link-text": "SHOP NOW"
+            }
+          },
+          "1604361432c1ef4ad2-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/PROTEIN.jpg",
+              "title": "WHEY PROTEIN FORMULATION",
+              "link-url": "shopify:\/\/products\/reyal-whey-protein",
+              "link-text": "SHOP NOW"
+            }
+          },
+          "1604361432c1ef4ad2-2": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/LAYER_002c_Copy.jpg",
+              "title": "SUPER DAY MOISTURIZER",
+              "link-url": "shopify:\/\/products\/layer-003-super-day-moisturizer",
+              "link-text": "SHOP NOW"
+            }
+          },
+          "1604361432c1ef4ad2-3": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/BCAA_a.jpg",
+              "title": "DAILY VITAMIN FORMULATION",
+              "link-url": "shopify:\/\/products\/daily-vitamin-formulation",
+              "link-text": "SHOP NOW"
+            }
+          },
+          "8ce580f3-4fe1-41d2-9020-2ddcf86ee298": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/BWASH_a.jpg",
+              "title": "SUPREME BODY WASH",
+              "link-url": "shopify:\/\/products\/supreme-bodywash",
+              "link-text": "View more"
+            }
+          },
+          "02032323-103c-4b0c-ad07-9ecc222a0414": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Skin_kit.jpg",
+              "title": "TOTAL SKINCARE KIT",
+              "link-url": "shopify:\/\/products\/skincare-kit",
+              "link-text": "SHOP NOW"
+            }
+          }
+        },
+        "block_order": [
+          "1604361432c1ef4ad2-0",
+          "1604361432c1ef4ad2-1",
+          "1604361432c1ef4ad2-2",
+          "1604361432c1ef4ad2-3",
+          "8ce580f3-4fe1-41d2-9020-2ddcf86ee298",
+          "02032323-103c-4b0c-ad07-9ecc222a0414"
+        ],
+        "settings": {
+          "background-color": "none",
+          "spacing": true,
+          "alternative-color": false,
+          "text-position": "center",
+          "container-width": 5,
+          "width": 3,
+          "mobile-width": "2",
+          "title": "",
+          "subtitle": "‏‏‎ ‎\n‏‏‎ ‎\n‏‏‎ ‎",
+          "link-url": "",
+          "link-text": ""
+        }
+      },
+      "framework--blog": {
+        "type": "framework--blog",
+        "settings": {
+          "show-title": false,
+          "show-tag-filter": true,
+          "show-excerpt": true,
+          "show-rss": false,
+          "columns": 2,
+          "show-featured": false,
+          "tag": "featured",
+          "image-height": "medium",
+          "alt-color": true,
+          "apply-overlay": true
+        }
+      },
+      "framework--article": {
+        "type": "framework--article",
+        "settings": {
+          "show-featured": false,
+          "title-position": "below",
+          "show-date": true,
+          "show-author": false,
+          "show-share": true,
+          "show-tags": true,
+          "show-recent": true,
+          "show-comments": true,
+          "enable-disqus": false,
+          "disqus-shortname": ""
+        }
+      },
+      "16046227238d2d0dea": {
+        "type": "slideshow",
+        "disabled": true,
+        "blocks": {
+          "16046227238d2d0dea-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/reyal_campaign-51.jpg",
+              "slide-title": "REYAL SUPPLEMENTS",
+              "slide-tagline": "‏‏HIGH-PERFORMANCE SUPPLEMENT FORMULATIONS WITH ADDED BCAAS, CREATINE, GLUTAMINE AND COLLAGEN.    DESIGNED TO OPTIMIZE RECOVERY TIME, STRENGTHEN MUSCLES AND PROTECT SKIN. ‎‎‏‏‎ ‎",
+              "slide-link-url": "",
+              "slide-link-title": "‎SHOP SUPPLEMENTS →",
+              "slide-y-pos": "middle",
+              "slide-x-pos": "left",
+              "slide-text-pos": "text-left"
+            }
+          }
+        },
+        "block_order": [
+          "16046227238d2d0dea-0"
+        ],
+        "settings": {
+          "full-width": true,
+          "autoplay": false,
+          "transition_style": "fade",
+          "rotate-frequency-range": 3
+        }
+      },
+      "framework--featured-text": {
+        "type": "framework--featured-text",
+        "settings": {
+          "background-color": "none",
+          "heading": "REYAL IS A PERFORMANCE SKINCARE AND SUPPLEMENT COMPANY BUILDING PRODUCTS BY AND FOR ATHLETES.",
+          "text": "<p><\/p><p>We create men’s performance skincare and supplements that work to fuel, strengthen and protect skin. Skincare, like all health-driven initiatives, skincare is a long game, training for a better tomorrow. To be successful, one must be committed, regimented, diligent, and focused. Your skin, like your body, is a by-product of what you eat, how often you sweat, and how you take of yourself. We created REYAL for a man who’s committed to bettering himself, a man who’s not afraid to feel.<\/p><p><\/p><p><\/p>"
+        }
+      },
+      "framework--featured-content": {
+        "type": "framework--featured-content",
+        "settings": {
+          "full-width": true,
+          "background-color": "dark",
+          "text-position": "left",
+          "text-width": "large",
+          "overlap": false,
+          "transparent-overlap": true,
+          "alternative-color": true,
+          "image": "shopify:\/\/shop_images\/FP2.png",
+          "title": "SKIN PERFORMANCE",
+          "description": "<p><\/p><p>Much like traditional training supplements, REYAL performance skincare products are designed to rebuild, protect and optimize. We developed an intelligent skincare assortment designing skincare supplements that aid in performance recovery. Our proprietary RSFC™ tri-blend is designed to maximize results — it hosts superior concentrations of active ingredients that are easily absorbed by your skin. We took the best of the training supplements we use like Creatine, BCAAs, Glutamine and Collagen and engineered them to be powerful additives to help your skin perform.  <\/p><p>We think of our skin in the same way we do our bodies, like an athlete. Skincare is a long game, where training now leads to a better tomorrow. Trust us, your face (and your partner) will thank you.<\/p><p><\/p>",
+          "link-url": "shopify:\/\/collections\/skinperformance",
+          "link-text": "SHOP SKIN PERFORMANCE"
+        }
+      },
+      "framework--service-list": {
+        "type": "framework--service-list",
+        "settings": {
+          "section--title": "Add title here",
+          "show-description": false
+        }
+      },
+      "1604825597485fc23a": {
+        "type": "framework--featured-content",
+        "disabled": true,
+        "settings": {
+          "full-width": true,
+          "background-color": "accent",
+          "text-position": "center",
+          "text-width": "large",
+          "overlap": false,
+          "transparent-overlap": true,
+          "alternative-color": true,
+          "image": "shopify:\/\/shop_images\/ok.jpg",
+          "title": "REYAL SUPPLEMENTS",
+          "description": "<p><\/p><p>‏‏HIGH-PERFORMANCE SUPPLEMENT FORMULATIONS WITH ADDED BCAAS, CREATINE, GLUTAMINE AND COLLAGEN.    DESIGNED TO OPTIMIZE RECOVERY TIME, STRENGTHEN MUSCLES AND PROTECT SKIN. ‎‎‏‏‎ ‎<\/p><p><\/p>",
+          "link-url": "shopify:\/\/collections\/supplements",
+          "link-text": "SHOP SUPPLEMENTS →"
+        }
+      },
+      "16048258340f345868": {
+        "type": "framework--featured-video",
+        "disabled": true,
+        "settings": {
+          "video-url": "https:\/\/vimeo.com\/466755579",
+          "full-width": true,
+          "background-color": "none",
+          "section-height": "regular",
+          "darken-video": true,
+          "alt-text": true,
+          "heading": "",
+          "sub-heading": "",
+          "button-text": "",
+          "button-url": ""
+        }
+      },
+      "16048314827d47c196": {
+        "type": "framework--featured-content",
+        "settings": {
+          "full-width": true,
+          "background-color": "light",
+          "text-position": "center",
+          "text-width": "large",
+          "overlap": false,
+          "transparent-overlap": true,
+          "alternative-color": true,
+          "image": "shopify:\/\/shop_images\/reyal_campaign-5_1.jpg",
+          "title": "",
+          "description": "",
+          "link-url": "shopify:\/\/pages\/about-us",
+          "link-text": "About"
+        }
+      },
+      "framework--featured-contentcontact": {
+        "type": "framework--featured-contentcontact",
+        "settings": {
+          "full-width": true,
+          "background-color": "accent",
+          "text-position": "left",
+          "text-width": "large",
+          "overlap": false,
+          "transparent-overlap": false,
+          "alternative-color": false,
+          "image": "shopify:\/\/shop_images\/ADRIAN_conatc.jpg",
+          "title": "",
+          "description": "<p>FOR ALL INQUIRIES, CUSTOMER SERVICE, MEDIA RELATIONS, STOCKIST INFORMATION OR TECHNICAL SUPPORT, PLEASE EMAIL:<\/p><p><a href=\"mailto:INFO@REYALPERFORMANCE.COM\" title=\"mailto:INFO@REYALPERFORMANCE.COM\"> INFO@REYALPERFORMANCE.COM<\/a>  <\/p><p><\/p><p>YOU CAN FIND REYAL PERFORMANCE ON INSTAGRAM AND FACEBOOK HERE: <\/p><p><a href=\"https:\/\/www.facebook.com\/reyalperformance\" title=\"https:\/\/www.facebook.com\/reyalperformance\">FACEBOOK<\/a>   \/   <a href=\"https:\/\/www.instagram.com\/reyalperformance\" title=\"https:\/\/www.instagram.com\/reyalperformance\">INSTAGRAM<\/a><\/p>",
+          "link-text": ""
+        }
+      },
+      "framework--featured-contentabout": {
+        "type": "framework--featured-contentabout",
+        "settings": {
+          "full-width": true,
+          "background-color": "dark",
+          "text-position": "right",
+          "text-width": "large",
+          "overlap": false,
+          "transparent-overlap": true,
+          "alternative-color": true,
+          "image": "shopify:\/\/shop_images\/FP3.png",
+          "title": "PERFORMANCE SUPPLEMENTS",
+          "description": "<p><\/p><p>REYAL performance supplements are designed to simplify your routine, combining the best assortment of traditional ingredients into single-use products that help your body recover, refuel and build muscle. We’ve included what we believe to be the essentials, supplements that support any type of training program and that give your body the fuel it needs to consistently perform at its best. <\/p><p><\/p><p>Training is a critical part of anyone’s collective health and wellness. Like skincare, it’s a long game requiring diligence, commitment, and consistency. REYAL performance adds to your arsenal of tools to help you maximize results. <\/p><p><\/p>",
+          "link-url": "https:\/\/www.reyalperformance.com\/collections\/supplements",
+          "link-text": "SHOP SUPPLEMENTS"
+        }
+      },
+      "16086695196803c9a6": {
+        "type": "double-image-section",
+        "settings": {
+        }
+      },
+      "framework--featured-contenttrain": {
+        "type": "framework--featured-contenttrain",
+        "settings": {
+          "full-width": true,
+          "background-color": "light",
+          "text-position": "center",
+          "text-width": "large",
+          "overlap": false,
+          "transparent-overlap": true,
+          "alternative-color": false,
+          "image": "shopify:\/\/shop_images\/RSCF_banner.jpg",
+          "title": "",
+          "description": "",
+          "link-text": ""
+        }
+      },
+      "160978762066fc8e6a": {
+        "type": "framework--featured-video",
+        "disabled": true,
+        "settings": {
+          "video-url": "https:\/\/vimeo.com\/502782317",
+          "full-width": true,
+          "background-color": "none",
+          "section-height": "regular",
+          "darken-video": false,
+          "alt-text": true,
+          "heading": "",
+          "sub-heading": "",
+          "button-text": "",
+          "button-url": ""
+        }
+      },
+      "framework--featured-contentheader": {
+        "type": "framework--featured-contentheader",
+        "settings": {
+          "full-width": true,
+          "background-color": "accent",
+          "text-position": "center",
+          "text-width": "large",
+          "overlap": false,
+          "transparent-overlap": true,
+          "alternative-color": true,
+          "image": "shopify:\/\/shop_images\/Screen_Shot_2021-01-18_at_11.20.57_AM.png",
+          "title": "",
+          "description": "<p>We create men’s performance skincare and supplements that work to fuel, strengthen and protect skin. Skincare, like all health-driven initiatives, skincare is a long game, training for a better tomorrow. To be successful, one must be committed, regimented, diligent, and focused. Your skin, like your body, is a by-product of what you eat, how often you sweat, and how you take of yourself. We created REYAL for a man who’s committed to bettering himself, a man who’s not afraid to feel.<\/p><p>‏‏<br\/>‏‏‎ ‎↓<\/p>",
+          "link-text": ""
+        }
+      },
+      "161049443034369103": {
+        "type": "instafeed",
+        "settings": {
+          "heading_font": "helvetica_n4",
+          "heading_size": 10,
+          "feed_width": 100,
+          "html_area": ""
+        }
+      },
+      "framework--featured-content-blog": {
+        "type": "framework--featured-content-blog",
+        "settings": {
+          "full-width": false,
+          "background-color": "none",
+          "text-position": "right",
+          "text-width": "large",
+          "overlap": false,
+          "transparent-overlap": true,
+          "alternative-color": false,
+          "image": "shopify:\/\/shop_images\/journ3_54603114-67a6-49cb-ac98-bd050ec1b571.jpg",
+          "title": "",
+          "description": "<p>THE REYAL JOURNAL IS A COLLECTIVE RESOURCE MERGING RELEVANT TOPICS ON FITNESS, CULTURE AND HEALTH. FEATURING STORIES, TRAINING PROGRAMS AND REYAL AMBASSADORS<\/p>",
+          "link-text": ""
+        }
+      },
+      "framework--featured-contentabout-banner": {
+        "type": "framework--featured-contentabout-banner",
+        "settings": {
+          "full-width": true,
+          "background-color": "light",
+          "text-position": "center",
+          "text-width": "large",
+          "overlap": false,
+          "transparent-overlap": true,
+          "alternative-color": true,
+          "image": "shopify:\/\/shop_images\/Alt.jpg",
+          "title": "",
+          "description": "<p>We create men’s performance skincare and supplements that work to fuel, strengthen and protect skin. Skincare, like all health-driven initiatives, skincare is a long game, training for a better tomorrow. To be successful, one must be committed, regimented, diligent, and focused. Your skin, like your body, is a by-product of what you eat, how often you sweat, and how you take of yourself. We created REYAL for a man who’s committed to bettering himself, a man who’s not afraid to feel.<\/p><p>‏‏<br\/>‏‏‎ ‎↓<\/p>",
+          "link-text": ""
+        }
+      },
+      "framework--login": {
+        "type": "framework--login",
+        "settings": {
+        }
+      },
+      "framework--register": {
+        "type": "framework--register",
+        "settings": {
+        }
+      },
+      "framework--account": {
+        "type": "framework--account",
+        "settings": {
+        }
+      },
+      "framework--featured-contentaboutabout": {
+        "type": "framework--featured-contentaboutabout",
+        "settings": {
+          "full-width": true,
+          "background-color": "dark",
+          "text-position": "left",
+          "text-width": "large",
+          "overlap": false,
+          "transparent-overlap": false,
+          "alternative-color": true,
+          "image": "shopify:\/\/shop_images\/FP4.png",
+          "title": "",
+          "description": "<p>THE REYAL JOURNAL IS A COLLECTIVE RESOURCE MERGING RELEVANT TOPICS ON FITNESS, CULTURE, AND HEALTH. FEATURING STORIES, TRAINING PROGRAMS, AND REYAL AMBASSADORS. <\/p>",
+          "link-url": "shopify:\/\/blogs\/journal",
+          "link-text": "READ JOURNAL"
+        }
+      },
+      "framework--featured-contentaboutaboutabout": {
+        "type": "framework--featured-contentaboutaboutabout",
+        "settings": {
+          "full-width": true,
+          "background-color": "dark",
+          "text-position": "right",
+          "text-width": "large",
+          "overlap": false,
+          "transparent-overlap": false,
+          "alternative-color": true,
+          "image": "shopify:\/\/shop_images\/FP1_925b0f43-2a29-4839-88db-66c686ebaded.png",
+          "title": "",
+          "description": "<p>REYAL CREATES MEN’S PERFORMANCE SKINCARE AND SUPPLEMENTS THAT WORK TO FUEL, STRENGTHEN AND PROTECT. LIKE ANYTHING ELSE IN LIFE, IN ORDER TO BE SUCCESSFUL, YOU MUST BE COMMITTED, REGIMENTED, DILIGENT, AND FOCUSED. HOW YOUR SKIN LOOKS, AND HOW YOUR BODY FEELS, IS A DIRECT RESULT OF WHAT YOU EAT, HOW OFTEN YOU SWEAT, AND HOW YOU TAKE CARE OF YOURSELF. <\/p><p><\/p><p>WE CREATED REYAL FOR A MAN WHO’S COMMITTED TO CONTINUOUSLY BETTERING HIMSELF AND A MAN WHO’S NOT AFRAID TO FEEL. <\/p><p><\/p>",
+          "link-text": ""
+        }
+      },
+      "framework--feat-journal": {
+        "type": "framework--feat-journal",
+        "settings": {
+        }
+      },
+      "framework--page-skin-traning": {
+        "type": "framework--page-skin-traning",
+        "settings": {
+          "hero_text": "RSCF™",
+          "banner_image": "shopify:\/\/shop_images\/hero.jpg",
+          "label_left": "RSCF™ FORMULA",
+          "label_right": "LAYERING SYSTEM",
+          "layer_1_heading": "Reyal’s proprietary skincare formula uses three powerful ingredients",
+          "layer_1_description": "<p>Reyal’s skincare performance formula combines the best of science and nature. Every Reyal skincare product includes our proprietary RSCF™ tri-blend. A custom combination of active ingredients: Dragon’s Blood, Tiger grass, and Vitamin E that work together to fuel, strengthen and protect your skin.<\/p>",
+          "layer_1_accordion_1_panel_title": "DRAGON’S BLOOD",
+          "layer_1_accordion_1_panel_left_heading": "<strong>SANGRE DE GRADO<\/strong> (SAN.GRE DE GRA.DO)",
+          "layer_1_accordion_1_panel_left_image": "shopify:\/\/shop_images\/L1A1.jpg",
+          "layer_1_accordion_1_panel_right_entry_txt": "<p>A powerful and protective antioxidant found in sap from amazonian rainforest trees. Dragon's Blood is traditionally used as a topical aid for injuries to the skin such as cuts, bites, burns, stings and rashes.<\/p>",
+          "layer_1_accordion_1_panel_right_r2_heading": "ANTI-BACTERIAL, ANTI-VIRAL, ANTI-FUNGAL",
+          "layer_1_accordion_1_panel_right_r2_txt": "<p>Its rich protective antioxidant phenols and anti-inflammatory compounds help to protect the cells of the skin, reducing both redness and inflammation.<\/p>",
+          "layer_1_accordion_1_panel_right_r3_c1_heading": "REDUCED SKIN REDNESS",
+          "layer_1_accordion_1_panel_right_r3_c1_txt": "<p>Anti-inflammatory antioxidant compounds that cool the skin and reduce redness.<\/p>",
+          "layer_1_accordion_1_panel_right_r3_c2_heading": "REPAIRS COLLAGEN",
+          "layer_1_accordion_1_panel_right_r3_c2_txt": "<p>Contains Proanthocyanidins which work to repair collagen and Taspine, a known tissue-healing agent.<\/p>",
+          "layer_1_accordion_2_panel_title": "TIGER GRASS",
+          "layer_1_accordion_2_panel_left_heading": "<strong>Centella Asiatica<\/strong> (CEN·TELLA ASIA·TICA)",
+          "layer_1_accordion_2_panel_left_image": "shopify:\/\/shop_images\/tiger-grass.jpg",
+          "layer_1_accordion_2_panel_right_entry_txt": "<p>Legend has it that Centella Asiatica got its nickname from tigers that would roll around in this plant after battle to soothe their wounds and promote recovery.<\/p>",
+          "layer_1_accordion_2_panel_right_r2_heading": "POWERFUL AND PROTECTIVE ANTIOXIDANT",
+          "layer_1_accordion_2_panel_right_r2_txt": "<p>Its powerful antioxidant properties and branched-chain amino acids revitalize the skins protective barrier, mitigate the visible effects of environmental stressors (sun, pollution), and encourage new skin regeneration. <\/p>",
+          "layer_1_accordion_2_panel_right_r3_c1_heading": "Powerful Hydration",
+          "layer_1_accordion_2_panel_right_r3_c1_txt": "<p>Hydrates, moisturizes and nourishes skin<\/p>",
+          "layer_1_accordion_2_panel_right_r3_c2_heading": "REVERSES SIGNS OF AGING",
+          "layer_1_accordion_2_panel_right_r3_c2_txt": "<p>Strengthens and replenishes skin’s moisture barrier to resist and reverse the signs of aging.<\/p>",
+          "layer_1_accordion_3_panel_title": "RSCF™ VITAMIN E COMPLEX",
+          "layer_1_accordion_3_panel_left_heading": "",
+          "layer_1_accordion_3_panel_left_image": "shopify:\/\/shop_images\/vitamin-e.jpg",
+          "layer_1_accordion_3_panel_right_entry_txt": "<p>Vitamin E is a naturally occurring compound in human skin that depletes over time from constant environmental exposure in the absence of sun protection. Vitamin E is an important antioxidant protecting cell membranes and preventing damage to associated enzymes.<\/p>",
+          "layer_1_accordion_3_panel_right_r2_heading": "THE WORKHORSE OF THE RSCF™ TRI-BLEND",
+          "layer_1_accordion_3_panel_right_r2_txt": "<p>By adding additional antioxidant and anti-inflammatory properties, it helps defend the skin  from pollution and other environmental stressors that weaken skin. <\/p><p><\/p><p><br\/><\/p>",
+          "layer_1_accordion_3_panel_right_r3_c1_heading": "INCREASES SKIN FIRMNESS",
+          "layer_1_accordion_3_panel_right_r3_c1_txt": "<p>Positively affects blood circulation to prevent aging and increase firmness of skin.<\/p>",
+          "layer_1_accordion_3_panel_right_r3_c2_heading": "MINIMIZES WRINKLES",
+          "layer_1_accordion_3_panel_right_r3_c2_txt": "<p>Vitamin E helps fight the effect of free radicals that cause signs of aging like wrinkles and enlarged pores. <\/p>",
+          "layer_2_heading": "REYAL’S LAYERING SYSTEM IS MADE UP OF THREE SIMPLE STEPS",
+          "layer_2_description": "<p>The Reyal skincare assortment was designed to make skincare efficient. A simple 3-layered approach whereby each product adds value to the next, amplifying performance and long-term results. We think of our skin in the same way we do our bodies, like an athlete. So, train your skin.<\/p>",
+          "layer_2_accordion_1_panel_title": "LAYER 001 SUPREME FACE WASH",
+          "layer_2_accordion_1_panel_left_image": "shopify:\/\/shop_images\/L2A1.jpg",
+          "layer_2_accordion_1_panel_right_entry_txt": "<p>A detoxifying face gel wash delivering an invigorating and deep pore clean. <\/p>",
+          "layer_2_accordion_1_panel_right_r2_heading": "Designed to cleanse, fuel, and activate",
+          "layer_2_accordion_1_panel_right_r2_txt": "<p>Effectively exfoliates and removes debris, dirt, and oil without over drying or excessive tightness. Leaving skin feeling clean, refreshed, and smooth.<\/p>",
+          "layer_2_accordion_1_panel_right_r3_c1_heading": "How to use",
+          "layer_2_accordion_1_panel_right_r3_c1_txt": "<p>Massage over wet face and neck every morning, night, and post-sweat for 1 minute.<\/p>",
+          "layer_2_accordion_1_panel_right_r3_c2_heading": "Active Ingredients",
+          "layer_2_accordion_1_panel_right_r3_c2_txt": "<p>Actives include peppermint, caffeine, antioxidants, exfoliants and the RSCF™ tri-blend.<\/p>",
+          "layer_2_accordion_2_panel_title": "LAYER 002 SELECT DAY SERUM",
+          "layer_2_accordion_2_panel_left_image": "shopify:\/\/shop_images\/L2A2.jpg",
+          "layer_2_accordion_2_panel_right_entry_txt": "<p>A high performance, anti-aging and skin strengthening daily Vitamin C serum. <\/p>",
+          "layer_2_accordion_2_panel_right_r2_heading": "Designed to strengthen, hydrate and repair skin",
+          "layer_2_accordion_2_panel_right_r2_txt": "<p>Powerful antioxidant formulation combining Vitamin C, Ferulic and Hyaluronic acids that work together to defend against environmental aggressors, sweat, and combat visible signs of aging.<\/p>",
+          "layer_2_accordion_2_panel_right_r3_c1_heading": "How to use",
+          "layer_2_accordion_2_panel_right_r3_c1_txt": "<p>Smooth two pumps of Layer 002 Select Day Serum into face and neck.<\/p>",
+          "layer_2_accordion_2_panel_right_r3_c2_heading": "Active Ingredients",
+          "layer_2_accordion_2_panel_right_r3_c2_txt": "<p>Actives include Vitamin C, Hyaluronic Acid, Ferulic Acid, Antioxidants and the RSCF™ tri-blend.<\/p>",
+          "layer_2_accordion_3_panel_title": "LAYER 003 SUPER DAY MOISTURIZER",
+          "layer_2_accordion_3_panel_left_image": "shopify:\/\/shop_images\/L2A3.jpg",
+          "layer_2_accordion_3_panel_right_entry_txt": "<p>A lightweight, non-greasy, anti-shine daily moisturizer with UVA\/UVB protection. Packed with creatine, proteins and BCAA’s to strengthen skin.<\/p>",
+          "layer_2_accordion_3_panel_right_r2_heading": "Designed to protect against UVA\/UVB exposure and strengthen skin",
+          "layer_2_accordion_3_panel_right_r2_txt": "<p>Ultra-sheer and anti-shine, high antioxidant protection broad spectrum UVA\/UVB shield defending against high impact environmental elements: sun, sweat and pollution. Non-acnegenic.<\/p>",
+          "layer_2_accordion_3_panel_right_r3_c1_heading": "How To Use",
+          "layer_2_accordion_3_panel_right_r3_c1_txt": "<p>Smooth a small amount of Layer 003 Super Day Moisturizer into face and neck.<\/p>",
+          "layer_2_accordion_3_panel_right_r3_c2_heading": "Active Ingredients",
+          "layer_2_accordion_3_panel_right_r3_c2_txt": "<p>Actives include antioxidants, creatine, BCAAs, proteins and the RSCF™ tri-blend.<\/p>",
+          "url_left": "shopify:\/\/products\/layer-003-super-day-moisturizer",
+          "image_left": "shopify:\/\/shop_images\/resized-pic1_cropped.jpg",
+          "left_product_name": "LAYER 003 SUPER DAY MOISTURIZER",
+          "left_product_price": 34,
+          "url_right": "shopify:\/\/products\/supreme-bodywash",
+          "image_right": "shopify:\/\/shop_images\/resized-pic2_cropped.jpg",
+          "right_product_name": "SUPREME BODY WASH",
+          "right_product_price": 58
+        }
+      },
+      "162286023092906457": {
+        "type": "framework--hosted-video",
+        "settings": {
+          "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0268\/0356\/8822\/files\/Hero_video_cut.mp4",
+          "height": 380
+        }
+      },
+      "framework--page-product-hero": {
+        "type": "framework--page-product-hero",
+        "settings": {
+          "left_image01": "shopify:\/\/shop_images\/Rectangle_72.jpg",
+          "left_image02": "shopify:\/\/shop_images\/Rectangle_72.jpg",
+          "left_image03": "shopify:\/\/shop_images\/Rectangle_72.jpg",
+          "right_product_name": "WEIGH PROTEIN  FORMULATION",
+          "right_product_subheading": "FLAVOUR: CLASSIC VANILLA",
+          "right_product_description": "Bright and refreshing, this apéritif blends fresh grapefruit, Makrut lime leaves, pink peppercorn, and a subtle kick of fresh jalapeño. Try it on the rocks or with a squeeze of fresh citrus.",
+          "right_product_feature01": "25 Servings (850g Total)",
+          "right_product_feature02": "Additive and Ingredient",
+          "right_product_heading": "25 Servings (850g Total)",
+          "right_product_purchase_01": "ONE TIME PURCHASE - $34",
+          "right_product_purchase_02": "30 DAY SUBSCRIPTION - $34",
+          "right_product_purchase_view_more": "View Details",
+          "right_product_purchase_submenu_link_01": "Link 1",
+          "right_product_purchase_submenu_link_02": "Link 2",
+          "right_product_purchase_submenu_link_03": "Link 3",
+          "right_product_button": "ADD TO CART - $34"
+        }
+      },
+      "framework--page-organic-ingredients": {
+        "type": "framework--page-organic-ingredients",
+        "settings": {
+          "center_organic_ingredient_title": "A FIVE IN ONE HIGH-PERFORMANCE PROTEIN SUPPLIMENT",
+          "left_image": "shopify:\/\/shop_images\/Rectangle_82.jpg",
+          "center_organic_ingredient_title1": "No Added Fillers",
+          "center_organic_ingredient_desc1": "Les 3 niveaux qui composent le boîtier donnent à la montre une silhouette fine et élancée. Chaque",
+          "center_image": "shopify:\/\/shop_images\/Rectangle_83.jpg",
+          "center_organic_ingredient_title2": "100% Dairy Free",
+          "center_organic_ingredient_desc2": "Les 3 niveaux qui composent le boîtier donnent à la montre une silhouette fine et élancée. Chaque",
+          "right_image": "shopify:\/\/shop_images\/Rectangle_84.jpg",
+          "center_organic_ingredient_title3": "Easy Mixing",
+          "center_organic_ingredient_desc3": "Les 3 niveaux qui composent le boîtier donnent à la montre une silhouette fine et élancée. Chaque",
+          "center_real_ingredient_title": "REAL INGREDIENTS.  FULL TRANSPARENCY.",
+          "center_real_ingredient_description": "",
+          "center_real_ingredient_button": "LEARN MORE",
+          "right_real_image": "shopify:\/\/shop_images\/Rectangle_114.jpg",
+          "left_ingredient_list_title": "AMOUNT PER SCOOP (34g)",
+          "left_ingredient_list_01": "Calories",
+          "left_ingredient_list_value_01": "121g",
+          "left_ingredient_list_02": "Fat",
+          "left_ingredient_list_value_02": "1g",
+          "left_ingredient_list_03": "Protein",
+          "left_ingredient_list_value_03": "27g",
+          "left_ingredient_list_04": "Sugars",
+          "left_ingredient_list_value_04": "1g",
+          "left_ingredient_list_05": "Carbohydrates",
+          "left_ingredient_list_value_05": "1g",
+          "left_ingredient_list_06": "Sodium",
+          "left_ingredient_list_value_06": "45mg",
+          "right_ingredient_list_title": "INGREDIENTS LIST",
+          "right_ingredient_list_01": "Whey Protein Isolate",
+          "right_ingredient_list_02": "Creatine Monohydrate",
+          "right_ingredient_list_03": "L-Leucine",
+          "right_ingredient_list_04": "L-Isoleucine",
+          "right_ingredient_list_05": "L-Valine",
+          "right_ingredient_list_06": "VIEW MORE INGREDIENTS"
+        }
+      },
+      "framework--page-membership": {
+        "type": "framework--page-membership",
+        "settings": {
+          "product_category_title": "YOU MAY ALSO LIKE:",
+          "product_category_name1": "001 SUPREME FACE WASH",
+          "product_category_name2": "002 FACIAL CLEANSER",
+          "product_category_name3": "003 FACIAL MOISTURIZER",
+          "tab01_membership_title_one": "REYAL MEMBERSHIP",
+          "tab01_membership_desc_one": "Fresh jalapeño adds a subtle kick to every pour. (Don’t worry, it’s not that kind of hot.) We use jalapeños sourced nearby in California every pour. (Don’t worry, it’s not that kind of hot.)",
+          "tab01_membership_button_one": "LEARN MORE",
+          "tab01_service_title_one": "BOTTLE DISCOUNTS & FREE SHIPPING",
+          "tab01_service_desc_one": "Fresh jalapeño adds a subtle kick to every pour. (Don’t worry, it’s not that kind of hot.) We use",
+          "tab01_service_title_two": "BOTTLE DISCOUNTS & FREE SHIPPING",
+          "tab01_service_desc_two": "Fresh jalapeño adds a subtle kick to every pour. (Don’t",
+          "tab01_service_title_three": "BOTTLE DISCOUNTS & FREE SHIPPING",
+          "tab01_service_desc_three": "Fresh jalapeño adds a subtle kick to every pour. (Don’t worry, it’s not that kind of hot.) We use",
+          "tab02_membership_title_one": "REYAL MEMBERSHIP 2",
+          "tab02_membership_desc_one": "Fresh jalapeño adds a subtle kick to every pour. (Don’t worry, it’s not that kind of hot.) We use jalapeños sourced nearby in California every pour. (Don’t worry, it’s not that kind of hot.)",
+          "tab02_membership_button_one": "LEARN MORE",
+          "tab02_service_title_one": "BOTTLE DISCOUNTS & FREE SHIPPING",
+          "tab02_service_desc_one": "Fresh jalapeño adds a subtle kick to every pour. (Don’t worry, it’s not that kind of hot.) We use",
+          "tab02_service_title_two": "BOTTLE DISCOUNTS & FREE SHIPPING",
+          "tab02_service_desc_two": "Fresh jalapeño adds a subtle kick to every pour. (Don’t",
+          "tab02_service_title_three": "BOTTLE DISCOUNTS & FREE SHIPPING",
+          "tab02_service_desc_three": "Fresh jalapeño adds a subtle kick to every pour. (Don’t worry, it’s not that kind of hot.) We use",
+          "tab03_membership_title_one": "REYAL MEMBERSHIP 3",
+          "tab03_membership_desc_one": "Fresh jalapeño adds a subtle kick to every pour. (Don’t worry, it’s not that kind of hot.) We use jalapeños sourced nearby in California every pour. (Don’t worry, it’s not that kind of hot.)",
+          "tab03_membership_button_one": "LEARN MORE",
+          "tab03_service_title_one": "BOTTLE DISCOUNTS & FREE SHIPPING",
+          "tab03_service_desc_one": "Fresh jalapeño adds a subtle kick to every pour. (Don’t worry, it’s not that kind of hot.) We use",
+          "tab03_service_title_two": "BOTTLE DISCOUNTS & FREE SHIPPING",
+          "tab03_service_desc_two": "Fresh jalapeño adds a subtle kick to every pour. (Don’t",
+          "tab03_service_title_three": "BOTTLE DISCOUNTS & FREE SHIPPING",
+          "tab03_service_desc_three": "Fresh jalapeño adds a subtle kick to every pour. (Don’t worry, it’s not that kind of hot.) We use"
+        }
+      },
+      "framework--page-review": {
+        "type": "framework--page-review",
+        "settings": {
+          "center_review_main_title": "WHAT PEOPLE ARE SAYING ABOUT US",
+          "center_review_star_count": "141 Reviews",
+          "review_coustomer_name1": "MITCH",
+          "review_coustomer_verified_acc1": "Verified Buyer",
+          "review_coustomer_review_title1": "Great skin cream!",
+          "review_coustomer_review_desc1": "Les 3 niveaux qui composent le boîtier donnent à la montre une silhouette fine et élancée. Chaque étage a une finition différente dont les reflets sous la lumière sont particulièrement captivants. Le taillage d’une extrême finesse des 120 crans de la couronne la rende précieuse comme un bijou. Le numéro de la collection est gravé sur le fond de la montre ainsi que la signature d’Apose : pure, automatique et très française."
+        }
+      },
+      "framework--page-apparel-product": {
+        "type": "framework--page-apparel-product",
+        "settings": {
+          "left_image": "shopify:\/\/shop_images\/t-shirt.jpg",
+          "right_product_name": "LAYER 001 SUPREME FACE WASH",
+          "right_product_description": "Bright and refreshing, this apéritif blends fresh grapefruit, Makrut lime leaves, pink peppercorn, and a subtle kick of fresh jalapeño. Try it on the rocks or with a squeeze of fresh citrus.",
+          "right_product_feature1": "100% Athletic Poly Blend",
+          "right_product_feature2": "Slim Athletic Fit",
+          "right_product_variant1": "SELECT SIZE",
+          "right_product_variant2": "SIZE GUIDE",
+          "right_product_variant2_link": "#",
+          "right_product_heading": "",
+          "right_product_purchase_01": "",
+          "right_product_purchase_02": "",
+          "right_product_purchase_view_more": "",
+          "right_product_purchase_submenu_link_01": "",
+          "right_product_purchase_submenu_link_02": "",
+          "right_product_purchase_submenu_link_03": "",
+          "right_product_button": "ADD TO CART - $34"
+        }
+      },
+      "framework--page-apparel-wearing": {
+        "type": "framework--page-apparel-wearing",
+        "settings": {
+          "wearing_title": "HOW OTHERS ARE WEARING IT",
+          "wearing_subtitle": "Tag us on Instagram @reyal-performance to have your look featured.",
+          "wearing_image1": "shopify:\/\/shop_images\/wearing1.jpg",
+          "wearing_image_title1": "@roanne.mah",
+          "wearing_image2": "shopify:\/\/shop_images\/wearing2.jpg",
+          "wearing_image_title2": "@jimmy.football",
+          "wearing_image3": "shopify:\/\/shop_images\/wearing3.jpg",
+          "wearing_image_title3": "@spud_mackenzie",
+          "wearing_image4": "shopify:\/\/shop_images\/wearing4.jpg",
+          "wearing_image_title4": "@terry_knowels",
+          "comfort_title": "COMFORT FOR ALL",
+          "comfort_subtitle": "Reyal's premium athletic gear and supply department is designed for an active life, prioritizing fit, fucntion and comfort. We select apparel partners, products, and styles that emphasize quality, design, and creativity. We wear our gear hard [in the gym] and chose products that's wash well, stretch right, and look better with age.",
+          "comfort_bg_image": "shopify:\/\/shop_images\/Rectangle_107.jpg"
+        }
+      },
+      "framework--page-sup-product-hero": {
+        "type": "framework--page-sup-product-hero",
+        "settings": {
+          "left_image001": "shopify:\/\/shop_images\/Rectangle_58.png",
+          "left_image002": "shopify:\/\/shop_images\/Rectangle_58.png",
+          "left_image003": "shopify:\/\/shop_images\/Rectangle_58.png",
+          "right_product_name": "LAYER 001 SUPREME FACE WASH",
+          "right_product_description": "Bright and refreshing, this apéritif blends fresh grapefruit, Makrut lime leaves, pink peppercorn, and a subtle kick of fresh jalapeño. Try it on the rocks or with a squeeze of fresh citrus.",
+          "right_product_heading": "ADDITIVES & INGREDIENTS",
+          "right_product_purchase_01": "ONE TIME PURCHASE - $34",
+          "right_product_purchase_02": "30 DAY SUBSCRIPTION - $34",
+          "right_product_purchase_view_more": "View Details",
+          "right_product_purchase_submenu_link_01": "link 1",
+          "right_product_purchase_submenu_link_02": "link 1",
+          "right_product_purchase_submenu_link_03": "link 1",
+          "right_product_button": "ADD TO CART - $34"
+        }
+      },
+      "framework--page-sup-organic-ingredients": {
+        "type": "framework--page-sup-organic-ingredients",
+        "settings": {
+          "center_organic_ingredient_title": "VIBRANT & FRESH, MADE WITH ALL ORGANIC INGREDIENTS",
+          "left_image": "shopify:\/\/shop_images\/The_Pour.jpg",
+          "center_organic_ingredient_title1": "The Pour",
+          "center_organic_ingredient_desc1": "Les 3 niveaux qui composent le boîtier donnent à la montre une silhouette fine et élancée. Chaque",
+          "center_image": "shopify:\/\/shop_images\/Cleansing.jpg",
+          "center_organic_ingredient_title2": "Cleansing",
+          "center_organic_ingredient_desc2": "Les 3 niveaux qui composent le boîtier donnent à la montre une silhouette fine et élancée. Chaque",
+          "right_image": "shopify:\/\/shop_images\/Vibrant_Fresh_Skin.jpg",
+          "center_organic_ingredient_title3": "Vibrant Fresh Skin",
+          "center_organic_ingredient_desc3": "Les 3 niveaux qui composent le boîtier donnent à la montre une silhouette fine et élancée. Chaque",
+          "center_real_ingredient_title": "REAL INGREDIENTS.  FULL TRANSPARENCY.",
+          "center_real_ingredient_description": "Les 3 niveaux qui composent le boîtier donnent à la montre une silhouette fine et élancée. Chaque Les 3 niveaux qui composent le boîtier donnent à la montre une silhouette fine et",
+          "center_real_ingredient_button": "VIEW INGREDIENTS",
+          "right_banner_image": "shopify:\/\/shop_images\/Rectangle_114.jpg"
+        }
+      },
+      "framework--product-apparel": {
+        "type": "framework--product-apparel",
+        "settings": {
+        }
+      },
+      "product-apparel": {
+        "type": "product-apparel",
+        "settings": {
+          "smart-payment-button": true,
+          "variant-style": "buttons",
+          "swatches-enabled": false,
+          "product-unavailable-form-show": false,
+          "low-in-stock-amount": 0,
+          "modal-enabled": true,
+          "hide-variant-media": false,
+          "loop-enabled": false,
+          "product-size-chart-enabled": false,
+          "product-size-chart-option": "size",
+          "product-size-chart-page-content": ""
+        }
+      }
+    },
+    "content_for_index": [
+      "162286023092906457",
+      "160978762066fc8e6a",
+      "16086695196803c9a6",
+      "1522371696540",
+      "16046227238d2d0dea",
+      "1604825597485fc23a",
+      "1522371405349",
+      "1522371573233",
+      "1602639580080",
+      "1604361432c1ef4ad2",
+      "1522371666643",
+      "16048258340f345868",
+      "16048314827d47c196",
+      "161049443034369103"
+    ]
+  },
+  "presets": {
+    "Bloom": {
+      "color--accent": "#c499fb",
+      "bg-color--body": "#ffffff",
+      "color--body": "#212121",
+      "color--alternative": "#ffffff",
+      "bg-color--panel": "#f0ecea",
+      "color--important": "#ca2f01",
+      "color--button": "#ffffff",
+      "bg-color--button": "#212121",
+      "color--header": "#212121",
+      "color--footer": "",
+      "bg-color--footer": "",
+      "bg-color--announcement": "#e6d4ff",
+      "announcement--alternative-text": false,
+      "color--collection--title": "#ffffff",
+      "typography--heading": "zurich_extended_n7",
+      "typography--heading--uppercase": false,
+      "typography--heading--size": "small",
+      "typography--accent": "helvetica_n4",
+      "typography--paragraph": "karla_n4",
+      "typography--paragraph--size": "medium",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo": "",
+            "logo-height-range": 50,
+            "menu": "main-menu"
+          }
+        },
+        "framework--footer": {
+          "type": "framework--footer",
+          "blocks": {
+            "1584642445690": {
+              "type": "about",
+              "settings": {
+                "about-title": "",
+                "text": "<p>A short summary about your brand.<\/p>\n<p>&copy; Your brand name.<\/p>",
+                "subscribe--show-social-icons": true
+              }
+            },
+            "1584642448228": {
+              "type": "menu",
+              "settings": {
+                "menu-title": "",
+                "menu": "footer"
+              }
+            },
+            "1584642450700": {
+              "type": "subscribe",
+              "settings": {
+                "newsletter--heading": "",
+                "newsletter--info": "<p>Sign up to our mailing list<\/p>",
+                "subscribe--show-newsletter": true
+              }
+            }
+          },
+          "block_order": [
+            "1584642445690",
+            "1584642448228",
+            "1584642450700"
+          ],
+          "settings": {
+            "show-currency-selector": true,
+            "show-locale-selector": true,
+            "show-payment-icons": true
+          }
+        },
+        "product": {
+          "type": "product",
+          "settings": {
+            "smart-payment-button": true,
+            "variant-style": "dropdowns",
+            "swatches-enabled": false,
+            "product-unavailable-form-show": false,
+            "low-in-stock-amount": 0,
+            "modal-enabled": true,
+            "hide-variant-media": false,
+            "loop-enabled": false,
+            "product-size-chart-enabled": false,
+            "product-size-chart-option": "size",
+            "product-size-chart-page-content": ""
+          }
+        },
+        "collection": {
+          "type": "collection",
+          "settings": {
+            "show-featured-image": true,
+            "products-per-row-range": 3
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "enabled": true,
+            "home-page-only": false,
+            "icon": "",
+            "text": "Add your announcement message with a bit more length",
+            "link": ""
+          }
+        },
+        "1522371405349": {
+          "type": "framework--featured-content",
+          "settings": {
+            "full-width": true,
+            "background-color": "accent",
+            "text-position": "left",
+            "text-width": "small",
+            "overlap": false,
+            "transparent-overlap": false,
+            "alternative-color": false,
+            "image": "",
+            "title": "Image with text",
+            "description": "<p>Use a combination of image and text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store<\/p>",
+            "link-url": "",
+            "link-text": "View more"
+          }
+        },
+        "1522371486135": {
+          "type": "index--collection",
+          "settings": {
+            "collection": "",
+            "max-products-range": 5
+          }
+        },
+        "1522371573233": {
+          "type": "framework--featured-content",
+          "settings": {
+            "full-width": false,
+            "background-color": "light",
+            "text-position": "center",
+            "text-width": "large",
+            "overlap": true,
+            "transparent-overlap": false,
+            "alternative-color": false,
+            "image": "",
+            "title": "Image with text",
+            "description": "<p>Use a combination of image and text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store<\/p>",
+            "link-url": "",
+            "link-text": "View more"
+          }
+        },
+        "1522371666643": {
+          "type": "framework--newsletter",
+          "settings": {
+            "background-color": "none",
+            "heading": "Subscribe to our newsletter",
+            "newsletter--subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+          }
+        },
+        "1522371685670": {
+          "type": "framework--featured-text",
+          "settings": {
+            "background-color": "none",
+            "heading": "Talk about your brand",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "1522371696540": {
+          "type": "framework--featured-video",
+          "settings": {
+            "video-url": "",
+            "image": "",
+            "full-width": true,
+            "background-color": "light",
+            "section-height": "regular",
+            "darken-video": true,
+            "alt-text": true,
+            "heading": "Video",
+            "sub-heading": "Add a subheading here",
+            "button-text": "button",
+            "button-url": ""
+          }
+        },
+        "1522371710166": {
+          "type": "framework--map",
+          "settings": {
+            "api-key": "",
+            "map-address": "391 Sutter St, San Francisco",
+            "background-color": "light",
+            "theme": "grayscale",
+            "heading": "Map",
+            "address": "<p>391 Sutter St,<br>San Francisco<br>CA 94108, USA<br><br>(555) 555-5555<\/p>",
+            "hours": "<p><strong>Monday - Friday<\/strong><br>12pm - 8pm<br><br><strong>Saturday - Sunday<\/strong><br>12pm - 5pm<\/p>",
+            "image": ""
+          }
+        },
+        "1522371753814": {
+          "type": "slideshow",
+          "blocks": {
+            "1522371753814-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "slide-title": "Slideshow",
+                "slide-tagline": "Introduce your store or campaign with this slideshow section.",
+                "slide-link-url": "",
+                "slide-link-title": "Link to content",
+                "slide-y-pos": "middle",
+                "slide-x-pos": "left",
+                "slide-text-pos": "text-left"
+              }
+            },
+            "1522371753814-1": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "slide-title": "Slideshow",
+                "slide-tagline": "Introduce your store or campaign with this slideshow section.",
+                "slide-link-url": "",
+                "slide-link-title": "Link to content",
+                "slide-y-pos": "middle",
+                "slide-x-pos": "left",
+                "slide-text-pos": "text-left"
+              }
+            }
+          },
+          "block_order": [
+            "1522371753814-0",
+            "1522371753814-1"
+          ],
+          "settings": {
+            "full-width": true,
+            "autoplay": false,
+            "transition_style": "default",
+            "rotate-frequency-range": 7
+          }
+        },
+        "1522371819571": {
+          "type": "framework--featured-grid",
+          "blocks": {
+            "1522371819571-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "title": "Grid image",
+                "link-url": "",
+                "link-text": "View more"
+              }
+            },
+            "1522371819571-1": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "title": "Grid image",
+                "link-url": "",
+                "link-text": "View more"
+              }
+            },
+            "1522371819571-2": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "title": "Grid image",
+                "link-url": "",
+                "link-text": "View more"
+              }
+            },
+            "1522371819571-3": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "title": "Grid image",
+                "link-url": "",
+                "link-text": "View more"
+              }
+            },
+            "1522371970926": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "title": "Grid image",
+                "link-url": "",
+                "link-text": "View more"
+              }
+            },
+            "1522371976471": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "title": "Grid image",
+                "link-url": "",
+                "link-text": "View more"
+              }
+            }
+          },
+          "block_order": [
+            "1522371819571-0",
+            "1522371819571-1",
+            "1522371819571-2",
+            "1522371819571-3",
+            "1522371970926",
+            "1522371976471"
+          ],
+          "settings": {
+            "background-color": "light",
+            "spacing": true,
+            "alternative-color": false,
+            "text-position": "center",
+            "container-width": 4,
+            "width": 3,
+            "mobile-width": "2",
+            "title": "Featured grid",
+            "subtitle": "",
+            "link-url": "",
+            "link-text": "View more"
+          }
+        }
+      },
+      "content_for_index": [
+        "1522371753814",
+        "1522371573233",
+        "1522371819571",
+        "1522371696540",
+        "1522371685670",
+        "1522371486135",
+        "1522371405349",
+        "1522371666643",
+        "1522371710166"
+      ]
+    },
+    "Fashion": {
+      "color--accent": "#f9cfd6",
+      "bg-color--body": "#ffffff",
+      "color--body": "#212121",
+      "color--alternative": "#ffffff",
+      "bg-color--panel": "rgba(0,0,0,0)",
+      "color--important": "#ca2f01",
+      "color--button": "#ffffff",
+      "bg-color--button": "#212121",
+      "color--header": "#212121",
+      "color--footer": "#212121",
+      "bg-color--footer": "",
+      "bg-color--announcement": "#f9cfd6",
+      "announcement--alternative-text": false,
+      "color--collection--title": "#ffffff",
+      "typography--heading": "trade_gothic_n4",
+      "typography--heading--uppercase": true,
+      "typography--heading--size": "small",
+      "typography--accent": "madera_n5",
+      "typography--paragraph": "roboto_n4",
+      "typography--paragraph--size": "medium",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo": "",
+            "logo-height-range": 50,
+            "menu": "main-menu"
+          }
+        },
+        "framework--footer": {
+          "type": "framework--footer",
+          "blocks": {
+            "1584642445690": {
+              "type": "about",
+              "settings": {
+                "about-title": "",
+                "text": "<p>A short summary about your brand.<\/p>\n<p>&copy; Your brand name.<\/p>",
+                "subscribe--show-social-icons": true
+              }
+            },
+            "1584642448228": {
+              "type": "menu",
+              "settings": {
+                "menu-title": "",
+                "menu": "footer"
+              }
+            },
+            "1584642450700": {
+              "type": "subscribe",
+              "settings": {
+                "newsletter--heading": "",
+                "newsletter--info": "<p>Sign up to our mailing list<\/p>",
+                "subscribe--show-newsletter": true
+              }
+            }
+          },
+          "block_order": [
+            "1584642445690",
+            "1584642448228",
+            "1584642450700"
+          ],
+          "settings": {
+            "show-currency-selector": true,
+            "show-locale-selector": true,
+            "show-payment-icons": true
+          }
+        },
+        "product": {
+          "type": "product",
+          "settings": {
+            "smart-payment-button": true,
+            "variant-style": "dropdowns",
+            "swatches-enabled": false,
+            "product-unavailable-form-show": false,
+            "low-in-stock-amount": 0,
+            "modal-enabled": true,
+            "hide-variant-media": false,
+            "loop-enabled": false,
+            "product-size-chart-enabled": false,
+            "product-size-chart-option": "size",
+            "product-size-chart-page-content": ""
+          }
+        },
+        "collection": {
+          "type": "collection",
+          "settings": {
+            "show-featured-image": true,
+            "products-per-row-range": 3
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "enabled": true,
+            "home-page-only": false,
+            "icon": "",
+            "text": "Add your announcement message with a bit more length",
+            "link": ""
+          }
+        },
+        "1522371405349": {
+          "type": "framework--featured-content",
+          "settings": {
+            "full-width": true,
+            "background-color": "accent",
+            "text-position": "left",
+            "text-width": "small",
+            "overlap": false,
+            "transparent-overlap": false,
+            "alternative-color": false,
+            "image": "",
+            "title": "Image with text",
+            "description": "<p>Use a combination of image and text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store<\/p>",
+            "link-url": "",
+            "link-text": "View more"
+          }
+        },
+        "1522371486135": {
+          "type": "index--collection",
+          "settings": {
+            "collection": "",
+            "max-products-range": 5
+          }
+        },
+        "1522371573233": {
+          "type": "framework--featured-content",
+          "settings": {
+            "full-width": false,
+            "background-color": "light",
+            "text-position": "center",
+            "text-width": "large",
+            "overlap": true,
+            "transparent-overlap": false,
+            "alternative-color": false,
+            "image": "",
+            "title": "Image with text",
+            "description": "<p>Use a combination of image and text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store<\/p>",
+            "link-url": "",
+            "link-text": "View more"
+          }
+        },
+        "1522371666643": {
+          "type": "framework--newsletter",
+          "settings": {
+            "background-color": "none",
+            "heading": "Subscribe to our newsletter",
+            "newsletter--subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+          }
+        },
+        "1522371685670": {
+          "type": "framework--featured-text",
+          "settings": {
+            "background-color": "none",
+            "heading": "Talk about your brand",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "1522371696540": {
+          "type": "framework--featured-video",
+          "settings": {
+            "video-url": "",
+            "image": "",
+            "full-width": true,
+            "background-color": "light",
+            "section-height": "regular",
+            "darken-video": true,
+            "alt-text": true,
+            "heading": "Video",
+            "sub-heading": "Add a subheading here",
+            "button-text": "button",
+            "button-url": ""
+          }
+        },
+        "1522371710166": {
+          "type": "framework--map",
+          "settings": {
+            "api-key": "",
+            "map-address": "391 Sutter St, San Francisco",
+            "background-color": "light",
+            "theme": "grayscale",
+            "heading": "Map",
+            "address": "<p>391 Sutter St,<br>San Francisco<br>CA 94108, USA<br><br>(555) 555-5555<\/p>",
+            "hours": "<p><strong>Monday - Friday<\/strong><br>12pm - 8pm<br><br><strong>Saturday - Sunday<\/strong><br>12pm - 5pm<\/p>",
+            "image": ""
+          }
+        },
+        "1522371753814": {
+          "type": "slideshow",
+          "blocks": {
+            "1522371753814-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "slide-title": "Slideshow",
+                "slide-tagline": "Introduce your store or campaign with this slideshow section.",
+                "slide-link-url": "",
+                "slide-link-title": "Link to content",
+                "slide-y-pos": "middle",
+                "slide-x-pos": "left",
+                "slide-text-pos": "text-left"
+              }
+            },
+            "1522371753814-1": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "slide-title": "Slideshow",
+                "slide-tagline": "Introduce your store or campaign with this slideshow section.",
+                "slide-link-url": "",
+                "slide-link-title": "Link to content",
+                "slide-y-pos": "middle",
+                "slide-x-pos": "left",
+                "slide-text-pos": "text-left"
+              }
+            }
+          },
+          "block_order": [
+            "1522371753814-0",
+            "1522371753814-1"
+          ],
+          "settings": {
+            "full-width": true,
+            "autoplay": false,
+            "transition_style": "default",
+            "rotate-frequency-range": 7
+          }
+        },
+        "1522371819571": {
+          "type": "framework--featured-grid",
+          "blocks": {
+            "1522371819571-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "title": "Grid image",
+                "link-url": "",
+                "link-text": "View more"
+              }
+            },
+            "1522371819571-1": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "title": "Grid image",
+                "link-url": "",
+                "link-text": "View more"
+              }
+            },
+            "1522371819571-2": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "title": "Grid image",
+                "link-url": "",
+                "link-text": "View more"
+              }
+            },
+            "1522371819571-3": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "title": "Grid image",
+                "link-url": "",
+                "link-text": "View more"
+              }
+            },
+            "1522371970926": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "title": "Grid image",
+                "link-url": "",
+                "link-text": "View more"
+              }
+            },
+            "1522371976471": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "title": "Grid image",
+                "link-url": "",
+                "link-text": "View more"
+              }
+            }
+          },
+          "block_order": [
+            "1522371819571-0",
+            "1522371819571-1",
+            "1522371819571-2",
+            "1522371819571-3",
+            "1522371970926",
+            "1522371976471"
+          ],
+          "settings": {
+            "background-color": "light",
+            "spacing": true,
+            "alternative-color": false,
+            "text-position": "center",
+            "container-width": 4,
+            "width": 3,
+            "mobile-width": "2",
+            "title": "Featured grid",
+            "subtitle": "",
+            "link-url": "",
+            "link-text": "View more"
+          }
+        }
+      },
+      "content_for_index": [
+        "1522371753814",
+        "1522371573233",
+        "1522371685670",
+        "1522371819571",
+        "1522371696540",
+        "1522371486135",
+        "1522371405349",
+        "1522371666643",
+        "1522371710166"
+      ]
+    },
+    "Books": {
+      "color--accent": "#197bbd",
+      "bg-color--body": "#ffffff",
+      "color--body": "#212121",
+      "color--alternative": "#ffffff",
+      "bg-color--panel": "#ffffff",
+      "color--important": "#ca2f01",
+      "color--button": "#ffffff",
+      "bg-color--button": "#212121",
+      "color--header": "#212121",
+      "color--footer": "#212121",
+      "bg-color--footer": "",
+      "bg-color--announcement": "#212121",
+      "announcement--alternative-text": true,
+      "color--collection--title": "#ffffff",
+      "typography--heading": "itc_caslon_no_224_n5",
+      "typography--heading--uppercase": false,
+      "typography--heading--size": "large",
+      "typography--accent": "avenir_next_n5",
+      "typography--paragraph": "itc_gamma_n4",
+      "typography--paragraph--size": "large",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo": "",
+            "logo-height-range": 50,
+            "menu": "main-menu"
+          }
+        },
+        "framework--footer": {
+          "type": "framework--footer",
+          "blocks": {
+            "1584642445690": {
+              "type": "about",
+              "settings": {
+                "about-title": "",
+                "text": "<p>A short summary about your brand.<\/p>\n<p>&copy; Your brand name.<\/p>",
+                "subscribe--show-social-icons": true
+              }
+            },
+            "1584642448228": {
+              "type": "menu",
+              "settings": {
+                "menu-title": "",
+                "menu": "footer"
+              }
+            },
+            "1584642450700": {
+              "type": "subscribe",
+              "settings": {
+                "newsletter--heading": "",
+                "newsletter--info": "<p>Sign up to our mailing list<\/p>",
+                "subscribe--show-newsletter": true
+              }
+            }
+          },
+          "block_order": [
+            "1584642445690",
+            "1584642448228",
+            "1584642450700"
+          ],
+          "settings": {
+            "show-currency-selector": true,
+            "show-locale-selector": true,
+            "show-payment-icons": true
+          }
+        },
+        "product": {
+          "type": "product",
+          "settings": {
+            "smart-payment-button": true,
+            "variant-style": "dropdowns",
+            "swatches-enabled": false,
+            "product-unavailable-form-show": false,
+            "low-in-stock-amount": 0,
+            "modal-enabled": true,
+            "hide-variant-media": false,
+            "loop-enabled": false,
+            "product-size-chart-enabled": false,
+            "product-size-chart-option": "size",
+            "product-size-chart-page-content": ""
+          }
+        },
+        "collection": {
+          "type": "collection",
+          "settings": {
+            "show-featured-image": true,
+            "products-per-row-range": 3
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "enabled": true,
+            "home-page-only": false,
+            "icon": "",
+            "text": "Add your announcement message with a bit more length",
+            "link": ""
+          }
+        },
+        "1522371405349": {
+          "type": "framework--featured-content",
+          "settings": {
+            "full-width": true,
+            "background-color": "accent",
+            "text-position": "left",
+            "text-width": "small",
+            "overlap": false,
+            "transparent-overlap": false,
+            "alternative-color": true,
+            "image": "",
+            "title": "Image with text",
+            "description": "<p>Use a combination of image and text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store<\/p>",
+            "link-url": "",
+            "link-text": "View more"
+          }
+        },
+        "1522371486135": {
+          "type": "index--collection",
+          "settings": {
+            "collection": "",
+            "max-products-range": 5
+          }
+        },
+        "1522371573233": {
+          "type": "framework--featured-content",
+          "settings": {
+            "full-width": false,
+            "background-color": "light",
+            "text-position": "center",
+            "text-width": "large",
+            "overlap": true,
+            "transparent-overlap": false,
+            "alternative-color": false,
+            "image": "",
+            "title": "Image with text",
+            "description": "<p>Use a combination of image and text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store<\/p>",
+            "link-url": "",
+            "link-text": "View more"
+          }
+        },
+        "1522371666643": {
+          "type": "framework--newsletter",
+          "settings": {
+            "background-color": "none",
+            "heading": "Subscribe to our newsletter",
+            "newsletter--subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+          }
+        },
+        "1522371685670": {
+          "type": "framework--featured-text",
+          "settings": {
+            "background-color": "none",
+            "heading": "Talk about your brand",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "1522371696540": {
+          "type": "framework--featured-video",
+          "settings": {
+            "video-url": "",
+            "image": "",
+            "full-width": true,
+            "background-color": "light",
+            "section-height": "regular",
+            "darken-video": true,
+            "alt-text": true,
+            "heading": "Video",
+            "sub-heading": "Add a subheading here",
+            "button-text": "button",
+            "button-url": ""
+          }
+        },
+        "1522371710166": {
+          "type": "framework--map",
+          "settings": {
+            "api-key": "",
+            "map-address": "391 Sutter St, San Francisco",
+            "background-color": "light",
+            "theme": "grayscale",
+            "heading": "Map",
+            "address": "<p>391 Sutter St,<br>San Francisco<br>CA 94108, USA<br><br>(555) 555-5555<\/p>",
+            "hours": "<p><strong>Monday - Friday<\/strong><br>12pm - 8pm<br><br><strong>Saturday - Sunday<\/strong><br>12pm - 5pm<\/p>",
+            "image": ""
+          }
+        },
+        "1522371753814": {
+          "type": "slideshow",
+          "blocks": {
+            "1522371753814-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "slide-title": "Slideshow",
+                "slide-tagline": "Introduce your store or campaign with this slideshow section.",
+                "slide-link-url": "",
+                "slide-link-title": "Link to content",
+                "slide-y-pos": "middle",
+                "slide-x-pos": "left",
+                "slide-text-pos": "text-left"
+              }
+            },
+            "1522371753814-1": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "slide-title": "Slideshow",
+                "slide-tagline": "Introduce your store or campaign with this slideshow section.",
+                "slide-link-url": "",
+                "slide-link-title": "Link to content",
+                "slide-y-pos": "middle",
+                "slide-x-pos": "left",
+                "slide-text-pos": "text-left"
+              }
+            }
+          },
+          "block_order": [
+            "1522371753814-0",
+            "1522371753814-1"
+          ],
+          "settings": {
+            "full-width": true,
+            "autoplay": false,
+            "transition_style": "default",
+            "rotate-frequency-range": 7
+          }
+        },
+        "1522371819571": {
+          "type": "framework--featured-grid",
+          "blocks": {
+            "1522371819571-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "title": "Grid image",
+                "link-url": "",
+                "link-text": "View more"
+              }
+            },
+            "1522371819571-1": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "title": "Grid image",
+                "link-url": "",
+                "link-text": "View more"
+              }
+            },
+            "1522371819571-2": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "title": "Grid image",
+                "link-url": "",
+                "link-text": "View more"
+              }
+            },
+            "1522371819571-3": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "title": "Grid image",
+                "link-url": "",
+                "link-text": "View more"
+              }
+            },
+            "1522371970926": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "title": "Grid image",
+                "link-url": "",
+                "link-text": "View more"
+              }
+            },
+            "1522371976471": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "title": "Grid image",
+                "link-url": "",
+                "link-text": "View more"
+              }
+            }
+          },
+          "block_order": [
+            "1522371819571-0",
+            "1522371819571-1",
+            "1522371819571-2",
+            "1522371819571-3",
+            "1522371970926",
+            "1522371976471"
+          ],
+          "settings": {
+            "background-color": "light",
+            "spacing": true,
+            "alternative-color": false,
+            "text-position": "center",
+            "container-width": 4,
+            "width": 3,
+            "mobile-width": "2",
+            "title": "Featured grid",
+            "subtitle": "",
+            "link-url": "",
+            "link-text": "View more"
+          }
+        }
+      },
+      "content_for_index": [
+        "1522371753814",
+        "1522371573233",
+        "1522371819571",
+        "1522371685670",
+        "1522371696540",
+        "1522371486135",
+        "1522371405349",
+        "1522371666643",
+        "1522371710166"
+      ]
+    }
+  }
+}
