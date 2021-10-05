@@ -1,0 +1,209 @@
+
+<section class="organic-ingredients">
+       
+         <div class="small-container">
+           <h2>{% if product.metafields.feature.section_title != blank %}
+            {{ product.metafields.feature.section_title }}
+          {% else %}
+          <strong>How Others Are Wearing It</strong>
+          {% endif %}</h2>
+            
+           <p>
+             {% if product.metafields.feature.section_subtitle != blank %}
+             {{ product.metafields.feature.section_subtitle }}
+             {% else %}
+             Tag us on Instagram @reyal-performance to have your look featured.
+          {% endif %}
+            </p>
+            <div class="row organic-ingredients-row">   
+               <div class="one-fourth">
+                 <div class="wearing-data">
+                 	<div class="organic-img">
+                    {% if product.metafields.feature.section_card1_image != blank %}
+                   	 <img src="{{ product.metafields.feature.section_card1_image | img_url: 'master' }}" alt="organic 1">
+                      {% else %}
+                      <img src="{{ section.settings.wearing_image1 | img_url: 'master' }}" alt="organic 1">
+                      {% endif %}
+                  	</div>
+                   <p>
+                    {% if product.metafields.feature.section_card1_text != blank %} 
+                    {{ product.metafields.feature.section_card1_text }}
+                    {% else %}
+                    {{ section.settings.wearing_image_title1 }}
+                    {% endif %}
+                  </p>
+                 </div>  
+               </div>
+               <div class="one-fourth">
+                 <div class="wearing-data">
+                 	<div class="organic-img">
+                    {% if product.metafields.feature.section_card2_image != blank %}
+                    <img src="{{ product.metafields.feature.section_card2_image | img_url: 'master' }}" alt="organic 2">
+                    {% else %}
+                    <img src="{{ section.settings.wearing_image2 | img_url: 'master' }}" alt="organic 2">
+                    {% endif %}
+                  	</div>
+                   <p>
+                    {% if product.metafields.feature.section_card2_text != blank %} 
+                    {{ product.metafields.feature.section_card2_text }}
+                    {% else %}
+                    {{ section.settings.wearing_image_title2 }}
+                    {% endif %}
+                   </p>
+                 </div>  
+               </div>
+               <div class="one-fourth">
+                <div class="wearing-data">
+                  <div class="organic-img">
+                   {% if product.metafields.feature.section_card3_image != blank %}
+                   <img src="{{ product.metafields.feature.section_card3_image | img_url: 'master' }}" alt="Feature 3">
+                   {% else %}
+                   <img src="{{ section.settings.wearing_image3 | img_url: 'master' }}" alt="Feature 3">
+                   {% endif %}
+                   </div>
+                  <p>
+                   {% if product.metafields.feature.section_card3_text != blank %} 
+                   {{ product.metafields.feature.section_card3_text }}
+                   {% else %}
+                   {{ section.settings.wearing_image_title3 }}
+                   {% endif %}
+                  </p>
+                </div> 
+               </div>
+              <div class="one-fourth">
+                <div class="wearing-data">
+                  <div class="organic-img">
+                   {% if product.metafields.feature.section_card4_image != blank %}
+                   <img src="{{ product.metafields.feature.section_card4_image | img_url: 'master' }}" alt="Feature 4">
+                   {% else %}
+                   <img src="{{ section.settings.wearing_image4 | img_url: 'master' }}" alt="Feature 4">
+                   {% endif %}
+                   </div>
+                  <p>
+                   {% if product.metafields.feature.section_card4_text != blank %} 
+                   {{ product.metafields.feature.section_card4_text }}
+                   {% else %}
+                   {{ section.settings.wearing_image_title4 }}
+                   {% endif %}
+                  </p>
+                </div> 
+               </div>
+              
+            </div>
+         </div>
+        
+         <div class="comfort-section-container">
+            <div class="row">  
+               <div class="comfort-section">
+                  <h3>
+                    {% if product.metafields.comfort.section_title != blank %}
+                    {{product.metafields.comfort.section_title}}
+                    {% else %}
+                    {{ section.settings.comfort_title }}
+                    {% endif %}
+                  </h3>
+                  <p>
+                    {% if product.metafields.comfort.section_subtitle != blank %}
+                    {{product.metafields.comfort.section_subtitle}}
+                    {% else %}
+                    {{ section.settings.comfort_subtitle }}
+                    {% endif %}
+                  </p>
+                 	<div class="comfort-bg-img">
+                      {% if product.metafields.real.ingredients_viedo != blank %}
+                <video playsinline autoplay muted loop id="bgvid">
+                  <source src="{{product.metafields.real.ingredients_viedo}}" type="video/mp4">
+               </video>
+               {% else %}
+               <video playsinline autoplay muted loop id="bgvid">
+                <source src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/brand_video.mp4?v=1622742854" type="video/mp4">
+             </video>
+             {% endif %}
+                  
+                   
+               </div>
+               </div>
+               
+            </div>
+         </div>
+
+</section>
+
+{% schema %}
+  {
+    "name": "HOW OTHERS ARE WEARING IT",
+    "settings": [
+		{
+      		"type": "header",
+      		"content": "Hero Center Content"
+    	},
+		{
+      		"type": "text",
+			"id": "wearing_title",
+			"label": "Wearing Section Title"
+		},
+		{
+      		"type": "text",
+			"id": "wearing_subtitle",
+			"label": "Wearing Section Sub Title"
+		},
+		{
+			"type": "image_picker",
+			"id": "wearing_image1",
+			"label": "Wearing Image 1"
+		},
+		{
+      		"type": "text",
+			"id": "wearing_image_title1",
+			"label": "Wearing Image Title 1"
+		},
+		{
+			"type": "image_picker",
+			"id": "wearing_image2",
+			"label": "Wearing Image 2"
+		},
+		{
+      		"type": "text",
+			"id": "wearing_image_title2",
+			"label": "Wearing Image Title 2"
+		},
+		{
+			"type": "image_picker",
+			"id": "wearing_image3",
+			"label": "Wearing Image 3"
+		},
+		{
+      		"type": "text",
+			"id": "wearing_image_title3",
+			"label": "Wearing Image Title 3"
+		},
+		{
+			"type": "image_picker",
+			"id": "wearing_image4",
+			"label": "Wearing Image 4"
+		},
+		{
+      		"type": "text",
+			"id": "wearing_image_title4",
+			"label": "Wearing Image Title 4"
+		},
+		
+		{
+      		"type": "text",
+			"id": "comfort_title",
+			"label": "Comfort Section Title"
+		},
+		{
+      		"type": "text",
+			"id": "comfort_subtitle",
+			"label": "Comfort Section Sub Title"
+		},
+		{
+			"type": "image_picker",
+			"id": "comfort_bg_image",
+			"label": "Comfort Background Image"
+		}
+		
+		]
+  }
+{% endschema %}

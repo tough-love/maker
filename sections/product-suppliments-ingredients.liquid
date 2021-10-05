@@ -108,55 +108,79 @@
           <div class="col-7">
             <div class="ingredient-box-one">
               <table>
-                <tr><th colspan="2">{% if product.metafields.amount.per_scoop != blank %}
-                  AMOUNT PER SCOOP ({{product.metafields.amount.per_scoop}})
+                <tr><th colspan="2">{% if product.metafields.products.total_vitamin_protein != blank %}
+                {{product.metafields.products.total_vitamin_protein}}
                   {%else%}
-                  AMOUNT PER SCOOP (NA)
+                  (NA)
                   {%endif%}</th></tr>
                   <tr>
-                    <td>Calories</td>
-                    <td>{% if product.metafields.calories.value != blank %}
-                    {{product.metafields.calories.value}}
+                    <td>{% if product.metafields.products.vitamin_protein_name1 != blank %}
+                    {{product.metafields.products.vitamin_protein_name1}}
+                    {%else%}
+                    NA
+                    {%endif%}</td>
+                    <td>{% if product.metafields.products.vitamin_protein_value1 != blank %}
+                    {{product.metafields.products.vitamin_protein_value1}}
                     {%else%}
                     NA
                     {%endif%}</td>
                   </tr>
                   <tr>
-                    <td>Fat</td>
-                    <td>{% if product.metafields.fat.value != blank %}
-                    {{product.metafields.fat.value}}
+                    <td>{% if product.metafields.products.vitamin_protein_name2 != blank %}
+                    {{product.metafields.products.vitamin_protein_name2}}
+                    {%else%}
+                    NA
+                    {%endif%}</td>
+                    <td>{% if product.metafields.products.vitamin_protein_value2 != blank %}
+                    {{product.metafields.products.vitamin_protein_value2}}
                     {%else%}
                     NA
                     {%endif%}</td>
                   </tr>
                    <tr>
-                    <td>Protein</td>
-                    <td> {% if product.metafields.protein.value != blank %}
-                    {{product.metafields.protein.value}}
+                    <td>{% if product.metafields.products.vitamin_protein_name3 != blank %}
+                    {{product.metafields.products.vitamin_protein_name3}}
+                    {%else%}
+                    NA
+                    {%endif%}</td>
+                    <td>{% if product.metafields.products.vitamin_protein_value3 != blank %}
+                    {{product.metafields.products.vitamin_protein_value3}}
                     {%else%}
                     NA
                     {%endif%}</td>
                   </tr>
                    <tr>
-                    <td>Sugars</td>
-                    <td> {% if product.metafields.sugars.value != blank %}
-                    {{product.metafields.sugars.value}}
+                    <td>{% if product.metafields.products.vitamin_protein_name4 != blank %}
+                    {{product.metafields.products.vitamin_protein_name4}}
+                    {%else%}
+                    NA
+                    {%endif%}</td>
+                    <td>{% if product.metafields.products.vitamin_protein_value4 != blank %}
+                    {{product.metafields.products.vitamin_protein_value4}}
                     {%else%}
                     NA
                     {%endif%}</td>
                   </tr>
                   <tr>
-                    <td>Carbohydrates</td>
-                    <td> {% if product.metafields.carbohydrates.value != blank %}
-                    {{product.metafields.carbohydrates.value}}
+                    <td>{% if product.metafields.products.vitamin_protein_name5 != blank %}
+                    {{product.metafields.products.vitamin_protein_name5}}
+                    {%else%}
+                    NA
+                    {%endif%}</td>
+                    <td>{% if product.metafields.products.vitamin_protein_value5 != blank %}
+                    {{product.metafields.products.vitamin_protein_value5}}
                     {%else%}
                     NA
                     {%endif%}</td>
                   </tr>
                   <tr>
-                    <td>Sodium</td>
-                    <td>{% if product.metafields.sodium.value != blank %}
-                    {{product.metafields.sodium.value}}
+                   <td>{% if product.metafields.products.vitamin_protein_name6 != blank %}
+                    {{product.metafields.products.vitamin_protein_name6}}
+                    {%else%}
+                    NA
+                    {%endif%}</td>
+                    <td>{% if product.metafields.products.vitamin_protein_value6 != blank %}
+                    {{product.metafields.products.vitamin_protein_value6}}
                     {%else%}
                     NA
                     {%endif%}</td>
@@ -180,7 +204,9 @@
                 <tr><td>L-Leucine</td></tr>
                 <tr><td>L-Isoleucine</td></tr>
                 <tr><td>L-Valine</td></tr>
-                <tr><td><span id="additivesIngreditnts2">VIEW MORE INGREDIENTS</span></td></tr>
+                <tr><td>
+                   <a data-pop="2" class="vitamin-ingredients">VIEW MORE INGREDIENTS</a>
+                  </td></tr>
               </table>
              
               {%endif%}
@@ -191,11 +217,8 @@
     </div>
   </div>
 </section>
-<div id="additivesModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
+ <div data-popup="2" class="mob-ingredients-modal">
+   <button data-pop class="close">&times;</button>
     <div class="additives-ingredients">
       {% if product.metafields.products.additives_ingredients != blank %}
       {{product.metafields.products.additives_ingredients}}
@@ -203,10 +226,68 @@
       Not Available
       {% endif %}
     </div>
-  </div>
+ </div>
 
-</div>
+ <style>
+  body .ingredient-box .vitamin-ingredients {
+	font-weight: 700;
+	text-decoration: underline;
+	font-size: 16px !important;
+	cursor: pointer;
+}
+.mob-ingredients-modal .close {
+	color: #000;
+	float: right;
+	font-size: 24px;
+	font-weight: bold;
+	background-color: transparent;
+}
+  .mob-ingredients-modal .close:hover{
+    background-color: transparent;
+  }
+
+  [data-popup] {
+  display    : none;
+  position   :fixed;
+  top:0%;
+  /* overflow-y: scroll; */
+  z-index    : 9999;
+  right      : 0;
+  left       : 0;
+  margin     : 45px auto;  
+  width      : 50%;
+  min-width  : 200px;
+  padding    : 15px 25px 25px;
+  background : #fff;
+  transition: box-shadow 2s;
+  box-shadow : 0 0 0 1900px hsla(220,7%,18%,0.6),
+          0 10px 30px -5px hsla(220,7%,18%,0.6);
+}
+  
+</style>
 <script>
+var $popup = $("[data-popup]"),
+    pHov   = false;
+$popup.hover(function(){ pHov^=1; });
+$(document).mousedown(function(){
+  if(!pHov) $popup.slideUp(240); 
+});
+
+$("[data-pop]").click(function(){
+  var n = $(this).data('pop')
+  var $popup = n ? $("[data-popup='"+n+"']") : $(this).closest("[data-popup]");
+  $popup.slideToggle(240);
+});
+
+
+
+  var learnMore = document.getElementById('learn-more');
+  learnMore.onclick = function (e) {
+    e.preventDefault();
+    sizeBtn.style.display = 'block';
+  };
+
+  
 $(document).ready(function(){
   $("#learn-more").click(function(){
         $(".size-modal").modal({
@@ -217,29 +298,6 @@ $(document).ready(function(){
   $('.close-size-modal').click(function(){
     $('.size-modal').fadeOut();
   });
-
-  var learnMore = document.getElementById('learn-more');
-  learnMore.onclick = function (e) {
-    e.preventDefault();
-    sizeBtn.style.display = 'block';
-  };
-
-  // Get the modal
-  var modal = document.getElementById("additivesModal");
-  var btn = document.getElementById("additivesIngreditnts2");
-  var span = document.getElementsByClassName("close")[0];
-  btn.onclick = function() {
-    modal.style.display = "block";
-  }
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
- 
 });
 </script>
 

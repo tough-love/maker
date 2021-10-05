@@ -1,0 +1,468 @@
+<div class="accordian-mob">
+  
+  <ul id="accordion" class="accordion">
+  <li class="entry-title">
+    <div class="link"><p class="acr-title" style="margin-top: -9%;">Size Guide</p></div>
+    <div class="submenu">
+     <div id="sizeGuide-mob" class="size-modal-mob">
+  <div class="size-data-mob">
+    <div class="size-inner-content">
+      
+      <div class="right-side">
+        <div class="pdt-sizes">
+          <table style="width:100%">
+            <tr>
+              <th>SIZE</th>
+              <th>HEIGHT (CM)</th> 
+              <th>CHEST (CM)</th>
+              <th>SLEEVE (CM)</th>
+            </tr>
+            <tr>
+              <td>XS</td>
+              <td>44</td>
+              <td>66</td>
+              <td>32</td>
+            </tr>
+             <tr>
+              <td>XS</td>
+              <td>44</td>
+              <td>66</td>
+              <td>32</td>
+            </tr>
+            <tr>
+              <td>S</td>
+              <td>44</td>
+              <td>66</td>
+              <td>32</td>
+            </tr>
+            <tr>
+              <td>M</td>
+              <td>44</td>
+              <td>66</td>
+              <td>32</td>
+            </tr>
+            <tr>
+              <td>L</td>
+              <td>44</td>
+              <td>66</td>
+              <td>32</td>
+            </tr>
+            <tr>
+              <td>XL</td>
+              <td>44</td>
+              <td>66</td>
+              <td>32</td>
+            </tr>
+            <tr>
+              <td colspan="4" class="direction-title"><h5>DIRECTIONS FOR WASH</h5></td>
+            </tr>
+            <tr>
+              <td colspan="4" class="direction-detail">
+                <p>
+            {% if product.metafields.direction.for_wash != blank %}
+          {{product.metafields.direction.for_wash}}
+          {% else %}
+          Wash with similar colours <br>
+          Wash cold <br>
+          Wash (and dry) inside out <br>
+          Do not tumble dry
+
+
+          {% endif %}
+          </p> 
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+    </div>
+  </li>
+  <li class="entry-title">
+    <div class="link"><p class="acr-title" style="margin-top: -9%;">Gear For All</p></div>
+    <div class="submenu">
+    <section class="organic-ingredients">
+       
+         <div class="small-container">
+           <h2>{% if product.metafields.feature.section_title != blank %}
+            {{ product.metafields.feature.section_title }}
+          {% else %}
+          <strong>How Others Are Wearing It</strong>
+          {% endif %}</h2>
+            
+           <p>
+             {% if product.metafields.feature.section_subtitle != blank %}
+             {{ product.metafields.feature.section_subtitle }}
+             {% else %}
+             Tag us on Instagram @reyal-performance to have your look featured.
+          {% endif %}
+            </p>
+           
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper organic-ing">
+                  <div class="swiper-slide">
+                    <div class="wearing-data">
+                 	<div class="organic-img">
+                    {% if product.metafields.feature.section_card1_image != blank %}
+                   	 <img src="{{ product.metafields.feature.section_card1_image | img_url: 'master' }}" alt="organic 1">
+                      {% else %}
+                      <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/wearing1.jpg?v=1625677624" alt="organic 1">
+                      {% endif %}
+                  	</div>
+                   <p>
+                    {% if product.metafields.feature.section_card1_text != blank %} 
+                    {{ product.metafields.feature.section_card1_text }}
+                    {% else %}
+                    {{ section.settings.wearing_image_title1 }}
+                    {% endif %}
+                  </p>
+                 </div> 
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="wearing-data">
+                 	<div class="organic-img">
+                    {% if product.metafields.feature.section_card2_image != blank %}
+                    <img src="{{ product.metafields.feature.section_card2_image | img_url: 'master' }}" alt="organic 2">
+                    {% else %}
+                    <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/wearing2.jpg?v=1625677623" alt="organic 2">
+                    {% endif %}
+                  	</div>
+                   <p>
+                    {% if product.metafields.feature.section_card2_text != blank %} 
+                    {{ product.metafields.feature.section_card2_text }}
+                    {% else %}
+                    {{ section.settings.wearing_image_title2 }}
+                    {% endif %}
+                   </p>
+                 </div> 
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="wearing-data">
+                  <div class="organic-img">
+                   {% if product.metafields.feature.section_card3_image != blank %}
+                   <img src="{{ product.metafields.feature.section_card3_image | img_url: 'master' }}" alt="Feature 3">
+                   {% else %}
+                   <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/wearing3.jpg?v=1625677623" alt="Feature 3">
+                   {% endif %}
+                   </div>
+                  <p>
+                   {% if product.metafields.feature.section_card3_text != blank %} 
+                   {{ product.metafields.feature.section_card3_text }}
+                   {% else %}
+                   {{ section.settings.wearing_image_title3 }}
+                   {% endif %}
+                  </p>
+                </div> 
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="wearing-data">
+                  <div class="organic-img">
+                   {% if product.metafields.feature.section_card4_image != blank %}
+                   <img src="{{ product.metafields.feature.section_card4_image | img_url: 'master' }}" alt="Feature 4">
+                   {% else %}
+                   <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/wearing4.jpg?v=1625677623" alt="Feature 4">
+                   {% endif %}
+                   </div>
+                  <p>
+                   {% if product.metafields.feature.section_card4_text != blank %} 
+                   {{ product.metafields.feature.section_card4_text }}
+                   {% else %}
+                   {{ section.settings.wearing_image_title4 }}
+                   {% endif %}
+                  </p>
+                </div> 
+                  </div>
+                  
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+          
+         </div>
+
+</section>
+    </div>
+  </li>
+  <li class="entry-title">
+   <div class="link"><p class="acr-title" style="margin-top: -9%;">Reviews</p></div>
+    <div class="submenu pdt-rev">
+      <div id="pdt-rev" class="pdt-rev-mob">   
+        {%- if product.metafields.spr.reviews contains 'class="spr-header-title"' -%}
+        {%- endif -%}
+        <div class="small-container">
+          <div id="shopify-product-reviews" data-id="{{product.id}}" >
+            {{ product.metafields.spr.reviews }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+  
+</ul>
+
+</div>
+
+<style>
+  #shopify-section-framework--page-apparel-wearing {
+	display: none;
+}
+.accordian-mob .swiper.mySwiper {
+	margin-top: 32px;
+}
+  .accordian-mob .spr-reviews {
+    margin: 0px 0 0 0;
+}
+  .accordian-mob .spr-review:first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    border-top: none !important;
+}
+ .accordian-mob .spr-header {
+	display: none;
+}
+  body .size-data-mob .spr-review:first-child{
+    margin-top: 0;
+padding-top: 0;
+  }
+  body .size-data-mob .size-inner-content .right-side {
+	border-left:none;
+}
+ body .size-data-mob .direction-title {
+	padding: 10px 12px !important;
+  text-align:left;
+}
+body .size-data-mob .direction-title h5{
+  font-size:10px;
+  font-weight: 700;
+  margin:0;
+}
+body .size-data-mob .direction-detail {
+	font-size: 10px !important;
+  font-weight: 500;
+	line-height: 18px;
+	text-align: left;
+	padding: 12px 12px !important;
+}
+  .size-data-mob .pdt-sizes table, .size-data-mob .pdt-sizes table tr th, .size-data-mob .pdt-sizes table tr td {
+	border: 1px solid #000;
+	border-collapse: collapse;
+	font-size: 10px;
+	color: #000;
+}
+  .size-data-mob .pdt-sizes table tr td:last-child, 
+  .size-data-mob .pdt-sizes table tr th:last-child {
+	border-right: 1px solid #000;
+}
+.size-data-mob .pdt-sizes table tr th {
+	border-top:1px solid #000 !important;
+}
+.pdt-sizes table tr th {
+	border-top: 0 !important;
+}
+  #shopify-section-framework--page-mobile-accordian-apparal {
+	padding: 30px 17px 20px;
+}
+
+
+.accordian-mob {
+	border-top: 1px solid #B6B6B6;
+	background-color: transparent;
+}
+.accordian-mob .small-container {
+	padding: 0;
+}
+.accordian-mob .spr-container {
+	padding: 0;
+}
+.accordian-mob .how-to-use h3 {
+	font-size: 17px !important;
+	line-height: 24px !important;
+	font-weight: 600 !important;
+	color: #000 !important;
+	margin-bottom: 6px !important;
+	margin-top: 18px !important;
+}
+.accordian-mob .how-to-use ul li {
+	border-bottom: none !important;
+}
+.accordian-mob .how-to-use ul li,
+.how-to-use ul li h3 {
+	position: unset !important;
+  padding: 0 !important;
+}
+.accordian-mob ul { list-style-type: none; }
+
+
+/** =======================
+ * Contenedor Principal
+ ===========================*/
+
+.entry-title{
+	border-bottom: 1px solid #B6B6B6;
+	padding-bottom: 20px;
+}
+
+.accordion .link {
+	cursor: pointer;
+	display: block;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	padding: 50px 0px 0px;
+}
+
+.accordion li:last-child .link { border-bottom: 0; }
+
+
+.link .acr-title {
+	color: #000;
+	font-size: 21px;
+	line-height: 31px;
+	text-transform: capitalize;
+	font-weight: bold;
+	position: relative;
+}
+.accordion li .link .acr-title::after{
+  content: "\f067";
+  font-family:"Fontawesome";
+  font-weight: 100;
+	position: absolute;
+	top:0px;
+  font-size:21px;
+	right: 0;
+}
+.accordion li.open .link .acr-title::after{
+  content:"\f00d";
+}
+.accordian-mob .spr-pagination{
+  padding:35px 0px 0px;
+}
+/* .entry-title:last-child{
+  padding-bottom:0;
+} */
+
+/**
+ * Submenu
+ -----------------------------*/
+
+
+.submenu {
+  display: none;
+  margin-top:40px;
+}
+
+#reviews-heading .spr-starrating .spr-icon {
+  font-size: 16px;
+} 
+  #shopify-section-framework--page-sup-organic-ingredients {
+	display: none;
+}
+#shopify-section-framework--page-membership {
+	display: none;
+}
+#shopify-section-framework--page-review {
+	display: none;
+}
+
+#shopify-section-product-suppliments-ingredients {
+	display: none;
+} 
+ @media (min-width: 768px) {
+   #shopify-section-framework--page-apparel-wearing {
+	display: block;
+}
+
+   .layer-btn ul li {
+      padding:20px 35px;
+
+    }
+    .product-form--root {
+	display: block;
+}
+    #shopify-section-framework--page-sup-organic-ingredients {
+	display: block;
+}
+#shopify-section-framework--page-membership {
+	display: block;
+}
+#shopify-section-framework--page-review {
+	display: block;
+}
+#shopify-section-framework--page-mobile-accordian-apparal {
+	display: none !important;
+}
+  
+
+#shopify-section-product-suppliments-ingredients {
+	display: block;
+}
+ }
+
+
+</style>
+
+<script>
+  
+
+
+
+ (function ($)
+ {
+
+
+
+  $(document).ready(function(){
+    if ($(window).width() < 768) {
+   $('#shopify-section-framework--page-review').empty();
+}
+
+
+     $('#reviews-heading').append($('.spr-starrating')[0]);
+var Accordion = function(el, multiple) {
+		this.el = el || {};
+		this.multiple = multiple || false;
+
+		// Variables privadas
+		var links = this.el.find('.link');
+		// Evento
+		links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+	}
+
+	Accordion.prototype.dropdown = function(e) {
+		var $el = e.data.el;
+			$this = $(this),
+			$next = $this.next();
+
+		$next.slideToggle();
+		$this.parent().toggleClass('open');
+
+		if (!e.data.multiple) {
+			$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+		};
+	}	
+
+	var accordion = new Accordion($('#accordion'), false);
+  
+});
+})(jQuery);
+
+
+ new Swiper(".mySwiper", {
+        
+        slidesPerView:2.1,
+        spaceBetween:8,
+        freeMode: true,
+        loop:true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+      });
+
+</script>
