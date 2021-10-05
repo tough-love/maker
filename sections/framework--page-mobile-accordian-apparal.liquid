@@ -2,7 +2,7 @@
   
   <ul id="accordion" class="accordion">
   <li class="entry-title">
-    <div class="link"><p class="acr-title" style="margin-top: -9%;">Size Guide</p></div>
+    <div class="link"><p class="acr-title" style="">Size Guide</p></div>
     <div class="submenu">
      <div id="sizeGuide-mob" class="size-modal-mob">
   <div class="size-data-mob">
@@ -82,8 +82,9 @@
     </div>
   </li>
   <li class="entry-title">
-    <div class="link"><p class="acr-title" style="margin-top: -9%;">Gear For All</p></div>
+    <div class="link"><p class="acr-title" style="">Gear For All</p></div>
     <div class="submenu">
+       
     <section class="organic-ingredients">
        
          <div class="small-container">
@@ -101,7 +102,7 @@
           {% endif %}
             </p>
            
-              <div class="swiper mySwiper">
+              <div class="swiper mySwiper2">
                 <div class="swiper-wrapper organic-ing">
                   <div class="swiper-slide">
                     <div class="wearing-data">
@@ -186,7 +187,7 @@
     </div>
   </li>
   <li class="entry-title">
-   <div class="link"><p class="acr-title" style="margin-top: -9%;">Reviews</p></div>
+   <div class="link"><p class="acr-title" style="">Reviews</p></div>
     <div class="submenu pdt-rev">
       <div id="pdt-rev" class="pdt-rev-mob">   
         {%- if product.metafields.spr.reviews contains 'class="spr-header-title"' -%}
@@ -208,6 +209,18 @@
   #shopify-section-framework--page-apparel-wearing {
 	display: none;
 }
+.submenu .organic-ingredients h2 strong {
+	font-size: 23px;
+	max-width: 217px;
+	margin-bottom: 29px;
+	display: block;
+}
+.submenu .organic-ingredients p {
+	font-size: 14px;
+	line-height: 18px;
+	color: #575757;
+}
+
 .accordian-mob .swiper.mySwiper {
 	margin-top: 32px;
 }
@@ -310,7 +323,7 @@ body .size-data-mob .direction-detail {
 	-webkit-transition: all 0.4s ease;
 	-o-transition: all 0.4s ease;
 	transition: all 0.4s ease;
-	padding: 50px 0px 0px;
+	padding: 20px 0px 0px;
 }
 
 .accordion li:last-child .link { border-bottom: 0; }
@@ -323,6 +336,7 @@ body .size-data-mob .direction-detail {
 	text-transform: capitalize;
 	font-weight: bold;
 	position: relative;
+  /* margin-top: -7%; */
 }
 .accordion li .link .acr-title::after{
   content: "\f067";
@@ -332,6 +346,9 @@ body .size-data-mob .direction-detail {
 	top:0px;
   font-size:21px;
 	right: 0;
+}
+.organic-ing{
+  margin-top:32px;
 }
 .accordion li.open .link .acr-title::after{
   content:"\f00d";
@@ -351,6 +368,21 @@ body .size-data-mob .direction-detail {
 .submenu {
   display: none;
   margin-top:40px;
+}
+.submenu .swiper.mySwiper2{
+	padding-bottom: 35px;
+}
+.submenu .swiper-pagination.swiper-pagination-progressbar {
+    display: block;
+    bottom: 10px;
+    top: unset;
+}
+.submenu .swiper-pagination-progressbar {
+	background: #B4B4B4;
+	height: 1px;
+}
+.submenu .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+	background: #000;
 }
 
 #reviews-heading .spr-starrating .spr-icon {
@@ -414,6 +446,24 @@ body .size-data-mob .direction-detail {
 
 
   $(document).ready(function(){
+    var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 2.1,
+        spaceBetween: 8,
+        loop:true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+        
+      });
+
+
+
+
     if ($(window).width() < 768) {
    $('#shopify-section-framework--page-review').empty();
 }
@@ -449,7 +499,7 @@ var Accordion = function(el, multiple) {
 })(jQuery);
 
 
- new Swiper(".mySwiper", {
+ new Swiper(".mySwiper222", {
         
         slidesPerView:2.1,
         spaceBetween:8,
