@@ -79,9 +79,10 @@
             </div>
          </div>
          <div class="container-fluid full-transp-container">
-            <div class="row">  
-               <div class="col-4 real-ingredient-text">
-                 <h3>
+            <div class="row ingredient-row">  
+               <div class="col col-4 real-ingredient-text">
+                 <div class="top-area">
+                    <h3>
                    {% if product.metafields.real.ingredients_section_title != blank %}
                    {{product.metafields.real.ingredients_section_title}}
                    {% else %}
@@ -95,11 +96,13 @@
                    Reyal’s skincare performance formula combines the best of science and nature. Every Reyal skincare product includes our proprietary RSCF™ tri-blend. A custom combination of active ingredients: Dragon’s Blood, Tiger grass, and Vitamin E that work together to fuel, strengthen and protect your skin. 
                    {% endif %}
                   </p>
-                 
-                  <a href="/pages/reyal-skincare-formula" id="show-ingreditnts222" target="_blank">{{ section.settings.center_real_ingredient_button }}</a>
+                 </div>
+                 <div class="bottom-area">
+                    <a href="/pages/reyal-skincare-formula" id="show-ingreditnts222" target="_blank">{{ section.settings.center_real_ingredient_button }}</a>
+                 </div>
                </div>
 
-               <div class="col-8 real-ingredient-img real-ingredients-video">
+               <div class="col col-8 real-ingredient-img real-ingredients-video">
                  {% if product.metafields.real.ingredients_viedo != blank %}
                 <video playsinline autoplay muted loop id="bgvid">
                   <source src="{{product.metafields.real.ingredients_viedo}}" type="video/mp4">

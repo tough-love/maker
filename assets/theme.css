@@ -47,6 +47,12 @@ iframe[src="//localhost:3000/preview_bar"] {
 
 /* Media Queries
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.page--reyal-e-gift-card #shopify-section-framework--page-apparel-wearing {
+	display: none !important;
+}
+.page--reyal-e-gift-card  #shopify-section-framework--page-review {
+	padding-top: 100px !important;
+}
 @media only screen and (min-width: 768px) {
   [data-mq='small'] {
     display: none;

@@ -2,7 +2,7 @@
   
   <ul id="accordion" class="accordion">
   <li class="entry-title">
-    <div class="link"><p class="acr-title" style="">Additives & Ingredients</p></div>
+    <div class="link"><p class="acr-title">{% if product.metafields.products.additives_ingredients_title != blank %}{{product.metafields.products.additives_ingredients_title}}{% else %}Additives & Ingredients{% endif %}</p></div>
     <div class="submenu">
      <div class="additives-ingredients">
               {% if product.metafields.products.additives_ingredients != blank %}
@@ -14,7 +14,7 @@
     </div>
   </li>
   <li class="entry-title">
-    <div class="link"><p class="acr-title" style="">How To Use</p></div>
+    <div class="link"><p class="acr-title">How To Use</p></div>
     <div class="submenu">
       <div class="how-to-use">
                     <ul>
@@ -72,7 +72,7 @@
     </div>
   </li>
   <li class="entry-title">
-   <div class="link"><p class="acr-title" style="">Reviews</p></div>
+   <div class="link"><p class="acr-title">Reviews</p></div>
     <div class="submenu pdt-rev">
       <div id="pdt-rev" class="pdt-rev-mob">   
         {%- if product.metafields.spr.reviews contains 'class="spr-header-title"' -%}
