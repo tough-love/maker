@@ -1,9 +1,1334 @@
-<div class="spacing--4x">
-  <article class="page-wrapper spacing--5">
-    <h1 class="page-title font--section-heading">{{ page.title }}</h1>
-    <div class="spacer spacing--4y"></div>
-    <div class="rte-content content">
-      {{ page.content }}
+<div class="contact-us-main">
+  <div id="contact-form">
+    {% form 'contact', id: 'contact_page_form' %}
+
+    {% if form.posted_successfully? %}
+    <div class="success feedback accent-text">
+      <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/success.png?v=1631356588" alt="Success" />
+      <p>{{ 'contact_page.success_feedback' | t }}</p>
+      <a href="https://www.reyalperformance.com" class="back-to-home">Go To Homepage</a>
     </div>
-  </article>
+    {% endif %}
+
+    {% if form.errors %}
+    <div class="error feedback accent-text">
+      <p>{{ 'contact_page.error_feedback' | t }}:</p>
+      <ul>
+        {% for field in form.errors %}
+        <li>
+          {{ field | capitalize | replace: 'Body', 'Message' }} {{ form.errors.messages[field] }}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    {% unless form.posted_successfully? %}
+
+    <div class="lets-talk">
+      <div class="form-header">
+        <h2 class="form-title animate__animated animate__fadeInUp">Let’s Talk</h2>
+        <p class="form-desc animate__animated animate__fadeInUp">
+          Start a new conversaton around new business opportunities or media inquiries. <br>
+          To contact us immediately, our email is <a class="bold-text-link" style="text-decoration:none; font-weight:bold;" href="mailto:info@reyalperformance.com" target="_blank" rel="noopener">info@reyalperformance.com</a> and instagram <a class="bold-text-link" style="text-decoration:none; font-weight:bold;" href="https://www.instagram.com/reyalperformance/" target="_blank" rel="noopener">@reyalperformance</a>.
+        </p>
+      </div>
+      <div class="form-body">
+        <div class="talk-about">
+          <p class="talk-radio talk-radio-btn animate__animated animate__fadeInUp">
+            <input type="radio" id="about1" name="contact[inquiry type]" value="Product-Inquiries">
+            <label for="about1">Product Inquiries</label>
+          </p>
+          <p class="talk-radio talk-radio-btn animate__animated animate__fadeInUp">
+            <input type="radio" id="about2" name="contact[inquiry type]" value="Media-Inquiry">
+            <label for="about2">Media Inquiry</label>
+          </p>
+          <p class="talk-radio talk-radio-btn animate__animated animate__fadeInUp">
+            <input type="radio" id="about3" name="contact[inquiry type]" value="Shipping">
+            <label for="about3">Shipping</label>
+          </p>
+          <p class="talk-radio talk-radio-btn animate__animated animate__fadeInUp">
+            <input type="radio" id="about4" name="contact[inquiry type]" value="Something-Else">
+            <label for="about4">Something Else?</label>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="Product-Inquiries box">
+      <div class="enquiry-step-first step1 active-pane">
+        <span class="back-btn animate__animated animate__fadeInUp"><img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/back.png?v=1631025367" alt="Arrow"> 1/4</span>
+        <div class="inquiring-about">
+          <h2 class="form-title underline animate__animated animate__fadeInUp">What’s your name?</h2>
+          <div class="form-group merge-field">
+            <input autocomplete="on" class="field-input animate__animated animate__fadeInUp" type="text" name="contact[Inquiries Name]" placeholder="Type your name" autofocus="">
+            <p class="form-next-btn animate__animated animate__fadeInUp" style="display: none;">
+              <span class="button nextStep styled-submit animate__animated animate__fadeInUp" type="submit">
+                <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/arrow_forward.png?v=1629379686" alt="Arrow">
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="enquiry-step-second step2">
+        <span class="back-btn animate__animated animate__fadeInUp"><img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/back.png?v=1631025367" alt="Arrow"> 2/4</span>
+        <div class="inquiring-about">
+          <h2 class="form-title underline animate__animated animate__fadeInUp">What product are you inquiring about?
+          </h2>
+          <div class="form-group merge-field">
+            <input class="field-input animate__animated animate__fadeInUp" type="text" autocomplete="on" name="contact[Inquiries ProductName]" placeholder="Supreme Face Wash">
+            <p class="form-next-btn animate__animated animate__fadeInUp" style="display: none;">
+              <span class="button nextStep styled-submit animate__animated animate__fadeInUp" type="submit">
+                <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/arrow_forward.png?v=1629379686" alt="Arrow">
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="enquiry-step-third step3">
+        <span class="back-btn animate__animated animate__fadeInUp"><img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/back.png?v=1631025367" alt="Arrow"> 3/4</span>
+        <div class="inquiring-about">
+          <h2 class="form-title underline animate__animated animate__fadeInUp">Is there something in particular you’d
+            like to ask?</h2>
+          <div class="form-group">
+            <div class="multiple-field merge-field">
+              <div class="merged-field answer-box"><textarea id="answer" name="contact[Inquiries Question]" placeholder="Type your answer" autocomplete="on" class="field-input answer animate__animated animate__fadeInUp" rows="3" cols="50"></textarea>
+                <p class="form-next-btn" style="display: none;">
+                  <span class="button nextStep styled-submit animate__animated animate__fadeInUp" type="submit">
+                    <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/arrow_forward.png?v=1629379686" alt="Arrow">
+                  </span>
+                </p>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Media-Inquiry box">
+      <div class="enquiry-step-first step1 active-pane">
+        <span class="back-btn animate__animated animate__fadeInUp"><img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/back.png?v=1631025367" alt="Arrow"> 1/4</span>
+        <div class="inquiring-about">
+          <h2 class="form-title underline animate__animated animate__fadeInUp">What’s your name?</h2>
+          <div class="form-group merge-field">
+            <input class="field-input animate__animated animate__fadeInUp" type="text" autocomplete="on" name="contact[Media Name]" placeholder="Type your name">
+            <p class="form-next-btn animate__animated animate__fadeInUp" style="display: none;">
+              <span class="button nextStep styled-submit" type="submit">
+                <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/arrow_forward.png?v=1629379686" alt="Arrow">
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="enquiry-step-second step2">
+        <span class="back-btn animate__animated animate__fadeInUp"><img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/back.png?v=1631025367" alt="Arrow"> 2/4</span>
+        <div class="inquiring-about">
+          <h2 class="form-title underline animate__animated animate__fadeInUp">What organization are you with?</h2>
+          <div class="form-group merge-field">
+            <input class="field-input animate__animated animate__fadeInUp" type="text" autocomplete="on" name="contact[Media Organization]" placeholder="Your organization">
+            <p class="form-next-btn animate__animated animate__fadeInUp" style="display: none;">
+              <span class="button nextStep styled-submit" type="submit">
+                <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/arrow_forward.png?v=1629379686" alt="Arrow">
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="enquiry-step-third step3">
+        <span class="back-btn animate__animated animate__fadeInUp"><img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/back.png?v=1631025367" alt="Arrow"> 3/4</span>
+        <div class="inquiring-about">
+          <h2 class="form-title underline animate__animated animate__fadeInUp">What questions do you have? How can we
+            help?</h2>
+          <div class="form-group">
+            <div class="multiple-field merge-field">
+              <div class="merged-field answer-box"><textarea id="answer2" name="contact[Media Answer]" autocomplete="on" placeholder="Type your answer" class="field-input answer animate__animated animate__fadeInUp" rows="3" cols="50"></textarea>
+                <p class="form-next-btn animate__animated animate__fadeInUp" style="display: none;">
+                  <span class="button nextStep styled-submit" type="submit">
+                    <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/arrow_forward.png?v=1629379686" alt="Arrow">
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Shipping box">
+      <div class="enquiry-step-first step1 active-pane">
+        <span class="back-btn animate__animated animate__fadeInUp"><img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/back.png?v=1631025367" alt="Arrow"> 1/4</span>
+        <div class="inquiring-about">
+          <h2 class="form-title underline animate__animated animate__fadeInUp">What’s your name?</h2>
+          <div class="form-group merge-field">
+            <input class="field-input animate__animated animate__fadeInUp" type="text" autocomplete="on" name="contact[Shipping Name]" placeholder="Type your name">
+            <p class="form-next-btn animate__animated animate__fadeInUp" style="display: none;">
+              <span class="button nextStep styled-submit" type="submit">
+                <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/arrow_forward.png?v=1629379686" alt="Arrow">
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="enquiry-step-second step2">
+        <span class="back-btn animate__animated animate__fadeInUp"><img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/back.png?v=1631025367" alt="Arrow"> 2/4</span>
+        <div class="inquiring-about">
+          <h2 class="form-title underline animate__animated animate__fadeInUp">What is your order number?</h2>
+          <div class="form-group merge-field">
+            <input class="field-input animate__animated animate__fadeInUp" type="text" autocomplete="on" name="contact[Shipping OrderNumber]" placeholder="Type order # here">
+            <p class="form-next-btn animate__animated animate__fadeInUp" style="display: none;">
+              <span class="button nextStep styled-submit" type="submit">
+                <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/arrow_forward.png?v=1629379686" alt="Arrow">
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="enquiry-step-third step3">
+        <span class="back-btn animate__animated animate__fadeInUp"><img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/back.png?v=1631025367" alt="Arrow"> 3/4</span>
+        <div class="inquiring-about">
+          <h2 class="form-title underline animate__animated animate__fadeInUp">What questions do you have? How can we
+            help?</h2>
+          <div class="form-group">
+            <div class="multiple-field merge-field">
+              <div class="merged-field answer-box"><textarea id="answer" name="contact[Shipping YourAnswer]" autocomplete="on" placeholder="Type your answer" class="field-input answer animate__animated animate__fadeInUp" rows="3" cols="50"></textarea>
+                <p class="form-next-btn animate__animated animate__fadeInUp" style="display: none;">
+                  <span class="button nextStep styled-submit" type="submit">
+                    <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/arrow_forward.png?v=1629379686" alt="Arrow">
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Something-Else box">
+      <div class="enquiry-step-first step1 active-pane">
+        <span class="back-btn animate__animated animate__fadeInUp"><img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/back.png?v=1631025367" alt="Arrow"> 1/4</span>
+        <div class="inquiring-about">
+          <h2 class="form-title underline animate__animated animate__fadeInUp">What’s your name?</h2>
+          <div class="form-group merge-field">
+            <input class="field-input animate__animated animate__fadeInUp" type="text" autocomplete="on" name="contact[SomethingElse Name]" placeholder="Type your name">
+            <p class="form-next-btn animate__animated animate__fadeInUp" style="display: none;">
+              <span class="button nextStep styled-submit" type="submit">
+                <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/arrow_forward.png?v=1629379686" alt="Arrow">
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="enquiry-step-second step2">
+        <span class="back-btn animate__animated animate__fadeInUp"><img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/back.png?v=1631025367" alt="Arrow"> 2/4</span>
+        <div class="inquiring-about">
+          <h2 class="form-title underline animate__animated animate__fadeInUp">What organization are you with?</h2>
+          <div class="form-group merge-field">
+            <input class="field-input animate__animated animate__fadeInUp" type="text" autocomplete="on" name="contact[SomethingElse organization]" placeholder="Your organization">
+            <p class="form-next-btn animate__animated animate__fadeInUp" style="display: none;">
+              <span class="button nextStep styled-submit" type="submit">
+                <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/arrow_forward.png?v=1629379686" alt="Arrow">
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="enquiry-step-third step3">
+        <span class="back-btn animate__animated animate__fadeInUp"><img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/back.png?v=1631025367" alt="Arrow"> 3/4</span>
+        <div class="inquiring-about">
+          <h2 class="form-title underline animate__animated animate__fadeInUp">Is there something in particular you’d
+            like to ask?</h2>
+          <div class="form-group">
+            <div class="multiple-field merge-field">
+              <div class="merged-field answer-box"><textarea id="answer2" name="contact[SomethingElse Answer]" autocomplete="on" placeholder="Type your answer" class="field-input answer animate__animated animate__fadeInUp" rows="3" cols="50"></textarea>
+                <p class="form-next-btn animate__animated animate__fadeInUp" style="display: none;">
+                  <span class="button nextStep styled-submit" type="submit">
+                    <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/arrow_forward.png?v=1629379686" alt="Arrow">
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="enquiry-step-fourth step4">
+      <span class="back-btn animate__animated animate__fadeInUp"><img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/back.png?v=1631025367" alt="Arrow"> 4/4</span>
+      <div class="inquiring-about">
+        <h2 class="form-title underline animate__animated animate__fadeInUp">What’s a good email we can reach you at?
+        </h2>
+        <div class="form-group we-ready pos-relative merge-field">
+          <input class="field-input animate__animated animate__fadeInUp" id="email_address" type="email" autocomplete="on" name="contact[email]" placeholder="Your email" required="">
+          <p class="form-submit-btn form-next-btn animate__animated animate__fadeInUp" style="display: none;">
+            <button class="button nextStep styled-submit" type="submit" id="contactFormSubmit">
+              <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/arrow_forward.png?v=1629379686" alt="Arrow">
+            </button>
+          </p>
+        </div>
+        <span id="error" style="display:none;color:red;"><b>Whoops!</b> That doesn't look right</span>
+      </div>
+    </div>
+
+    {% endunless %}
+
+    {% if form.posted_successfully? or form.errors %}
+    <script>
+      window.location.hash = '#contact-form';
+    </script>
+    {% endif %}
+
+    {% endform %}
+  </div>
 </div>
+<div class="ticker-section">
+  <div class="ticker-content ticker">
+    <ul>
+      <li>REYAL PERFORMANCE</li>
+      <li>VANCOUVER, BC</li>
+      <li>INFO@REYALPERFORMANCE.COM</li>
+      <li>REYAL PERFORMANCE</li>
+      <li>VANCOUVER, BC</li>
+      <li>INFO@REYALPERFORMANCE.COM</li>
+    </ul>
+    <ul>
+      <li>REYAL PERFORMANCE</li>
+      <li>VANCOUVER, BC</li>
+      <li>INFO@REYALPERFORMANCE.COM</li>
+      <li>REYAL PERFORMANCE</li>
+      <li>VANCOUVER, BC</li>
+      <li>INFO@REYALPERFORMANCE.COM</li>
+    </ul>
+  </div>
+</div>
+
+<style>
+  @keyframes scrollLeft {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+  }
+
+  @media (min-width:0) {
+
+    body .back-to-home {
+      padding: 10px 15px;
+      display: inline-block;
+      background-color: #000;
+      color: #fff;
+      margin-top: 30px;
+    }
+
+    .success.feedback.accent-text img {
+      width: 100px;
+      height: auto;
+      margin-bottom: 30px;
+    }
+
+    .success.feedback.accent-text {
+      text-align: center;
+      padding: 50px 0px;
+    }
+
+    .success.feedback.accent-text p {
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    .contact-form .error.feedback.accent-text {
+      color: #000;
+      padding-bottom: 30px;
+    }
+
+    .bold-text-link {
+
+      font-size: 20px !important;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    .footer--root,
+    .feedback-bar--root {
+      background: black;
+      color: white !important
+    }
+
+    .ticker-section {
+      margin: 0px;
+      padding: 35px 20px;
+      border-top: 2px solid #000;
+      border-bottom: 2px solid #000;
+    }
+
+    .ticker-content {
+      display: flex;
+      width: 100%;
+      min-height: 16px;
+      box-sizing: content-box;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ticker-content ul {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      width: auto;
+      box-sizing: content-box;
+      white-space: nowrap;
+      animation: scrollLeft 30s linear infinite;
+    }
+
+    .ticker-content ul li {
+      display: inline-block;
+      font-size: 12px;
+      line-height: 16px;
+      padding-right: 8vw;
+      font-weight: 700;
+      font-family: Helvetica;
+      text-align: center;
+      width: auto !important;
+    }
+
+    .merged-field.answer-box {
+      position: relative;
+    }
+
+    .merged-field.answer-box::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      background-color: #000;
+      width: 0%;
+      transition: all 1s ease;
+      animation: widthIn 1s linear both;
+    }
+
+    .form-group.select-pdt::after {
+      position: absolute;
+      content: "";
+      width: 0%;
+      left: 0;
+      height: 1px;
+      background-color: #000;
+      bottom: 0;
+      transition: all 1s ease;
+      animation: widthIn 1s linear both;
+    }
+
+    .form-group.merge-field::after {
+      content: "";
+      height: 1px;
+      width: 0%;
+      left: 0;
+      background-color: #000;
+      bottom: 0;
+      position: absolute;
+      transition: all 1s ease;
+      animation: widthIn 1s linear both;
+    }
+
+    .form-group.merge-field input {
+      margin-bottom: 0;
+      padding-right: 50px;
+    }
+
+    .contact-us-main form .talk-radio::after,
+    .form-title.underline::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: "";
+      height: 1px;
+      background-color: #000;
+      width: 0%;
+      transition: all 1s ease;
+      animation: widthIn 1s linear both;
+    }
+
+    .lets-talk .form-body::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      height: 1px;
+      background-color: #000;
+      width: 0%;
+      transition: all 1s ease;
+      animation: widthIn 1s linear both;
+    }
+
+    @keyframes widthIn {
+      from {
+        width: 0%;
+      }
+
+      to {
+        width: 100%;
+      }
+    }
+
+    .animate__animated.animate__fadeInUp {
+      --animate-duration: 0.650s;
+      --animate-delay: 450ms;
+    }
+
+    body .yes-no-box .form-submit-btn {
+      bottom: 20px;
+    }
+
+    .yes-no-box .talk-radio {
+      margin-bottom: 0px !important;
+    }
+
+    .yes-no-box {
+      margin-top: 50px;
+    }
+
+    .talk-about:hover>p:not(:hover) label {
+      color: #DFDFDF !important;
+    }
+
+    .form-group.we-ready.pos-relative.merged-field:hover>p:not(:hover) label {
+      color: #DFDFDF !important;
+    }
+
+    body .answer:focus {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border: none;
+
+    }
+
+    .answer {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: none;
+      margin-bottom: 0;
+      appearance: none;
+      resize: unset;
+      font-size: 24px;
+      font-family: Helvetica;
+      color: #000;
+      font-weight: 700;
+      text-transform: initial;
+      padding-right: 30px;
+      outline: none;
+      padding-left: 0;
+
+    }
+
+    .answer::placeholder {
+      font-size: 24px;
+      opacity: 1;
+      font-weight: 700;
+      font-family: Helvetica;
+      color: #DFDFDF;
+      text-transform: initial;
+
+    }
+
+    .pos-relative {
+      position: relative;
+    }
+
+    .step2,
+    .step3,
+    .step4,
+    .step5 {
+      display: none;
+    }
+
+    .merged-field {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .merged-field label {
+      font-size: 34px;
+      font-weight: 700;
+      font-family: Helvetica;
+      text-transform: initial;
+      line-height: normal;
+      padding-bottom: 0;
+      color: #DFDFDF;
+    }
+
+    .merged-field input {
+      margin: 0;
+      padding: 0 0px 0px 20px !important;
+      flex: 1;
+      height: auto;
+      line-height: 34px;
+    }
+
+    .multiple-field {
+      position: relative;
+    }
+
+    .form-group.select-pdt {
+      position: relative;
+      display: inline-block;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group select {
+      font-size: 24px;
+      border: 0px;
+      /* 	border-bottom: 1px solid #000; */
+      border-radius: 0;
+      width: 850px;
+      padding: 0px 0px 20px;
+      appearance: none;
+      margin-bottom: 0;
+    }
+
+    .form-group input::placeholder {
+      font-size: 24px;
+      opacity: 1;
+      font-weight: 700;
+      font-family: Helvetica;
+      color: #DFDFDF;
+    }
+
+    .form-group input {
+      border: none;
+      /* 	border-bottom: 1px solid #000; */
+      border-radius: 0;
+      font-size: 24px;
+      font-weight: 700;
+      font-family: Helvetica;
+      padding: 0px 0px 20px;
+    }
+
+    .box {
+
+      padding: 0px;
+      display: none;
+      margin-top: 20px;
+    }
+
+    .shopify-challenge__container {
+      padding-bottom: 150px;
+    }
+
+    .contact-us-main {
+      padding: 100px 20px;
+      max-width: 1480px;
+      margin: 0px auto;
+    }
+
+    .contact-us-main form h2 {
+      font-size: 26px;
+      font-family: Helvetica;
+      color: #000;
+      font-weight: 600;
+      margin-bottom: 36px;
+    }
+
+    .form-title.underline {
+      padding-bottom: 20px;
+      position: relative;
+    }
+
+    .contact-us-main .form-desc {
+      font-size: 18px;
+      line-height: 30px;
+      font-weight: 400;
+      font-family: Helvetica;
+      margin-bottom: 0;
+    }
+
+    .contact-us-main .what-is-name {
+      display: none;
+
+    }
+
+    .contact-us-main .form-body {
+      display: block;
+      clear: both;
+      margin-top: 20px;
+      padding-top: 75px;
+      position: relative;
+    }
+
+    .contact-us-main form [type="radio"]:checked,
+    .contact-us-main form [type="radio"]:not(:checked) {
+      position: absolute;
+      left: -9999px;
+    }
+
+    body .contact-us-main form .talk-radio label:hover {
+      color: #000 !important;
+    }
+
+    /*   .contact-us-main form [type="radio"]:not(:checked) + label{
+
+color:#DFDFDF !important;
+} */
+    .contact-us-main form [type="radio"]:checked+label,
+    .contact-us-main form [type="radio"]:not(:checked)+label {
+      position: relative;
+      padding-left: 50px;
+      cursor: pointer;
+      line-height: 35px;
+      display: inline-block;
+      color: #000;
+      font-size: 30px;
+      text-transform: capitalize;
+      font-weight: 700;
+      transition: all 0.3s;
+    }
+
+    .contact-us-main form [type="radio"]:checked+label:before,
+    .contact-us-main form [type="radio"]:not(:checked)+label:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 35px;
+      height: 35px;
+      border: 1px solid #000;
+      border-radius: 100%;
+      background: #fff;
+    }
+
+    .contact-us-main form [type="radio"]:checked+label:after,
+    .contact-us-main form [type="radio"]:not(:checked)+label:after {
+      content: '';
+      width: 35px;
+      height: 35px;
+      background: #000;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      border-radius: 100%;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+      transform: translate(0%, -1%) !important;
+    }
+
+    .contact-us-main form [type="radio"]:not(:checked)+label:after {
+      opacity: 0;
+      -webkit-transform: scale(0);
+      /*     transform: scale(0); */
+    }
+
+    .contact-us-main form [type="radio"]:checked+label:after {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      /*     transform: scale(1); */
+    }
+
+    .contact-us-main form .talk-radio {
+      margin-bottom: 30px;
+      width: 100%;
+      padding: 0px 10px 10px 0px;
+      margin-right: 20px;
+      position: relative;
+    }
+
+    .contact-us-main form .talk-about {
+      display: flex;
+      width: 100%;
+      flex-flow: wrap;
+    }
+
+    .contact-us-main form .shopify-form-submit {
+      border-top: 1px solid #000;
+      padding-top: 84px;
+    }
+
+    .contact-us-main form .merge-field {
+      width: 100%;
+      max-width: 850px;
+      position: relative;
+      padding-top: 0px;
+    }
+
+    .contact-us-main form .merge-field p input {
+      margin: 0;
+    }
+
+    .form-submit-btn,
+    .form-next-btn {
+      position: absolute;
+      bottom: 20px;
+      right: 0px;
+      height: auto;
+    }
+
+    .multiple-field .form-submit-btn,
+    .multiple-field .form-next-btn {
+      bottom: 10px;
+      height: unset;
+      align-items: self-end;
+    }
+
+    .form-next-btn .nextStep {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #000;
+      color: #fff;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .form-next-btn .nextStep img {
+      width: 22px;
+    }
+
+    .form-submit-btn #contactFormSubmit {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background-color: #000;
+      color: #fff;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .form-submit-btn #contactFormSubmit img {
+      width: 20px;
+    }
+
+    .contact-us-main form #contactFormName {
+      border: 1px solid #000;
+      padding: 5px 15px;
+      height: auto;
+      font-size: 22px;
+      color: #000;
+      font-weight: 400;
+      font-family: Helvetica;
+    }
+
+    .contact-us-main form #contactFormName::placeholder {
+      font-size: 22px;
+      font-weight: 700;
+      font-family: Helvetica;
+      opacity: 1;
+      color: #DFDFDF;
+    }
+
+    /*  .back-btn {
+    margin-bottom: 20px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 26px;
+    } */
+    .back-btn {
+      margin-bottom: 38px;
+      display: flex;
+      cursor: pointer;
+      font-size: 26px;
+      align-items: center;
+    }
+
+    .back-btn img {
+      height: 30px;
+      width: auto;
+      margin-right: 10px;
+      margin-left: -5px;
+    }
+
+    .form-next-btn,
+    .form-submit-btn {
+      display: none;
+    }
+
+  }
+
+  @media (min-width:992px) {
+
+    .form-submit-btn,
+    .form-next-btn {
+      bottom: 30px;
+
+    }
+
+    .ticker-section {
+      margin: 0px -48px;
+    }
+
+    .contact-us-main .form-desc {
+      font-size: 21px;
+
+    }
+
+
+    #contact_page_form {
+      min-height: 580px
+    }
+
+    .ticker-section {
+      padding: 35px 0px;
+    }
+
+    .yes-no-box {
+      margin-top: 110px;
+    }
+
+    .contact-us-main form [type="radio"]:checked+label,
+    .contact-us-main form [type="radio"]:not(:checked)+label {
+      padding-left: 80px;
+    }
+
+    .contact-us-main form [type="radio"]:checked+label:before,
+    .contact-us-main form [type="radio"]:not(:checked)+label:before {
+      width: 50px;
+      height: 50px;
+      top: -7px;
+    }
+
+    .contact-us-main form [type="radio"]:checked+label:after,
+    .contact-us-main form [type="radio"]:not(:checked)+label:after {
+      width: 50px;
+      height: 50px;
+      top: -7px;
+    }
+
+    .form-submit-btn #contactFormSubmit {
+      width: 40px;
+      height: 40px;
+
+    }
+
+    .multiple-field .form-submit-btn,
+    .multiple-field .form-next-btn {
+      bottom: 35px;
+    }
+
+    .inquiring-about {
+      margin-top: 10px;
+    }
+
+    .contact-us-main form .talk-radio {
+      padding: 0 15px 15px 0px;
+      margin-bottom: 113px;
+    }
+
+    .contact-us-main {
+      padding: 100px 0px;
+    }
+
+    .contact-us-main form .talk-radio {
+      width: 48%;
+    }
+
+    .contact-us-main form [type="radio"]:checked+label,
+    .contact-us-main form [type="radio"]:not(:checked)+label {
+
+      font-size: 60px;
+    }
+
+    .contact-us-main form h2 {
+      font-size: 39px;
+    }
+
+    .form-group input::placeholder {
+      font-size: 48px;
+
+    }
+
+    .form-group select {
+      font-size: 48px;
+    }
+
+    .form-group input {
+      font-size: 48px;
+      height: auto;
+    }
+
+    .answer::placeholder {
+      font-size: 48px;
+    }
+
+    .answer {
+      font-size: 48px;
+      padding-right: 45px;
+    }
+
+    .talk-radio.talk-radio-btn:nth-child(3) {
+      width: auto;
+    }
+
+
+  }
+
+  @media (min-width:1480px) {
+    .ticker-content ul li {
+      font-size: 16px;
+      line-height: 18px;
+
+    }
+
+    .form-group.merge-field input {
+      padding-right: 75px;
+      line-height: 90px;
+    }
+
+    .form-submit-btn #contactFormSubmit {
+      width: 64px;
+      height: 64px;
+
+    }
+
+    .form-group.we-ready.pos-relative.merged-field {
+      margin-top: 104px;
+    }
+
+    .contact-us-main form .merge-field {
+      max-width: 1067px;
+    }
+
+    .form-group.select-pdt {
+      position: relative;
+      display: inline-block;
+      width: 1067px;
+      margin-top: 30px;
+    }
+
+    .form-next-btn .nextStep {
+      width: 64px;
+      height: 64px;
+    }
+
+    .form-next-btn .nextStep img {
+      width: 30px;
+    }
+
+    .contact-us-main form .merge-field {
+      padding-top: 45px;
+    }
+
+    .form-group input {
+      font-size: 76px;
+      line-height: 80px;
+    }
+
+    .form-group input::placeholder {
+      font-size: 76px;
+      line-height: 80px;
+
+    }
+
+    .form-group select {
+      font-size: 76px;
+      line-height: 80px;
+      width: 100%;
+    }
+
+    .answer::placeholder {
+      font-size: 76px;
+      line-height: 80px;
+    }
+
+    .answer {
+      font-size: 76px;
+      line-height: 80px;
+      padding-right: 65px;
+    }
+
+    .form-title.underline {
+      padding-bottom: 20px;
+    }
+
+    .contact-us-main .form-body {
+      display: block;
+
+      padding-top: 80px;
+    }
+
+    .contact-us-main form [type="radio"]:checked+label::before,
+    .contact-us-main form [type="radio"]:not(:checked)+label::before {
+      top: 0px;
+      width: 55px;
+      height: 55px;
+
+    }
+
+    .contact-us-main form [type="radio"]:checked+label::after,
+    .contact-us-main form [type="radio"]:not(:checked)+label::after {
+      width: 55px;
+      height: 55px;
+      top: 0px;
+
+    }
+
+    .contact-us-main form [type="radio"]:checked+label,
+    .contact-us-main form [type="radio"]:not(:checked)+label {
+      font-size: 70px;
+      line-height: 50px;
+      padding-left: 90px;
+    }
+
+    .contact-us-main form .talk-radio {
+      margin-bottom: 113px;
+      padding-bottom: 27px;
+      margin-right: 20px;
+      padding-left: 0px;
+      padding-right: 10px;
+    }
+
+    .form-submit-btn #contactFormSubmit img {
+      width: 30px;
+    }
+
+
+  }
+
+  @media (min-width:1680px) {
+    .ticker-content ul li {
+      font-size: 18px;
+      line-height: 22px;
+
+    }
+
+    .contact-us-main form [type="radio"]:checked+label::before,
+    .contact-us-main form [type="radio"]:not(:checked)+label::before {
+      top: 0px;
+      width: 63px;
+      height: 63px;
+
+    }
+
+    .contact-us-main form [type="radio"]:checked+label::after,
+    .contact-us-main form [type="radio"]:not(:checked)+label::after {
+      width: 63px;
+      height: 63px;
+      top: 0px;
+
+    }
+
+    .contact-us-main form [type="radio"]:checked+label,
+    .contact-us-main form [type="radio"]:not(:checked)+label {
+      font-size: 76px;
+      line-height: 55px;
+      padding-left: 100px;
+    }
+
+    .contact-us-main form .talk-radio {
+      margin-bottom: 80px;
+      padding-bottom: 27px;
+      margin-right: 20px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+
+  }
+
+  @media (min-width:1920px) {
+    .ticker-content ul li {
+      font-size: 22px;
+      line-height: 26px;
+
+    }
+  }
+
+  .error-msg {
+    color: #dd323c;
+    display: none;
+  }
+</style>
+
+<script>
+  function checkEmails() {
+    var email = document.getElementById('txtEmail1');
+    var filter =
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (!filter.test(email.value)) {
+      document.getElementById('txtEmail1-error').style.display = "block";
+      email.focus;
+      return false;
+    } else {
+      document.getElementById('txtEmail1-error').style.display = "none";
+      email.focus;
+    }
+  }
+
+  function checkEmail() {
+    var email = document.getElementById('txtEmail');
+    var filter =
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (!filter.test(email.value)) {
+      document.getElementById('txtEmail-error').style.display = "block";
+      email.focus;
+      return false;
+    } else {
+      document.getElementById('txtEmail-error').style.display = "none";
+      email.focus;
+    }
+  }
+
+  (function ($) {
+    // $(document).ready(function() {
+    //   $(".talk-radio").click(function(){
+    //   	$(".lets-talk").fadeOut();
+    //     $(".what-is-name").fadeIn();
+    //   });
+    //   $(".back-btn").click(function(){
+    //   	$(".lets-talk").fadeIn();
+    //     $(".what-is-name").fadeOut();
+    //   });
+    //   });
+
+    function inputFocus(duration) {
+      setTimeout(function() {
+        $('.active-pane .field-input').focus();
+      }, duration);
+    }
+
+    $('.field-input').keypress(function (e) {
+
+      var key = e.which;
+      if (key == 13) // the enter key code
+
+      {
+        e.preventDefault();
+        $('.active-pane .nextStep').click();
+      }
+    });
+
+    $(document).ready(function () {
+      $('#contact_page_form').attr('autocomplete', 'off')
+
+      $('#email_address').on('keypress', function () {
+        var re = /([A-Z0-9a-z_-][^@])+?@[^$#<>?]+?\.[\w]{2,4}/.test(this.value);
+        if (!re) {
+          $('#error').show();
+        } else {
+          $('#error').hide();
+        }
+      })
+
+      $(".form-next-btn").hide();
+      $(".field-input").keyup(function () {
+        if ($(this).val()) {
+          $(this).next(".form-next-btn").show();
+        } else {
+          $(this).next(".form-next-btn").hide();
+        }
+      });
+
+      $(".select-option").change(function () {
+        if ($(this).val()) {
+          $(this).next(".form-next-btn").show();
+        } else {
+          $(this).next(".form-next-btn").hide();
+        }
+      });
+
+      $(".make-subscribe").click(function () {
+        $(".form-submit-btn").show();
+      });
+
+      $('.talk-radio-btn input[type="radio"]').click(function () {
+        var inputValue = $(this).attr("value");
+        var targetBox = $("." + inputValue);
+        $(`.box:not(.${inputValue})`).html('');
+        $(".lets-talk").fadeOut(0);
+        $(".box").not(targetBox).fadeOut();
+        $(targetBox).fadeIn(2000);
+        inputFocus();
+      });
+
+      $(".step1 .nextStep").click(function () {
+        $(".step1").removeClass('active-pane');
+        $(".step1").fadeOut(0);
+        $('.step2').fadeIn(2000);
+        setTimeout(function() {
+          $(".step2").addClass('active-pane');
+        }, 2000);
+        inputFocus(2010);
+      });
+
+      $(".step2 .nextStep").click(function () {
+        $(".step2").fadeOut(0);
+        $(".step2").removeClass('active-pane');
+        $('.step3').fadeIn(2000);
+        setTimeout(function() {
+          $(".step3").addClass('active-pane');
+        }, 2000);
+        inputFocus(2010);
+      });
+
+      $(".step3 .nextStep").click(function () {
+        $(".step3").fadeOut(0);
+        $(".step3").removeClass('active-pane');
+        $('.step4').fadeIn(2000);
+        setTimeout(function() {
+          $(".step4").addClass('active-pane');
+        }, 2000);
+        inputFocus(2010);
+      });
+
+      $(".step4 .back-btn").click(function () {
+        $(".step4").fadeOut(0);
+        $(".step4").removeClass('active-pane');
+        $(".step3").fadeIn(500);
+        $(".step3").addClass('active-pane');
+        inputFocus(510);
+      });
+
+      $(".step3 .back-btn").click(function () {
+        $(".step3").fadeOut(0);
+        $(".step3").removeClass('active-pane');
+        $(".step2").fadeIn(500);
+        $(".step2").addClass('active-pane');
+        inputFocus(510);
+      });
+
+      $(".step2 .back-btn").click(function () {
+        $(".step2").fadeOut(0);
+        $(".step2").removeClass('active-pane');
+        $(".step1").fadeIn(500);
+        $(".step1").addClass('active-pane');
+        inputFocus(510);
+      });
+
+      $(".step1 .back-btn").click(function () {
+        $(".box").fadeOut(1);
+        location.reload();
+        // $(".lets-talk").fadeIn(500);
+      });
+
+    });
+  })(jQuery);
+  //   var inputText = document.getElementsByClassName("field-input");
+  //    inputText.addEventListener("keyup", function(event) {
+  //       if (event.keyCode === 13) {
+  //          event.preventDefault();
+  //          document.getElementById("nextStep").click();
+  //       }
+  //    });
+</script>
