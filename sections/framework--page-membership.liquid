@@ -74,9 +74,16 @@
             </div>
             
         </div>
+      
      </div>
  
 </section>
+
+<style>
+  .swiper-slide:last-child {
+	margin-right: 0 !important;
+}
+</style>
 
 <script>
 function openPage(pageName,elmnt,color) {
@@ -102,14 +109,11 @@ function openPage(pageName,elmnt,color) {
     loop: true,
   freeMode: true,
   spaceBetween:50,
-  grabCursor: true,
-  loop: true,
   autoplay: {
-    delay: 1,
+    delay:10,
     disableOnInteraction: true
   },
-  freeMode: true,
-  speed: 5500,
+  speed:5000,
   freeModeMomentum: false,
   
   breakpoints: {
