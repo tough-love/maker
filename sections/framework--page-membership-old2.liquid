@@ -1,0 +1,392 @@
+<section class="membership-wrp">
+	<div class="container-fluid ">
+        <div class="prod-name-row you-know-slider">  
+            <div class="you-may-also">
+              <p>
+                {% if product.metafields.products.you_may_also_like_title != blank %}
+                    {{ product.metafields.products.you_may_also_like_title }}
+                    {% else %}
+                    BUILD YOUR ROUTINE:
+                    {% endif %}
+
+              </p>
+            </div>
+            <div class="you-may-also-slider">
+            <div class="swiper-container you-may-know-also">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="{% if product.metafields.you.like_link1 != blank  %} {{ product.metafields.you.like_link1}} {% else %} https://www.reyalperformance.com/collections/mens-skincare/products/supreme-face-wash {% endif %} ">
+                    {% if product.metafields.you.like_text1 != blank %}
+                    {{ product.metafields.you.like_text1 }}
+                    {% else %}
+                    WHEY PROTEIN FORMULATION
+                    {% endif %}
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="{% if product.metafields.you.like_link2 != blank  %} {{ product.metafields.you.like_link2}} {% else %} https://www.reyalperformance.com/collections/mens-skincare/products/select-day-serum {% endif %}">
+                    {% if product.metafields.you.like_text2 != blank %}
+                    {{ product.metafields.you.like_text2 }}
+                    {% else %}
+                    002 SELECT DAY SERUM
+                    {% endif %}
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="{% if product.metafields.you.like_link3 != blank  %} {{ product.metafields.you.like_link3}} {% else %} https://www.reyalperformance.com/collections/mens-skincare/products/super-day-moisturizer {% endif %}">
+                    {% if product.metafields.you.like_text3 != blank %}
+                    {{ product.metafields.you.like_text3 }}
+                    {% else %}
+                      003 SUPER DAY MOISTURIZER
+                    {% endif %}
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="{% if product.metafields.you.like_link4 != blank  %} {{ product.metafields.you.like_link4}} {% else %} https://www.reyalperformance.com/collections/mens-skincare/products/supreme-face-wash {% endif %} ">
+                    {% if product.metafields.you.like_text4 != blank %}
+                    {{ product.metafields.you.like_text4 }}
+                    {% else %}
+                    WHEY PROTEIN FORMULATION
+                    {% endif %}
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="{% if product.metafields.you.like_link5 != blank  %} {{ product.metafields.you.like_link5}} {% else %} https://www.reyalperformance.com/collections/mens-skincare/products/select-day-serum {% endif %}">
+                    {% if product.metafields.you.like_text5 != blank %}
+                    {{ product.metafields.you.like_text5 }}
+                    {% else %}
+                    002 SELECT DAY SERUM
+                    {% endif %}
+                  </a>
+                </div>
+                <!-- <div class="swiper-slide">
+                  <a href="{% if product.metafields.you.like_link6 != blank  %} {{ product.metafields.you.like_link6}} {% else %} https://www.reyalperformance.com/collections/mens-skincare/products/super-day-moisturizer {% endif %}">
+                    {% if product.metafields.you.like_text6 != blank %}
+                    {{ product.metafields.you.like_text6 }}
+                    {% else %}
+                    003 SUPER DAY MOISTURIZER
+                    {% endif %}
+                  </a>
+                </div> -->
+                
+              </div>
+            </div>
+            </div>
+            
+        </div>
+        <div class="ticker-section">
+          <div class="ticker-content ticker">
+            <ul>
+              <li>REYAL PERFORMANCE</li>
+              <li>VANCOUVER, BC</li>
+              <li>INFO@REYALPERFORMANCE.COM</li>
+              <li>REYAL PERFORMANCE</li>
+              <li>VANCOUVER, BC</li>
+              <li>INFO@REYALPERFORMANCE.COM</li>
+            </ul>
+            <ul>
+              <li>REYAL PERFORMANCE</li>
+              <li>VANCOUVER, BC</li>
+              <li>INFO@REYALPERFORMANCE.COM</li>
+              <li>REYAL PERFORMANCE</li>
+              <li>VANCOUVER, BC</li>
+              <li>INFO@REYALPERFORMANCE.COM</li>
+            </ul>
+          </div>
+        </div>
+     </div>
+ 
+</section>
+
+<style>
+   @media (min-width:0) {
+  @keyframes scrollLeft {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+  }
+  .ticker-section {
+    margin: 0px;
+    padding: 35px 20px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+  }
+
+  .ticker-content {
+    display: flex;
+    width: 100%;
+    min-height: 16px;
+    box-sizing: content-box;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ticker-content ul {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    box-sizing: content-box;
+    white-space: nowrap;
+    animation: scrollLeft 30s linear infinite;
+  }
+
+  .ticker-content ul li {
+      display: inline-block;
+      font-size: 12px;
+      line-height: 16px;
+      padding-right: 8vw;
+      font-weight: 700;
+      font-family: Helvetica;
+      text-align: center;
+      width: auto !important;
+    }
+  }
+  @media (min-width:992px) {
+    .ticker-section {
+      margin: 0px -48px;
+      padding: 35px 0px;
+    }
+  }
+  @media (min-width:1480px) {
+    .ticker-content ul li {
+      font-size: 16px;
+      line-height: 18px;
+
+    }
+  }
+  @media (min-width:1680px) {
+    .ticker-content ul li {
+      font-size: 18px;
+      line-height: 22px;
+
+    }
+  }
+  @media (min-width:1920px) {
+  .ticker-content ul li {
+    font-size: 22px;
+    line-height: 26px;
+
+  }
+}
+</style>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+  document.getElementById("defaultOpen").click();
+</script>
+<script>
+ 
+
+ $(document).ready(function(){
+  var mySwiper = new Swiper(".you-may-know-also", {
+    loop: true,
+  freeMode: true,
+  spaceBetween:50,
+  autoplay: {
+    delay:10,
+    disableOnInteraction: true
+  },
+  speed:5000,
+  freeModeMomentum: false,
+  
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween:75,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween:100,
+    },
+  },
+ });
+
+});
+</script>
+
+{% schema %}
+  {
+    "name": "Membership",
+    "settings": [
+		{
+			"type": "text",
+			"id": "product_category_title",
+			"label": "Product Category Title"
+		},
+		{
+			"type": "text",
+			"id": "product_category_name1",
+			"label": "Product Category Name1"
+		},
+		{
+			"type": "text",
+			"id": "product_category_name2",
+			"label": "Product Category Name2"
+		},
+		{
+			"type": "text",
+			"id": "product_category_name3",
+			"label": "Product Category Name3"
+		},
+		{
+			"type": "text",
+			"id": "tab01_membership_title_one",
+			"label": "Tab01 Membership Title One"
+		},
+		{
+			"type": "text",
+			"id": "tab01_membership_desc_one",
+			"label": "Tab01 Membership Desc One"
+		},
+		{
+			"type": "text",
+			"id": "tab01_membership_button_one",
+			"label": "Tab01 Membership Button One"
+		},
+		{
+			"type": "text",
+			"id": "tab01_service_title_one",
+			"label": "Tab01 Service Title One"
+		},
+		{
+			"type": "text",
+			"id": "tab01_service_desc_one",
+			"label": "Tab01 Service Desc One"
+		},
+		{
+			"type": "text",
+			"id": "tab01_service_title_two",
+			"label": "Tab01 Service Title Two"
+		},
+		{
+			"type": "text",
+			"id": "tab01_service_desc_two",
+			"label": "Tab01 Service Desc Two"
+		},
+		{
+			"type": "text",
+			"id": "tab01_service_title_three",
+			"label": "Tab01 Service Title Three"
+		},
+		{
+			"type": "text",
+			"id": "tab01_service_desc_three",
+			"label": "Tab01 Service Desc Three"
+		},
+		{
+			"type": "text",
+			"id": "tab02_membership_title_one",
+			"label": "Tab02 Membership Title One"
+		},
+		{
+			"type": "text",
+			"id": "tab02_membership_desc_one",
+			"label": "Tab02 Membership Desc One"
+		},
+		{
+			"type": "text",
+			"id": "tab02_membership_button_one",
+			"label": "Tab02 Membership Button One"
+		},
+		{
+			"type": "text",
+			"id": "tab02_service_title_one",
+			"label": "Tab02 Service Title One"
+		},
+		{
+			"type": "text",
+			"id": "tab02_service_desc_one",
+			"label": "Tab02 Service Desc One"
+		},
+		{
+			"type": "text",
+			"id": "tab02_service_title_two",
+			"label": "Tab02 Service Title Two"
+		},
+		{
+			"type": "text",
+			"id": "tab02_service_desc_two",
+			"label": "Tab02 Service Desc Two"
+		},
+		{
+			"type": "text",
+			"id": "tab02_service_title_three",
+			"label": "Tab02 Service Title Three"
+		},
+		{
+			"type": "text",
+			"id": "tab02_service_desc_three",
+			"label": "Tab02 Service Desc Three"
+		},
+		{
+			"type": "text",
+			"id": "tab03_membership_title_one",
+			"label": "Tab03 Membership Title One"
+		},
+		{
+			"type": "text",
+			"id": "tab03_membership_desc_one",
+			"label": "Tab03 Membership Desc One"
+		},
+		{
+			"type": "text",
+			"id": "tab03_membership_button_one",
+			"label": "Tab03 Membership Button One"
+		},
+		{
+			"type": "text",
+			"id": "tab03_service_title_one",
+			"label": "Tab03 Service Title One"
+		},
+		{
+			"type": "text",
+			"id": "tab03_service_desc_one",
+			"label": "Tab03 Service Desc One"
+		},
+		{
+			"type": "text",
+			"id": "tab03_service_title_two",
+			"label": "Tab03 Service Title Two"
+		},
+		{
+			"type": "text",
+			"id": "tab03_service_desc_two",
+			"label": "Tab03 Service Desc Two"
+		},
+		{
+			"type": "text",
+			"id": "tab03_service_title_three",
+			"label": "Tab03 Service Title Three"
+		},
+		{
+			"type": "text",
+			"id": "tab03_service_desc_three",
+			"label": "Tab03 Service Desc Three"
+		}
+	]
+  }
+{% endschema %}
+
+
