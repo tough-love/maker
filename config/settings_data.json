@@ -851,15 +851,15 @@
         "type": "framework--page-apparel-wearing",
         "settings": {
           "wearing_title": "HOW OTHERS ARE WEARING IT",
-          "wearing_subtitle": "Tag us on Instagram @reyal-performance to have your look featured.",
+          "wearing_subtitle": "Tag us on Instagram @reyalperformance to have your look featured.",
           "wearing_image1": "shopify:\/\/shop_images\/wearing1.jpg",
-          "wearing_image_title1": "@roanne.mah",
+          "wearing_image_title1": "",
           "wearing_image2": "shopify:\/\/shop_images\/wearing2.jpg",
-          "wearing_image_title2": "@jimmy.football",
+          "wearing_image_title2": "",
           "wearing_image3": "shopify:\/\/shop_images\/wearing3.jpg",
-          "wearing_image_title3": "@spud_mackenzie",
+          "wearing_image_title3": "",
           "wearing_image4": "shopify:\/\/shop_images\/wearing4.jpg",
-          "wearing_image_title4": "@terry_knowels",
+          "wearing_image_title4": "",
           "comfort_title": "COMFORT FOR ALL",
           "comfort_subtitle": "Reyal's premium athletic gear and supply department is designed for an active life, prioritizing fit, fucntion and comfort. We select apparel partners, products, and styles that emphasize quality, design, and creativity. We wear our gear hard [in the gym] and chose products that's wash well, stretch right, and look better with age.",
           "comfort_bg_image": "shopify:\/\/shop_images\/Rectangle_107.jpg"
@@ -921,6 +921,11 @@
           "product-size-chart-enabled": false,
           "product-size-chart-option": "size",
           "product-size-chart-page-content": ""
+        }
+      },
+      "framework--page-mobile-accordian-apparal": {
+        "type": "framework--page-mobile-accordian-apparal",
+        "settings": {
         }
       }
     },
