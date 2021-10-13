@@ -12007,14 +12007,26 @@ body.template--customers--register input[type='password'] {
 	margin-top: 0 !important; 
 }
 
-
     .spr-form-title {
       font-size: 22px !important;
       margin-bottom: 20px !important
     }
 
-
+/* 
 @media (min-width: 1240px)
 .container-fluid {
     max-width: 1330px !Important;
+} */
+
+.page--reyal-e-gift-card #shopify-section-framework--page-review {
+	display: none;
+}
+.page--reyal-e-gift-card .comfort-section {
+	display: none;
+}
+.page--reyal-e-gift-card .small-container .organic-ingredients-row {
+	padding-bottom: 50px;
+}
+.page--reyal-e-gift-card .accordian-mob ul li:last-child {
+    display: none;
 }
