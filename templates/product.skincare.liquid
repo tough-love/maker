@@ -337,7 +337,7 @@
     }
     .ingredients-modal-data {
       margin: auto;
-      padding: 0;
+      padding: 40px 50px;
       width: 95%;
       position: absolute;
       top: 50%;
@@ -370,6 +370,12 @@
       right: 10px;
       cursor: pointer;
     }
+    .close-ingredients-modal:hover,
+    .close-ingredients-modal:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
     .close-size-modal:hover,
     .close-size-modal:focus {
       color: #000;
@@ -396,7 +402,13 @@
     }
     .ingredients-data {
       width: 100%;
-      padding: 46px 50px 31px;
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;
+      max-height: 80vh;
+      overflow: auto;
+    }
+    .ingredients-data::-webkit-scrollbar {
+      display: none;
     }
     .ingredients-data table {
       width: 100%;
