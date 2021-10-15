@@ -98,7 +98,7 @@
                   </p>
                  </div>
                  <div class="bottom-area">
-                    <a href="/pages/reyal-skincare-formula" id="show-ingreditnts222" target="_blank">{{ section.settings.center_real_ingredient_button }}</a>
+                    <a id="show-ingreditnts2" style="cursor: pointer;">{{ section.settings.center_real_ingredient_button }}</a>
                  </div>
                </div>
 
@@ -123,93 +123,17 @@
 
 </section>
 <div id="ingreditnts-modal2" class="size-modal">
-  <div class="size-data">
-    <span id="close-modal" class="close-size-modal">&times;</span>
+  <div class="ingredients-modal-data" style="width: 55%;">
+    <span id="close-ingredients-modal" class="close-ingredients-modal">&times;</span>
     <div class="size-inner-content">
-      <div class="left-side">
-        <img style="z-index: 3;" id="img{{forloop.index0}}" name="{{ image.alt }}" data-src="{{ product.featured_image | img_url: '100x100'}}" itemprop="image" src="{{ product.featured_image | img_url: '721x736'}}" class=" lazyloaded">
-      </div>
-      <div class="right-side">
-        <div class="pdt-sizes">
-          <table style="width:100%">
-            <tr>
-              {% if product.metafields.amount.per_scoop != blank %}
-              <th colspan="2" style="text-align:left">AMOUNT PER SCOOP ({{ product.metafields.amount.per_scoop }})</th>
-              {% else %}
-              <th colspan="2" style="text-align:left">AMOUNT PER SCOOP (NA)</th>
-              {% endif %}
-            </tr>
-            <tr>
-              <td>Calories</td>
-              <td>
-                {% if product.metafields.calories.value != blank %}
-                {{product.metafields.calories.value}}
-                {% else %}
-                NA
-                {% endif %}
-              </td>
-            </tr>
-            <tr>
-              <td>Fat</td>
-              <td>
-                {% if product.metafields.fat.value != blank %}
-                {{product.metafields.fat.value}}
-                {% else %}
-                NA
-                {% endif %}
-              </td>
-            </tr>
-            <tr>
-              <td>Protein</td>
-              <td>
-                {% if product.metafields.protein.value != blank %}
-                {{product.metafields.protein.value}}
-                {% else %}
-                NA
-                {% endif %}
-              </td>
-            </tr>
-            <tr>
-              <td>Sugars</td>
-              <td>
-                {% if product.metafields.sugars.value != blank %}
-                {{product.metafields.sugars.value}}
-                {% else %}
-                NA
-                {% endif %}
-              </td>
-            </tr>
-            <tr>
-              <td>Carbohydrates</td>
-              <td>
-                {% if product.metafields.carbohydrates.value != blank %}
-                {{product.metafields.carbohydrates.value}}
-                {% else %}
-                NA
-                {% endif %}
-              </td>
-            </tr>
-            <tr>
-              <td>Sodium</td>
-              <td>
-                {% if product.metafields.sodium.value != blank %}
-                {{product.metafields.sodium.value}}
-                {% else %}
-                NA
-                {% endif %}
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="wash-direction">
-          <h5>INGREDIENTS</h5>
-          <p>
-            {% if product.metafields.ingredients.description != blank %}
-                {{product.metafields.ingredients.description}}
-                {% else %}
-                NA
-                {% endif %}
-          </p>
+      <div class="ingredients-data">
+        {% if product.metafields.ingredients.description != blank %}
+        {{product.metafields.ingredients.description}}
+        {% else %}
+        Not Available
+        {% endif %}
+        <div class="ingredients-footer">
+          Proudly Formulated and Manufactured in Canada
         </div>
       </div>
     </div>
@@ -226,12 +150,11 @@ var sizeBtn = document.getElementById("ingreditnts-modal2");
 var openbtn = document.getElementById("show-ingreditnts2");
 
 // Get the element that closes the modal
-var closeBtn = document.getElementById("close-modal");
+var closeBtn = document.getElementById("close-ingredients-modal");
 
 // When the user clicks the button, open the modal 
 openbtn.onclick = function(e) {
-  e.preventDefault();
-  //sizeBtn.style.display = "block";
+  sizeBtn.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal

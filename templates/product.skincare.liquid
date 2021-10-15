@@ -335,6 +335,21 @@
       box-shadow: unset;
       z-index: 9999;
     }
+    .ingredients-modal-data {
+      margin: auto;
+      padding: 0;
+      width: 95%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 973px;
+      box-shadow: unset;
+      z-index: 9999;
+
+      background: #FFFFFF;
+      box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.29);
+    }
     /* The Close Button */
     .close-size-modal {
       color: #000;
@@ -344,6 +359,16 @@
       position: absolute;
       top: -25px;
       right: -10px;
+    }
+    .close-ingredients-modal {
+      color: grey;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
     }
     .close-size-modal:hover,
     .close-size-modal:focus {
@@ -368,6 +393,43 @@
       border-right: 0 !important;
       border-left: 0px !important;
       border-top: 0 !important;
+    }
+    .ingredients-data {
+      width: 100%;
+      padding: 46px 50px 31px;
+    }
+    .ingredients-data table {
+      width: 100%;
+      border-radius: 0;
+      border-collapse: collapse;
+      margin-bottom: 14px;
+    }
+    .ingredients-data table tr th {
+      background: #E0E0E0;
+      border: 1px solid #000;
+      font-weight: bold;
+      font-size: 17px;
+      color: #000;
+      font-style: normal;
+      padding-bottom: 0;
+      text-align: left;
+      padding: 8px;
+    }
+    .ingredients-data table tr td {
+      border: 1px solid #000;
+      font-weight: 500;
+      font-size: 17px;
+      color: #000;
+      font-style: normal;
+      padding-bottom: 0;
+      text-align: left;
+      padding: 8px;
+    }
+    .ingredients-footer {
+      margin-top: 15px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 17px;
     }
     .pdt-sizes table,
     .pdt-sizes table tr th,
