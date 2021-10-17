@@ -5368,7 +5368,7 @@ function(e,t){"function"==typeof define&&define.amd?define("jquery-bridget/jquer
     $('a').each(function() {
       var _this;
       _this = $(this);
-      if (this.host === location.host) {
+      if (this.host === location.host && _this.attr('target') !== '_blank') {
         return _this.attr('target', '_self');
       } else {
         return _this.attr('target', '_blank').attr('rel', 'noopener');
