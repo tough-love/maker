@@ -4,9 +4,9 @@
   <li class="entry-title">
     <div class="link"><p class="acr-title">{% if product.metafields.products.additives_ingredients_title != blank %}{{product.metafields.products.additives_ingredients_title}}{% else %}Additives & Ingredients{% endif %}</p></div>
     <div class="submenu">
-     <div class="additives-ingredients">
-              {% if product.metafields.products.additives_ingredients != blank %}
-              {{product.metafields.products.additives_ingredients}}
+     <div class="additives-ingredients-mobile">
+              {% if product.metafields.ingredients.description != blank %}
+              {{product.metafields.ingredients.description}}
               {% else %}
               Not Available
               {% endif %}

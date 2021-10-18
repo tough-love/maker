@@ -140,14 +140,18 @@
 .modal-content {
 	background-color: #fefefe;
 	margin: auto;
-	padding: 20px;
+  padding: 60px 50px 40px;
 	border: 1px solid #888;
   width:95%;
-	max-width: 600px;
+	max-width: 705px;
+  position: relative;
 }
 
 /* The Close Button */
 .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
   color: #aaaaaa;
   float: right;
   font-size: 28px;
@@ -343,7 +347,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      max-width: 973px;
+      max-width: 705px;
       box-shadow: unset;
       z-index: 9999;
 
@@ -444,12 +448,53 @@
     .ingredients-data table tr th:not(:last-child), .ingredients-data table tr td:not(:last-child) {
       border-right-width: 0 !important;
     }
-    .ingredients-footer {
+    .ingredients-data p {
       margin-top: 15px;
       color: #000000;
       font-style: normal;
       font-weight: bold;
       font-size: 17px;
+    }
+    .additives-ingredients-mobile table {
+      width: 100%;
+      border-radius: 0;
+      border-collapse: separate !important;
+      margin-top: 10px;
+      margin-bottom: 14px;
+      table-layout: fixed;
+    }
+    .additives-ingredients-mobile table tr th {
+      background: #E0E0E0;
+      border: 1px solid #000;
+      font-weight: bold;
+      font-size: 9px;
+      color: #000;
+      font-style: normal;
+      padding-bottom: 0;
+      text-align: left;
+      padding: 8px;
+    }
+    .additives-ingredients-mobile table tr td {
+      border: 1px solid #000;
+      font-weight: 500;
+      font-size: 9px;
+      color: #000;
+      font-style: normal;
+      padding-bottom: 0;
+      text-align: left;
+      padding: 8px;
+    }
+    .additives-ingredients-mobile table tr:not(:last-child) th, .additives-ingredients-mobile table tr:not(:last-child) td {
+      border-bottom-width: 0 !important;
+    }
+    .additives-ingredients-mobile table tr th:not(:last-child), .additives-ingredients-mobile table tr td:not(:last-child) {
+      border-right-width: 0 !important;
+    }
+    .additives-ingredients-mobile p {
+      margin: 10px 0;
+      color: #000000;
+      font-weight: bold;
+      font-size: 9px;
     }
     .pdt-sizes table,
     .pdt-sizes table tr th,

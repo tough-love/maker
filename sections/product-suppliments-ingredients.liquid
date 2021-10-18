@@ -217,7 +217,7 @@
     </div>
   </div>
 </section>
- <div data-popup="2" class="mob-ingredients-modal" style="padding: 35px 50px 30px;">
+ <div data-popup="2" class="mob-ingredients-modal" style="padding: 35px 50px 30px; max-width: 705px;">
    <button data-pop class="close">&times;</button>
     <div class="additives-ingredients">
       {% if product.metafields.ingredients.description != blank %}
@@ -238,11 +238,15 @@
 .mob-ingredients-modal .close {
 	color: #000;
 	float: right;
+  margin-top: -10px;
+  margin-right: -15px;
 	font-size: 24px;
 	font-weight: bold;
 	background-color: transparent;
+  color: #aaaaaa;
 }
   .mob-ingredients-modal .close:hover{
+    color: #000;
     background-color: transparent;
   }
 
