@@ -158,18 +158,22 @@ border-collapse: collapse;
 .modal-content {
 	background-color: #fefefe;
 	margin: auto;
-	padding: 20px;
+    padding: 35px 50px 30px;
 	border: 1px solid #888;
-  width:95%;
+    width:95%;
 	max-width: 600px;
-  position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 45px auto;
 }
 
 /* The Close Button */
 .close {
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 30px;
+  top: 25px;
   color: #aaaaaa;
   float: right;
   font-size: 28px;
@@ -236,6 +240,52 @@ border-collapse: collapse;
   color: #000000;
   font-weight: normal;
   font-size: 15px;
+}
+.additives-ingredients-mobile table {
+  width: 100%;
+  border-radius: 0;
+  border-collapse: separate !important;
+  margin-top: 10px;
+  margin-bottom: 14px;
+  table-layout: fixed;
+}
+.additives-ingredients-mobile table tr th {
+  background: #E0E0E0;
+  border: 1px solid #000;
+  font-weight: bold;
+  font-size: 9px;
+  color: #000;
+  font-style: normal;
+  padding-bottom: 0;
+  text-align: left;
+  padding: 8px;
+}
+.additives-ingredients-mobile table tr td {
+  border: 1px solid #000;
+  font-weight: 500;
+  font-size: 9px;
+  color: #000;
+  font-style: normal;
+  padding-bottom: 0;
+  text-align: left;
+  padding: 8px;
+}
+.additives-ingredients-mobile table tr:not(:last-child) th, .additives-ingredients-mobile table tr:not(:last-child) td {
+  border-bottom-width: 0 !important;
+}
+.additives-ingredients-mobile table tr th:not(:last-child), .additives-ingredients-mobile table tr td:not(:last-child) {
+  border-right-width: 0 !important;
+}
+.additives-ingredients-mobile p {
+  margin: 10px 0;
+  color: #000000;
+  font-weight: bold;
+  font-size: 9px;
+}
+.additives-ingredients-mobile span {
+  color: #000000;
+  font-weight: normal;
+  font-size: 9px;
 }
 
 
