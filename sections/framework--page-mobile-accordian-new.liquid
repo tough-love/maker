@@ -7,6 +7,7 @@
      <div class="additives-ingredients-mobile">
               {% if product.metafields.ingredients.description != blank %}
               {{product.metafields.ingredients.description}}
+      		  {% else %}
               Not Available
               {% endif %}
             </div>
