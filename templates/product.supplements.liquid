@@ -194,7 +194,7 @@ border-collapse: collapse;
 .additives-ingredients table {
   width: 100%;
   border-radius: 0;
-  border-collapse: collapse;
+  border-collapse: separate !important;
   margin-top: 10px;
   margin-bottom: 14px;
   table-layout: fixed;
@@ -219,6 +219,12 @@ border-collapse: collapse;
   padding-bottom: 0;
   text-align: left;
   padding: 8px;
+}
+.additives-ingredients table tr:not(:last-child) th, .additives-ingredients table tr:not(:last-child) td {
+  border-bottom-width: 0 !important;
+}
+.additives-ingredients table tr th:not(:last-child), .additives-ingredients table tr td:not(:last-child) {
+  border-right-width: 0 !important;
 }
 .additives-ingredients p {
   margin: 20px 0 10px;
