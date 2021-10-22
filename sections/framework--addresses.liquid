@@ -47,7 +47,7 @@
               </div>
             </div>
 
-            <div class="address--edit" id="edit_address_{{ address.id }}" style="display:none;">
+            <div class="address--edit invisible" id="edit_address_{{ address.id }}">
               {% form 'customer_address', address %}
                 <table class="address--customer-table">
                   <tr>
@@ -168,7 +168,7 @@
                       </select>
                     </td>
                   </tr>
-                  <tr id="address_province_container_{{ form.id }}" style="display:none">
+                  <tr id="address_province_container_{{ form.id }}" class="invisible">
                     <td>
                       <label data-item="accent-text" for="address_province_{{ form.id }}">
                         {{ 'customer.addresses.province' | t }}
@@ -255,7 +255,7 @@
             {{ 'customer.addresses.add_new' | t }}
           </a>
         </div>
-        <div class="edit_address" id="add_address" style="display:none;">
+        <div class="edit_address invisible" id="add_address">
           {% form 'customer_address', customer.new_address %}
 
           {{ form.errors | default_errors }}
@@ -379,7 +379,7 @@
                 </select>
               </td>
             </tr>
-            <tr id="address_province_container_new" style="display:none">
+            <tr id="address_province_container_new" class="invisible">
               <td>
                 <label data-item="accent-text" for="address_province_new">
                   {{ 'customer.addresses.province' | t }}

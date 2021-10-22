@@ -4,86 +4,86 @@
 
 
 <script>
-  
-  $('.layers .link-target').click(function(){
-    	
+
+  $('.layers .link-target').click(function () {
+
     $('.layers .link-target').removeClass('active-target');
     $(this).addClass('active-target');
-    
-    $('.layers .content.active').removeClass('active').hide(); 
-    
+
+    $('.layers .content.active').removeClass('active').hide();
+
     $('#layer-' + $(this).data('target')).show().addClass('active');
-    
+
   });
-  
-  
+
+
   var activeStep = 1;
-  $('.skin_arrows .arrow-left').click(function(){
-    
-    if(activeStep>1){
-		activeStep-=1;
-	    $('.layers .link-target').removeClass('active-target');
-      	$('.layers .link-target[data-target="00'+ activeStep + '"]').addClass('active-target');
-    
-    	$('.layers .content.active').removeClass('active').hide(); 
-    	$('#layer-00' + activeStep ).show().addClass('active');
+  $('.skin_arrows .arrow-left').click(function () {
+
+    if (activeStep > 1) {
+      activeStep -= 1;
+      $('.layers .link-target').removeClass('active-target');
+      $('.layers .link-target[data-target="00' + activeStep + '"]').addClass('active-target');
+
+      $('.layers .content.active').removeClass('active').hide();
+      $('#layer-00' + activeStep).show().addClass('active');
     }
-    
+
   });
-  
-  $('.skin_arrows .arrow-right').click(function(){
-    
-    if(activeStep<3){
-		activeStep+=1;
-	    $('.layers .link-target').removeClass('active-target');
-      	$('.layers .link-target[data-target="00'+ activeStep + '"]').addClass('active-target');
-      
-      	$('.layers .content.active').removeClass('active').hide(); 
-    	$('#layer-00' + activeStep ).show().addClass('active');
+
+  $('.skin_arrows .arrow-right').click(function () {
+
+    if (activeStep < 3) {
+      activeStep += 1;
+      $('.layers .link-target').removeClass('active-target');
+      $('.layers .link-target[data-target="00' + activeStep + '"]').addClass('active-target');
+
+      $('.layers .content.active').removeClass('active').hide();
+      $('#layer-00' + activeStep).show().addClass('active');
     }
-    
+
   });
-  
-  
-   $('.formula .link-target').click(function(){
-    	
+
+
+  $('.formula .link-target').click(function () {
+
     $('.formula .link-target').removeClass('active-target');
     $(this).addClass('active-target');
-    
-    $('.formula .content.active').removeClass('active').hide(); 
-    
+
+    $('.formula .content.active').removeClass('active').hide();
+
     $('#formula-' + $(this).data('target')).show().addClass('active');
-    
+
   });
-  
-  
+
+
   var activeStepFormula = 1;
-  $('.formula_arrows .arrow-left').click(function(){
-    
-    if(activeStepFormula>1){
-		activeStepFormula-=1;
-	    $('.formula .link-target').removeClass('active-target');
-      	$('.formula .link-target[data-target="00'+ activeStepFormula + '"]').addClass('active-target');
-    
-    	$('.formula .content.active').removeClass('active').hide(); 
-    	$('#formula-00' + activeStepFormula ).show().addClass('active');
+  $('.formula_arrows .arrow-left').click(function () {
+
+    if (activeStepFormula > 1) {
+      activeStepFormula -= 1;
+      $('.formula .link-target').removeClass('active-target');
+      $('.formula .link-target[data-target="00' + activeStepFormula + '"]').addClass('active-target');
+
+      $('.formula .content.active').removeClass('active').hide();
+      $('#formula-00' + activeStepFormula).show().addClass('active');
     }
-    
+
   });
-  
-  $('.formula_arrows .arrow-right').click(function(){
-    
-    if(activeStepFormula<3){
-		activeStepFormula+=1;
-	    $('.formula .link-target').removeClass('active-target');
-      	$('.formula .link-target[data-target="00'+ activeStepFormula + '"]').addClass('active-target');
-      
-      	$('.formula .content.active').removeClass('active').hide(); 
-    	$('#formula-00' + activeStepFormula ).show().addClass('active');
+
+  $('.formula_arrows .arrow-right').click(function () {
+
+    if (activeStepFormula < 3) {
+      activeStepFormula += 1;
+      $('.formula .link-target').removeClass('active-target');
+      $('.formula .link-target[data-target="00' + activeStepFormula + '"]').addClass('active-target');
+
+      $('.formula .content.active').removeClass('active').hide();
+      $('#formula-00' + activeStepFormula).show().addClass('active');
     }
-    
+
   });
-  
-  
-  
+
+
+
 </script>

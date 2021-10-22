@@ -87,19 +87,6 @@
                 {% comment %}
                   NOTE: to add quantity field, remove input above this line and uncomment block below
                 {% endcomment %}
-                {% comment %}
-                  <div class="product-form--quantity">
-                    <label for="product-quantity">{{ quantity_t }}</label>
-                    <input
-                      id="quantity"
-                      type="number"
-                      name="quantity"
-                      min="1"
-                      value="1"
-                      style="width: 64px"
-                    />
-                  </div>
-                {% endcomment %}
               </div>
               {% if low_stock_amount > 0 and sold_out == false %}
               	<div class='product-form--low-stock' data-item='paragraph'></div>
@@ -211,16 +198,16 @@
     <span id="close-modal" class="close-size-modal">&times;</span>
     <div class="size-inner-content">
       <div class="left-side">
-        <img style="z-index: 3;" id="img{{forloop.index0}}" name="{{ image.alt }}" data-src="{{ product.featured_image | img_url: '100x100'}}" itemprop="image" src="{{ product.featured_image | img_url: '721x736'}}" class=" lazyloaded">
+        <img id="img{{forloop.index0}}" name="{{ image.alt }}" data-src="{{ product.featured_image | img_url: '100x100'}}" itemprop="image" src="{{ product.featured_image | img_url: '721x736'}}" class=" lazyloaded">
       </div>
       <div class="right-side">
         <div class="pdt-sizes">
-          <table style="width:100%">
+          <table>
             <tr>
               {% if product.metafields.amount.per_scoop != blank %}
-              <th colspan="2" style="text-align:left">AMOUNT PER SCOOP ({{ product.metafields.amount.per_scoop }})</th>
+              <th colspan="2">AMOUNT PER SCOOP ({{ product.metafields.amount.per_scoop }})</th>
               {% else %}
-              <th colspan="2" style="text-align:left">AMOUNT PER SCOOP (NA)</th>
+              <th colspan="2">AMOUNT PER SCOOP (NA)</th>
               {% endif %}
             </tr>
             <tr>

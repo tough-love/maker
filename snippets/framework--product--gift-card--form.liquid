@@ -38,7 +38,7 @@
   <div class="modal--root pdt-form-outer" data-js-class="FrameworkModal">
 
     {% form 'product', product, data-productid: product.id, class: 'product-form--container' %}
-      <div class="product-form--price-container" style="display:none;">
+      <div class="product-form--price-container invisible">
 
         <div
           class="product-form--price-wrapper"
@@ -135,20 +135,6 @@
         <input type="hidden" name="quantity" value="1">
         {% comment %}
           NOTE: to add quantity field, remove input above this line and uncomment block below
-        {% endcomment %}
-
-        {% comment %}
-          <div class="product-form--quantity">
-            <label for="product-quantity">{{ quantity_t }}</label>
-            <input
-              id="quantity"
-              type="number"
-              name="quantity"
-              min="1"
-              value="1"
-              style="width: 64px"
-            />
-          </div>
         {% endcomment %}
       </div>
 
@@ -276,11 +262,11 @@
     <span class="close-size-modal">&times;</span>
     <div class="size-inner-content">
       <div class="left-side">
-        <img style="z-index: 3;" id="img{{forloop.index0}}" name="{{ image.alt }}" data-src="{{ product.featured_image | img_url: '100x100'}}" itemprop="image" src="{{ product.featured_image | img_url: '1000x1000'}}" class=" lazyloaded">
+        <img id="img{{forloop.index0}}" name="{{ image.alt }}" data-src="{{ product.featured_image | img_url: '100x100'}}" itemprop="image" src="{{ product.featured_image | img_url: '1000x1000'}}" class=" lazyloaded">
       </div>
       <div class="right-side">
         <div class="pdt-sizes">
-          <table style="width:100%">
+          <table>
             <tr>
               <th>SIZE</th>
               <th>HEIGHT (CM)</th> 

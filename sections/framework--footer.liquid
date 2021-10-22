@@ -114,7 +114,7 @@
                   %}
                     <div
                       id="mailing-list-module"
-                      {% if block.settings.subscribe--show-newsletter == false and settings.popup--newsletter--enabled %}style="display:none;"{% endif %}
+                      {% if block.settings.subscribe--show-newsletter == false and settings.popup--newsletter--enabled %}class="invisible"{% endif %}
                     >
                       {% if block.settings.newsletter--info != blank %}
                         <div class="footer--subscribe--info font--paragraph rte-content">
@@ -174,7 +174,7 @@
                   {% endif %}
                 </div>
                 
-                 <img style="width: 25px;float: right;margin-top: 25px;" src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/Reyal_Icon_4x.png?v=1609797353">
+                <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/Reyal_Icon_4x.png?v=1609797353">
               </div>
             </div>
           </div>
@@ -277,6 +277,14 @@
   </div>
 
 </footer>
+
+<style>
+  .footer--subscribe img {
+    width: 25px;
+    float: right;
+    margin-top: 25px;
+  }
+</style>
 
 {% schema %}
 {

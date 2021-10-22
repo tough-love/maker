@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #333;
   background-color: #fafafa;
   padding: 0;
@@ -90,7 +90,7 @@ h4 {
 }
 
 .wrap:after {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
@@ -410,7 +410,7 @@ main {
 }
 
 #gift-card-inner-container:after {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
@@ -447,6 +447,14 @@ main {
   border: 1px solid #d9d9d9;
 }
 
+.add-to-apple-wallet {
+  text-align: center;
+}
+
+.add-to-apple-wallet img {
+  display: inline-block;
+}
+
 #gift-card-header .tag {
   float: right;
 }
@@ -463,7 +471,7 @@ main {
 }
 
 #gift-card-tofrom li:after {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
@@ -508,7 +516,7 @@ main {
 }
 
 #gift-card:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -626,7 +634,7 @@ main {
 }
 
 .tooltip-triangle {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 0;
@@ -692,6 +700,11 @@ main {
   overflow: hidden;
 }
 
+#Qrcode {
+  width: 120px;
+  margin: 0 auto 20px;
+}
+
 .action-link {
   font-size: 0.875em;
   text-transform: uppercase;
@@ -750,10 +763,8 @@ main {
   background-repeat: no-repeat;
 }
 
-
-
 /* - Footer ---------------------------------------------------------------------------- */
-footer[role='contentinfo'] {
+footer[role="contentinfo"] {
   text-align: center;
   padding: 3em 0;
   -webkit-animation: fadein 0.5s ease-in-out both 0.4s;
@@ -789,7 +800,7 @@ footer[role='contentinfo'] {
   color: #999;
 }
 
-footer[role='contentinfo'] .gift-card-icon {
+footer[role="contentinfo"] .gift-card-icon {
   width: 45px;
   display: inline-block;
   vertical-align: baseline;
