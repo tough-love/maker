@@ -298,13 +298,6 @@ previous, or current article {% endcomment %}
     {% if enable_disqus %}
       <h2 class="comments--heading" data-item='section-heading'>{{ comments_t }}</h2>
       <div id="disqus_thread" class="comments--disqus"></div>
-      <script>
-        function disqus_config() {
-          this.page.identifier = '{{ article.id }}';
-          this.page.title = '{{ shop.name }} - {{ article.title }}';
-          this.page.url = '{{ canonical_url }}';
-        }
-      </script>
     {% elsif show_comments %}
       <h2 class="comments--heading" data-item='section-heading'>{{ comments_t }}</h2>
       {% render "framework--comments" %}

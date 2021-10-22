@@ -205,17 +205,6 @@
       ></script>
     {% endif %}
 
-    {% if youtube_exists %}
-      <script>
-        // YouTube callback
-        function onYouTubeIframeAPIReady() {
-          $(function() {
-            $(window).trigger('theme.utils.youtubeAPIReady');
-          });
-        }
-      </script>
-    {% endif %}
-
 {% endcase %}
 
 {% unless view == 'media-dependencies' %}

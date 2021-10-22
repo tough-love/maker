@@ -34,7 +34,7 @@
 </ul>
 
 <script>
-  $('.product-images-slider').slick({
+  $('.product-images-slider').click({
     arrows: true,
     slidesToShow: 1,
   	slidesToScroll: 1,
@@ -42,7 +42,7 @@
     asNavFor: '.product-images-slider-nav'
   });
   
-  $('.product-images-slider-nav').slick({
+  $('.product-images-slider-nav').click({
     slidesToShow: 4,
     slidesToScroll: 1,
     asNavFor: '.product-images-slider',
