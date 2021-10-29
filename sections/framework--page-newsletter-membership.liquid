@@ -1,0 +1,403 @@
+
+<section class="membership-wrp news-letter-section">
+    <div id="News" class="tabcontent">
+      <section class="membership">
+         <div class="container-fluid ">
+            <div class="row">
+               <div class="col-7">
+               
+                  <h2>
+                     {% if product.metafields.products.reyal_membership_section_title != blank %}
+                {{ product.metafields.products.reyal_membership_section_title }}
+                {%else%}
+                REYAL NEWSLETTER
+                {%endif%}
+                  </h2>
+                  <p>
+                    {% if product.metafields.products.reyal_membership_section_desc != blank %}
+                {{ product.metafields.products.reyal_membership_section_desc }}
+                {%else%}
+                Sign up and be the first to know about new REYAL products, gear drops,<br/> collaborations and exclusive content. Knowledge is power, man.
+
+                {%endif%}
+                  </p>
+                  <div class="subs">
+                    
+          <div class="footer--block" data-block-type="subscribe">
+            <div class="footer--block--container">
+              <div class="footer--subscribe">
+
+                {% if block.settings.subscribe--show-newsletter or show_social %}
+                  {% if block.settings.newsletter--heading != blank %}
+                    <div class="footer--block--heading font--block-heading">
+                      {{ block.settings.newsletter--heading }}
+                    </div>
+                  {% endif %}
+                {% endif %}
+
+                <div class="footer--block--body">
+                  {% if
+                    block.settings.subscribe--show-newsletter or
+                    settings.popup--newsletter--enabled
+                  %}
+                    <div
+                      id="mailing-list-module"
+                      {% if block.settings.subscribe--show-newsletter == false and settings.popup--newsletter--enabled %}class="invisible"{% endif %}
+                    >
+                      {% if block.settings.newsletter--info != blank %}
+                        <div class="footer--subscribe--info font--paragraph rte-content">
+                          {{ block.settings.newsletter--info }}
+                        </div>
+                      {% endif %}
+
+                      {% form 'customer', id: 'footer_form' %}
+                        {% if form.errors %}
+                          <p class="error feedback">
+                            {% for field in form.errors %}
+                              {{ field }} {{ form.errors.messages[field] }}
+                            {% endfor %}
+                          </p>
+                        {% endif %}
+
+                        <div class="footer--form-container">
+                          <input type="hidden" name="contact[tags]" value="newsletter" />
+                          <input
+                            type="hidden"
+                            name="contact[first_name]"
+                            value="Newsletter"
+                          />
+                          <input
+                            type="hidden"
+                            name="contact[last_name]"
+                            value="Subscriber"
+                          />
+                          <label for="footer-email" data-item="hidden-text">
+                            {{ 'layout.footer.newsletter_placeholder' | t }}
+                          </label>
+                          <input
+                            class="small"
+                            id="footer-email"
+                            type="email"
+                            placeholder="{{ 'layout.footer.newsletter_placeholder' | t }}"
+                            name="contact[email]"
+                          />
+                          <input
+                            type="submit"
+                            class="font--button prefix"
+                            value="{{ 'layout.footer.newsletter_button' | t }}"
+                            name="subscribe"
+                          />
+                        </div>
+
+                        {% if form.posted_successfully? or form.errors %}
+                          <script>window.location.hash = '#feedback-bar--newsletter';</script>
+                        {% endif %}
+
+                        <div data-item="hidden-text">
+                          {% comment %} remove the below line to display reCAPTCHA badge {% endcomment %}
+                          {{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}
+                        </div>
+                      {% endform %}
+                    </div>
+                  {% endif %}
+                </div>
+                
+                <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/Reyal_Icon_4x.png?v=1609797353">
+              </div>
+            </div>
+          </div>
+                  </div>
+                  
+               </div>
+               <div class="col-5">
+                  <div class="member-icon-wrp">
+                     <div class="member-icon">
+                        <svg width="75" height="77" viewBox="0 0 64 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1529:77)">
+<path d="M62.56 13.5098H1.25V74.8198H62.56V13.5098Z" stroke="white" stroke-width="2.5" stroke-miterlimit="10"/>
+<path d="M50.2898 13.521V5.38098C44.5407 2.66095 38.2598 1.25 31.8998 1.25C25.5397 1.25 19.2588 2.66095 13.5098 5.38098V13.521" stroke="white" stroke-width="2.5" stroke-miterlimit="10"/>
+</g>
+<defs>
+<clipPath id="clip0_1529:77">
+<rect width="63.81" height="76.07" fill="white"/>
+</clipPath>
+</defs>
+                        </svg>
+                     </div>
+                     <div class="member-text">
+                        <h5>
+                          {% if product.metafields.products.newsletter_title1 != blank %}
+                          {{ product.metafields.products.newsletter_title1 }}
+                          {%else%}
+                          FIRST PURCHASE
+                          {%endif%}
+                        </h5>
+                        <p>
+                          {% if product.metafields.products.newsletter_description1 != blank %}
+                          {{ product.metafields.products.newsletter_description1 }}
+                          {%else%}
+                          Receive 15% off your first REYAL order including skincare, supplements, and gear.
+                          {%endif%}
+                        </p>
+                     </div>
+                  </div>
+                  <div class="member-icon-wrp">
+                     <div class="member-icon">
+                        <svg width="75" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1529:73)">
+<path d="M31.91 62.57C48.843 62.57 62.57 48.843 62.57 31.91C62.57 14.9769 48.843 1.25 31.91 1.25C14.9769 1.25 1.25 14.9769 1.25 31.91C1.25 48.843 14.9769 62.57 31.91 62.57Z" stroke="white" stroke-width="2.5" stroke-miterlimit="10"/>
+<path d="M38.0295 7.69922H25.7695V38.0292H38.0295V7.69922Z" stroke="white" stroke-width="2.5" stroke-miterlimit="10"/>
+<path d="M38.0295 44.1699H25.7695V56.4299H38.0295V44.1699Z" stroke="white" stroke-width="2.5" stroke-miterlimit="10"/>
+</g>
+<defs>
+<clipPath id="clip0_1529:73">
+<rect width="63.81" height="63.81" fill="white"/>
+</clipPath>
+</defs>
+                        </svg>
+
+                     </div>
+                     <div class="member-text">
+                        <h5>
+                          {% if product.metafields.products.newsletter_title2 != blank %}
+                          {{ product.metafields.products.newsletter_title2 }}
+                          {%else%}
+                          REMINDERS
+                          {%endif%}
+                        </h5>
+                        <p>
+                          {% if product.metafields.products.newsletter_description2 != blank %}
+                          {{ product.metafields.products.newsletter_description2 }}
+                          {%else%}
+                          E-mails that remind you to re-order before the tubes run dry. Preparation is key to success.
+                          {%endif%}
+                        </p>
+                     </div>
+                  </div>
+                  <div class="member-icon-wrp">
+                     <div class="member-icon">
+                        <svg width="75" height="64" viewBox="0 0 89 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1529:66)">
+<path d="M44.1702 25.77C50.9412 25.77 56.4302 20.281 56.4302 13.51C56.4302 6.73899 50.9412 1.25 44.1702 1.25C37.3991 1.25 31.9102 6.73899 31.9102 13.51C31.9102 20.281 37.3991 25.77 44.1702 25.77Z" stroke="white" stroke-width="2.5" stroke-miterlimit="10"/>
+<path d="M74.8205 38.0298C81.5916 38.0298 87.0805 32.5408 87.0805 25.7698C87.0805 18.9988 81.5916 13.5098 74.8205 13.5098C68.0495 13.5098 62.5605 18.9988 62.5605 25.7698C62.5605 32.5408 68.0495 38.0298 74.8205 38.0298Z" stroke="white" stroke-width="2.5" stroke-miterlimit="10"/>
+<path d="M13.51 38.0298C20.281 38.0298 25.77 32.5408 25.77 25.7698C25.77 18.9988 20.281 13.5098 13.51 13.5098C6.73899 13.5098 1.25 18.9988 1.25 25.7698C1.25 32.5408 6.73899 38.0298 13.51 38.0298Z" stroke="white" stroke-width="2.5" stroke-miterlimit="10"/>
+<path d="M62.5595 38.0402V62.5602H25.7695V38.0402L31.9095 31.9102H56.4295L62.5595 38.0402Z" stroke="white" stroke-width="2.5" stroke-miterlimit="10"/>
+<path d="M87.0805 43.7207H62.5605V62.5607H87.0805V43.7207Z" stroke="white" stroke-width="2.5" stroke-miterlimit="10"/>
+<path d="M25.77 43.7207H1.25V62.5607H25.77V43.7207Z" stroke="white" stroke-width="2.5" stroke-miterlimit="10"/>
+</g>
+<defs>
+<clipPath id="clip0_1529:66">
+<rect width="88.34" height="63.81" fill="white"/>
+</clipPath>
+</defs>
+                        </svg>
+
+                     </div>
+                     <div class="member-text">
+                        <h5>
+                          {% if product.metafields.products.newsletter_title3 != blank %}
+                          {{ product.metafields.products.newsletter_title3 }}
+                          {%else%}
+                          COMMUNITY
+                          {%endif%}
+                        </h5>
+                        <p>
+                          {% if product.metafields.products.newsletter_description3 != blank %}
+                          {{ product.metafields.products.newsletter_description3 }}
+                          {%else%}
+                          A collective of like-minded individuals sharing information and working to continuously improve themselves.
+                          {%endif%}
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section> 
+    </div>
+</section>
+
+<style>
+  @media only screen and (max-width:768px) {
+    .membership-wrp.news-letter-section {
+	margin-top: 50px;
+}
+    .news-letter-section .member-icon {
+    display: none;
+  }
+  .news-letter-section .member-icon-wrp {
+    margin-bottom: 50px;
+  }
+  .news-letter-section .member-text {
+    margin-left: 0;
+    flex-basis: 100%;
+  }
+}
+</style>
+
+
+{% schema %}
+  {
+    "name": "Membership",
+    "settings": [
+		{
+			"type": "text",
+			"id": "product_category_title",
+			"label": "Product Category Title"
+		},
+		{
+			"type": "text",
+			"id": "product_category_name1",
+			"label": "Product Category Name1"
+		},
+		{
+			"type": "text",
+			"id": "product_category_name2",
+			"label": "Product Category Name2"
+		},
+		{
+			"type": "text",
+			"id": "product_category_name3",
+			"label": "Product Category Name3"
+		},
+		{
+			"type": "text",
+			"id": "tab01_membership_title_one",
+			"label": "Tab01 Membership Title One"
+		},
+		{
+			"type": "text",
+			"id": "tab01_membership_desc_one",
+			"label": "Tab01 Membership Desc One"
+		},
+		{
+			"type": "text",
+			"id": "tab01_membership_button_one",
+			"label": "Tab01 Membership Button One"
+		},
+		{
+			"type": "text",
+			"id": "tab01_service_title_one",
+			"label": "Tab01 Service Title One"
+		},
+		{
+			"type": "text",
+			"id": "tab01_service_desc_one",
+			"label": "Tab01 Service Desc One"
+		},
+		{
+			"type": "text",
+			"id": "tab01_service_title_two",
+			"label": "Tab01 Service Title Two"
+		},
+		{
+			"type": "text",
+			"id": "tab01_service_desc_two",
+			"label": "Tab01 Service Desc Two"
+		},
+		{
+			"type": "text",
+			"id": "tab01_service_title_three",
+			"label": "Tab01 Service Title Three"
+		},
+		{
+			"type": "text",
+			"id": "tab01_service_desc_three",
+			"label": "Tab01 Service Desc Three"
+		},
+		{
+			"type": "text",
+			"id": "tab02_membership_title_one",
+			"label": "Tab02 Membership Title One"
+		},
+		{
+			"type": "text",
+			"id": "tab02_membership_desc_one",
+			"label": "Tab02 Membership Desc One"
+		},
+		{
+			"type": "text",
+			"id": "tab02_membership_button_one",
+			"label": "Tab02 Membership Button One"
+		},
+		{
+			"type": "text",
+			"id": "tab02_service_title_one",
+			"label": "Tab02 Service Title One"
+		},
+		{
+			"type": "text",
+			"id": "tab02_service_desc_one",
+			"label": "Tab02 Service Desc One"
+		},
+		{
+			"type": "text",
+			"id": "tab02_service_title_two",
+			"label": "Tab02 Service Title Two"
+		},
+		{
+			"type": "text",
+			"id": "tab02_service_desc_two",
+			"label": "Tab02 Service Desc Two"
+		},
+		{
+			"type": "text",
+			"id": "tab02_service_title_three",
+			"label": "Tab02 Service Title Three"
+		},
+		{
+			"type": "text",
+			"id": "tab02_service_desc_three",
+			"label": "Tab02 Service Desc Three"
+		},
+		{
+			"type": "text",
+			"id": "tab03_membership_title_one",
+			"label": "Tab03 Membership Title One"
+		},
+		{
+			"type": "text",
+			"id": "tab03_membership_desc_one",
+			"label": "Tab03 Membership Desc One"
+		},
+		{
+			"type": "text",
+			"id": "tab03_membership_button_one",
+			"label": "Tab03 Membership Button One"
+		},
+		{
+			"type": "text",
+			"id": "tab03_service_title_one",
+			"label": "Tab03 Service Title One"
+		},
+		{
+			"type": "text",
+			"id": "tab03_service_desc_one",
+			"label": "Tab03 Service Desc One"
+		},
+		{
+			"type": "text",
+			"id": "tab03_service_title_two",
+			"label": "Tab03 Service Title Two"
+		},
+		{
+			"type": "text",
+			"id": "tab03_service_desc_two",
+			"label": "Tab03 Service Desc Two"
+		},
+		{
+			"type": "text",
+			"id": "tab03_service_title_three",
+			"label": "Tab03 Service Title Three"
+		},
+		{
+			"type": "text",
+			"id": "tab03_service_desc_three",
+			"label": "Tab03 Service Desc Three"
+		}
+   
+	]
+  }
+{% endschema %}
+
+
