@@ -23,89 +23,72 @@
                   </p>
                   <div class="subs">
                     
-          <div class="footer--block" data-block-type="subscribe">
-            <div class="footer--block--container">
-              <div class="footer--subscribe">
+                    {% comment %} Translations {% endcomment %}
+{% assign success_t = 'home.newsletter.success' | t %}
+{% assign email_placeholder_t = 'home.newsletter.email_placeholder' | t %}
+{% assign button_t = 'home.newsletter.button' | t %}
 
-                {% if block.settings.subscribe--show-newsletter or show_social %}
-                  {% if block.settings.newsletter--heading != blank %}
-                    <div class="footer--block--heading font--block-heading">
-                      {{ block.settings.newsletter--heading }}
-                    </div>
-                  {% endif %}
-                {% endif %}
+{% comment %} Variables {% endcomment %}
+{% assign heading = section.settings.heading | escape %}
+{% assign subheading = section.settings.newsletter--subheading %}
 
-                <div class="footer--block--body">
-                  {% if
-                    block.settings.subscribe--show-newsletter or
-                    settings.popup--newsletter--enabled
-                  %}
-                    <div
-                      id="mailing-list-module"
-                      {% if block.settings.subscribe--show-newsletter == false and settings.popup--newsletter--enabled %}class="invisible"{% endif %}
-                    >
-                      {% if block.settings.newsletter--info != blank %}
-                        <div class="footer--subscribe--info font--paragraph rte-content">
-                          {{ block.settings.newsletter--info }}
-                        </div>
-                      {% endif %}
+{% comment %} View {% endcomment %}
+<div
+  class="newsletter--root"
+  style="{% render 'framework--background-colors', bg_color: section.settings.background-color %}"
+  data-section-id="{{ section.id }}"
+>
+  <div class="newsletter--container">
 
-                      {% form 'customer', id: 'footer_form' %}
-                        {% if form.errors %}
-                          <p class="error feedback">
-                            {% for field in form.errors %}
-                              {{ field }} {{ form.errors.messages[field] }}
-                            {% endfor %}
-                          </p>
-                        {% endif %}
+    {% if heading != blank or subheading != blank %}
+      <div class="newsletter--header">
+        {% if heading != blank %}
+          <h2 class="newsletter--heading font--section-heading">{{ heading }}</h2>
+        {% endif %}
 
-                        <div class="footer--form-container">
-                          <input type="hidden" name="contact[tags]" value="newsletter" />
-                          <input
-                            type="hidden"
-                            name="contact[first_name]"
-                            value="Newsletter"
-                          />
-                          <input
-                            type="hidden"
-                            name="contact[last_name]"
-                            value="Subscriber"
-                          />
-                          <label for="footer-email" data-item="hidden-text">
-                            {{ 'layout.footer.newsletter_placeholder' | t }}
-                          </label>
-                          <input
-                            class="small"
-                            id="footer-email"
-                            type="email"
-                            placeholder="{{ 'layout.footer.newsletter_placeholder' | t }}"
-                            name="contact[email]"
-                          />
-                          <input
-                            type="submit"
-                            class="font--button prefix"
-                            value="{{ 'layout.footer.newsletter_button' | t }}"
-                            name="subscribe"
-                          />
-                        </div>
+        {% if subheading != blank %}
+          <div class="newsletter--subheading font--paragraph rte-content">{{ subheading }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
 
-                        {% if form.posted_successfully? or form.errors %}
-                          <script>window.location.hash = '#feedback-bar--newsletter';</script>
-                        {% endif %}
+    <div class="newsletter--body">
+      {% form 'customer', id: 'newsletter_form' %}
+        {% if form.errors %}
+          <p class="newsletter--failure">
+          {% for field in form.errors %}
+            {{ field }} {{ form.errors.messages[field] }}
+          {% endfor %}
+          </p>
+        {% endif %}
+        <input type="hidden" name="contact[tags]" value="newsletter" />
+        <label for="newsletter-email" data-item="hidden-text">{{ email_placeholder_t }}</label>
+        <input
+          class="newsletter--email"
+          id="newsletter-email"
+          name="contact[email]"
+          type="email"
+          aria-label="{{ email_placeholder_t }}"
+          placeholder="SIGN UP HERE"
+          required
+        />
+        <!-- <button class="font--button" id="newsletter--button" name="subscribe">
+          {{ button_t }}
+        </button> -->
 
-                        <div data-item="hidden-text">
-                          {% comment %} remove the below line to display reCAPTCHA badge {% endcomment %}
-                          {{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}
-                        </div>
-                      {% endform %}
-                    </div>
-                  {% endif %}
-                </div>
-                
-                <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/Reyal_Icon_4x.png?v=1609797353">
-              </div>
-            </div>
-          </div>
+        {% if form.posted_successfully? or form.errors %}
+          <script>window.location.hash = '#feedback-bar--newsletter';</script>
+        {% endif %}
+
+        <div data-item="hidden-text">
+          {% comment %} remove the below line to display reCAPTCHA badge {% endcomment %}
+          {{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}
+        </div>
+      {% endform %}
+
+    </div>
+  </div>
+</div>
                   </div>
                   
                </div>
@@ -233,6 +216,36 @@
     flex-basis: 100%;
   }
 }
+.subs {
+	max-width: 511px;
+}
+.subs .newsletter--root {
+	width: 100%;
+	margin: 0px auto;
+	padding: 50px 0px;
+}
+.subs .newsletter--body {
+	width: 100%;
+	max-width: 100%;
+	padding: 0;
+}
+.subs #newsletter_form {
+	width: 100%;
+	margin: 0;
+}
+.subs #newsletter-email, .subs #newsletter-email::placeholder {
+	background-color: #fff;
+	color: #111 !important;
+	padding: 15px 28px;
+	font-size: 17px;
+  text-align: left;
+  opacity: 1;
+}
+.subs .newsletter--container {
+	width: 100%;
+}
+
+
 </style>
 
 
