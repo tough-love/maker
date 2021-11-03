@@ -924,6 +924,9 @@
   @media (min-width: 576px) {}
 
   @media only screen and (min-width:0px) and (max-width: 767px) {
+    .pd .membership .container-fluid {
+	padding: 0 50px !important;
+}
     .product-form--add-to-cart {
       position: fixed;
       bottom: 0;
@@ -1156,6 +1159,9 @@
   @media (max-width: 640px) {}
 
   @media (min-width: 1024px) {
+    #shopify-section-framework--page-review {
+	padding-top: 100px;
+}
     #single-product-form .product-form--button-container .product-form--add-to-cart {
       font-size: 20px;
       line-height: 24px;
@@ -1308,10 +1314,57 @@
       padding-bottom: 30px;
     }
   }
+    .membership-wrp {
+      margin: 0 -50px;
+    }
+    .membership {
+    background: #000;
+    padding: 78px 15px;
+    color: #fff;
+}
+.membership .container-fluid {
+	padding: 0px 45px;
+  margin: 0px auto;
+}
+.membership h2 {
+    font-size: 47px;
+    line-height: 55px;
+}
+body .membership p {
+    margin-top: 14px;
+}
+.member-icon-wrp {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 83px;
+}
+.member-text {
+	margin-left: 42px;
+	flex-basis: 80%;
+}
+.member-icon-wrp:last-child {
+	margin-bottom: 0;
+}
+.member-text h5 {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;
+}
+.member-icon-wrp:last-child {
+	margin-bottom: 0 !important;
+}
 </style>
 
 {% section 'product-apparel' %}
 {% section 'framework--page-apparel-wearing' %}
+<div class="desktop-news-letter pd">
+  {% section 'framework--page-newsletter-membership' %}
+</div>
 {% section 'framework--page-review' %}
 {% section 'framework--page-mobile-accordian-apparal' %}
 {% section 'framework--product-recommendations' %}
+<div class="mob-news-letter pd">
+  {% section 'framework--page-newsletter-membership' %}
+</div>
