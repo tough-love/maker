@@ -3,8 +3,8 @@
     <div id="News" class="tabcontent">
       <section class="membership">
          <div class="container-fluid ">
-            <div class="row">
-               <div class="col-7">
+            <div class="row news-letter-content">
+               <div class="news-left">
                
                   <h2>
                      {% if product.metafields.products.reyal_membership_section_title != blank %}
@@ -17,7 +17,7 @@
                     {% if product.metafields.products.reyal_membership_section_desc != blank %}
                 {{ product.metafields.products.reyal_membership_section_desc }}
                 {%else%}
-                Sign up and be the first to know about new REYAL products, gear drops,<br/> collaborations and exclusive content. Knowledge is power, man.
+                Sign up and be the first to know about new REYAL products, gear drops, collaborations and exclusive content. Knowledge is power, man.
 
                 {%endif%}
                   </p>
@@ -92,7 +92,7 @@
                   </div>
                   
                </div>
-               <div class="col-5">
+               <div class="news-right">
                   <div class="member-icon-wrp">
                      <div class="member-icon">
                         <svg width="75" height="77" viewBox="0 0 64 77" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -201,7 +201,19 @@
 </section>
 
 <style>
-  @media only screen and (max-width:768px) {
+
+
+
+  @media only screen and (max-width:767px) {
+    .membership p {
+    font-size: 12px;
+}
+    .desktop-news-letter {
+	display: none;
+}
+.mob-news-letter {
+	display: block !important;
+}
     .membership-wrp.news-letter-section {
 	margin-top: 50px;
 }
@@ -215,6 +227,13 @@
     margin-left: 0;
     flex-basis: 100%;
   }
+}
+@media screen and (min-width:0){
+  .mob-news-letter {
+	display: none;
+}
+.news-letter-content {
+	align-items: center !important;
 }
 .subs {
 	max-width: 511px;
@@ -238,11 +257,39 @@
 	color: #111 !important;
 	padding: 15px 28px;
 	font-size: 17px;
+  font-weight: 700;
   text-align: left;
   opacity: 1;
 }
 .subs .newsletter--container {
 	width: 100%;
+}
+.news-left {
+	flex-basis: 100%;
+}
+.news-right {
+	flex-basis:100%;
+}
+.member-icon {
+	flex-basis: unset !important;
+}
+}
+
+@media screen and (min-width:992px){
+.news-left {
+	flex-basis: 46% !important;
+	max-width: 511px;
+}
+.news-right {
+	flex-basis:47% !important;
+}
+.subs .newsletter--root {
+	padding: 50px 0px 0px;
+}
+.member-text p {
+    font-size: 17px;
+    line-height: 24px;
+}
 }
 
 
