@@ -60,9 +60,6 @@
       display: none;
     }
     
-    .membership-wrp {
-      margin: 0
-    }
     .membership .container-fluid {
      	padding: 0 !important;
     	width: 100%; 
@@ -1372,6 +1369,12 @@ body .membership p {
 .member-icon-wrp:last-child {
 	margin-bottom: 0 !important;
 }
+  
+  @media (max-width: 480px) {
+   .membership-wrp {
+    	margin: 0 
+   }
+  }
 </style>
 
 {% section 'product-apparel' %}
