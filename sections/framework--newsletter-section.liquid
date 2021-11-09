@@ -1,0 +1,61 @@
+
+
+<div
+  class="newsletter--root news-letter-section"
+>
+  <div class="newsletter--container">
+
+
+      <div class="newsletter--header">
+      
+          <h2 class="newsletter--heading font--section-heading">[SUBSCRIBE TO REYAL]</h2>
+       
+
+      
+          <div class="newsletter--subheading font--paragraph rte-content">
+            <p>SIGN UP TO OUR NEWSLETTER FOR GYM INSPIRATION, TRAINING TIPS, NEW RELEASES, AND 15% OFF YOUR FIRST ORDER.</p></div>
+    
+      </div>
+ 
+
+    <div class="newsletter--body">
+      {% form 'customer', id: 'newsletter_form' %}
+        {% if form.errors %}
+          <p class="newsletter--failure">
+          {% for field in form.errors %}
+            {{ field }} {{ form.errors.messages[field] }}
+          {% endfor %}
+          </p>
+        {% endif %}
+        <input type="hidden" name="contact[tags]" value="newsletter" />
+        <div class="row mx-0">
+          <input
+          class="newsletter--email"
+          id="newsletter-email"
+          name="contact[email]"
+          type="email"
+          aria-label=""
+          placeholder="EMAIL ADDRESS...."
+          required
+        />
+        <button class="font--button" id="newsletter--button" name="subscribe">
+          SIGN UP!
+        </button>
+        </div>
+        
+
+        {% if form.posted_successfully? or form.errors %}
+          <script>window.location.hash = '#feedback-bar--newsletter';</script>
+        {% endif %}
+
+        <!-- <div data-item="hidden-text">
+          {% comment %} remove the below line to display reCAPTCHA badge {% endcomment %}
+          {{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}
+        </div> -->
+      {% endform %}
+
+    </div>
+  </div>
+</div>
+
+

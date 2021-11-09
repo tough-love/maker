@@ -1,0 +1,34 @@
+
+
+  <div data-section-id="{{ section.id }}" class="feature-video--root">
+    <video playsinline autoplay muted loop>
+      <source src="{{section.settings.url}}" type="video/mp4">
+    </video>
+    <h1 class="concept-banner-text">BE GENTLE, MAN</h1>
+  </div>
+
+{% schema %}
+  {
+    "name": "Video Section",
+    "settings": [
+      {
+        "type": "url",
+        "id": "url",
+        "label": "Video Link"
+      },
+      {
+        "type": "number",
+        "id": "height",
+        "label": "Height",
+        "info": "will be applied between 0px to 992px",
+		"default": 600
+      }
+    ],
+    "presets": [
+      {
+        "name": "video section",
+        "category": "Video Section"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,514 @@
+
+
+@media (min-width:0) {
+
+ .main-header .announcement-bar__message {
+	font-size: 12px;
+	font-family: "HN-B";
+	letter-spacing: 1.2px;
+}
+.main-content {
+	padding-top: 0px !important;
+}
+.site-nav a {
+	padding: 0px 10px;
+	text-transform: uppercase;
+	font-size: 17px;
+	line-height: 20px;
+  font-family: "HN-M";
+}
+.grid__item.logo-area {
+	width: 187px;
+}
+.right-nax{
+  max-width: 250px;}
+#AccessibleNav {
+	width: inherit;
+}
+.main-header .site-nav {
+	text-align: left;
+}
+.main-header .site-nav__link:focus .site-nav__label, .main-header .site-nav__link:not([disabled]):hover .site-nav__label {
+	border-bottom-color:transparent;
+}
+.right-nav button, .right-nav a {
+	color: #000;
+	font-size: 17px;
+	font-family: "HN-M";
+	padding: 0;
+	margin-left: 30px !important;
+}
+.home-page-banner .one-half {
+	height:500px;
+}
+.banner-logo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+ .you-may-also-slider {
+	overflow-x: hidden;
+}
+  @keyframes scrollLeft {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+  }
+  .ticker-section {
+    margin: 0px;
+  }
+
+  .ticker-content {
+    display: flex;
+    width: 100%;
+    min-height: 16px;
+    box-sizing: content-box;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ticker-content ul {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    box-sizing: content-box;
+    white-space: nowrap;
+    animation: scrollLeft 30s linear infinite;
+  }
+
+  .ticker-content ul li {
+      display: inline-block;
+      font-size: 12px;
+      line-height: 16px;
+      padding-right: 8vw;
+      font-weight: 700;
+      font-family: Helvetica;
+      text-align: center;
+      width: auto !important;
+      text-transform: uppercase;
+    }
+    .prod-name-row.you-know-slider {
+	display: flex;
+}
+.feature-video--root {
+   position: relative; 
+  }
+  .feature-video--root video{
+    max-width: 100%;
+    display: flex;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+   .concept-banner-text {
+      font-size: 50px;
+      color: #ef3536;
+      font-family: aktiv-grotesk,sans-serif;
+      font-weight: bold;
+      letter-spacing: 3.5px;
+      line-height: 1.1;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      text-shadow: 5px 5px 6px #00000029;
+      text-transform: uppercase;
+      left: 0%;
+      transform: translate(0%, -50%);
+      z-index: 9999;
+      width: 100%;
+      padding: 0 10px;
+   }
+   .you-may-also {
+    width: -moz-available;
+    width:-webkit-fill-available;
+    max-width: fit-content;
+    padding-right: 50px;
+  }
+  .membership-wrp {
+    padding: 25px 0px;
+  }
+  .you-may-also p {
+	font-size: 14px;
+	font-family: "HN-M";
+	color: #93D1E1;
+  width: max-content;
+}
+
+.ticker-content.ticker ul li a{
+  font-size: 14px;
+	font-family: "HN-M";
+	color: #000000;
+}
+.skincare-home-section {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height:400px;
+	max-height: 1004px;
+  position: relative;
+}
+.top-content {
+	position: absolute;
+	left:50px;
+	top: 50px;
+}
+.bottom-link {
+	position: absolute;
+	bottom:50px;
+	right:50px;
+}
+.bg-layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.2);
+}
+.top-content p, .bottom-link a {
+	color: #fff;
+	font-size:24px;
+	font-weight: 700;
+	font-family: "HN-M";
+}
+.bottom-link a:hover, .bottom-link a:focus {
+	color: #fff !important;
+}
+.bg-image {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.even-lift-section .bg-image {
+	height:500px;
+}
+.even-lift-section .content-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+}
+.even-lift-section .content-box h2{
+  font-size:50px;
+  line-height:110px;
+  color: #fff;
+  font-weight: 700;
+  font-family: "HN-M";
+  text-align: center;
+}
+.bulk-now {
+	display: flex;
+	height: 100%;
+	align-items: flex-start;
+	justify-content: center;
+	padding-top:50px;
+}
+.fancy-supplement {
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: flex-end;
+	padding-bottom:50px;
+}
+.bulk-now a, .fancy-supplement a {
+	font-size:30px;
+	color: #fff;
+	font-weight: 700;
+	font-family: "HN-M";
+  text-align: center;
+}
+.bulk-now a:hover, .bulk-now a:focus, .fancy-supplement a:hover, .fancy-supplement a:focus{
+  color: #fff !important;
+}
+.news-letter-section {
+	background-color: #99D7E4;
+	padding: 90px 20px 95px;
+}
+.news-letter-section .newsletter--container {
+	width: 100%;
+	max-width: 718px;
+	margin: 0px auto;
+	text-align: center;
+}
+.newsletter--heading {
+	font-size: 30px;
+	font-weight: 700;
+	color: #fff;
+  margin:0;
+  letter-spacing: 0px;
+}
+.newsletter--subheading p {
+	font-size: 18px;
+	line-height: 34px;
+	font-weight: 500;
+	color: #fff;
+	padding: 22px 0px 54px;
+}
+.news-letter-section #newsletter_form {
+	width: 100%;
+}
+.news-letter-section #newsletter-email {
+	width: 60%;
+}
+.news-letter-section #newsletter-email {
+	width: 60%;
+	background-color: transparent;
+	border: 1px solid #ffff;
+	height: 69px;
+	font-size: 22px;
+	color: #fff;
+	padding: 0px 30px;
+	outline: none;
+}
+
+#newsletter-email::placeholder {
+    font-size: 22px;
+    color: #fff;
+    opacity: 1;
+    font-weight: 500;
+}
+.news-letter-section #newsletter--button {
+	width: 40%;
+	background-color: #ffff;
+	border: 1px solid #fff;
+	height: 70px;
+	color: #99D7E4;
+	padding: 0px;
+	font-size: 22px;
+	font-weight: 700;
+}
+.news-letter-section #newsletter--button {
+	width: 40%;
+}
+.home-product{
+  padding:94px 0px 83px;
+}
+.home-product .pdt-card, .home-product .insta-feed{
+	padding: 0px 6px;
+	margin-bottom: 18px;
+}
+.super-sensitive {
+	position: absolute;
+	bottom: 100px;
+	width: 100%;
+	text-align: center;
+}
+.super-sensitive a{
+  font-size: 30px;
+color: #fff;
+font-weight: 700;
+font-family: "HN-M";
+text-align: center;
+}
+.super-sensitive a:hover{
+color: #fff !important;
+}
+.homeSwiper .swiper-button-next, .homeSwiper .swiper-button-prev {
+	color: #fff;
+}
+.insta-feed .product-card a {
+	position: relative;
+	display: inline-block;
+}
+.insta-feed .product-card a .insta-link {
+	position: absolute;
+	display: inline-flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: all 0.3s;
+	background-color: rgba(0,0,0,0.3);
+}
+.insta-feed .product-card a:hover .insta-link{
+  opacity:1;
+} 
+.insta-feed .product-card a .insta-link img{
+  width:25px;
+}
+}
+@media (max-width: 767px) {
+  .template--index .layout--main-content .shopify-section{
+  }
+  .shopify-section .featured-double-image,
+  .shopify-section .newsletter--root,
+  .shopify-section .featured-grid--item{
+    margin: 0;
+  }
+  
+}
+  
+@media (max-width: 680px) {
+ 
+   .concept-banner-text {
+      font-size: 50px;
+      color: #ef3536;
+      font-family: aktiv-grotesk,sans-serif;
+      font-weight: bold;
+      letter-spacing: 3.5px;
+      line-height: 1.1;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      text-shadow: 5px 5px 6px #00000029;
+      text-transform: uppercase;
+      left: 0%;
+      transform: translate(0%, -50%);
+      z-index: 9999;
+      width: 100%;
+   }
+ 
+}
+@media (min-width: 576px) { 
+   .skincare-home-section {
+	height:500px;
+}
+}
+@media (min-width: 768px) { 
+   .concept-banner-text {
+      font-size: 65px;
+      color:#ef3536; 
+      font-family: aktiv-grotesk,sans-serif; 
+      font-weight: bold;
+      left: 50%;
+      letter-spacing: 3.5px;
+      line-height: 1.1;
+      position: absolute;
+      top: 50%;
+      text-shadow: 5px 5px 6px #00000029;
+      text-transform: uppercase;
+      transform: translate(-50%, -50%);
+      z-index: 9999
+   }
+}
+@media (min-width: 992px) {
+  .home-page-banner .one-half {
+	height: 825px;
+}
+  .bulk-now a, .fancy-supplement a {
+	font-size:30px;
+
+}
+  .bulk-now {
+	padding-top: 103px;
+}
+.fancy-supplement {
+	padding-bottom: 100px;
+}
+  .top-content p, .bottom-link a {
+	font-size:32px;
+}
+  .you-may-also p {
+	font-size: 17px;
+}
+.skincare-home-section {
+	height:700px;
+}
+
+.ticker-content.ticker ul li a{
+  font-size: 17px;
+}
+  .feature-video--root video{
+    height: auto;
+  }
+  .ticker-section {
+      margin: 0px -48px;
+    }
+    .even-lift-section .bg-image {
+	height:700px;
+}
+.even-lift-section .content-box h2{
+  font-size:100px;
+  line-height:220px;
+}
+.top-content {
+	left: 174px;
+	top: 93px;
+}
+.bottom-link {
+	bottom: 100px;
+	right: 302px;
+}
+}
+@media (min-width: 1200px) {
+  .prod-name-row.you-know-slider {
+	padding-left: 154px;
+}
+  .concept-banner-text {
+  	font-size: 95px;
+    left: 0%;
+    transform: translate(0%, -50%);
+  }
+} 
+@media (min-width: 1400px) {
+  
+  .concept-banner-text {
+  	font-size: 95px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .ticker-content ul li {
+      font-size: 16px;
+      line-height: 18px;
+
+    }
+}
+@media (min-width:1680px) {
+    .ticker-content ul li {
+      font-size: 18px;
+      line-height: 22px;
+
+    }
+    .skincare-home-section {
+    height: 1004px;
+  }
+  .top-content p, .bottom-link a {
+	font-size:36px;
+}
+.even-lift-section .bg-image {
+	height: 1004px;
+}
+.even-lift-section .content-box h2{
+  font-size:172px;
+  line-height:300px;
+ 
+}
+.newsletter--heading {
+	font-size: 45px;
+}
+.newsletter--subheading p {
+	font-size: 22px;
+	line-height: 42px;
+}
+  }
+@media (min-width:1920px) {
+  .ticker-content ul li {
+    font-size: 22px;
+    line-height: 26px;
+    padding-right: 3vw;
+
+  }
+   .top-content p, .bottom-link a {
+	font-size: 47px;
+}
+}

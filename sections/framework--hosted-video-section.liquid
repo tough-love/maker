@@ -1,0 +1,39 @@
+
+
+<div class="home-page-banner position-relative">
+  <div class="bg-layer"></div>
+  <div class="row mx-0">
+     <div class="one-half bg-image position-relative" style="background-image: url('https://cdn.shopify.com/s/files/1/0550/8943/0589/files/home1.jpg?v=1636452731');">
+    </div>
+    <div class="one-half bg-image position-relative" style="background-image: url('https://cdn.shopify.com/s/files/1/0550/8943/0589/files/home22.jpg?v=1636452731');">
+    </div>
+  </div>
+  <div class="banner-logo">
+    <img src="https://cdn.shopify.com/s/files/1/0550/8943/0589/files/home-logo.png?v=1636452731" alt="reyal" />
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Hosted Video",
+    "settings": [
+      {
+        "type": "url",
+        "id": "url",
+        "label": "Video URL"
+      },
+      {
+        "type": "number",
+        "id": "height",
+        "label": "Height",
+        "info": "will be applied between 0px to 992px",
+		"default": 600
+      }
+    ],
+    "presets": [
+      {
+        "name": "Hosted Video",
+        "category": "Hosted Video"
+      }
+    ]
+  }
+{% endschema %}

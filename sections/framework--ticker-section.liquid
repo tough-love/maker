@@ -1,0 +1,154 @@
+<section class="membership-wrp">
+	<div class="container-fluid ">
+        <div class="prod-name-row you-know-slider">  
+            <div class="you-may-also">
+              <p>
+                {% if product.metafields.products.you_may_also_like_title != blank %}
+                    {{ product.metafields.products.you_may_also_like_title }}
+                    {% else %}
+                    BUILD YOUR ROUTINE:
+                    {% endif %}
+
+              </p>
+            </div>
+            <div class="you-may-also-slider">
+               <div class="ticker-section">
+          <div class="ticker-content ticker">
+            <ul>
+              <li>
+                 <a href="#">
+                    WHEY PROTEIN FORMULATION
+                  </a>
+              </li>
+              <li>
+                 <a href="#">
+                    002 SELECT DAY SERUM
+                  </a>
+              </li>
+              <li>
+                 <a href="#">
+                      003 SUPER DAY MOISTURIZER
+                  </a>
+              </li>
+              <li>
+                <a href="#">
+                    WHEY PROTEIN FORMULATION
+                  </a>
+              </li>
+              <li>
+                 <a href="#">   
+                    002 SELECT DAY SERUM
+                  </a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                 <a href="#">
+                    WHEY PROTEIN FORMULATION
+                  </a>
+              </li>
+              <li>
+                 <a href="#">
+                    002 SELECT DAY SERUM
+                  </a>
+              </li>
+              <li>
+                 <a href="#">
+                      003 SUPER DAY MOISTURIZER
+                  </a>
+              </li>
+              <li>
+                <a href="#">
+                    WHEY PROTEIN FORMULATION
+                  </a>
+              </li>
+              <li>
+                 <a href="#">   
+                    002 SELECT DAY SERUM
+                  </a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                 <a href="#">
+                    WHEY PROTEIN FORMULATION
+                  </a>
+              </li>
+              <li>
+                 <a href="#">
+                    002 SELECT DAY SERUM
+                  </a>
+              </li>
+              <li>
+                 <a href="#">
+                      003 SUPER DAY MOISTURIZER
+                  </a>
+              </li>
+              <li>
+                <a href="#">
+                    WHEY PROTEIN FORMULATION
+                  </a>
+              </li>
+              <li>
+                 <a href="#">   
+                    002 SELECT DAY SERUM
+                  </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+            </div>
+        </div>
+     </div>
+</section>
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+  document.getElementById("defaultOpen").click();
+</script>
+<script>
+ 
+
+ $(document).ready(function(){
+  var mySwiper = new Swiper(".you-may-know-also", {
+    loop: true,
+  freeMode: true,
+  spaceBetween:50,
+  autoplay: {
+    delay:10,
+    disableOnInteraction: true
+  },
+  speed:5000,
+  freeModeMomentum: false,
+  
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween:75,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween:100,
+    },
+  },
+ });
+
+});
+</script>
+
