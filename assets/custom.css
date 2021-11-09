@@ -1,11 +1,18 @@
 
 
 @media (min-width:0) {
+  .home-page-main {
+	overflow-x: hidden !important;
+}
+ .page--homepage-new .col-lg-3 {
+	flex: 0 0 auto;
+	width:100%;
+}
   .page--homepage-new .container{
 	max-width: 1140px;
   margin:0px auto;
 }
-  .col-lg-4 {
+ .page--homepage-new .col-lg-4 {
 	flex: 0 0 auto;
 	width:100%;
 }
@@ -413,7 +420,10 @@ color: #fff !important;
 }
 }
 @media (min-width: 768px) { 
-  .col-lg-4 {
+  .page--homepage-new .col-lg-3 {
+	width:50%;
+}
+  .page--homepage-new  .col-lg-4 {
 	width:50%;
 }
     .one-half { 
@@ -436,7 +446,10 @@ color: #fff !important;
    }
 }
 @media (min-width: 992px) {
-  .col-lg-4 {
+  .page--homepage-new .col-lg-3 {
+	width:25%;
+}
+   .page--homepage-new  .col-lg-4 {
 	width: 33.33333333%;
 }
   .home-page-banner .one-half {
