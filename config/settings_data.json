@@ -927,6 +927,62 @@
         "type": "framework--page-mobile-accordian-apparal",
         "settings": {
         }
+      },
+      "framework--hosted-video-section": {
+        "type": "framework--hosted-video-section",
+        "settings": {
+          "url": "",
+          "height": 600
+        }
+      },
+      "framework--ticker-section": {
+        "type": "framework--ticker-section",
+        "settings": {
+        }
+      },
+      "framework--skincare-home-section": {
+        "type": "framework--skincare-home-section",
+        "settings": {
+          "url": "",
+          "height": 600
+        }
+      },
+      "framework--evenlift-section": {
+        "type": "framework--evenlift-section",
+        "settings": {
+        }
+      },
+      "framework--home-product-section": {
+        "type": "framework--home-product-section",
+        "settings": {
+        }
+      },
+      "framework--newsletter-section": {
+        "type": "framework--newsletter-section",
+        "settings": {
+        }
+      },
+      "framework--about-reyal-section": {
+        "type": "framework--about-reyal-section",
+        "settings": {
+        }
+      },
+      "framework--home-slider-section": {
+        "type": "framework--home-slider-section",
+        "settings": {
+        }
+      },
+      "framework--home-video-section": {
+        "type": "framework--home-video-section",
+        "settings": {
+          "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0268\/0356\/8822\/files\/Rectangle_84.jpg?v=1626186147",
+          "height": 0
+        }
+      },
+      "framework--instafeed-section": {
+        "type": "framework--instafeed-section",
+        "settings": {
+        }
       }
     },
     "content_for_index": [
