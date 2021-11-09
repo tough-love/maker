@@ -1,6 +1,19 @@
 
 
 @media (min-width:0) {
+  .holidayz {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.holidayz h5 {
+	font-size:50px;
+	line-height:70px;
+	font-weight: 700;
+	color: #fff;
+}
   .page--homepage-new #newsletter-email {
 	text-align: left;
 }
@@ -83,7 +96,7 @@ flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 }
- .you-may-also-slider {
+ .page--homepage-new .you-may-also-slider {
 	overflow-x: hidden;
 }
   @keyframes scrollLeft {
@@ -163,16 +176,16 @@ flex-wrap: wrap;
       width: 100%;
       padding: 0 10px;
    }
-   .you-may-also {
+   .page--homepage-new .you-may-also {
     width: -moz-available;
     width:-webkit-fill-available;
     max-width: fit-content;
     padding-right: 50px;
   }
-  .membership-wrp {
+  .page--homepage-new .membership-wrp {
     padding: 25px 0px;
   }
-  .you-may-also p {
+  .page--homepage-new .you-may-also p {
 	font-size: 14px;
 	font-family:aktiv-grotesk, sans-serif;
   font-weight:500;
@@ -180,7 +193,7 @@ flex-wrap: wrap;
   width: max-content;
 }
 
-.ticker-content.ticker ul li a{
+.page--homepage-new .ticker-content.ticker ul li a{
   font-size: 14px;
 	font-family:aktiv-grotesk, sans-serif;
   font-weight: 500;
@@ -377,6 +390,21 @@ color: #fff !important;
 .insta-feed .product-card a .insta-link img{
   width:25px;
 }
+.holidayz-content {
+	text-align: center;
+}
+   .page--homepage-new .holidayz-content a {
+	font-size:30px;
+	font-weight: 700;
+	color: #fff;
+  margin-top: 27px;
+display: block;
+line-height: 100%;
+text-align: center;
+}
+.no-cursor {
+	pointer-events: none !important;
+}
 }
 @media (max-width: 767px) {
   .template--index .layout--main-content .shopify-section{
@@ -408,7 +436,7 @@ color: #fff !important;
       z-index: 9999;
       width: 100%;
    }
-  
+   
 }
 @media (min-width: 576px) { 
    .skincare-home-section {
@@ -442,6 +470,13 @@ color: #fff !important;
    }
 }
 @media (min-width: 992px) {
+  .page--homepage-new .holidayz-content a {
+	font-size: 45px !important;
+}
+  .holidayz h5 {
+	font-size:100px;
+	line-height:150px;
+}
   .page--homepage-new .col-lg-3 {
 	width:25%;
 }
@@ -505,6 +540,7 @@ body .skincare-home-section .top-content p,
 }
 }
 @media (min-width: 1200px) {
+  
   .prod-name-row.you-know-slider {
 	padding-left: 154px;
 }
@@ -515,7 +551,10 @@ body .skincare-home-section .top-content p,
   }
 } 
 @media (min-width: 1400px) {
-  
+  .holidayz h5 {
+	font-size: 172px;
+	line-height: 220px;
+}
   .concept-banner-text {
   	font-size: 95px;
     left: 50%;
