@@ -1,6 +1,14 @@
 
 
 @media (min-width:0) {
+  .page--homepage-new .container{
+	max-width: 1140px;
+  margin:0px auto;
+}
+  .col-lg-4 {
+	flex: 0 0 auto;
+	width:100%;
+}
    .position-relative {
     position: relative !important;
 }
@@ -17,7 +25,7 @@ flex-wrap: wrap;
 
  .main-header .announcement-bar__message {
 	font-size: 12px;
-	font-family: "HN-B";
+	font-family:aktiv-grotesk, sans-serif;
 	letter-spacing: 1.2px;
 }
 .main-content {
@@ -28,7 +36,7 @@ flex-wrap: wrap;
 	text-transform: uppercase;
 	font-size: 17px;
 	line-height: 20px;
-  font-family: "HN-M";
+  font-family:aktiv-grotesk, sans-serif;
 }
 .grid__item.logo-area {
 	width: 187px;
@@ -47,7 +55,7 @@ flex-wrap: wrap;
 .right-nav button, .right-nav a {
 	color: #000;
 	font-size: 17px;
-	font-family: "HN-M";
+	font-family:aktiv-grotesk, sans-serif;
 	padding: 0;
 	margin-left: 30px !important;
 }
@@ -108,7 +116,7 @@ flex-wrap: wrap;
       line-height: 16px;
       padding-right: 8vw;
       font-weight: 700;
-      font-family: Helvetica;
+      font-family:aktiv-grotesk, sans-serif;
       text-align: center;
       width: auto !important;
       text-transform: uppercase;
@@ -156,14 +164,16 @@ flex-wrap: wrap;
   }
   .you-may-also p {
 	font-size: 14px;
-	font-family: "HN-M";
+	font-family:aktiv-grotesk, sans-serif;
+  font-weight:500;
 	color: #93D1E1;
   width: max-content;
 }
 
 .ticker-content.ticker ul li a{
   font-size: 14px;
-	font-family: "HN-M";
+	font-family:aktiv-grotesk, sans-serif;
+  font-weight: 500;
 	color: #000000;
 }
 .skincare-home-section {
@@ -192,11 +202,13 @@ flex-wrap: wrap;
 	height: 100%;
 	background-color: rgba(0,0,0,0.2);
 }
-.top-content p, .bottom-link a {
+body .skincare-home-section .top-content p,
+ body .skincare-home-section .bottom-link a {
 	color: #fff;
 	font-size:24px;
 	font-weight: 700;
-	font-family: "HN-M";
+	font-family: aktiv-grotesk, sans-serif;
+  line-height: 100%;
 }
 .bottom-link a:hover, .bottom-link a:focus {
 	color: #fff !important;
@@ -224,7 +236,7 @@ flex-wrap: wrap;
   line-height:110px;
   color: #fff;
   font-weight: 700;
-  font-family: "HN-M";
+  font-family:aktiv-grotesk, sans-serif;
   text-align: center;
 }
 .bulk-now {
@@ -245,7 +257,7 @@ flex-wrap: wrap;
 	font-size:30px;
 	color: #fff;
 	font-weight: 700;
-	font-family: "HN-M";
+	font-family:aktiv-grotesk, sans-serif;
   text-align: center;
 }
 .bulk-now a:hover, .bulk-now a:focus, .fancy-supplement a:hover, .fancy-supplement a:focus{
@@ -290,6 +302,7 @@ flex-wrap: wrap;
 	color: #fff;
 	padding: 0px 30px;
 	outline: none;
+  margin:0px !important;
 }
 
 #newsletter-email::placeholder {
@@ -309,7 +322,8 @@ flex-wrap: wrap;
 	font-weight: 700;
 }
 .news-letter-section #newsletter--button {
-	width: 40%;
+    width: 40%;
+    margin: 0 !important;
 }
 .home-product{
   padding:94px 0px 83px;
@@ -328,7 +342,7 @@ flex-wrap: wrap;
   font-size: 30px;
 color: #fff;
 font-weight: 700;
-font-family: "HN-M";
+font-family:aktiv-grotesk, sans-serif;
 text-align: center;
 }
 .super-sensitive a:hover{
@@ -399,6 +413,9 @@ color: #fff !important;
 }
 }
 @media (min-width: 768px) { 
+  .col-lg-4 {
+	width:50%;
+}
     .one-half { 
     width:50%;
 }
@@ -419,6 +436,9 @@ color: #fff !important;
    }
 }
 @media (min-width: 992px) {
+  .col-lg-4 {
+	width: 33.33333333%;
+}
   .home-page-banner .one-half {
 	height: 825px;
 }
@@ -432,8 +452,9 @@ color: #fff !important;
 .fancy-supplement {
 	padding-bottom: 100px;
 }
-  .top-content p, .bottom-link a {
-	font-size:32px;
+body .skincare-home-section .top-content p,
+ body .skincare-home-section .bottom-link a {
+	font-size:45px;
 }
   .you-may-also p {
 	font-size: 17px;
@@ -489,6 +510,7 @@ color: #fff !important;
       line-height: 18px;
 
     }
+
 }
 @media (min-width:1680px) {
     .ticker-content ul li {
@@ -499,9 +521,7 @@ color: #fff !important;
     .skincare-home-section {
     height: 1004px;
   }
-  .top-content p, .bottom-link a {
-	font-size:36px;
-}
+  
 .even-lift-section .bg-image {
 	height: 1004px;
 }
@@ -525,7 +545,5 @@ color: #fff !important;
     padding-right: 3vw;
 
   }
-   .top-content p, .bottom-link a {
-	font-size: 47px;
-}
+  
 }
