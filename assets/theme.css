@@ -45,6 +45,10 @@ iframe[src="//localhost:3000/preview_bar"]
 .fw--loading_animation {
   display: none;
 }
+/* Custom CSS */
+body .page--homepage-new .layout--main-content {
+	padding: 0px 0px !important;
+}
 
 /* Media Queries
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -5901,6 +5905,9 @@ body {
   position: relative;
   z-index: 1;
   padding: 0 48px;
+}
+body .page--homepage-new .layout--main-content {
+  padding: 0px 0px !important;
 }
 
 @media only screen and (max-width: 767px) {

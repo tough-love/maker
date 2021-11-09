@@ -1,6 +1,19 @@
 
 
 @media (min-width:0) {
+   .position-relative {
+    position: relative !important;
+}
+.page--homepage-new #main-content {
+	padding: 0px !important;
+}
+  .one-half {
+    width:100%;
+}
+  .row{
+    display: flex;
+flex-wrap: wrap;
+  }
 
  .main-header .announcement-bar__message {
 	font-size: 12px;
@@ -40,6 +53,7 @@
 }
 .home-page-banner .one-half {
 	height:500px;
+  
 }
 .banner-logo {
 	position: absolute;
@@ -377,7 +391,7 @@ color: #fff !important;
       z-index: 9999;
       width: 100%;
    }
- 
+  
 }
 @media (min-width: 576px) { 
    .skincare-home-section {
@@ -385,6 +399,9 @@ color: #fff !important;
 }
 }
 @media (min-width: 768px) { 
+    .one-half { 
+    width:50%;
+}
    .concept-banner-text {
       font-size: 65px;
       color:#ef3536; 
