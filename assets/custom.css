@@ -1,6 +1,9 @@
 
 
 @media (min-width:0) {
+  .page--homepage-new #newsletter-email {
+	text-align: left;
+}
   .home-page-main {
 	overflow-x: hidden !important;
 }
@@ -260,17 +263,18 @@ body .skincare-home-section .top-content p,
 	align-items: flex-end;
 	padding-bottom:50px;
 }
-.bulk-now a, .fancy-supplement a {
+.even-lift-section .bulk-now a, .even-lift-section .fancy-supplement a, .super-sensitive a{
 	font-size:30px;
-	color: #fff;
+  line-height: 100%;
+	color: #fff !important;
 	font-weight: 700;
 	font-family:aktiv-grotesk, sans-serif;
   text-align: center;
 }
-.bulk-now a:hover, .bulk-now a:focus, .fancy-supplement a:hover, .fancy-supplement a:focus{
+.even-lift-section .bulk-now a:hover, .even-lift-section .bulk-now a:focus, .even-lift-section .fancy-supplement a:hover, .even-lift-section .fancy-supplement a:focus{
   color: #fff !important;
 }
-.news-letter-section {
+.page--homepage-new .news-letter-section {
 	background-color: #99D7E4;
 	padding: 90px 20px 95px;
 }
@@ -280,12 +284,12 @@ body .skincare-home-section .top-content p,
 	margin: 0px auto;
 	text-align: center;
 }
-.newsletter--heading {
+.page--homepage-new .newsletter--heading {
 	font-size: 30px;
 	font-weight: 700;
 	color: #fff;
   margin:0;
-  letter-spacing: 0px;
+  letter-spacing: 0px !important;
 }
 .newsletter--subheading p {
 	font-size: 18px;
@@ -297,9 +301,7 @@ body .skincare-home-section .top-content p,
 .news-letter-section #newsletter_form {
 	width: 100%;
 }
-.news-letter-section #newsletter-email {
-	width: 60%;
-}
+
 .news-letter-section #newsletter-email {
 	width: 60%;
 	background-color: transparent;
@@ -310,6 +312,7 @@ body .skincare-home-section .top-content p,
 	padding: 0px 30px;
 	outline: none;
   margin:0px !important;
+  border-radius: 0px !important;
 }
 
 #newsletter-email::placeholder {
@@ -327,11 +330,10 @@ body .skincare-home-section .top-content p,
 	padding: 0px;
 	font-size: 22px;
 	font-weight: 700;
+  border-radius: 0px !important;
+  margin: 0 !important;
 }
-.news-letter-section #newsletter--button {
-    width: 40%;
-    margin: 0 !important;
-}
+
 .home-product{
   padding:94px 0px 83px;
 }
@@ -345,13 +347,7 @@ body .skincare-home-section .top-content p,
 	width: 100%;
 	text-align: center;
 }
-.super-sensitive a{
-  font-size: 30px;
-color: #fff;
-font-weight: 700;
-font-family:aktiv-grotesk, sans-serif;
-text-align: center;
-}
+
 .super-sensitive a:hover{
 color: #fff !important;
 }
@@ -455,8 +451,8 @@ color: #fff !important;
   .home-page-banner .one-half {
 	height: 825px;
 }
-  .bulk-now a, .fancy-supplement a {
-	font-size:30px;
+  .even-lift-section .bulk-now a, .even-lift-section .fancy-supplement a, .super-sensitive a{
+	font-size:45px !important;
 
 }
   .bulk-now {
@@ -499,6 +495,13 @@ body .skincare-home-section .top-content p,
 .bottom-link {
 	bottom: 100px;
 	right: 302px;
+}
+.page--homepage-new .newsletter--heading {
+	font-size: 45px;
+}
+.page--homepage-new .newsletter--subheading p {
+	font-size: 22px;
+	line-height: 42px;
 }
 }
 @media (min-width: 1200px) {
@@ -543,13 +546,7 @@ body .skincare-home-section .top-content p,
   line-height:300px;
  
 }
-.newsletter--heading {
-	font-size: 45px;
-}
-.newsletter--subheading p {
-	font-size: 22px;
-	line-height: 42px;
-}
+
   }
 @media (min-width:1920px) {
   .ticker-content ul li {
