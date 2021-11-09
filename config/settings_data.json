@@ -142,7 +142,7 @@
         "settings": {
           "enabled": true,
           "home-page-only": true,
-          "text": "15% OFF YOUR FIRST ORDER, USE CODE ' REYAL15 ' AT CHECKOUT",
+          "text": "JOIN REYAL NOW AND GET 15% OFF YOUR FIRST ORDER [HERE]",
           "link": "shopify:\/\/pages\/about-us"
         }
       },

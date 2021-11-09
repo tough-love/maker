@@ -1,6 +1,10 @@
 
 
 @media (min-width:0) {
+
+  :root {
+      --swiper-navigation-size: 55px !important;
+  }
   .holidayz {
 	width: 100%;
 	height: 100%;
@@ -8,11 +12,17 @@
 	align-items: center;
 	justify-content: center;
 }
+.home-product .container {
+  max-width: 1276px;
+}
 .holidayz h5 {
 	font-size:50px;
 	line-height:70px;
 	font-weight: 700;
 	color: #fff;
+}
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 1 !important;
 }
   .page--homepage-new #newsletter-email {
 	text-align: left;
@@ -22,15 +32,15 @@
 }
  .page--homepage-new .col-lg-3 {
 	flex: 0 0 auto;
-	width:100%;
+	width:25%;
 }
   .page--homepage-new .container{
-	max-width: 1140px;
+	/* max-width: 1140px; */
   margin:0px auto;
 }
  .page--homepage-new .col-lg-4 {
 	flex: 0 0 auto;
-	width:100%;
+	width: 50%;
 }
    .position-relative {
     position: relative !important;
@@ -180,7 +190,8 @@ flex-wrap: wrap;
     width: -moz-available;
     width:-webkit-fill-available;
     max-width: fit-content;
-    padding-right: 50px;
+    padding-right: 20px;
+    padding-left: 10px;
   }
   .page--homepage-new .membership-wrp {
     padding: 25px 0px;
@@ -188,7 +199,7 @@ flex-wrap: wrap;
   .page--homepage-new .you-may-also p {
 	font-size: 14px;
 	font-family:aktiv-grotesk, sans-serif;
-  font-weight:500;
+  font-weight:bold;
 	color: #93D1E1;
   width: max-content;
 }
@@ -196,7 +207,7 @@ flex-wrap: wrap;
 .page--homepage-new .ticker-content.ticker ul li a{
   font-size: 14px;
 	font-family:aktiv-grotesk, sans-serif;
-  font-weight: 500;
+  font-weight: bold;
 	color: #000000;
 }
 .skincare-home-section {
@@ -209,13 +220,13 @@ flex-wrap: wrap;
 }
 .top-content {
 	position: absolute;
-	left:50px;
+	left:10px;
 	top: 50px;
 }
 .bottom-link {
 	position: absolute;
 	bottom:50px;
-	right:50px;
+	right:20px;
 }
 .bg-layer {
 	position: absolute;
@@ -277,8 +288,8 @@ body .skincare-home-section .top-content p,
 	padding-bottom:50px;
 }
 .even-lift-section .bulk-now a, .even-lift-section .fancy-supplement a, .super-sensitive a{
-	font-size:30px;
-  line-height: 100%;
+	font-size:32px;
+  line-height: 1.2;
 	color: #fff !important;
 	font-weight: 700;
 	font-family:aktiv-grotesk, sans-serif;
@@ -365,7 +376,8 @@ body .skincare-home-section .top-content p,
 color: #fff !important;
 }
 .homeSwiper .swiper-button-next, .homeSwiper .swiper-button-prev {
-	color: #fff;
+	color: black;
+
 }
 .insta-feed .product-card a {
 	position: relative;
@@ -592,7 +604,17 @@ body .skincare-home-section .top-content p,
     font-size: 22px;
     line-height: 26px;
     padding-right: 3vw;
+  }
 
+  .page--homepage-new .ticker-content.ticker ul li a {
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  .page--homepage-new .you-may-also p {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 3px
   }
   
 }
