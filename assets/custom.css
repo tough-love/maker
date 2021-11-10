@@ -12,6 +12,9 @@
 	align-items: center;
 	justify-content: center;
 }
+.template--index .layout--main-content .shopify-section {
+  padding: 0 !important
+}
 .home-product .container {
   max-width: 1276px;
 }
@@ -24,28 +27,28 @@
 .swiper-button-prev.swiper-button-disabled {
   opacity: 1 !important;
 }
-  .page--homepage-new #newsletter-email {
+  .template--index #newsletter-email {
 	text-align: left;
 }
   .home-page-main {
 	overflow-x: hidden !important;
 }
- .page--homepage-new .col-lg-3 {
+ .template--index .col-lg-3 {
 	flex: 0 0 auto;
 	width:25%;
 }
-  .page--homepage-new .container{
+  .template--index .container{
 	/* max-width: 1140px; */
   margin:0px auto;
 }
- .page--homepage-new .col-lg-4 {
+ .template--index .col-lg-4 {
 	flex: 0 0 auto;
 	width: 50%;
 }
    .position-relative {
     position: relative !important;
 }
-.page--homepage-new #main-content {
+.template--index #main-content {
 	padding: 0px !important;
 }
   .one-half {
@@ -106,7 +109,7 @@ flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 }
- .page--homepage-new .you-may-also-slider {
+ .template--index .you-may-also-slider {
 	overflow-x: hidden;
 }
   @keyframes scrollLeft {
@@ -186,17 +189,17 @@ flex-wrap: wrap;
       width: 100%;
       padding: 0 10px;
    }
-   .page--homepage-new .you-may-also {
+   .template--index .you-may-also {
     width: -moz-available;
     width:-webkit-fill-available;
     max-width: fit-content;
     padding-right: 20px;
     padding-left: 10px;
   }
-  .page--homepage-new .membership-wrp {
+  .template--index .membership-wrp {
     padding: 25px 0px;
   }
-  .page--homepage-new .you-may-also p {
+  .template--index .you-may-also p {
 	font-size: 14px;
 	font-family:aktiv-grotesk, sans-serif;
   font-weight:bold;
@@ -204,7 +207,7 @@ flex-wrap: wrap;
   width: max-content;
 }
 
-.page--homepage-new .ticker-content.ticker ul li a{
+.template--index .ticker-content.ticker ul li a{
   font-size: 14px;
 	font-family:aktiv-grotesk, sans-serif;
   font-weight: bold;
@@ -298,7 +301,7 @@ body .skincare-home-section .top-content p,
 .even-lift-section .bulk-now a:hover, .even-lift-section .bulk-now a:focus, .even-lift-section .fancy-supplement a:hover, .even-lift-section .fancy-supplement a:focus{
   color: #fff !important;
 }
-.page--homepage-new .news-letter-section {
+.template--index .news-letter-section {
 	background-color: #99D7E4;
 	padding: 90px 20px 95px;
 }
@@ -308,7 +311,7 @@ body .skincare-home-section .top-content p,
 	margin: 0px auto;
 	text-align: center;
 }
-.page--homepage-new .newsletter--heading {
+.template--index .newsletter--heading {
 	font-size: 30px;
 	font-weight: 700;
 	color: #fff;
@@ -405,7 +408,7 @@ color: #fff !important;
 .holidayz-content {
 	text-align: center;
 }
-   .page--homepage-new .holidayz-content a {
+   .template--index .holidayz-content a {
 	font-size:30px;
 	font-weight: 700;
 	color: #fff;
@@ -456,10 +459,10 @@ text-align: center;
 }
 }
 @media (min-width: 768px) { 
-  .page--homepage-new .col-lg-3 {
+  .template--index .col-lg-3 {
 	width:50%;
 }
-  .page--homepage-new  .col-lg-4 {
+  .template--index  .col-lg-4 {
 	width:50%;
 }
     .one-half { 
@@ -482,17 +485,17 @@ text-align: center;
    }
 }
 @media (min-width: 992px) {
-  .page--homepage-new .holidayz-content a {
+  .template--index .holidayz-content a {
 	font-size: 45px !important;
 }
   .holidayz h5 {
 	font-size:100px;
 	line-height:150px;
 }
-  .page--homepage-new .col-lg-3 {
+  .template--index .col-lg-3 {
 	width:25%;
 }
-   .page--homepage-new  .col-lg-4 {
+   .template--index  .col-lg-4 {
 	width: 33.33333333%;
 }
   .home-page-banner .one-half {
@@ -543,10 +546,10 @@ body .skincare-home-section .top-content p,
 	bottom: 100px;
 	right: 302px;
 }
-.page--homepage-new .newsletter--heading {
+.template--index .newsletter--heading {
 	font-size: 45px;
 }
-.page--homepage-new .newsletter--subheading p {
+.template--index .newsletter--subheading p {
 	font-size: 22px;
 	line-height: 42px;
 }
@@ -606,12 +609,12 @@ body .skincare-home-section .top-content p,
     padding-right: 3vw;
   }
 
-  .page--homepage-new .ticker-content.ticker ul li a {
+  .template--index .ticker-content.ticker ul li a {
     font-size: 17px;
     font-weight: bold;
   }
 
-  .page--homepage-new .you-may-also p {
+  .template--index .you-may-also p {
     font-size: 17px;
     font-weight: bold;
     margin-top: 3px
