@@ -71,6 +71,12 @@ text-align: left;
   display:none;
 }
 /* END */
+.accordian-mob  .spr-header-title {
+	font-weight: 700;
+}
+.accordian-mob .spr-summary-caption {
+	padding-bottom: 30px;
+}
 
 .page--reyal-e-gift-card-men-39-s-skincare-amp-supplements-gift-card  #shopify-section-framework--page-mobile-accordian-apparal{
   display: none;
