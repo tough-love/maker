@@ -3,11 +3,18 @@
 @media (min-width:0) {
   /* NEWS LETTER POPUP */
   .newsletter-popup {
+    width:100%;
 	position: fixed;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
+.subscribe-content {
+	width: 95%;
+	max-width: 715px;
+	margin: 0px auto;
+}
+/* END */
 
 .page--reyal-e-gift-card-men-39-s-skincare-amp-supplements-gift-card  #shopify-section-framework--page-mobile-accordian-apparal{
   display: none;
