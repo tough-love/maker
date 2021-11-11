@@ -46,6 +46,12 @@
   border-radius: 0px;
   border-right:0px;
   font-weight:500;
+  padding: 0px 30px;
+text-align: left;
+}
+.newsletter-popup #newsletter-email::::placeholder{
+  font-size:18px;
+  color: #9B9B9B;
 }
 .newsletter-popup #newsletter--button {
   font-size: 18px;
