@@ -11,8 +11,58 @@
 }
 .subscribe-content {
 	width: 95%;
-	max-width: 715px;
+	max-width:673px;
 	margin: 0px auto;
+	background-color: #fff;
+	padding: 38px 40px;
+	text-align: center;
+}
+.subscribe-content .form-img{
+	height: 340px;
+}
+.form-head h2 {
+	font-size: 50px;
+	color: #99D7E4;
+	font-weight: 700;
+	line-height: 100%;
+	margin: 17px auto;
+}
+.form-head p {
+	font-size: 14px;
+	color: #9B9B9B;
+	font-weight: 500;
+	line-height:30px;
+	margin:0;
+  text-align: center;
+}
+.newsletter-popup #newsletter-email {
+  font-size:18px;
+  color: #9B9B9B;
+	width: 65%;
+	border: 1px solid #9B9B9B;
+	height: 58px;
+  flex-basis: 65%;
+  margin:0px auto;
+  border-radius: 0px;
+  border-right:0px;
+  font-weight:500;
+}
+.newsletter-popup #newsletter--button {
+  font-size: 18px;
+	width: 35%;
+	flex-basis: 35%;
+	margin: 0;
+	height: 58px;
+	background-color: #99D7E4;
+	color: #fff;
+	font-weight: 700;
+	border: 1px solid #99D7E4;
+	text-decoration: none;
+  border-radius: 0px;
+
+}
+.newsletter-popup #newsletter--button::after{
+  display:none;
 }
 /* END */
 
