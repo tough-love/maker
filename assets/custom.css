@@ -751,6 +751,8 @@ input#newsletter-email::placeholder{
   
 }
 
-.page--reyal-e-gift-card-men-39-s-skincare-amp-supplements-gift-card .organic-ingredients, .page--reyal-e-gift-card-men-39-s-skincare-amp-supplements-gift-card #shopify-section-framework--page-review {
+.page--reyal-e-gift-card-men-39-s-skincare-amp-supplements-gift-card .organic-ingredients, 
+.page--reyal-e-gift-card-men-39-s-skincare-amp-supplements-gift-card #shopify-section-framework--page-review, 
+.page--reyal-e-gift-card-men-39-s-skincare-amp-supplements-gift-card .pdt-star-rating.grid-view-item {
   display: none;
 }
