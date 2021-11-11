@@ -32,7 +32,7 @@
 .subscribe-content .form-img{
 	height:250px;
 }
-.form-head h2 {
+body .newsletter-popup .form-head h2 {
 	font-size:30px;
 	color: #99D7E4;
 	font-weight: 700;
