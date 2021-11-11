@@ -756,3 +756,7 @@ input#newsletter-email::placeholder{
 .page--reyal-e-gift-card-men-39-s-skincare-amp-supplements-gift-card .pdt-star-rating.grid-view-item {
   display: none;
 }
+
+.page--reyal-e-gift-card-men-39-s-skincare-amp-supplements-gift-card .product-desc {
+  margin-top: 20px
+}
