@@ -5911,6 +5911,9 @@ body .page--homepage-new .layout--main-content {
 }
 
 @media only screen and (max-width: 767px) {
+  .accordian-mob .spr-summary-caption {
+	padding-bottom: 30px;
+}
   .layout--main-content {
     padding: 50px 0 0;
   }
