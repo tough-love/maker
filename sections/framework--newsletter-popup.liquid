@@ -1,0 +1,41 @@
+<div class="newsletter-popup">
+  <div class="subscribe-content">
+    <div class="subscribe-form">
+      <div class="form-head">
+        <h2 class="newsletter--heading font--section-heading">[SUBSCRIBE TO REYAL]</h2>
+      <p>SIGN UP TO BE THE FIRST TO KNOW ABOUT NEW PRODUCTS, COLLABORATIONS, EXCLUSIVE CONTENT, AND 15% OFF YOUR FIRST ORDER. KNOWLEDGE IS POWER, MAN.</p>
+      </div>
+      <div class="form-body">
+         {% form 'customer', id: 'newsletter_form' %}
+        {% if form.errors %}
+          <p class="newsletter--failure">
+          {% for field in form.errors %}
+            {{ field }} {{ form.errors.messages[field] }}
+          {% endfor %}
+          </p>
+        {% endif %}
+        <input type="hidden" name="contact[tags]" value="newsletter" />
+        <div class="row mx-0">
+          <input
+          class="newsletter--email"
+          id="newsletter-email"
+          name="contact[email]"
+          type="email"
+          aria-label=""
+          placeholder="EMAIL ADDRESS...."
+          required
+        />
+        <button class="font--button" id="newsletter--button" name="subscribe">
+          SIGN UP!
+        </button>
+        </div>
+        
+
+        {% if form.posted_successfully? or form.errors %}
+          <script>window.location.hash = '#feedback-bar--newsletter';</script>
+        {% endif %}
+      {% endform %}
+      </div>
+    </div>
+  </div>
+</div>
