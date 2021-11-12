@@ -132,14 +132,24 @@
         
       });
 
+      $(document).ready(function() {
+          if(localStorage.getItem('popState') != 'shown'){
+              $("#shopify-section-framework--newsletter-popup").delay(5000).fadeIn();
+              localStorage.setItem('popState','shown')
+          }
+
+          $('.subscribe-close').click(function(e) // You are clicking the close button
+          {
+          $('#shopify-section-framework--newsletter-popup').fadeOut(); // Now the pop up is hiden.
+          });
+          
+      });
+
       $(document).ready(function(){
         $('.page--reyal-e-gift-card-men-39-s-skincare-amp-supplements-gift-card .select-varient').text('SELECT AMOUNT');
         $('.page--reyal-e-gift-card-men-39-s-skincare-amp-supplements-gift-card .size-guide-modal-pop').css('display','none');
 
-        $("#shopify-section-framework--newsletter-popup").delay(5000).fadeIn(500);
-        $('.subscribe-close').click(function(){
-          $("#shopify-section-framework--newsletter-popup").fadeOut();
-        });
+     
       });
     </script>
 
