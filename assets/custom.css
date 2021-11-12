@@ -763,3 +763,9 @@ input#newsletter-email::placeholder{
 .footer--block--body>:not(:last-child) {
   padding-top: 26px;
 }
+
+@media only screen and (min-width: 992px) and (max-width: 1440px) {
+  .newsletter-popup {
+    top: 56%;
+  }
+}
