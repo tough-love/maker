@@ -8,8 +8,8 @@
   }
   .subscribe-close {
 	position: absolute;
-	top: 0px;
-	right: 10px;
+	top: -2px;
+	right: 4px;
 	z-index: 99;
 	font-size: 25px;
 }
@@ -20,7 +20,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 99999;
-    zoom: 0.85;
+    zoom: 0.;
 }
 .subscribe-content {
 	width: 95%;
@@ -564,6 +564,11 @@ text-align: center;
 }
     .one-half { 
     width:50%;
+}
+
+.subscribe-close { 
+	top: 0px;
+	right: 10px; 
 }
    .concept-banner-text {
       font-size: 65px;
