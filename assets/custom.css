@@ -767,6 +767,13 @@ input#newsletter-email::placeholder{
 
 @media only screen and (min-width: 992px) and (max-width: 1440px) {
   .newsletter-popup {
-    top: 60%;
+    top: 56%;
+  }
+}
+
+
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  .newsletter-popup {
+    top: 70%;
   }
 }
