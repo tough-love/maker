@@ -20,6 +20,9 @@
   <link rel="canonical" href="{{ canonical_url }}">
   <link rel="preconnect" href="https://cdn.shopify.com">
   {{ 'custom.css' | asset_url | stylesheet_tag }}
+  {{ 'product-apparel.css' | asset_url | stylesheet_tag }}
+  {{ 'product-skincare.css' | asset_url | stylesheet_tag }}
+  {{ 'product-supplement.css' | asset_url | stylesheet_tag }}
 
   {% if settings.favicon != nil %}
   <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
