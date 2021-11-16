@@ -975,12 +975,17 @@
       "framework--home-video-section": {
         "type": "framework--home-video-section",
         "settings": {
-          "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0268\/0356\/8822\/files\/Hero_video_cut.mp4?v=1622907302",
+          "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0268\/0356\/8822\/files\/REYAL_Official_Hero.mp4?v=1637080137",
           "height": 0
         }
       },
       "framework--instafeed-section": {
         "type": "framework--instafeed-section",
+        "settings": {
+        }
+      },
+      "framework--newsletter-popup": {
+        "type": "framework--newsletter-popup",
         "settings": {
         }
       }
