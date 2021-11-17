@@ -693,6 +693,7 @@ input#newsletter-email::placeholder{
   font-size: 22px;
 }
   .prod-name-row.you-know-slider {
+    padding:0;
 	padding-left: 154px;
 }
   .concept-banner-text {
