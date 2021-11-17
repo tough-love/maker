@@ -20,7 +20,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 99999;
-    zoom: 0.;
+    zoom: 0.8;
 }
 .subscribe-content {
 	width: 95%;
