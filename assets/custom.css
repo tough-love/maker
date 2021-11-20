@@ -295,11 +295,14 @@ flex-wrap: wrap;
     padding: 25px 0px;
   }
   .template--index .you-may-also p {
-	font-size: 14px;
-	font-family:aktiv-grotesk, sans-serif;
-  font-weight:bold;
-	color: #93D1E1;
-  width: max-content;
+	font-size: 14px !important;
+	font-family: aktiv-grotesk,sans-serif;
+	font-weight: 700;
+	color: #93d1e1;
+	width: max-content;
+	margin-bottom: 0;
+	display:inline-block;
+	padding: 0;
 }
 
 .template--index .ticker-content.ticker ul li a{
@@ -588,6 +591,9 @@ text-align: center;
    }
 }
 @media (min-width: 992px) {
+.template--index .you-may-also p {
+	font-size: 18px !important;
+}
   /* NEWS LETTER POPUP */
   
 .subscribe-content {
