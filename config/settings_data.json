@@ -705,11 +705,11 @@
           "url_left": "shopify:\/\/products\/layer-003-super-day-moisturizer",
           "image_left": "shopify:\/\/shop_images\/resized-pic1_cropped.jpg",
           "left_product_name": "LAYER 003 SUPER DAY MOISTURIZER",
-          "left_product_price": 34,
+          "left_product_price": 36,
           "url_right": "shopify:\/\/products\/supreme-bodywash",
           "image_right": "shopify:\/\/shop_images\/resized-pic2_cropped.jpg",
           "right_product_name": "SUPREME BODY WASH",
-          "right_product_price": 58
+          "right_product_price": 60
         }
       },
       "162286023092906457": {
@@ -986,6 +986,78 @@
       },
       "framework--newsletter-popup": {
         "type": "framework--newsletter-popup",
+        "settings": {
+        }
+      },
+      "product-suppliments": {
+        "type": "product-suppliments",
+        "settings": {
+          "smart-payment-button": true,
+          "variant-style": "dropdowns",
+          "swatches-enabled": false,
+          "product-unavailable-form-show": false,
+          "low-in-stock-amount": 0,
+          "modal-enabled": true,
+          "hide-variant-media": false,
+          "loop-enabled": false,
+          "product-size-chart-enabled": false,
+          "product-size-chart-option": "size",
+          "product-size-chart-page-content": ""
+        }
+      },
+      "product-suppliments-ingredients": {
+        "type": "product-suppliments-ingredients",
+        "settings": {
+          "center_organic_ingredient_title": "",
+          "center_organic_ingredient_title1": "",
+          "center_organic_ingredient_desc1": "",
+          "center_organic_ingredient_title2": "",
+          "center_organic_ingredient_desc2": "",
+          "center_organic_ingredient_title3": "",
+          "center_organic_ingredient_desc3": "",
+          "center_real_ingredient_title": "",
+          "center_real_ingredient_description": "",
+          "center_real_ingredient_button": ""
+        }
+      },
+      "framework--page-newsletter-membership": {
+        "type": "framework--page-newsletter-membership",
+        "settings": {
+          "product_category_title": "",
+          "product_category_name1": "",
+          "product_category_name2": "",
+          "product_category_name3": "",
+          "tab01_membership_title_one": "",
+          "tab01_membership_desc_one": "",
+          "tab01_membership_button_one": "",
+          "tab01_service_title_one": "",
+          "tab01_service_desc_one": "",
+          "tab01_service_title_two": "",
+          "tab01_service_desc_two": "",
+          "tab01_service_title_three": "",
+          "tab01_service_desc_three": "",
+          "tab02_membership_title_one": "",
+          "tab02_membership_desc_one": "",
+          "tab02_membership_button_one": "",
+          "tab02_service_title_one": "",
+          "tab02_service_desc_one": "",
+          "tab02_service_title_two": "",
+          "tab02_service_desc_two": "",
+          "tab02_service_title_three": "",
+          "tab02_service_desc_three": "",
+          "tab03_membership_title_one": "",
+          "tab03_membership_desc_one": "",
+          "tab03_membership_button_one": "",
+          "tab03_service_title_one": "",
+          "tab03_service_desc_one": "",
+          "tab03_service_title_two": "",
+          "tab03_service_desc_two": "",
+          "tab03_service_title_three": "",
+          "tab03_service_desc_three": ""
+        }
+      },
+      "framework--page-mobile-accordian-new": {
+        "type": "framework--page-mobile-accordian-new",
         "settings": {
         }
       }
