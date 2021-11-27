@@ -141,7 +141,7 @@
         "type": "announcement",
         "settings": {
           "enabled": true,
-          "home-page-only": true,
+          "home-page-only": false,
           "text": "BLACK FRIDAY. 15% OFF SITE WIDE. USE CODE BLKFRI21 AT CHECKOUT",
           "link": "\/#shopify-section-framework--newsletter-section"
         }
