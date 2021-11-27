@@ -1,6 +1,30 @@
 
 
 @media (min-width:0) {
+  .footer--menu {
+	width: 100%;
+	box-sizing: border-box;
+	columns: 2;
+}
+.footer-block-middle.footer--block .footer--block--container {
+	margin-left: 0;
+  width: 100%;
+}
+.footer-block-middle .footer--menu li {
+	text-align: left;
+}
+  .desktop-footer-logo.footer-logo-box {
+	display: none;
+}
+  .footer-logo-box {
+  display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+  .spr-review-content-body {
+	text-transform: uppercase;
+}
 
   /* NEWS LETTER POPUP */
   #shopify-section-framework--newsletter-popup{
@@ -351,7 +375,7 @@ body .skincare-home-section .top-content p,
 .bg-image {
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position:center top;
 }
 .even-lift-section .bg-image {
 	height:500px;
@@ -370,7 +394,7 @@ body .skincare-home-section .top-content p,
   font-size:65px;
   line-height:110px;
   color: #fff;
-  font-weight: 700;
+  font-weight:bold;
   font-family:aktiv-grotesk, sans-serif;
   text-align: center;
 }
@@ -411,7 +435,7 @@ body .skincare-home-section .top-content p,
 }
 .template--index .newsletter--heading {
 	font-size: 30px;
-	font-weight: 700;
+	font-weight: 900;
 	color: #fff;
   margin:0;
   letter-spacing: 0px !important;
@@ -456,8 +480,8 @@ input#newsletter-email::placeholder{
 	height: 70px;
 	color: #99D7E4;
 	padding: 0px;
-	font-size: 22px;
-	font-weight: 700;
+	font-size: 16px;
+	font-weight:300;
   border-radius: 0px !important;
   margin: 0 !important;
 }
@@ -471,7 +495,7 @@ input#newsletter-email::placeholder{
 }
 .super-sensitive {
 	position: absolute;
-	bottom: 100px;
+	bottom: 50px;
 	width: 100%;
 	text-align: center;
 }
@@ -560,6 +584,20 @@ text-align: center;
 }
 }
 @media (min-width: 768px) { 
+  .desktop-footer-logo.footer-logo-box img {
+	width: 25px;
+	margin-top: 25px;
+}
+.footer-block-middle.footer--block {
+	display: block;
+}
+  
+  .desktop-footer-logo.footer-logo-box {
+	display: flex;
+}
+.footer-logo-box {
+	display: none;
+}
   .template--index .col-lg-3 {
 	width:50%;
 }
@@ -591,6 +629,13 @@ text-align: center;
    }
 }
 @media (min-width: 992px) {
+  .news-letter-section #newsletter--button {
+	font-size: 22px;
+	font-weight:700;
+}
+.super-sensitive {
+	bottom: 100px;
+}
 .template--index .you-may-also p {
 	font-size: 18px !important;
 }
