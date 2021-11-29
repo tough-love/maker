@@ -628,6 +628,12 @@ text-align: center;
       z-index: 9999
    }
 }
+@media only screen and (max-width: 767px) {
+  body .footer--menu li:not(:last-child) {
+    padding-bottom: 0px;
+    margin-bottom:8px;
+  }
+}
 @media (min-width: 992px) {
   .news-letter-section #newsletter--button {
 	font-size: 22px;
