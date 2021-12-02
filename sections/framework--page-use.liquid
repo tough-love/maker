@@ -1,0 +1,545 @@
+
+<section class="concept-banner-wrp">
+  <div class="concept-container">
+    <div class="concept-banner-img">
+<!--       <img src="{{ section.settings.banner_image | img_url: 'master' }}" alt="banner image" /> -->
+      <video playsinline autoplay muted loop id="bgvid">
+         <source src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/brand_video.mp4?v=1622742854" type="video/mp4">
+      </video>
+
+      <h1 class="concept-banner-text">{{page_title}}</h1>
+     
+    </div>
+  </div>
+</section>
+<section class="layering-system">
+  <div class="layring-container show" id="layer-2">
+    <div class="layer">
+      	<h3>{{section.settings.layer_2_heading}}</h3>
+		<div class="layring-inner">
+          	{{section.settings.layer_2_description}}
+		</div>
+        <div class="accordion-container">
+          <div class="layer-accordion">
+            <div class="accordion-panel active">
+              <div class="panel-heading" role="tab">
+                <h4 class="panel-title">
+                  <button type="button" data-toggle="L1A1">{{section.settings.layer_2_accordion_1_panel_title}}</button>
+                  <i class="toggle-icon open"></i>
+                </h4>
+              </div>
+              <div id="L1A1" class="panel-body show">
+                <div class="panel-wrp">
+                  <div class="panel-row">
+                    <div class="panel-shrink">
+                      <img src="{{ section.settings.layer_2_accordion_1_panel_left_image | img_url: 'master' }}" width="{{section.settings.layer_2_accordion_1_panel_left_image.width}}" height="{{section.settings.layer_2_accordion_1_panel_left_image.height}}" alt="L2A1-image" />
+                      <div class="panel-layer">
+                        <div class="panel-buy-btn"> 
+                          <a href="{{section.settings.layer_2_accordion_1_buy_link}}">{{section.settings.layer_2_accordion_1_buy}}</a>
+                        </div>
+                        <a class="buy-arrow" href="{{section.settings.layer_2_accordion_1_buy_link}}">{{section.settings.layer_2_accordion_1_buy}}</a>
+                      </div>
+                    </div>
+                    <div class="panel-grow">
+                      <div class="panel-right">
+                        <div class="inner-row">
+                          <div class="inner-col entry-txt">
+                            {{section.settings.layer_2_accordion_1_panel_right_entry_txt}}
+                          </div>
+                        </div>
+                        <div class="inner-row">
+                          <div class="inner-col secondary">
+                            <h4>001</h4>
+                            <h5>{{section.settings.layer_2_accordion_1_panel_right_r2_heading}}</h5>
+                            {{section.settings.layer_2_accordion_1_panel_right_r2_txt}}
+                            {{section.settings.layer_2_accordion_1_panel_right_r2_txt2}}
+                          </div>
+                        </div>
+                        <div class="inner-row">
+                          <div class="inner-col half secondary">
+                            <h5>{{section.settings.layer_2_accordion_1_panel_right_r3_c1_heading}}</h5>
+                            {{section.settings.layer_2_accordion_1_panel_right_r3_c1_txt}}
+                          </div>
+                          <div class="inner-col half secondary">
+                            <h5>{{section.settings.layer_2_accordion_1_panel_right_r3_c2_heading}}</h5>
+                            {{section.settings.layer_2_accordion_1_panel_right_r3_c2_txt}}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-panel">
+              <div class="panel-heading" role="tab">
+                <h4 class="panel-title">
+                  <button type="button" data-toggle="L1A2">
+                    {{section.settings.layer_2_accordion_2_panel_title}}
+                  </button>
+                  <i class="toggle-icon"></i>
+                </h4>
+              </div>
+              <div id="L1A2" class="panel-body">
+                <div class="panel-wrp">
+                  <div class="panel-row">
+                    <div class="panel-shrink">
+                      <img src="{{ section.settings.layer_2_accordion_2_panel_left_image | img_url: 'master' }}" width="{{section.settings.layer_2_accordion_2_panel_left_image.width}}" height="{{section.settings.layer_2_accordion_2_panel_left_image.height}}" alt="L2A2-image" />
+                      <div class="panel-layer">
+                        <div class="panel-buy-btn"> 
+                          <a href="{{section.settings.layer_2_accordion_2_buy_link}}">{{section.settings.layer_2_accordion_2_buy}}</a>
+                        </div>
+                        <a class="buy-arrow" href="{{section.settings.layer_2_accordion_2_buy_link}}">
+                          {{section.settings.layer_2_accordion_2_buy}}
+                        </a>
+                      </div>
+                    </div>
+                    <div class="panel-grow">
+                      <div class="panel-right">
+                        <div class="inner-row">
+                          <div class="inner-col entry-txt">
+                            {{section.settings.layer_2_accordion_2_panel_right_entry_txt}}
+                          </div>
+                        </div>
+                        <div class="inner-row">
+                          <div class="inner-col secondary">
+                            <h4>002</h4>
+                            <h5>{{section.settings.layer_2_accordion_2_panel_right_r2_heading}}</h5>
+                            {{section.settings.layer_2_accordion_2_panel_right_r2_txt}}
+                          </div>
+                        </div>
+                        <div class="inner-row">
+                          <div class="inner-col half secondary">
+                            <h5>{{section.settings.layer_2_accordion_2_panel_right_r3_c1_heading}}</h5>
+                            {{section.settings.layer_2_accordion_2_panel_right_r3_c1_txt}}
+                          </div>
+                          <div class="inner-col half secondary">
+                            <h5>{{section.settings.layer_2_accordion_2_panel_right_r3_c2_heading}}</h5>
+                            {{section.settings.layer_2_accordion_2_panel_right_r3_c2_txt}}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-panel">
+              <div class="panel-heading" role="tab">
+                <h4 class="panel-title">
+                  <button type="button" data-toggle="L1A3">
+                    {{section.settings.layer_2_accordion_3_panel_title}}
+                  </button>
+                  <i class="toggle-icon"></i>
+                </h4>
+              </div>
+              <div id="L1A3" class="panel-body">
+                <div class="panel-wrp">
+                  <div class="panel-row">
+                    <div class="panel-shrink">
+                      <img src="{{ section.settings.layer_2_accordion_3_panel_left_image | img_url: 'master' }}" width="{{section.settings.layer_2_accordion_3_panel_left_image.width}}" height="{{section.settings.layer_2_accordion_3_panel_left_image.height}}" alt="L2A3-image" />
+                      <div class="panel-layer">
+                        <div class="panel-buy-btn"> 
+                          <a href="{{section.settings.layer_2_accordion_3_buy_link}}">{{section.settings.layer_2_accordion_3_buy}}</a>
+                        </div>
+                        <a class="buy-arrow" href="{{section.settings.layer_2_accordion_3_buy_link}}">
+                          {{section.settings.layer_2_accordion_3_buy}}
+                        </a>
+                      </div>
+                    </div>
+                    <div class="panel-grow">
+                      <div class="panel-right">
+                        <div class="inner-row">
+                          <div class="inner-col entry-txt">
+                            {{section.settings.layer_2_accordion_3_panel_right_entry_txt}}
+                          </div>
+                        </div>
+                        <div class="inner-row">
+                          <div class="inner-col secondary">
+                            <h4>003</h4>
+                            <h5>{{section.settings.layer_2_accordion_3_panel_right_r2_heading}}</h5>
+                            {{section.settings.layer_2_accordion_3_panel_right_r2_txt}}
+                          </div>
+                        </div>
+                        <div class="inner-row">
+                          <div class="inner-col half secondary">
+                            <h5>{{section.settings.layer_2_accordion_3_panel_right_r3_c1_heading}}</h5>
+                            {{section.settings.layer_2_accordion_3_panel_right_r3_c1_txt}}
+                          </div>
+                          <div class="inner-col half secondary">
+                            <h5>{{section.settings.layer_2_accordion_3_panel_right_r3_c2_heading}}</h5>
+                            {{section.settings.layer_2_accordion_3_panel_right_r3_c2_txt}}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      	  </div>
+      	</div>
+	</div>
+  </div>
+</section>
+<section class="show-case">
+  <div class="layring-container">
+    <div class="block-row">
+      <div class="half">
+        <a href="{{section.settings.url_left}}">
+          <img src="{{ section.settings.image_left | img_url: 'master' }}" alt="image-left" />
+          <div class="conc-img-text">
+            <h4>{{ section.settings.left_product_name }}</h4>
+            <p><span>$</span>{{ section.settings.left_product_price }}</p>
+            <!-- <a class="buy-now-btn" href="{{section.settings.url_left}}">BUY NOW</a> -->
+          </div>
+        </a>
+      </div>
+      <div class="half">
+        <a href="{{section.settings.url_right}}">
+          <img src="{{ section.settings.image_right | img_url: 'master' }}" alt="image-right" />
+          <div class="conc-img-text">
+            <h4>{{ section.settings.right_product_name }}</h4>
+            <p><span>$</span>{{ section.settings.right_product_price }}</p>
+            <!-- <a class="buy-now-btn" href="{{section.settings.url_right}}">BUY NOW</a> -->
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+$(document).ready(function(){
+ /* $(window).scroll(function(e){
+    if($(window).scrollTop() < ($('.concept-banner-img').offset().top + $('.concept-banner-img').height())){
+      $('.concept-type-wrp').removeAttr('style')
+    } else {
+      $('.concept-type-wrp').css({
+        width: $('.concept-type-wrp').width(),
+        position: 'fixed',
+        top: 0,
+        left: '50%',
+        transform: 'translateX(-50%)',
+        zIndex: 99,
+      })
+    }
+  });*/
+  
+  $(".concept-type-wrp .half-block:first-child").addClass('active');
+  
+  $(".in-block").click(function(){ 
+  	$(".concept-type-wrp .half-block.active").removeClass('active');
+    $(".in-block button.active").removeClass('active');
+    if(!$(this).hasClass('active')){
+      $("button", this).parents('.half-block.active').removeClass('active');
+      $("button", this).parents('.half-block').addClass('active');
+      $("button", this).addClass('active');
+      $('.layring-container.show').fadeOut('fast').removeClass('show');
+      $(`#${$("button", this).data('toggle')}`).fadeIn('fast').addClass('show');
+      if($(window).scrollTop() > ($('.concept-banner-img').offset().top + $('.concept-banner-img').height())){
+        $(window).scrollTop($('.layering-system').offset().top)
+      }
+    }
+  });
+  
+  $(".panel-title button").click(function(){
+    $(this).parents('.accordion-panel').toggleClass('active').find('.panel-body').slideToggle('fast');
+    $(this).next().toggleClass('open');
+    $(".layring-container.show .panel-title button").not(this).parents('.accordion-panel').removeClass('active').find('.panel-body').slideUp('fast');
+    $(".layring-container.show .panel-title button").not(this).next().removeClass('open');
+  });
+  $('.toggle-icon').click(function(){
+    $(this).prev().click();
+  });
+});
+</script>
+{% schema %}
+  {
+    "name": "Big hero",
+    "settings": [
+		{
+      		"type": "header",
+      		"content": "Hero Content"
+    	},
+		{
+      		"type": "text",
+			"id": "hero_text",
+			"label": "Hero Text",
+			"default": "RSCF™"
+		},
+		{
+			"type": "image_picker",
+			"id": "banner_image",
+			"label": "Image"
+		},
+		
+		{
+      		"type": "header",
+      		"content": "Layer 2"
+    	},
+		{
+      		"type": "text",
+			"id": "layer_2_heading",
+			"label": "Layer 2 Heading",
+			"default": "REYAL’S LAYERING SYSTEM IS MADE UP OF THREE SIMPLE STEPS"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_2_description",
+			"label": "Layer 2 Description",
+			"default": "<p>Reyal’s skincare performance formula combines the best of science and nature. Every reyal skincare product includes our proprietary rscf™ tri-blend. A custom combination of active ingredients: dragon’s blood, tiger grass, and vitamin e that work together to fuel, strengthen and protect your skin.</p>"
+		},
+		{
+      		"type": "header",
+      		"content": "Layer 2 Accordion 1"
+    	},
+		{
+      		"type": "text",
+			"id": "layer_2_accordion_1_panel_title",
+			"label": "Panel Title",
+			"default": "LAYER 001 SUPREME FACE WASH"
+		},
+    {
+      "type": "text",
+			"id": "layer_2_accordion_1_buy",
+			"label": "Buy Now Text",
+			"default": "Buy Now"
+		},
+    {
+      "type": "text",
+			"id": "layer_2_accordion_1_buy_link",
+			"label": "Buy Now Link",
+      "default": "URL Here"
+		},
+		{
+			"type": "image_picker",
+			"id": "layer_2_accordion_1_panel_left_image",
+			"label": "Panel Left Image"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_2_accordion_1_panel_right_entry_txt",
+			"label": "Panel Right Entry Text",
+			"default": "<p>a powerful and protective antioxidant found in sap from amazonian rainforest trees. dragon's blood is traditionally used as a topical aid for cuts, bites, burns, stings, and rashes. </p>"
+		},
+		{
+      		"type": "text",
+			"id": "layer_2_accordion_1_panel_right_r2_heading",
+			"label": "Panel Right 2nd Row Heading",
+			"default": "ANTI-BACTERIAL, ANTI-VIRAL, ANTI-FUNGAL"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_2_accordion_1_panel_right_r2_txt",
+			"label": "Panel Right 2nd Row Text",
+			"default": "<p>its rich protective antioxidant phenols and anti-inflammatory compounds help to protect the cells of the skin, reducing both redness and inflammation,</p>"
+		},
+		{
+      		"type": "text",
+			"id": "layer_2_accordion_1_panel_right_r3_c1_heading",
+			"label": "Panel Right 2nd Row 1st Col Heading",
+			"default": "REDUCED SKIN REDNESS"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_2_accordion_1_panel_right_r3_c1_txt",
+			"label": "Panel Right 2nd Row 1st Col Text",
+			"default": "<p>Performance actives (you can feel) that strengthen and up your game</p>"
+		},
+		{
+      		"type": "text",
+			"id": "layer_2_accordion_1_panel_right_r3_c2_heading",
+			"label": "Panel Right 2nd Row 2nd Col Heading",
+			"default": "REPAIRS COLLAGEN"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_2_accordion_1_panel_right_r3_c2_txt",
+			"label": "Panel Right 2nd Row 2nd Col Text",
+			"default": "<p>Performance actives (you can feel) that strengthen and up your game</p>"
+		},
+		{
+      		"type": "header",
+      		"content": "Layer 2 Accordion 2"
+    	},
+		{
+      		"type": "text",
+			"id": "layer_2_accordion_2_panel_title",
+			"label": "Panel Title",
+			"default": "LAYER 002 SELECT DAY SERUM"
+		},
+    {
+      "type": "text",
+			"id": "layer_2_accordion_2_buy",
+			"label": "Buy Now Text",
+			"default": "Buy Now"
+		},
+    {
+      "type": "text",
+			"id": "layer_2_accordion_2_buy_link",
+			"label": "Buy Now Link",
+      "default": "URL Here"
+		},
+		{
+			"type": "image_picker",
+			"id": "layer_2_accordion_2_panel_left_image",
+			"label": "Panel Left Image"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_2_accordion_2_panel_right_entry_txt",
+			"label": "Panel Right Entry Text",
+			"default": "<p>a powerful and protective antioxidant found in sap from amazonian rainforest trees. dragon's blood is traditionally used as a topical aid for cuts, bites, burns, stings, and rashes. </p>"
+		},
+		{
+      		"type": "text",
+			"id": "layer_2_accordion_2_panel_right_r2_heading",
+			"label": "Panel Right 2nd Row Heading",
+			"default": "ANTI-BACTERIAL, ANTI-VIRAL, ANTI-FUNGAL"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_2_accordion_2_panel_right_r2_txt",
+			"label": "Panel Right 2nd Row Text",
+			"default": "<p>its rich protective antioxidant phenols and anti-inflammatory compounds help to protect the cells of the skin, reducing both redness and inflammation,</p>"
+		},
+		{
+      		"type": "text",
+			"id": "layer_2_accordion_2_panel_right_r3_c1_heading",
+			"label": "Panel Right 2nd Row 1st Col Heading",
+			"default": "REDUCED SKIN REDNESS"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_2_accordion_2_panel_right_r3_c1_txt",
+			"label": "Panel Right 2nd Row 1st Col Text",
+			"default": "<p>Performance actives (you can feel) that strengthen and up your game</p>"
+		},
+		{
+      		"type": "text",
+			"id": "layer_2_accordion_2_panel_right_r3_c2_heading",
+			"label": "Panel Right 2nd Row 2nd Col Heading",
+			"default": "REPAIRS COLLAGEN"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_2_accordion_2_panel_right_r3_c2_txt",
+			"label": "Panel Right 2nd Row 2nd Col Text",
+			"default": "<p>Performance actives (you can feel) that strengthen and up your game</p>"
+		},
+		{
+      		"type": "header",
+      		"content": "Layer 2 Accordion 3"
+    	},
+		{
+      		"type": "text",
+			"id": "layer_2_accordion_3_panel_title",
+			"label": "Panel Title",
+			"default": "LAYER 003 SUPER DAY MOISTURIZER"
+		},
+    {
+      "type": "text",
+			"id": "layer_2_accordion_3_buy",
+			"label": "Buy Now Text",
+			"default": "Buy Now"
+		},
+    {
+      "type": "text",
+			"id": "layer_2_accordion_3_buy_link",
+			"label": "Buy Now Link",
+      "default": "URL Here"
+		},
+		{
+			"type": "image_picker",
+			"id": "layer_2_accordion_3_panel_left_image",
+			"label": "Panel Left Image"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_2_accordion_3_panel_right_entry_txt",
+			"label": "Panel Right Entry Text",
+			"default": "<p>a powerful and protective antioxidant found in sap from amazonian rainforest trees. dragon's blood is traditionally used as a topical aid for cuts, bites, burns, stings, and rashes. </p>"
+		},
+		{
+      		"type": "text",
+			"id": "layer_2_accordion_3_panel_right_r2_heading",
+			"label": "Panel Right 2nd Row Heading",
+			"default": "ANTI-BACTERIAL, ANTI-VIRAL, ANTI-FUNGAL"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_2_accordion_3_panel_right_r2_txt",
+			"label": "Panel Right 2nd Row Text",
+			"default": "<p>its rich protective antioxidant phenols and anti-inflammatory compounds help to protect the cells of the skin, reducing both redness and inflammation,</p>"
+		},
+		{
+      		"type": "text",
+			"id": "layer_2_accordion_3_panel_right_r3_c1_heading",
+			"label": "Panel Right 2nd Row 1st Col Heading",
+			"default": "REDUCED SKIN REDNESS"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_2_accordion_3_panel_right_r3_c1_txt",
+			"label": "Panel Right 2nd Row 1st Col Text",
+			"default": "<p>Performance actives (you can feel) that strengthen and up your game</p>"
+		},
+		{
+      		"type": "text",
+			"id": "layer_2_accordion_3_panel_right_r3_c2_heading",
+			"label": "Panel Right 2nd Row 2nd Col Heading",
+			"default": "REPAIRS COLLAGEN"
+		},
+		{
+      		"type": "richtext",
+			"id": "layer_2_accordion_3_panel_right_r3_c2_txt",
+			"label": "Panel Right 2nd Row 2nd Col Text",
+			"default": "<p>Performance actives (you can feel) that strengthen and up your game</p>"
+		},
+		{
+      		"type": "header",
+      		"content": "Show Case"
+    	},
+		{
+			"type": "url",
+			"id": "url_left",
+			"label": "Product URL Left"
+		},
+		{
+			"type": "image_picker",
+			"id": "image_left",
+			"label": "Product Image Left"
+		},
+		{
+      		"type": "text",
+			"id": "left_product_name",
+			"label": "Left Product Name"
+		},
+		{
+      		"type": "number",
+			"id": "left_product_price",
+			"label": "Left Product Price"
+		},
+		{
+			"type": "url",
+			"id": "url_right",
+			"label": "Product URL Right"
+		},
+		{
+			"type": "image_picker",
+			"id": "image_right",
+			"label": "Image Right"
+		},
+		{
+      		"type": "text",
+			"id": "right_product_name",
+			"label": "Right Product Name"
+		},
+		{
+      		"type": "number",
+			"id": "right_product_price",
+			"label": "Right Product Price"
+		}
+	]
+  }
+{% endschema %}
