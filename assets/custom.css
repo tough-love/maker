@@ -1,6 +1,108 @@
 
 
 @media (min-width:0) {
+   /* About Us Page */
+
+  .page--about .layout--main-content {
+    padding: 0 !important;
+}
+  .about-us-main .aboutus-section .bg-image {
+	/* height: 952px; */
+	background-position: unset;
+}
+.about-us-main .about-right-part {
+	align-items: center;
+}
+.about-us-main .about-right-part {
+	padding-left:20px;
+}
+.about-us-main .about-us-content {
+	width: 100%;
+	max-width: 659px;
+  padding-right: 20px;
+  padding-top: 30px;
+padding-bottom: 30px;
+}
+.about-us-content p {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 500;
+	color: #000;
+	font-family: 'helvetica';
+  text-align:left;
+}
+.one-half.about-left-part {
+	align-items: center;
+}
+.about-us-main .about-left-part .about-us-content {
+	width: 100%;
+	max-width: 639px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.one-half.about-left-part {
+	align-items: center;
+	padding-right:0px;
+  order: 1;
+}
+.about-us-main .overlay-text {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	width: 95%;
+	max-width:610px;
+	margin: 0px auto;
+}
+.overlay-text h3{
+  font-size: 50px;
+  line-height: 80px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+.about-us-main .shop-btn-position {
+	margin-top:30px;
+width: 100%;
+text-align: center;
+}
+.aboutus-section .row {
+	margin-bottom: 75px;
+}
+body .about-us-main .shop-btn-position a{
+font-size: 18px;
+line-height: 32px;
+color: #000;
+font-weight:700;
+}
+body .about-us-main .about-us-content h4{
+  font-size: 24px;
+line-height: 32px;
+color: #000;
+font-weight:700;
+margin-bottom: 17px;
+}
+.about-image{
+  padding-top: 106%;
+height: 100%;
+max-width: 100%;
+position: relative;
+}
+.about-image img {
+	display: block;
+	height: 100%;
+	left: 0;
+	opacity: 1;
+	position: absolute;
+	top: 0;
+	-webkit-transition: opacity .3s ease;
+	transition: opacity .3s ease;
+	visibility: visible;
+	/* max-width: auto; */
+	width: auto;
+}
+  /* End About Us page css */
   .footer--menu {
 	width: 100%;
 	box-sizing: border-box;
@@ -759,6 +861,50 @@ input#newsletter-email::placeholder{
     left: 0%;
     transform: translate(0%, -50%);
   }
+   /* About Us Page */
+  .aboutus-section .row {
+	margin-bottom:0px;
+}
+
+.about-us-main .about-right-part {
+	padding-left:138px;
+  justify-content: center;
+  padding-right: 122px;
+}
+.about-us-main .about-us-content {
+  padding-top: 0px;
+padding-bottom: 0px;
+}
+.about-us-content p {
+	font-size: 14px;
+	line-height: 24px;
+}
+.about-us-main .about-left-part .about-us-content {
+  padding-right:0px;
+}
+.one-half.about-left-part {
+	padding-right: 138px;
+	order: unset !important;
+	justify-content: center;
+	padding-left: 122px;
+}
+.overlay-text h3{
+  font-size: 75px;
+  line-height: 110px;
+}
+.about-us-main .shop-btn-position {
+	margin-top: 114px;
+}
+body .about-us-main .shop-btn-position a{
+font-size: 24px;
+line-height: 32px;
+}
+body .about-us-main .about-us-content h4{
+  font-size: 24px;
+line-height: 32px;
+}
+
+  /* End About Us page css */
 } 
 @media (min-width: 1400px) {
   .holidayz h5 {
@@ -775,6 +921,19 @@ input#newsletter-email::placeholder{
       line-height: 18px;
 
     }
+    /* About Us Page */
+   .about-us-main .about-right-part {
+	padding-left: 174px;
+}
+.one-half.about-left-part {
+	padding-right: 174px;
+}
+
+  .about-us-content p {
+	font-size: 16px;
+	line-height: 30px;
+}
+ /* About Us Page css end */
 
 }
 @media (min-width:1680px) {
@@ -814,6 +973,10 @@ input#newsletter-email::placeholder{
     font-weight: bold;
     margin-top: 3px
   }
+  .about-us-content p {
+	font-size: 19px;
+	line-height: 32px;
+}
   
 }
 
