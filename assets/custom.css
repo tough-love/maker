@@ -23,7 +23,7 @@ padding-right: 0;
 	padding: 0;
 }
 .prod-name-row.you-know-slider {
-	padding: 25px 0px;
+	padding: 25px 0px !important;
 }
   .page--about .layout--main-content {
     padding: 0 !important;
@@ -931,7 +931,7 @@ body .about-us-main .about-us-content h4{
 line-height: 32px;
 }
 .template--index .membership-wrp {
-	padding:25px 0px;
+	padding: 0px 48px;
 }
 
   /* End About Us page css */
