@@ -761,7 +761,7 @@ text-align: center;
 }
 @media (min-width: 992px) {
   .template--index .prod-name-row.you-know-slider {
-	padding-left: 48px;
+	padding-left:215px !important;
 	padding-right: 48px;
 }
   .news-letter-section #newsletter--button {
@@ -875,6 +875,9 @@ body .skincare-home-section .top-content p,
 }
 }
 @media (min-width: 1200px) {
+  .template--index .prod-name-row.you-know-slider {
+	padding-left:175px !important;
+}
   
 input#newsletter-email::placeholder{
   font-size: 22px;
