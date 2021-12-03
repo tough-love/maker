@@ -1,6 +1,10 @@
 
 
 @media (min-width:0) {
+  .template--index .prod-name-row.you-know-slider{
+padding-left: 0;
+padding-right: 0;
+  }
    /* About Us Page */
 .page--about-reyal-performance-performance-skincare-amp-supplements #main-content {
 	padding: 0;
@@ -422,9 +426,7 @@ flex-wrap: wrap;
     padding-right: 20px;
     padding-left: 10px;
   }
-  .template--index .membership-wrp {
-    padding: 25px 0px;
-  }
+ 
   .template--index .you-may-also p {
 	font-size: 14px !important;
 	font-family: aktiv-grotesk,sans-serif;
@@ -742,6 +744,10 @@ text-align: center;
   }
 }
 @media (min-width: 992px) {
+  .template--index .prod-name-row.you-know-slider {
+	padding-left: 48px;
+	padding-right: 48px;
+}
   .news-letter-section #newsletter--button {
 	font-size: 22px;
 	font-weight:700;
@@ -908,10 +914,14 @@ body .about-us-main .about-us-content h4{
   font-size: 24px;
 line-height: 32px;
 }
+.template--index .membership-wrp {
+	padding:25px 0px;
+}
 
   /* End About Us page css */
 } 
 @media (min-width: 1400px) {
+  
   .holidayz h5 {
 	font-size: 172px;
 	line-height: 220px;
