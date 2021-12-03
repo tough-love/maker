@@ -363,7 +363,7 @@
         <div class="cart--tax-info" data-item="paragraph">
           {{ shipping_taxes_t }}
         </div>
-
+        
         <div class="cart--nav">
           <div class="cart--continue-shopping" data-item="block-link">
             <a href="{{ routes.all_products_collection_url }}">
@@ -381,6 +381,9 @@
             </button>
           </div>
         </div>
+        <div class="notification-info">
+      <p><span>Note:</span>We offer free shipping for orders $125 +</p>
+    </div>
 
       {% if additional_checkout_buttons %}
         <div class="cart--additional-buttons additional-checkout-buttons
@@ -391,6 +394,7 @@
 
       </div>
     </div>
+    
   </form>
 
   <div class="cart--no-items" data-item="paragraph">{{ empty_html_t }}</div>

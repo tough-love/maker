@@ -1,6 +1,19 @@
 
 
 @media (min-width:0) {
+  .ticker-content.ticker .bestpush-inline-bis-notify {
+	display: none !important;
+}
+  .template--customers--login #rc_login{
+    display: none;
+  }
+  .notification-info p {
+	font-size: 16px;
+}
+.notification-info p span{
+	font-weight:700;
+  padding-right: 10px;
+}
   .template--index .prod-name-row.you-know-slider{
 padding-left: 0;
 padding-right: 0;
