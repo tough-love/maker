@@ -2,7 +2,9 @@
 
 @media (min-width:0) {
    /* About Us Page */
-
+.page--about-reyal-performance-performance-skincare-amp-supplements #main-content {
+	padding: 0;
+}
   .page--about .layout--main-content {
     padding: 0 !important;
 }
@@ -23,13 +25,16 @@
   padding-top: 30px;
 padding-bottom: 30px;
 }
+.aboutus-section .row{
+  align-items: center;
+}
 .about-us-content p {
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 500;
 	color: #000;
 	font-family: 'helvetica';
-  text-align:left;
+  text-align:justify;
 }
 .one-half.about-left-part {
 	align-items: center;
