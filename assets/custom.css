@@ -12,7 +12,7 @@
     opacity: 0;
     transition: all 0.2s;
   }
-  .template--collection .collection--product-grid .product--item:hover.bestpush-inline-bis-notify.bestpush-inline-bis-notify-button{
+  .template--collection .collection--product-grid .product--root:hover .bestpush-inline-bis-notify.bestpush-inline-bis-notify-button{
     opacity: 1;
   }
   /* End Collection Page CSS */
