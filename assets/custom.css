@@ -41,6 +41,9 @@
 padding-left: 0;
 padding-right: 0;
   }
+  #shopify-section-framework--page-apparel-wearing {
+	overflow-x: hidden;
+}
    /* About Us Page */
 .page--about-reyal-performance-performance-skincare-amp-supplements #main-content {
 	padding: 0;
