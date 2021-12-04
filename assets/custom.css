@@ -9,12 +9,10 @@
     transform: translate(-50%,-50%);
     left: 50%;
     border: 1px solid #000;
-    opacity: 0;
+    opacity:1;
     transition: all 0.2s;
   }
-  .template--collection .collection--product-grid .product--root:hover .bestpush-inline-bis-notify.bestpush-inline-bis-notify-button{
-    opacity: 1;
-  }
+  
   /* End Collection Page CSS */
   /* CART PAGE CSS */
   .template--cart .cart--item--remove {
