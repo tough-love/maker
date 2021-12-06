@@ -1014,7 +1014,9 @@ line-height: 32px;
   }
   
 .even-lift-section .bg-image {
-	height: 1004px;
+    height: 90vh;
+    background-position: center;
+}
 }
 .even-lift-section .content-box h2{
   font-size:172px;
