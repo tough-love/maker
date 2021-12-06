@@ -1064,3 +1064,7 @@ line-height: 32px;
 .footer--block--body>:not(:last-child) {
   padding-top: 26px;
 }
+  
+.shopify-section-framework--evenlift-section .even-lift-section .bg-image {
+  height: 100vh !important;
+}
