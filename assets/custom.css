@@ -3,7 +3,8 @@
 @media (min-width:0) {
   .swiper-slide.video-panel video {
     height: 100vh;
-    object-fit:cover;
+    object-fit: scale-down;
+    background: black;
 }
   .template--index .swiper-slide {
     height: 90vh
