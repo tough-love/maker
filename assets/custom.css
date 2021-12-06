@@ -979,6 +979,11 @@ line-height: 32px;
 	display: block;
 }
   
+.even-lift-section .bg-image {
+    height: 90vh;
+    background-position: center;
+}
+
   .holidayz h5 {
 	font-size: 172px;
 	line-height: 220px;
@@ -1013,11 +1018,6 @@ line-height: 32px;
     height: 1004px;
   }
   
-.even-lift-section .bg-image {
-    height: 90vh;
-    background-position: center;
-}
-}
 .even-lift-section .content-box h2{
   font-size:172px;
   line-height:300px;
