@@ -1,9 +1,9 @@
 
 
 @media (min-width:0) {
-/*   .swiper-slide.video-panel video {
-    height: 1000px;
-} */
+  .swiper-slide.video-panel video {
+    height: 100vh;
+}
   /* Collection Page CSS */
     .template--collection .bestpush-inline-bis-notify.bestpush-inline-bis-notify-button {
     position: absolute;
