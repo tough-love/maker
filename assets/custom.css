@@ -5,6 +5,9 @@
     height: 100vh;
     object-fit:cover;
 }
+  .template--index .swiper-slide {
+    height: 90vh
+  }
   /* Collection Page CSS */
     .template--collection .bestpush-inline-bis-notify.bestpush-inline-bis-notify-button {
     position: absolute;
