@@ -535,9 +535,8 @@ body .skincare-home-section .top-content p,
 	background-repeat: no-repeat;
 	background-position:center top;
 }
-.home-season-slider .even-lift-section .bg-image {
-  height:90vh;
-  background-position: center
+.even-lift-section .bg-image {
+	height:90vh;
 }
 .even-lift-section .content-box {
 	position: absolute;
@@ -886,9 +885,8 @@ body .skincare-home-section .top-content p,
   .ticker-section {
       margin: 0px -48px;
     }
-.home-season-slider .even-lift-section .bg-image {
+    .even-lift-section .bg-image {
 	height:90vh;
-  	background-position: center;
 }
 .even-lift-section .content-box h2{
   font-size:100px;
@@ -984,8 +982,8 @@ line-height: 32px;
 	display: block;
 }
   
-.home-season-slider .even-lift-section .bg-image {
-  	height: 90vh;
+.even-lift-section .bg-image {
+    height: 90vh;
     background-position: center;
 }
 
