@@ -1,6 +1,9 @@
 
 
 @media (min-width:0) {
+  .swiper-slide.video-panel video {
+    height: 700px;
+}
   /* Collection Page CSS */
     .template--collection .bestpush-inline-bis-notify.bestpush-inline-bis-notify-button {
     position: absolute;
