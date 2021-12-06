@@ -3,6 +3,7 @@
 @media (min-width:0) {
   .swiper-slide.video-panel video {
     height: 100vh;
+    object-fit:cover;
 }
   /* Collection Page CSS */
     .template--collection .bestpush-inline-bis-notify.bestpush-inline-bis-notify-button {
