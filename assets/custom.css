@@ -1,9 +1,9 @@
 
 
 @media (min-width:0) {
-  .swiper-slide.video-panel video {
+/*   .swiper-slide.video-panel video {
     height: 1000px;
-}
+} */
   /* Collection Page CSS */
     .template--collection .bestpush-inline-bis-notify.bestpush-inline-bis-notify-button {
     position: absolute;
@@ -738,9 +738,9 @@ text-align: center;
 }
 }
 @media (min-width: 768px) { 
-   .swiper-slide.video-panel video {
+/*    .swiper-slide.video-panel video {
     height:695px;
-}
+} */
   .desktop-footer-logo.footer-logo-box img {
 	width: 25px;
 	margin-top: 25px;
