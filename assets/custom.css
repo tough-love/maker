@@ -1093,6 +1093,6 @@ line-height: 32px;
   padding-top: 26px;
 }
   
-.shopify-section-framework--evenlift-section .even-lift-section .bg-image {
+#shopify-section-framework--evenlift-section .even-lift-section .bg-image {
   height: 100vh !important;
 }
