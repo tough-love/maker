@@ -1,6 +1,10 @@
 
 
 @media (min-width:0) {
+  .homeSwiper .swiper-button-prev::after,
+  .homeSwiper .swiper-button-next::after {
+	display: none;
+}
   .swiper-slide.video-panel video {
     height: 100vh;
     object-fit: scale-down;
