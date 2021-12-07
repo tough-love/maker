@@ -580,6 +580,7 @@ body .skincare-home-section .top-content p,
 	font-weight: 700;
 	font-family:aktiv-grotesk, sans-serif;
   text-align: center;
+  width: 80%;
 }
 .even-lift-section .bulk-now a:hover, .even-lift-section .bulk-now a:focus, .even-lift-section .fancy-supplement a:hover, .even-lift-section .fancy-supplement a:focus{
   color: #fff !important;
