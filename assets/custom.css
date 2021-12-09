@@ -1,6 +1,9 @@
 
 
 @media (min-width:0) {
+  .home-product #insta-feed{
+    margin-top:0;
+  }
   .homeSwiper .swiper-button-prev::after,
   .homeSwiper .swiper-button-next::after {
 	display: none;
