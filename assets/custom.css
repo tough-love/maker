@@ -8,6 +8,9 @@
 
 }
 @media (min-width:0) {
+  #shopify-section-framework--about-reyal-section .one-half.bg-image{
+	height: 400px;
+}
   .home-product #insta-feed{
     margin-top:0;
   }
@@ -771,6 +774,9 @@ text-align: center;
   .template--index .swiper-slide {
     height: 90vh
   }
+  #shopify-section-framework--about-reyal-section .one-half.bg-image{
+	height: 500px;
+}
 
   .holidayz-content {
 	text-align: center;
@@ -840,6 +846,9 @@ text-align: center;
   }
 }
 @media (min-width: 992px) {
+  #shopify-section-framework--about-reyal-section .one-half.bg-image{
+	height: 700px;
+}
   .template--index .prod-name-row.you-know-slider {
 	padding-left:215px !important;
 	padding-right: 48px;
