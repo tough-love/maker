@@ -310,6 +310,8 @@ text-align: left;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+  text-align: center;
+  margin: 0px auto;
 }
 .template--index .layout--main-content .shopify-section {
   padding: 0 !important
