@@ -1,5 +1,12 @@
 
+@font-face {
+    font-family: 'aktiv';
+    src: url('aktivgroteskcorp-bold.woff2') format('woff2'),
+         url('aktivgroteskcorp-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 @media (min-width:0) {
   .home-product #insta-feed{
     margin-top:0;
