@@ -1,126 +1,224 @@
-<section class="organic-ingredients">
-         <div class="small-container">
-           {% if product.metafields.ingredient.section_above_title != blank %}
-            <h2>{{ product.metafields.ingredient.section_above_title }}</h2>
+<section class="organic-ingredients skincare-ing">
+    <div class="ing-top">
+      <div class="small-container">
+        {% if product.metafields.ingredient.section_above_title != blank %}
+         <h2>{{ product.metafields.ingredient.section_above_title }}</h2>
+         {% else %}
+         <h2>{{ section.settings.center_organic_ingredient_title }}</h2>
+         {% endif %}
+         <div class="row organic-ingredients-row">   
+            <div class="col-3">
+               <div class="organic-img">
+                 {% if product.metafields.ingredient.section_col1_image != blank %}
+                  <img src="{{ product.metafields.ingredient.section_col1_image | img_url: 'master' }}" alt="organic 1">
+                  {% else %}
+                  <img src="{{ section.settings.left_image | img_url: 'master' }}" alt="organic 1">
+                  {% endif %}
+               </div>
+               <h3>
+                 {% if product.metafields.ingredient.section_col1_text_1 != blank %}
+                 {{ product.metafields.ingredient.section_col1_text_1 }}
+                 {% else %}
+                 {{ section.settings.center_organic_ingredient_title1 }}
+                 {% endif %}
+               </h3>
+               <p>
+                 {% if product.metafields.ingredient.section_col1_text_2 != blank %}
+                 {{ product.metafields.ingredient.section_col1_text_2 }}
+                 {% else %}
+                 {{ section.settings.center_organic_ingredient_desc1 }}
+                 {% endif %}
+               </p>
+              
+            </div>
+            <div class="col-3">
+               <div class="organic-img">
+                 {% if product.metafields.ingredient.section_col2_image != blank %}
+                 <img src="{{ product.metafields.ingredient.section_col2_image | img_url: 'master' }}" alt="organic 2">
+                 {% else %}
+                  <img src="{{ section.settings.center_image | img_url: 'master' }}" alt="organic 2">
+                  {% endif %}
+               </div>
+               <h3>
+                 {% if product.metafields.ingredient.section_col2_text_1 != blank %}
+                 {{ product.metafields.ingredient.section_col2_text_1 }}
+                 {% else %}
+                 {{ section.settings.center_organic_ingredient_title2 }}
+                 {% endif %}
+               </h3>
+               <p>
+                 {% if product.metafields.ingredient.section_col2_text_2 != blank %}
+                 {{ product.metafields.ingredient.section_col2_text_2 }}
+                 {% else %}
+                 {{ section.settings.center_organic_ingredient_desc2 }}
+                 {% endif %}
+               </p>
+            </div>
+            <div class="col-3">
+               <div class="organic-img">
+                 {% if product.metafields.ingredient.section_col3_image != blank %}
+                 <img src="{{ product.metafields.ingredient.section_col3_image | img_url: 'master' }}" alt="organic 3">
+                 {% else %}
+                  <img src="{{ section.settings.right_image | img_url: 'master' }}" alt="organic 3">
+                  {% endif %}
+               </div>
+               <h3>
+                 {% if product.metafields.ingredient.section_col3_text_1 != blank %}
+                 {{ product.metafields.ingredient.section_col3_text_1 }}
+                 {% else %}
+                 {{ section.settings.center_organic_ingredient_title3 }}
+                 {% endif %}
+               </h3>
+               <p>
+                 {% if product.metafields.ingredient.section_col3_text_2 != blank %}
+                 {{ product.metafields.ingredient.section_col3_text_2 }}
+                 {% else %}
+                 {{ section.settings.center_organic_ingredient_desc3 }}
+                 {% endif %}
+               </p>
+            </div>
+         </div>
+      </div>
+    </div>
+    <div class="ing-bottom">
+      <div class="container-fluid full-transp-container">
+         <div class="row ingredient-row" style="display:none;">  
+            <div class="col col-4 real-ingredient-text">
+              <div class="top-area">
+                 <h3>
+                {% if product.metafields.real.ingredients_section_title != blank %}
+                {{product.metafields.real.ingredients_section_title}}
+                {% else %}
+                REYAL’S PROPRIETARY SKINCARE FORMULA USES THREE POWERFUL INGREDIENTS.
+                {% endif %}
+              </h3>
+               <p>
+                 {% if product.metafields.real.ingredients_section_subtitle != blank %}
+                {{product.metafields.real.ingredients_section_subtitle}}
+                {% else %}
+                Reyal’s skincare performance formula combines the best of science and nature. Every Reyal skincare product includes our proprietary RSCF™ tri-blend. A custom combination of active ingredients: Dragon’s Blood, Tiger grass, and Vitamin E that work together to fuel, strengthen and protect your skin. 
+                {% endif %}
+               </p>
+              </div>
+              <div class="bottom-area">
+                 <a id="show-ingreditnts2c" style="cursor: pointer;">{{ section.settings.center_real_ingredient_button }}</a>
+              </div>
+            </div>
+
+            <div class="col col-8 real-ingredient-img real-ingredients-video" >
+              {% if product.metafields.real.ingredients_viedo != blank %}
+             <video playsinline autoplay muted loop id="bgvid">
+               <source src="{{product.metafields.real.ingredients_viedo}}" type="video/mp4">
+            </video>
             {% else %}
-            <h2>{{ section.settings.center_organic_ingredient_title }}</h2>
-            {% endif %}
-            <div class="row organic-ingredients-row">   
-               <div class="col-3">
-                  <div class="organic-img">
-                    {% if product.metafields.ingredient.section_col1_image != blank %}
-                     <img src="{{ product.metafields.ingredient.section_col1_image | img_url: 'master' }}" alt="organic 1">
-                     {% else %}
-                     <img src="{{ section.settings.left_image | img_url: 'master' }}" alt="organic 1">
-                     {% endif %}
-                  </div>
-                  <h3>
-                    {% if product.metafields.ingredient.section_col1_text_1 != blank %}
-                    {{ product.metafields.ingredient.section_col1_text_1 }}
-                    {% else %}
-                    {{ section.settings.center_organic_ingredient_title1 }}
-                    {% endif %}
-                  </h3>
-                  <p>
-                    {% if product.metafields.ingredient.section_col1_text_2 != blank %}
-                    {{ product.metafields.ingredient.section_col1_text_2 }}
-                    {% else %}
-                    {{ section.settings.center_organic_ingredient_desc1 }}
-                    {% endif %}
-                  </p>
+            <video playsinline autoplay muted loop id="bgvid">
+             <source src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/brand_video.mp4?v=1622742854" type="video/mp4">
+          </video>
+          {% endif %}
+            </div>
+            
+         </div>
+         <div class="ingredients-slider">
+           <div class="slider-left-content real-ingredient-text">
+                <div class="top-area">
+                 <h3 style="margin-top:0;">
+                REYAL’S LAYERING SYSTEM WAS CREATED WITH SIMPLICITY IN MIND
+              </h3>
+              </div>
+              <div class="middle-area">
+                 <p>
+                The REYAL skincare assortment was designed to make skincare efficient. A simple 3-layered approach whereby each product adds value to the next, amplifying performance and long-term results. We think of our skin in the same way we do our bodies, like an athlete. So, train your skin.
+               </p>
+              </div>
+              <div class="bottom-area">
+                 <!-- <a id="show-ingreditnts2-old" href="https://www.reyalperformance.com/pages/our-science" style="cursor: pointer; color: #DC493F; text-decoration: none; font-weight: bold;">[{{ section.settings.center_real_ingredient_button }}]</a> -->
+                 <a id="show-ingreditnts2-old" href="https://www.reyalperformance.com/pages/our-science" style="cursor: pointer; color: #DC493F; text-decoration: none; font-weight: bold;">[OUR SCIENCE]</a>
+              </div>
+           </div>
+           <div class="slider-right-content real-ingredient-img real-ingredients-video">
+             <div class="slider-inner-box">
+               <div class="slider-area">
+                 <div class="swiper ingredientSwiper">
+                   <div class="swiper-wrapper">
+                     <div class="swiper-slide pdp-slide1">
+                       <div class="right-slider-content">
+               <h3>HOW OUR DAYTIME ROUTINE WORKS:</h3>
+               <div class="layer-data">
+                 <div class="layer-data-grid layer1">
+                   <h4>Layer 001</h4>
+                   <span>SUPREME FACE WASH</span>
+                  <div class="pdp-img-box">
+                     <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/imgl1.png?v=1640876435" alt="SUPREME FACE WASH" />
+                   </div>
+                   <p>
+                     A DETOXIFYING FACE GEL WASH DELIVERING AN INVIGORATING AND DEEP PORE CLEAN.
+                   </p>
+                 </div>
+                 <div class="layer-data-grid layer2">
+                   <h4>Layer 002</h4>
+                   <span>SELECT DAY SERUM</span>
+                   <div class="pdp-img-box">
+                     <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/imgl2.png?v=1640876435" alt="SELECT DAY SERUM" />
+                   </div>
+                   <p>
+                     A HIGH PERFORMANCE, ANTI-AGING AND SKIN STRENGTHENING DAILY VITAMIN C SERUM.
+                   </p>
+                 </div>
+                 <div class="layer-data-grid layer3">
+                   <h4>Layer 003</h4>
+                   <span>SUPER DAY MOISTURIZER</span>
+                   <div class="pdp-img-box">
+                     <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/imgl3.png?v=1640876435" alt="SUPER DAY MOISTURIZER" />
+                   </div>
+                   <p>
+                    A LIGHTWEIGHT, NON-GREASY, ANTI-SHINE DAILY MOISTURIZER WITH UVA/UVB PROTECTION.
+                   </p>
+                 </div>
+               </div>
+             </div>
+                     </div>
+                     <div class="swiper-slide pdp-slide2">
+                       <div class="right-slider-content">
+               <h3>HOW OUR NIGHTTIME ROUTINE WORKS:</h3>
+               <div class="layer-data layer-slide2">
+                 <div class="layer-data-grid layer1">
+                   <h4>Layer 001</h4>
+                   <span>SUPREME FACE WASH</span>
+                   <div class="pdp-img-box">
+                     <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/imgl1.png?v=1640876435" alt="SUPREME FACE WASH" />
+                   </div>
+                   <p>
+                     A DETOXIFYING FACE GEL WASH DELIVERING AN INVIGORATING AND DEEP PORE CLEAN.
+                   </p>
+                 </div>
+                 <div class="layer-data-grid layer3">
+                   <h4>Layer 003</h4>
+                   <span>SUPER NIGHT MOISTURIZER</span>
+                   <div class="pdp-img-box">
+                     <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/imgn2.png?v=1640876435" alt="SUPER NIGHT MOISTURIZER" />
+                   </div>
+                   <p>
+                     DESIGNED TO HYDRATE, REPAIR AND PROTECT YOUR SKIN WHILE YOU SLEEP.
+                   </p>
+                 </div>
                  
                </div>
-               <div class="col-3">
-                  <div class="organic-img">
-                    {% if product.metafields.ingredient.section_col2_image != blank %}
-                    <img src="{{ product.metafields.ingredient.section_col2_image | img_url: 'master' }}" alt="organic 2">
-                    {% else %}
-                     <img src="{{ section.settings.center_image | img_url: 'master' }}" alt="organic 2">
-                     {% endif %}
-                  </div>
-                  <h3>
-                    {% if product.metafields.ingredient.section_col2_text_1 != blank %}
-                    {{ product.metafields.ingredient.section_col2_text_1 }}
-                    {% else %}
-                    {{ section.settings.center_organic_ingredient_title2 }}
-                    {% endif %}
-                  </h3>
-                  <p>
-                    {% if product.metafields.ingredient.section_col2_text_2 != blank %}
-                    {{ product.metafields.ingredient.section_col2_text_2 }}
-                    {% else %}
-                    {{ section.settings.center_organic_ingredient_desc2 }}
-                    {% endif %}
-                  </p>
-               </div>
-               <div class="col-3">
-                  <div class="organic-img">
-                    {% if product.metafields.ingredient.section_col3_image != blank %}
-                    <img src="{{ product.metafields.ingredient.section_col3_image | img_url: 'master' }}" alt="organic 3">
-                    {% else %}
-                     <img src="{{ section.settings.right_image | img_url: 'master' }}" alt="organic 3">
-                     {% endif %}
-                  </div>
-                  <h3>
-                    {% if product.metafields.ingredient.section_col3_text_1 != blank %}
-                    {{ product.metafields.ingredient.section_col3_text_1 }}
-                    {% else %}
-                    {{ section.settings.center_organic_ingredient_title3 }}
-                    {% endif %}
-                  </h3>
-                  <p>
-                    {% if product.metafields.ingredient.section_col3_text_2 != blank %}
-                    {{ product.metafields.ingredient.section_col3_text_2 }}
-                    {% else %}
-                    {{ section.settings.center_organic_ingredient_desc3 }}
-                    {% endif %}
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div class="container-fluid full-transp-container">
-            <div class="row ingredient-row">  
-               <div class="col col-4 real-ingredient-text">
-                 <div class="top-area">
-                    <h3>
-                   {% if product.metafields.real.ingredients_section_title != blank %}
-                   {{product.metafields.real.ingredients_section_title}}
-                   {% else %}
-                   REYAL’S PROPRIETARY SKINCARE FORMULA USES THREE POWERFUL INGREDIENTS.
-                   {% endif %}
-                 </h3>
-                  <p>
-                    {% if product.metafields.real.ingredients_section_subtitle != blank %}
-                   {{product.metafields.real.ingredients_section_subtitle}}
-                   {% else %}
-                   REYAL’s skincare performance formula combines the best of science and nature. Every REYAL skincare product includes our proprietary RSCF™ tri-blend. A custom combination of active ingredients: Dragon’s Blood, Tiger grass, and Vitamin E that work together to fuel, strengthen and protect your skin. 
-                   {% endif %}
-                  </p>
+             </div>
+                     </div>
+                   </div>
+                   <div class="ingredient-swiper-btn">
+                     <div class="swiper-button-next"></div>
+                   <div class="swiper-button-prev"></div>
+                   </div>
                  </div>
-                 <div class="bottom-area">
-                    <a id="show-ingreditnts2" style="cursor: pointer;">{{ section.settings.center_real_ingredient_button }}</a>
-                 </div>
-               </div>
-
-               <div class="col col-8 real-ingredient-img real-ingredients-video">
-                 {% if product.metafields.real.ingredients_viedo != blank %}
-                <video playsinline autoplay muted loop id="bgvid">
-                  <source src="{{product.metafields.real.ingredients_viedo}}" type="video/mp4">
-               </video>
-               {% else %}
-               <video playsinline autoplay muted loop id="bgvid">
-                <source src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/brand_video.mp4?v=1622742854" type="video/mp4">
-             </video>
-             {% endif %}
-                <!-- {% if product.metafields.real.ingredients_section_image != blank %}
-                <img src="{{ product.metafields.real.ingredients_section_image | img_url: 'master' }}" alt="organic 1">
-                {% else %}
-                  <img src="{{ section.settings.right_banner_image | img_url: 'master' }}" alt="organic 1">
-                  {% endif %} -->
-               </div>
-            </div>
+             </div>
+             
+             </div>
+             
+           </div>
          </div>
-
+      </div>
+    </div>
 </section>
 <div id="ingreditnts-modal2" class="size-modal">
   <div class="ingredients-modal-data" style="width: 55%;">

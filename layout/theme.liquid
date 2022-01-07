@@ -78,7 +78,7 @@
         r=o.createElement('script');r.async=1;
         r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
         a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    })(window,document,"https://static.hotjar.com/c/hotjar-",".js?sv=");
 </script> 
 
 </head>
@@ -86,8 +86,8 @@
 <body
   class="template--{{ template | split: '.' | first | remove: '_' | replace: '/', '--' }} page--{{ page_title | handle }}{% if customer %} customer-logged-in{% endif %}"
   data-theme-id="765" data-theme-name="Maker" data-theme-version="5.5.2" {% if template contains 'customers' %}
-  data-account-template="true" {% endif %}>
-  <a data-item="a11y-button" href='#main-content'>
+  data-account-template="true" {% endif %} >
+  <a data-item="a11y-button" href="#main-content">
     {{ 'general.skip_link' | t }}
   </a>
 
@@ -149,6 +149,14 @@
         
       });
 
+       var swiper = new Swiper(".ingredientSwiper", {
+        loop:true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
       $(document).ready(function() {
           if(localStorage.getItem('popState') != 'shown'){
               $("#shopify-section-framework--newsletter-popup").delay(10000).fadeIn();
@@ -183,7 +191,7 @@
         r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
         a.appendChild(r);
     });
-    (window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=’);
+    (window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
 
 </body>

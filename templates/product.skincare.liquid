@@ -14,6 +14,7 @@
   }
 
   @media (min-width: 0) {
+   
     .mob-news-letter div#shopify-section-framework--page-newsletter-membership {
     overflow-x: hidden;
 }
@@ -550,7 +551,6 @@
     .ingredients-data table tr td:not(:last-child) {
       border-right-width: 0 !important;
     }
-
     .ingredients-data p {
       margin-top: 15px;
       color: #000000;
@@ -610,7 +610,47 @@
       font-size: 9px;
       font-family: 'Helvetica Neue';
     }
-
+    .additives-ingredients-mobile table {
+      width: 100%;
+      border-radius: 0;
+      border-collapse: separate !important;
+      margin-top: 10px;
+      margin-bottom: 14px;
+      table-layout: fixed;
+    }
+    .additives-ingredients-mobile table tr th {
+      background: #E0E0E0;
+      border: 1px solid #000;
+      font-weight: bold;
+      font-size: 9px;
+      color: #000;
+      font-style: normal;
+      padding-bottom: 0;
+      text-align: left;
+      padding: 8px;
+    }
+    .additives-ingredients-mobile table tr td {
+      border: 1px solid #000;
+      font-weight: 500;
+      font-size: 9px;
+      color: #000;
+      font-style: normal;
+      padding-bottom: 0;
+      text-align: left;
+      padding: 8px;
+    }
+    .additives-ingredients-mobile table tr:not(:last-child) th, .additives-ingredients-mobile table tr:not(:last-child) td {
+      border-bottom-width: 0 !important;
+    }
+    .additives-ingredients-mobile table tr th:not(:last-child), .additives-ingredients-mobile table tr td:not(:last-child) {
+      border-right-width: 0 !important;
+    }
+    .additives-ingredients-mobile p {
+      margin: 10px 0;
+      color: #000000;
+      font-weight: bold;
+      font-size: 9px;
+    }
     .pdt-sizes table,
     .pdt-sizes table tr th,
     .pdt-sizes table tr td {
@@ -912,12 +952,12 @@
       margin-bottom: 91px;
     }
 
-    .organic-ingredients h3 {
+    body .ing-bottom .organic-ingredients h3 {
       font-style: normal;
       font-weight: 500;
       font-size: 22px;
       line-height: 20px;
-      margin-top: 43px;
+      margin-top:0px;
       margin-bottom: 15px;
       text-align: center;
     }
@@ -967,7 +1007,11 @@
       font-weight: normal;
       font-size: 17px;
       line-height: 24px;
-      /* margin-bottom: 144px; */
+      margin-bottom:0px;
+    }
+    .full-transp-container .middle-area p{
+      line-height: 27px;
+      padding-top: 30px;
     }
 
     .full-transp-container a,
@@ -1394,18 +1438,27 @@
     .spr-summary span i {
       font-size: 24px;
     }
- 
+
+    .organic-ingredients .real-ingredient-text h3 {
+      font-size: 47px;
+      line-height: 55px !important;
+    }
 
     .organic-ingredients,
     .membership-wrp {
       margin: 0 -50px;
     }
 
+
+    @import url("https://use.typekit.net/oey3xjr.css");
+
     .organic-ingredients .real-ingredient-text h3 {
-      font-size: 38px !important;
-      font-weight: 700 !important;
-      line-height: 50px !important;
+      font-size:34px; 
+      line-height:1.5 !important;
       margin-top: 0;
+      font-family: "aktiv",sans-serif; 
+      font-weight:700;
+      margin-top:-8px;
     }
 
     /* .real-ingredient-text h3 {

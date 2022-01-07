@@ -8,6 +8,202 @@
 
 }
 @media (min-width:0) {
+  /* Skincare PDP section css */
+  .ing-bottom .full-transp-container {
+    padding:50px 0px;
+}
+    .ing-bottom .real-ingredient-text {
+      height: unset;
+      position: relative;
+    }
+    .ing-bottom .real-ingredient-text .bottom-area {
+	position: absolute;
+	bottom: 0;
+}
+    .ing-bottom .real-ingredient-img.real-ingredients-video {
+    padding-bottom: 0px;
+}
+.ing-bottom .full-transp-container .middle-area p {
+    font-size:17px;
+}
+   body .ing-bottom .organic-ingredients h3{
+      margin-top: 0;
+    }
+  .organic-ingredients.skincare-ing {
+	padding: 104px 0px 0 0;
+}
+.ing-top {
+	padding: 0px 15px;
+}
+.ing-bottom {
+	padding: 0px 15px;
+	background-color: #fff;
+}
+.ing-bottom .full-transp-container{
+   border: none;
+ }
+ .ingredients-slider {
+	display: flex;
+	justify-content: space-between;
+	/* margin-top: 100px; */
+}
+  .slider-left-content {
+	width: 37%;
+}
+.slider-right-content {
+	width:60%;
+}
+.slider-inner-box{
+  width: 100%;
+  position: relative;
+}
+/* .slider-inner-box::before {
+  content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	background-color: rgba(0,0,0,0.4);
+	top: 0;
+	z-index:9;
+} */
+.swiper.ingredientSwiper {
+	z-index: 99;
+}
+.ingredient-swiper-btn .swiper-button-next::after, .ingredient-swiper-btn .swiper-button-prev::after {
+	color: #A2A1A2;
+	font-weight: 100;
+	font-size: 30px;
+}
+.ingredient-swiper-btn .swiper-button-next::after{
+  position: absolute;
+  right: 0;
+}
+.ingredient-swiper-btn .swiper-button-prev::after{
+  position: absolute;
+  left: 0;
+}
+.swiper-slide.pdp-slide1 {
+	background-color: #fff;
+  border: 2px solid #232323;
+}
+.swiper-slide.pdp-slide2 {
+	background-color:#232323;
+}
+.ingredients-slider .swiper-slide{
+	padding: 35px 0;
+}
+
+/* .ingredients-slider .swiper-slide1 {
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+} */
+/* .ingredients-slider .slider-area {
+	min-height: 420px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+} */
+.slide-box{
+  min-height:400px;
+}
+.right-slider-content {
+	width:85%;
+	max-width: 722px;
+	margin: 0px auto;
+  padding:16px 0px 32px;
+}
+.pdp-slide1 .right-slider-content {
+	border: 2px solid #000;
+}
+.pdp-slide2 .right-slider-content {
+	border: 2px solid #fff;
+}
+.organic-ingredients .right-slider-content h3 {
+	font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+	font-weight: 700;
+  margin:0;
+}
+.organic-ingredients .pdp-slide1 .right-slider-content h3{
+  color: #000;
+}
+.organic-ingredients .pdp-slide2 .right-slider-content h3{
+  color: #fff;
+}
+.ingredients-slider .layer-data-grid.layer1 ul li:first-child, .layer-data-grid.layer2 ul li,.layer-data-grid.layer3 ul li {
+	background-color: #DC493F;
+}
+
+body .ingredients-slider .layer-data-grid.layer2 ul li:last-child {
+	background-color: #fff;
+}
+.layer-data {
+	display: flex;
+	justify-content:center;
+  margin-top:20px;
+}
+.layer-data-grid {
+	width: 33.3%;
+  text-align: center;
+  padding: 0px 5px;
+}
+.layer-data-grid h4 {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 100%;
+}
+.layer-data-grid span {
+	font-size:10px;
+	text-transform: uppercase;
+	font-weight: 400;
+	line-height: 100%;
+  margin-top: 8px;
+display: block;
+}
+.pdp-slide1 .layer-data-grid h4,
+.pdp-slide1 .layer-data-grid span,
+.pdp-slide1 .layer-data-grid p {
+    color:#000;
+}
+.pdp-img-box{
+  padding: 20px 0px;
+}
+.pdp-img-box img {
+	width: auto;
+	height:125px;
+}
+.pdp-slide2 .layer-data-grid h4,
+.pdp-slide2 .layer-data-grid span,
+.pdp-slide2 .layer-data-grid p {
+    color:#fff;
+}
+.ingredients-slider .layer-data-grid p {
+	font-size:10px;
+	line-height: 16px;
+	font-weight: 400;
+}
+.layer-data-grid ul li {
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: #fff;
+  margin: 0px 4px;
+}
+.layer-data-grid ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  margin:15px 0px 10px;
+}
+  /* End skincare css */
   #shopify-section-framework--about-reyal-section .one-half.bg-image{
 	height: 400px;
 }
@@ -734,8 +930,8 @@ text-align: center;
 }
 }
 @media (max-width: 767px) {
-  .template--index .layout--main-content .shopify-section{
-  }
+  /* .template--index .layout--main-content .shopify-section{
+  } */
   .shopify-section .featured-double-image,
   .shopify-section .newsletter--root,
   .shopify-section .featured-grid--item{
@@ -846,6 +1042,50 @@ text-align: center;
   }
 }
 @media (min-width: 992px) {
+  /* Skincare PDP section css */
+  .ing-bottom .full-transp-container {
+    padding:100px 0px;
+}
+ 
+.ingredient-swiper-btn .swiper-button-next::after, .ingredient-swiper-btn .swiper-button-prev::after {
+	color: #A2A1A2;
+	font-weight: 100;
+	font-size: 45px;
+}
+.ing-bottom .full-transp-container .middle-area p {
+    font-size:19px;
+}
+.right-slider-content {
+  padding:16px 0px 32px;
+}
+.layer-data {
+    padding: 0px 30px;
+}
+.organic-ingredients .right-slider-content h3 {
+	font-size:28px;
+	line-height: 60px;
+}
+.layer-data-grid {
+  padding: 0px 20px;
+}
+.layer-data-grid h4 {
+	font-size: 23px;
+}
+.layer-data-grid span {
+	font-size:9px;
+}
+.ingredients-slider .layer-data-grid p {
+	font-size: 11px;
+	line-height: 18px;
+}
+.layer-data-grid ul li {
+	width: 16px;
+	height: 16px;
+}
+.layer-data-grid ul {
+  margin: 34px 0px 22px;
+}
+  /* End skincare css */
   #shopify-section-framework--about-reyal-section .one-half.bg-image{
 	height: 700px;
 }

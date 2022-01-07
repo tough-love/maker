@@ -1,0 +1,249 @@
+<section class="organic-ingredients">
+         <div class="small-container">
+           {% if product.metafields.ingredient.section_above_title != blank %}
+            <h2>{{ product.metafields.ingredient.section_above_title }}</h2>
+            {% else %}
+            <h2>{{ section.settings.center_organic_ingredient_title }}</h2>
+            {% endif %}
+            <div class="row organic-ingredients-row">   
+               <div class="col-3">
+                  <div class="organic-img">
+                    {% if product.metafields.ingredient.section_col1_image != blank %}
+                     <img src="{{ product.metafields.ingredient.section_col1_image | img_url: 'master' }}" alt="organic 1">
+                     {% else %}
+                     <img src="{{ section.settings.left_image | img_url: 'master' }}" alt="organic 1">
+                     {% endif %}
+                  </div>
+                  <h3>
+                    {% if product.metafields.ingredient.section_col1_text_1 != blank %}
+                    {{ product.metafields.ingredient.section_col1_text_1 }}
+                    {% else %}
+                    {{ section.settings.center_organic_ingredient_title1 }}
+                    {% endif %}
+                  </h3>
+                  <p>
+                    {% if product.metafields.ingredient.section_col1_text_2 != blank %}
+                    {{ product.metafields.ingredient.section_col1_text_2 }}
+                    {% else %}
+                    {{ section.settings.center_organic_ingredient_desc1 }}
+                    {% endif %}
+                  </p>
+                 
+               </div>
+               <div class="col-3">
+                  <div class="organic-img">
+                    {% if product.metafields.ingredient.section_col2_image != blank %}
+                    <img src="{{ product.metafields.ingredient.section_col2_image | img_url: 'master' }}" alt="organic 2">
+                    {% else %}
+                     <img src="{{ section.settings.center_image | img_url: 'master' }}" alt="organic 2">
+                     {% endif %}
+                  </div>
+                  <h3>
+                    {% if product.metafields.ingredient.section_col2_text_1 != blank %}
+                    {{ product.metafields.ingredient.section_col2_text_1 }}
+                    {% else %}
+                    {{ section.settings.center_organic_ingredient_title2 }}
+                    {% endif %}
+                  </h3>
+                  <p>
+                    {% if product.metafields.ingredient.section_col2_text_2 != blank %}
+                    {{ product.metafields.ingredient.section_col2_text_2 }}
+                    {% else %}
+                    {{ section.settings.center_organic_ingredient_desc2 }}
+                    {% endif %}
+                  </p>
+               </div>
+               <div class="col-3">
+                  <div class="organic-img">
+                    {% if product.metafields.ingredient.section_col3_image != blank %}
+                    <img src="{{ product.metafields.ingredient.section_col3_image | img_url: 'master' }}" alt="organic 3">
+                    {% else %}
+                     <img src="{{ section.settings.right_image | img_url: 'master' }}" alt="organic 3">
+                     {% endif %}
+                  </div>
+                  <h3>
+                    {% if product.metafields.ingredient.section_col3_text_1 != blank %}
+                    {{ product.metafields.ingredient.section_col3_text_1 }}
+                    {% else %}
+                    {{ section.settings.center_organic_ingredient_title3 }}
+                    {% endif %}
+                  </h3>
+                  <p>
+                    {% if product.metafields.ingredient.section_col3_text_2 != blank %}
+                    {{ product.metafields.ingredient.section_col3_text_2 }}
+                    {% else %}
+                    {{ section.settings.center_organic_ingredient_desc3 }}
+                    {% endif %}
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid full-transp-container">
+            <div class="row ingredient-row">  
+               <div class="col col-4 real-ingredient-text">
+                 <div class="top-area">
+                    <h3>
+                   {% if product.metafields.real.ingredients_section_title != blank %}
+                   {{product.metafields.real.ingredients_section_title}}
+                   {% else %}
+                   REYAL’S PROPRIETARY SKINCARE FORMULA USES THREE POWERFUL INGREDIENTS.
+                   {% endif %}
+                 </h3>
+                  <p>
+                    {% if product.metafields.real.ingredients_section_subtitle != blank %}
+                   {{product.metafields.real.ingredients_section_subtitle}}
+                   {% else %}
+                   REYAL’s skincare performance formula combines the best of science and nature. Every REYAL skincare product includes our proprietary RSCF™ tri-blend. A custom combination of active ingredients: Dragon’s Blood, Tiger grass, and Vitamin E that work together to fuel, strengthen and protect your skin. 
+                   {% endif %}
+                  </p>
+                 </div>
+                 <div class="bottom-area">
+                    <a id="show-ingreditnts2" style="cursor: pointer;">{{ section.settings.center_real_ingredient_button }}</a>
+                 </div>
+               </div>
+
+               <div class="col col-8 real-ingredient-img real-ingredients-video">
+                 {% if product.metafields.real.ingredients_viedo != blank %}
+                <video playsinline autoplay muted loop id="bgvid">
+                  <source src="{{product.metafields.real.ingredients_viedo}}" type="video/mp4">
+               </video>
+               {% else %}
+               <video playsinline autoplay muted loop id="bgvid">
+                <source src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/brand_video.mp4?v=1622742854" type="video/mp4">
+             </video>
+             {% endif %}
+                <!-- {% if product.metafields.real.ingredients_section_image != blank %}
+                <img src="{{ product.metafields.real.ingredients_section_image | img_url: 'master' }}" alt="organic 1">
+                {% else %}
+                  <img src="{{ section.settings.right_banner_image | img_url: 'master' }}" alt="organic 1">
+                  {% endif %} -->
+               </div>
+            </div>
+         </div>
+
+</section>
+<div id="ingreditnts-modal2" class="size-modal">
+  <div class="ingredients-modal-data" style="width: 55%;">
+    <span id="close-ingredients-modal" class="close-ingredients-modal">&times;</span>
+    <div class="size-inner-content">
+      <div class="ingredients-data">
+        {% if product.metafields.ingredients.description != blank %}
+        {{product.metafields.ingredients.description}}
+        {% else %}
+        Not Available
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  // Get the modal
+var sizeBtn = document.getElementById("ingreditnts-modal2");
+
+// Get the button that opens the modal
+var openbtn = document.getElementById("show-ingreditnts2");
+
+// Get the element that closes the modal
+var closeBtn = document.getElementById("close-ingredients-modal");
+
+// When the user clicks the button, open the modal 
+openbtn.onclick = function(e) {
+  sizeBtn.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+closeBtn.onclick = function() {
+  sizeBtn.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == sizeBtn) {
+    sizeBtn.style.display = "none";
+  }
+}
+</script>
+{% schema %}
+  {
+    "name": "Organic Ingredients",
+    "settings": [
+		{
+      		"type": "header",
+      		"content": "Hero Center Content"
+    	},
+		{
+      		"type": "text",
+			"id": "center_organic_ingredient_title",
+			"label": "Center Organic Ingredient Title"
+		},
+		{
+			"type": "image_picker",
+			"id": "left_image",
+			"label": "Left Image"
+		},
+		{
+			"type": "text",
+			"id": "center_organic_ingredient_title1",
+			"label": "Center Organic Ingredient Title"
+		},
+		{
+			"type": "text",
+			"id": "center_organic_ingredient_desc1",
+			"label": "Center Organic Ingredient Desc1"
+		},
+		{
+			"type": "image_picker",
+			"id": "center_image",
+			"label": "Center Image"
+		},
+		{
+			"type": "text",
+			"id": "center_organic_ingredient_title2",
+			"label": "Center Organic Ingredient Title"
+		},
+		{
+			"type": "text",
+			"id": "center_organic_ingredient_desc2",
+			"label": "Center Organic Ingredient Desc2"
+		},
+		{
+			"type": "image_picker",
+			"id": "right_image",
+			"label": "Right Image"
+		},
+		{
+			"type": "text",
+			"id": "center_organic_ingredient_title3",
+			"label": "Center Organic Ingredient Title"
+		},
+		{
+			"type": "text",
+			"id": "center_organic_ingredient_desc3",
+			"label": "Center Organic Ingredient Desc3"
+		},
+		{
+			"type": "text",
+			"id": "center_real_ingredient_title",
+			"label": "Center Real Ingredient Title"
+		},
+		{
+			"type": "text",
+			"id": "center_real_ingredient_description",
+			"label": "Center Real Ingredient Description"
+		},
+		{
+			"type": "text",
+			"id": "center_real_ingredient_button",
+			"label": "Center Real Ingredient Button"
+		},
+		{
+			"type": "image_picker",
+			"id": "right_banner_image",
+			"label": "Right Banner Image"
+		}
+		]
+  }
+{% endschema %}
