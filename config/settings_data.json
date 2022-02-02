@@ -1156,6 +1156,53 @@
           "right_product_name": "SUPREME BODY WASH",
           "right_product_price": 60
         }
+      },
+      "framework--newsroom-banner-section": {
+        "type": "framework--newsroom-banner-section",
+        "settings": {
+          "banner_image": "shopify:\/\/shop_images\/newsroom-banner.jpg"
+        }
+      },
+      "framework--newsroom-article": {
+        "type": "framework--newsroom-article",
+        "blocks": {
+          "1fc48a04-30ee-436f-98f6-4e282879f2b8": {
+            "type": "image",
+            "settings": {
+              "article-image": "shopify:\/\/shop_images\/article1.png",
+              "article-link": "https:\/\/vancouversun.com\/life\/fashion-beauty\/style-qa-canadian-brand-celebrates-the-softer-and-gentler-side-of-masculinity"
+            }
+          },
+          "6d0bfced-685d-42d8-ae7c-e077904e1824": {
+            "type": "image",
+            "settings": {
+              "article-image": "shopify:\/\/shop_images\/article2.png",
+              "article-link": "https:\/\/nuvomagazine.com\/beauty\/mens-grooming-and-skin-care-guide-for-fathers-day"
+            }
+          },
+          "b897efa4-e93d-4b08-a7e5-d75b2530c032": {
+            "type": "image",
+            "settings": {
+              "article-image": "shopify:\/\/shop_images\/article3.png",
+              "article-link": "https:\/\/www.businessoffashion.com\/articles\/beauty\/the-mens-skin-care-opportunity\/"
+            }
+          },
+          "3ead3ea2-22ba-4c06-8e9e-bf37f1459447": {
+            "type": "image",
+            "settings": {
+              "article-image": "shopify:\/\/shop_images\/article4.png",
+              "article-link": "https:\/\/robbreport.com\/style\/grooming\/best-grooming-products-of-the-year-1234653630\/"
+            }
+          }
+        },
+        "block_order": [
+          "1fc48a04-30ee-436f-98f6-4e282879f2b8",
+          "6d0bfced-685d-42d8-ae7c-e077904e1824",
+          "b897efa4-e93d-4b08-a7e5-d75b2530c032",
+          "3ead3ea2-22ba-4c06-8e9e-bf37f1459447"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
