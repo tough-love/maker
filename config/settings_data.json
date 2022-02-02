@@ -1271,11 +1271,11 @@
         "settings": {
           "section_title": "ONLINE RETAILERS",
           "retailer1_title": "SIMONS",
-          "retailer1_link": "",
+          "retailer1_link": "https:\/\/www.simons.ca",
           "retailer2_title": "LE MEC",
-          "retailer2_link": "",
+          "retailer2_link": "https:\/\/shopmasc.com",
           "retailer3_title": "HUCKBERRY",
-          "retailer3_link": ""
+          "retailer3_link": "https:\/\/www.ridecycleclub.com\/"
         }
       }
     },
