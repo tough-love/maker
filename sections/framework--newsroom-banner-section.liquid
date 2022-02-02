@@ -1,0 +1,32 @@
+
+<div class="newsroom-banner" style="background-image:url('https://cdn.shopify.com/s/files/1/0268/0356/8822/files/newsroom-banner.jpg?v=1642778316');">
+  <div class="stockists-page-title">
+    <h1>{{page.title}}</h1>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Banner Section",
+    "settings": [
+    {
+    "id": "banner_image",
+    "type":"image_picker",
+    "label": "Banner Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "custom-text",
+      "category": "Custom"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

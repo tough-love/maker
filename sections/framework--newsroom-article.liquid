@@ -1,0 +1,46 @@
+
+<div class="newsroom-section">
+  <div class="container">
+    <div class="row newsroom-card-outer">
+      {% for block in section.blocks %}
+        <div class="newsroom-card"> 
+          <a class="area-link" href="{{ block.settings.article-link | escape }}">
+            <img src="{{ block.settings.article-image | img_url: 'master' }}">
+          </a> 			
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+{
+	"name": "Articles",
+	"blocks": [
+    		{
+          "type": "image",
+          "name": "article-entry",
+          "settings": [
+            {
+              "type": "image_picker",
+              "id": "article-image",
+              "label": "Image of the aticle"
+            },
+            {
+              "type": "url",
+              "id": "article-link",
+              "label": "Article Link"
+            }
+          ]
+    		}
+	]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

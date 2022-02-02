@@ -1,0 +1,133 @@
+
+<div class="brick-and-mortar online-retailers">
+  <div class="container">
+    <div class="brick-section-title">
+      <h3>{% if section.settings.section_title != blank %} 
+                  {{ section.settings.section_title }}
+                  {% else %}
+                  ONLINE RETAILERS
+                  {% endif %}</h3>
+    </div>
+    <div class="row directions">
+      <div class="direction-card">
+        <h5>
+          {% if section.settings.retailer1_title != blank %} 
+          {{ section.settings.retailer1_title }}
+          {% else %}
+          SIMONS
+          {% endif %}
+        </h5>
+        <a class="area-link" href="{% if section.settings.retailer1_link != blank %} 
+          {{ section.settings.retailer1_link }}
+          {% else %}
+          https://www.simons.ca
+          {% endif %}">{% if section.settings.retailer1_link != blank %} 
+          {{ section.settings.retailer1_link }}
+          {% else %}
+          https://www.simons.ca
+          {% endif %}
+        </a>
+      </div>
+      <div class="direction-card">
+        <h5>
+          {% if section.settings.retailer2_title != blank %} 
+          {{ section.settings.retailer2_title }}
+          {% else %}
+          LE MEC
+          {% endif %}
+        </h5>
+        <a class="area-link" href="{% if section.settings.retailer2_link != blank %} 
+          {{ section.settings.retailer2_link }}
+          {% else %}
+          https://shopmasc.com 
+          {% endif %}">{% if section.settings.retailer2_link != blank %} 
+          {{ section.settings.retailer2_link }}
+          {% else %}
+          https://shopmasc.com
+          {% endif %}
+        </a>
+      </div>
+      <div class="direction-card">
+        <h5>
+          {% if section.settings.retailer3_title != blank %} 
+          {{ section.settings.retailer3_title }}
+          {% else %}
+          HUCKBERRY
+          {% endif %}
+        </h5>
+        <a class="area-link" href="{% if section.settings.retailer3_link != blank %} 
+          {{ section.settings.retailer3_link }}
+          {% else %}
+          https://www.ridecycleclub.com/
+          {% endif %}">
+          {% if section.settings.retailer3_link != blank %} 
+          {{ section.settings.retailer3_link }}
+          {% else %}
+          https://www.ridecycleclub.com/
+          {% endif %}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "Online Retailers",
+    "settings": [
+    {
+    "id": "section_title",
+    "type":"text",
+    "label": "Section Title",
+    "default": "ONLINE RETAILERS"
+    },
+    {
+    "id": "retailer1_title",
+    "type":"text",
+    "label": "Retailer 1 Title",
+    "default": "SIMONS"
+    },
+    {
+    "id": "retailer1_link",
+    "type":"url",
+    "label": "Retailer 1 Link"
+    },
+   {
+    "id": "retailer2_title",
+    "type":"text",
+    "label": "Retailer 2 Title",
+    "default": "LE MEC"
+    },
+    {
+    "id": "retailer2_link",
+    "type":"url",
+    "label": "Retailer 2 Link"
+    },
+    {
+    "id": "retailer3_title",
+    "type":"text",
+    "label": "Retailer 3 Title",
+    "default": "HUCKBERRY"
+    },
+    {
+    "id": "retailer3_link",
+    "type":"url",
+    "label": "Retailer 3 Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "custom-text",
+      "category": "Custom"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

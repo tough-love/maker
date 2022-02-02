@@ -1,0 +1,237 @@
+
+<div class="brick-and-mortar">
+  <div class="container">
+    <div class="brick-section-title">
+      <h3>{% if section.settings.section_title != blank %} 
+                  {{ section.settings.section_title }}
+                  {% else %}
+                  BRICK AND MORTAR
+                  {% endif %}</h3>
+    </div>
+    <div class="row directions">
+      <div class="direction-card">
+        <h4>
+          {% if section.settings.location1_title != blank %} 
+                  {{ section.settings.location1_title }}
+                  {% else %}
+                  VANCOUVER
+                  {% endif %}
+        </h4>
+        
+          {% if section.settings.location1_subtitle != blank %} 
+                  {{ section.settings.location1_subtitle }}
+                  {% else %}
+                  Ride Cycle Club Kitsilano Vancouver 
+                  {% endif %}
+        
+        <a class="area-link" href="{% if section.settings.location1_url != blank %} 
+                  {{ section.settings.location1_url }}
+                  {% else %}
+                  www.ridecycleclub.com
+                  {% endif %}">{% if section.settings.location1_url != blank %} 
+                  {{ section.settings.location1_url }}
+                  {% else %}
+                  www.ridecycleclub.com
+                  {% endif %}</a>
+        <a class="get-direction-api" href="{% if section.settings.location1_get_direction != blank %} 
+                  {{ section.settings.location1_get_direction }}
+                  {% else %}
+                  https://www.google.com/maps/dir//2173+W+4th+Ave,+Vancouver,+BC+V6K+1N7,+Canada/@49.2683967,-123.1565068,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x548673b46a6d19b5:0x105aa70c8f3f9f38!2m2!1d-123.1543181!2d49.2683932 
+                  {% endif %}">Get direction</a>
+        <div class="address-box">
+          {% if section.settings.location1_address != blank %} 
+                  {{ section.settings.location1_address }}
+                  {% else %}
+                  2173 W 4th Ave, Vancouver, BC V6K 1N7 
+                  {% endif %}
+        </div>
+      </div>
+      <div class="direction-card">
+        <h4>
+          {% if section.settings.location2_title != blank %} 
+                  {{ section.settings.location2_title }}
+                  {% else %}
+                  VANCOUVER
+                  {% endif %}
+        </h4>
+        
+          {% if section.settings.location2_subtitle != blank %} 
+                  {{ section.settings.location2_subtitle }}
+                  {% else %}
+                  MASC Yaletown Vancouver 
+                  {% endif %}
+      
+        <a class="area-link" href="{% if section.settings.location2_url != blank %} 
+                  {{ section.settings.location2_url }}
+                  {% else %}
+                  https://shopmasc.com
+                  {% endif %}">{% if section.settings.location2_url != blank %} 
+                  {{ section.settings.location2_url }}
+                  {% else %}
+                  https://shopmasc.com
+                  {% endif %}</a>
+        <a class="get-direction-api" href="{% if section.settings.location2_get_direction != blank %} 
+                  {{ section.settings.location2_get_direction }}
+                  {% else %}
+                  https://www.google.com/maps/dir//433+Davie+St,+Vancouver,+BC+V6B+2G2,+Canada/@49.2755537,-123.1254198,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x548673d69586aaf7:0xe036e884655704ff!2m2!1d-123.1232311!2d49.2755502 
+                  {% endif %}">Get direction</a>
+        <di class="address-box">
+          {% if section.settings.location2_address != blank %} 
+                  {{ section.settings.location2_address }}
+                  {% else %}
+                  433 Davie St, Vancouver, BC V6B 2G2 
+                  {% endif %}
+        </di>
+      </div>
+      <div class="direction-card">
+        <h4>
+          {% if section.settings.location3_title != blank %} 
+                  {{ section.settings.location3_title }}
+                  {% else %}
+                  TORONTO
+                  {% endif %}
+        </h4>
+        
+          {% if section.settings.location3_subtitle != blank %} 
+                  {{ section.settings.location3_subtitle }}
+                  {% else %}
+                  Ride Cycle Club King Street West 
+                  {% endif %}
+    
+        <a class="area-link" href="{% if section.settings.location3_url != blank %} 
+                  {{ section.settings.location3_url }}
+                  {% else %}
+                  www.ridecycleclub.com 
+                  {% endif %}">{% if section.settings.location3_url != blank %} 
+                  {{ section.settings.location3_url }}
+                  {% else %}
+                  www.ridecycleclub.com 
+                  {% endif %}</a>
+        <a class="get-direction-api" href="{% if section.settings.location3_get_direction != blank %} 
+                  {{ section.settings.location3_get_direction }}
+                  {% else %}
+                  https://www.google.com/maps/dir//435+King+St+W,+Toronto,+ON+M5V+3M4,+Canada/@43.6452035,-79.3976441,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x882b34d965d165f7:0xff56aff1a55375e2!2m2!1d-79.3954554!2d43.6451996 
+                  {% endif %}">Get direction</a>
+                  <div class="address-box">
+                      {% if section.settings.location3_address != blank %} 
+                  {{ section.settings.location3_address }}
+                  {% else %}
+                  435 King St W, Toronto, ON M5V 3M4 
+                  {% endif %}
+                  </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "Brick And Mortar",
+    "settings": [
+    {
+    "id": "section_title",
+    "type":"text",
+    "label": "Section Title",
+    "default": "BRICK AND MORTAR"
+    },
+    {
+    "id": "location1_title",
+    "type":"text",
+    "label": "Location 1 Title",
+    "default": "VANCOUVER"
+    },
+    {
+    "id": "location1_subtitle",
+    "type":"richtext",
+    "label": "Location 1 Subtitle",
+    "default": "<p>Ride Cycle Club Kitsilano Vancouver </p>"
+    },
+    {
+    "id": "location1_url",
+    "type":"url",
+    "label": "Location 1 URL"
+    },
+    {
+    "id": "location1_get_direction",
+    "type":"url",
+    "label": "Location 1 Get Direction"
+    },
+    {
+    "id": "location1_address",
+    "type":"richtext",
+    "label": "Location 1 Address",
+    "default":"<p>2173 W 4th Ave, Vancouver, BC V6K 1N7</p>"
+    },
+    {
+    "id": "location2_title",
+    "type":"text",
+    "label": "Location 2 Title",
+    "default": "VANCOUVER"
+    },
+    {
+    "id": "location2_subtitle",
+    "type":"richtext",
+    "label": "Location 2 Subtitle",
+    "default": "<p>MASC Yaletown Vancouver</p>"
+    },
+    {
+    "id": "location2_url",
+    "type":"url",
+    "label": "Location 2 URL"
+    },
+    {
+    "id": "location2_get_direction",
+    "type":"url",
+    "label": "Location 2 Get Direction"
+    },
+    {
+    "id": "location2_address",
+    "type":"richtext",
+    "label": "Location 2 Address",
+    "default":"<p>433 Davie St, Vancouver, BC V6B 2G2</p>"
+    },
+    {
+    "id": "location3_title",
+    "type":"text",
+    "label": "Location 3 Title",
+    "default": "TORONTO"
+    },
+    {
+    "id": "location3_subtitle",
+    "type":"richtext",
+    "label": "Location 3 Subtitle",
+    "default": "<p>Ride Cycle Club King Street West</p>"
+    },
+    {
+    "id": "location3_url",
+    "type":"url",
+    "label": "Location 3 URL"
+    },
+    {
+    "id": "location3_get_direction",
+    "type":"url",
+    "label": "Location 3 Get Direction"
+    },
+    {
+    "id": "location3_address",
+    "type":"richtext",
+    "label": "Location 3 Address",
+    "default":"<p>435 King St W, Toronto, ON M5V 3M4</p>"
+    }
+  ],
+  "presets": [
+    {
+      "name": "custom-text",
+      "category": "Custom"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
