@@ -1,0 +1,211 @@
+<div class="featured-home">
+    <div class="container">
+        <div class="row">
+            <div class="feature-title">
+                <h3>{% if section.settings.featured_section_title != blank %}
+                    {{ section.settings.featured_section_title }}
+                    {% else %}
+                    FEATURED
+                    {% endif %}
+                </h3>
+            </div>
+        </div>
+        <div class="row card-row">
+            <div class="card-body">
+                <div class="inner-card">
+                  <a href="{% if section.settings.featured_link_1 != blank %} 
+                  {{ section.settings.featured_link_1 }}
+                  {% else %}
+                  https://www.businessoffashion.com/articles/beauty/the-mens-skin-care-opportunity/
+                  {% endif %}">
+                    <div class="feat-logo feat-logo1">
+                        {% if section.settings.featured_image_1 != blank %}
+                        {{ section.settings.featured_image_1 | img_url: 'master' | img_tag }}
+                    {% else %}
+                    <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/boff.png?v=1642845427" alt="bof"/>
+                    {% endif %}
+                    </div>
+                    <div class="feature-title">
+                        <h5>
+                            {% if section.settings.featured_text1 != blank %}
+                    {{ section.settings.featured_text1 }}
+                    {% else %}
+                    “The Men’s Skin Care Opportunity”
+                    {% endif %}
+                            </h5>
+                    </div>
+                  </a>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="inner-card">
+                  <a href="{% if section.settings.featured_link_2 != blank %} 
+                  {{ section.settings.featured_link_2 }}
+                  {% else %}
+                  https://robbreport.com/style/grooming/best-grooming-products-of-the-year-1234653630/
+                  {% endif %}">
+                    <div class="feat-logo feat-logo2">
+                        {% if section.settings.featured_image_2 != blank %}
+                        {{ section.settings.featured_image_2 | img_url: 'master' | img_tag }}
+                    {% else %}
+                    <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/robb.png?v=1642845427" alt="robb"/>
+                    {% endif %}
+                    </div>
+                    <div class="feature-title">
+                        <h5>
+                            {% if section.settings.featured_text2 != blank %}
+                            {{ section.settings.featured_text2 }}
+                            {% else %}
+                            “Definitely coming to 2022 with us”
+                            {% endif %} 
+                            </h5>
+                    </div>
+                  </a>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="inner-card">
+                  <a href="{% if section.settings.featured_link_3 != blank %} 
+                  {{ section.settings.featured_link_3 }}
+                  {% else %}
+                  https://nuvomagazine.com/beauty/mens-grooming-and-skin-care-guide-for-fathers-day
+                  {% endif %}">
+                    <div class="feat-logo feat-logo3">
+                        {% if section.settings.featured_image_3 != blank %}
+                        {{ section.settings.featured_image_3 | img_url: 'master' | img_tag }}
+                    {% else %}
+                    <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/nuvo.png?v=1642845427" alt="Nuvo"/>
+                    {% endif %}
+                    </div>
+                    <div class="feature-title">
+                        <h5>
+                            {% if section.settings.featured_text3 != blank %}
+                    {{ section.settings.featured_text3 }}
+                    {% else %}
+                    “Built for active men”
+                    {% endif %}
+                            </h5>
+                    </div>
+                  </a>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="inner-card">
+                  <a href="{% if section.settings.featured_link_4 != blank %} 
+                  {{ section.settings.featured_link_4 }}
+                  {% else %}
+                  https://vancouversun.com/life/fashion-beauty/style-qa-canadian-brand-celebrates-the-softer-and-gentler-side-of-masculinity
+                  {% endif %}">
+                    <div class="feat-logo feat-logo4">
+                        {% if section.settings.featured_image_4 != blank %}
+                        {{ section.settings.featured_image_4 | img_url: 'master' | img_tag }}
+                    {% else %}
+                    <img src="https://cdn.shopify.com/s/files/1/0268/0356/8822/files/vancouver.png?v=1642845427" alt="vancouver"/>
+                    {% endif %}
+                        
+                    </div>
+                    <div class="feature-title">
+                        <h5>
+                            {% if section.settings.featured_text4 != blank %}
+                    {{ section.settings.featured_text4 }}
+                    {% else %}
+                    “Celebrates the softer and gentler side of masculinity”
+                    {% endif %}
+                    </h5>
+                    </div>  
+                  </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Featured Section",
+    "settings": [
+    {
+      "id": "featured_section_title",
+      "type": "text",
+      "label": "Featured Section Title",
+      "default": "Title"
+    },
+    {
+    "id": "featured_image_1",
+    "type":"image_picker",
+    "label": "Featured Image 1"
+    },
+    {
+    "id": "featured_link_1",
+    "type":"url",
+    "label": "Featured Link 1"
+    },
+    {
+    "id": "featured_text1",
+    "type": "richtext",
+    "label": "Featured Text 1",
+    "default": "<p>Add your text here</p>"
+    },
+    {
+    "id": "featured_image_2",
+    "type":"image_picker",
+    "label": "Featured Image 2"
+    },
+    {
+    "id": "featured_link_2",
+    "type":"url",
+    "label": "Featured Link 2"
+    },
+    {
+    "id": "featured_text2",
+    "type": "richtext",
+    "label": "Featured Text 2",
+    "default": "<p>Add your text here</p>"
+    },
+    {
+    "id": "featured_image_3",
+    "type":"image_picker",
+    "label": "Featured Image 3"
+    },
+    {
+    "id": "featured_link_3",
+    "type":"url",
+    "label": "Featured Link 3"
+    },
+    {
+    "id": "featured_text3",
+    "type": "richtext",
+    "label": "Featured Text 3",
+    "default": "<p>Add your text here</p>"
+    },
+    {
+    "id": "featured_image_4",
+    "type":"image_picker",
+    "label": "Featured Image 4"
+    },
+    {
+    "id": "featured_link_4",
+    "type":"url",
+    "label": "Featured Link 4"
+    },
+    {
+    "id": "featured_text4",
+    "type": "richtext",
+    "label": "Featured Text 4",
+    "default": "<p>Add your text here</p>"
+    }
+  ],
+  "presets": [
+    {
+      "name": "custom-text",
+      "category": "Custom"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

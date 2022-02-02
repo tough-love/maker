@@ -1,5 +1,26 @@
 
 @font-face {
+     font-family: 'HN';
+    src: url('./helveticaneue_medium.woff2') format('woff2'),
+         url('./helveticaneue_medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HN-B';
+    src: url('./helvetica_neu_bold.woff2') format('woff2'),
+         url('./helvetica_neu_bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HN-L';
+    src: url('./helveticaneue_light.woff2') format('woff2'),
+         url('./helveticaneue_light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'aktiv';
     src: url('aktivgroteskcorp-bold.woff2') format('woff2'),
          url('aktivgroteskcorp-bold.woff') format('woff');
@@ -8,6 +29,199 @@
 
 }
 @media (min-width:0) {
+   /* Newsroom Page Css */
+ 
+.newsroom-banner {
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height:60vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.newsroom-banner .stockists-page-title h1 {
+	font-size:40px;
+  font-family: 'HN-B';
+  font-weight:500;
+}
+.newsroom-card {
+	width: 100%;
+  margin-bottom: 50px;
+}
+.row.newsroom-card-outer {
+	width: 100%;
+	max-width: 1700px;
+	margin:75px auto;
+}
+/* End Newsroom page css */
+
+  /* Stockists Page Css */
+  
+  .stockists-banner {
+    height:60vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+align-items: center;
+justify-content: center;
+position:relative;
+  }
+  .stockists-banner::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0,0.3);
+	height: 100%;
+}
+.stockists-page-title{
+  position:relative;
+  z-index:9;
+}
+  .stockists-page-title h1 {
+	font-size:50px;
+  font-family:"HN-B";
+	line-height: 220px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+}
+.brick-and-mortar {
+	padding:75px 0px 40px;
+}
+.brick-and-mortar .container {
+	max-width: 995px;
+	margin: 0px auto;
+  padding:0px 20px;
+}
+.brick-section-title h3 {
+	font-size: 26px;
+  font-family: "HN";
+	line-height:50px;
+	font-weight: 700;
+	color: #000;
+	text-align: center;
+	margin: 0px auto;
+}
+.direction-card {
+	width:100%;
+	padding:10px;
+  text-align:center;
+  margin-bottom:50px;
+}
+.brick-and-mortar.online-retailers .direction-card {
+  margin-bottom:0px;
+}
+.direction-card h4 {
+	font-size: 20px;
+  font-family: "HN-L";
+	line-height: 23.86px;
+	font-weight: 400;
+	color: #000;
+	padding-bottom: 15px;
+}
+.direction-card p {
+	font-size: 17px;
+  font-family: "HN-L";
+	line-height: 20.28px;
+	font-weight: 400;
+	color: #000;
+	max-width:220px;
+	margin: 0px auto;
+}
+.direction-card .area-link {
+	display: block;
+	font-size: 17px !important;
+  font-family: "HN-L";
+	line-height: 20.28px;
+	margin:20px 0px;
+	text-decoration: none;
+	color: #000;
+	font-weight: 400;
+}
+body .direction-card .get-direction-api {
+	font-size: 17px;
+  font-family: "HN-L";
+	line-height: 20.28px;
+	color: #D12C36;
+	font-weight: 400;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.direction-card h5 {
+	font-size: 20px;
+	line-height: 23.86px;
+	margin: 10px 0px 0px;
+  font-family:"HN-L";
+  color:#000;
+}
+.brick-and-mortar.online-retailers {
+	padding: 40px 0px 49px;
+}
+
+  /* End Stockists page css */
+
+
+	/* Featured Setion CSS */
+	.featured-home {
+	padding: 50px 0px;
+	border-bottom: 2px solid #000;
+}
+	.featured-home .container {
+		max-width:1796px;
+		padding:0px 20px;
+	}
+	.feature-title h3 {
+		font-size: 35px;
+		font-weight: 700;
+		margin: 0;
+    font-family:"HN";
+	}
+	.feature-title {
+		width: 100%;
+		text-align: center;
+	}
+	.featured-home .card-row {
+	margin-top: 25px;
+}
+	.featured-home .row .card-body {
+	width: 50%;
+	text-align: center;
+	margin-bottom: 30px;
+	padding: 0px 25px;
+}
+	.feat-logo {
+		height:45px;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		/* padding: 0px 45px; */
+	}
+	/* .feat-logo img {
+		width: auto;
+		height:85%;
+	} */
+  .feat-logo img {
+	width: auto;
+	height: 55%;
+}
+	body .feature-title h5 p{
+		font-size: 12px;
+		font-weight: 500;
+		font-family: 'HN-B';
+		margin-top:35px;
+    color:#000000;
+	}
+
+	/* End Featured section css */
+
   /* Skincare PDP section css */
   .ing-bottom .full-transp-container {
     padding:50px 0px;
@@ -965,8 +1179,49 @@ text-align: center;
    .skincare-home-section {
 	height:500px;
 }
+/*Featured section CSS  */
+  body .feature-title h5 p{
+		font-size: 12px;
+	}
+
+	 /* End Featured section css */
 }
 @media (min-width: 768px) { 
+   /* Newsroom Page Css */
+  .newsroom-banner {
+	height:60vh;
+}
+.newsroom-banner .stockists-page-title h1 {
+	font-size:76px;
+}
+.newsroom-card {
+	width: 50%;
+}
+/* End Newsroom page css */
+  /* Stockists Page Css */
+  .stockists-banner {
+    height:60vh;
+  }
+  .stockists-page-title h1 {
+	font-size: 80px;
+}
+.direction-card {
+	width: 33%;
+	padding:10px;
+  margin-bottom:0px;
+}
+
+  /* End Stockists page css */
+	 /*Featured section CSS  */
+	 .featured-home .container {
+		padding:0px 50px;
+	}
+	 .featured-home .row .card-body {
+		width:50%;
+		text-align: center;
+	}
+
+	 /* End Featured section css */
   .template--index .swiper-slide {
     height: 90vh
   }
@@ -1042,6 +1297,60 @@ text-align: center;
   }
 }
 @media (min-width: 992px) {
+  /* Newsroom Page Css */
+ .newsroom-banner .stockists-page-title h1 {
+	font-size: 100px;
+}
+.row.newsroom-card-outer {
+	margin: 129px auto;
+}
+/* End Newsroom page css */
+  /* Stockists Page Css */
+  .stockists-banner {
+    height:60vh;
+  }
+  .stockists-page-title h1 {
+	font-size: 120px;
+}
+.brick-and-mortar {
+	padding: 155px 0px 75px;
+}
+.brick-section-title h3 {
+	font-size: 40px;
+	line-height: 77px;
+}
+.direction-card {
+	width: 33%;
+	padding: 20px;
+}
+.brick-and-mortar.online-retailers {
+	padding: 75px 0px 49px;
+}
+
+  /* End Stockists page css */
+
+	/*Featured section CSS  */
+	.featured-home .container {
+		padding:0px 74px;
+	}
+	.featured-home .row .card-body {
+		width:25%;
+		text-align: center;
+		margin-bottom:0px;
+	}
+  .feature-title h3 {
+	font-size: 40px;
+}
+	
+  body .feature-title h5 p{
+		font-size: 13px;
+    font-weight:600;
+	}
+  .feat-logo img {
+	height: 85%;
+}
+
+	 /* End Featured section css */
   /* Skincare PDP section css */
   .ing-bottom .full-transp-container {
     padding:100px 0px;
@@ -1202,6 +1511,15 @@ body .skincare-home-section .top-content p,
 }
 }
 @media (min-width: 1200px) {
+   /* Newsroom Page Css */
+
+/* End Newsroom page css */
+   /* Stockists Page Css */
+  .stockists-page-title h1 {
+	font-size: 100px;
+}
+
+  /* End Stockists page css */
   .template--index .prod-name-row.you-know-slider {
 	padding-left:175px !important;
 }
@@ -1269,6 +1587,15 @@ line-height: 32px;
   /* End About Us page css */
 } 
 @media (min-width: 1400px) {
+   /* Newsroom Page Css */
+
+/* End Newsroom page css */
+  /* Stockists Page Css */
+  .stockists-page-title h1 {
+	font-size: 100px;
+}
+
+  /* End Stockists page css */
   .template--index .you-may-also p {
 	font-size:14px !important;
 	line-height: 22px;
@@ -1322,6 +1649,20 @@ line-height: 32px;
 
   }
 @media (min-width:1920px) {
+  /*Featured section css */
+
+	.featured-home .container {
+		max-width: 1920px;
+	}
+	.featured-home .row .card-body {
+		width:25%;
+		text-align: center;
+	}
+	.feature-title h5 {
+		font-size: 17px;
+	}
+
+	 /* End Featured section css */
 
   /* .template--index .ticker-content ul li {
     padding-right: 3vw;
