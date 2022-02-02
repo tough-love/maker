@@ -1212,15 +1212,19 @@
       "framework--featured-section": {
         "type": "framework--featured-section",
         "settings": {
-          "featured_section_title": "Title",
-          "featured_link_1": "",
-          "featured_text1": "<p>Add your text here<\/p>",
-          "featured_link_2": "",
-          "featured_text2": "<p>Add your text here<\/p>",
-          "featured_link_3": "",
-          "featured_text3": "<p>Add your text here<\/p>",
-          "featured_link_4": "",
-          "featured_text4": "<p>Add your text here<\/p>"
+          "featured_section_title": "FEATURED",
+          "featured_image_1": "shopify:\/\/shop_images\/boff.png",
+          "featured_link_1": "https:\/\/www.businessoffashion.com\/articles\/beauty\/the-mens-skin-care-opportunity\/",
+          "featured_text1": "<p>“The Men’s Skin Care Opportunity”<\/p>",
+          "featured_image_2": "shopify:\/\/shop_images\/robb.png",
+          "featured_link_2": "https:\/\/robbreport.com\/style\/grooming\/best-grooming-products-of-the-year-1234653630\/",
+          "featured_text2": "<p>“Definitely coming to 2022 with us”<\/p>",
+          "featured_image_3": "shopify:\/\/shop_images\/nuvo.png",
+          "featured_link_3": "https:\/\/nuvomagazine.com\/beauty\/mens-grooming-and-skin-care-guide-for-fathers-day",
+          "featured_text3": "<p>“Built for active men”<\/p>",
+          "featured_image_4": "shopify:\/\/shop_images\/vancouver.png",
+          "featured_link_4": "https:\/\/vancouversun.com\/life\/fashion-beauty\/style-qa-canadian-brand-celebrates-the-softer-and-gentler-side-of-masculinity",
+          "featured_text4": "<p>“Celebrates the softer and gentler side of masculinity”<\/p>"
         }
       },
       "framework--sweat-and-gains-section": {
