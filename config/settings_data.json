@@ -1242,6 +1242,7 @@
       "framework--stockists-banner-section": {
         "type": "framework--stockists-banner-section",
         "settings": {
+          "banner_image": "shopify:\/\/shop_images\/stockists-banner.jpg"
         }
       },
       "framework--stockists-brick-and-mortar": {
