@@ -1203,6 +1203,79 @@
         ],
         "settings": {
         }
+      },
+      "framework--skincare-supplements-panel": {
+        "type": "framework--skincare-supplements-panel",
+        "settings": {
+        }
+      },
+      "framework--featured-section": {
+        "type": "framework--featured-section",
+        "settings": {
+          "featured_section_title": "Title",
+          "featured_link_1": "",
+          "featured_text1": "<p>Add your text here<\/p>",
+          "featured_link_2": "",
+          "featured_text2": "<p>Add your text here<\/p>",
+          "featured_link_3": "",
+          "featured_text3": "<p>Add your text here<\/p>",
+          "featured_link_4": "",
+          "featured_text4": "<p>Add your text here<\/p>"
+        }
+      },
+      "framework--sweat-and-gains-section": {
+        "type": "framework--sweat-and-gains-section",
+        "settings": {
+          "url": "",
+          "height": 600
+        }
+      },
+      "instafeed": {
+        "type": "instafeed",
+        "settings": {
+          "heading_font": "helvetica_n4",
+          "heading_size": 20,
+          "feed_width": 100,
+          "html_area": ""
+        }
+      },
+      "framework--stockists-banner-section": {
+        "type": "framework--stockists-banner-section",
+        "settings": {
+        }
+      },
+      "framework--stockists-brick-and-mortar": {
+        "type": "framework--stockists-brick-and-mortar",
+        "settings": {
+          "section_title": "BRICK AND MORTAR",
+          "location1_title": "VANCOUVER",
+          "location1_subtitle": "<p>Ride Cycle Club<\/p><p>Kitsilano Vancouver <\/p>",
+          "location1_url": "https:\/\/www.ridecycleclub.com",
+          "location1_get_direction": "https:\/\/www.google.com\/maps\/dir\/\/2173+W+4th+Ave,+Vancouver,+BC+V6K+1N7,+Canada\/@49.2683967,-123.1565068,17z\/data=!4m8!4m7!1m0!1m5!1m1!1s0x548673b46a6d19b5:0x105aa70c8f3f9f38!2m2!1d-123.1543181!2d49.2683932",
+          "location1_address": "<p>2173 W 4th Ave, Vancouver,<\/p><p>BC V6K 1N7<\/p>",
+          "location2_title": "VANCOUVER",
+          "location2_subtitle": "<p>MASC<\/p><p>Yaletown Vancouver<\/p>",
+          "location2_url": "https:\/\/shopmasc.com",
+          "location2_get_direction": "https:\/\/www.google.com\/maps\/dir\/\/433+Davie+St,+Vancouver,+BC+V6B+2G2,+Canada\/@49.2755537,-123.1254198,17z\/data=!4m8!4m7!1m0!1m5!1m1!1s0x548673d69586aaf7:0xe036e884655704ff!2m2!1d-123.1232311!2d49.2755502",
+          "location2_address": "<p>433 Davie St, Vancouver,<\/p><p>BC V6B 2G2<\/p>",
+          "location3_title": "TORONTO",
+          "location3_subtitle": "<p>Ride Cycle Club<\/p><p>King Street West<\/p>",
+          "location3_url": "https:\/\/www.ridecycleclub.com",
+          "location3_get_direction": "https:\/\/www.google.com\/maps\/dir\/\/435+King+St+W,+Toronto,+ON+M5V+3M4,+Canada\/@43.6452035,-79.3976441,17z\/data=!4m8!4m7!1m0!1m5!1m1!1s0x882b34d965d165f7:0xff56aff1a55375e2!2m2!1d-79.3954554!2d43.6451996",
+          "location3_address": "<p>435 King St W, Toronto,<\/p><p>ON M5V 3M4<\/p>"
+        }
+      },
+      "framework--stockists-online-retailers": {
+        "type": "framework--stockists-online-retailers",
+        "settings": {
+          "section_title": "ONLINE RETAILERS",
+          "retailer1_title": "SIMONS",
+          "retailer1_link": "",
+          "retailer2_title": "LE MEC",
+          "retailer2_link": "",
+          "retailer3_title": "HUCKBERRY",
+          "retailer3_link": ""
+        }
       }
     },
     "content_for_index": [
