@@ -1166,11 +1166,11 @@
       "framework--newsroom-article": {
         "type": "framework--newsroom-article",
         "blocks": {
-          "1fc48a04-30ee-436f-98f6-4e282879f2b8": {
+          "e0c3b7b6-1a58-4ce9-8237-ed06a0e2fdc2": {
             "type": "image",
             "settings": {
-              "article-image": "shopify:\/\/shop_images\/article1.png",
-              "article-link": "https:\/\/vancouversun.com\/life\/fashion-beauty\/style-qa-canadian-brand-celebrates-the-softer-and-gentler-side-of-masculinity"
+              "article-image": "shopify:\/\/shop_images\/Rectangle_474.jpg",
+              "article-link": "https:\/\/www.menshealth.com\/grooming\/g31134888\/best-body-wash-for-men\/"
             }
           },
           "6d0bfced-685d-42d8-ae7c-e077904e1824": {
@@ -1193,17 +1193,9 @@
               "article-image": "shopify:\/\/shop_images\/article4.png",
               "article-link": "https:\/\/robbreport.com\/style\/grooming\/best-grooming-products-of-the-year-1234653630\/"
             }
-          },
-          "e0c3b7b6-1a58-4ce9-8237-ed06a0e2fdc2": {
-            "type": "image",
-            "settings": {
-              "article-image": "shopify:\/\/shop_images\/Rectangle_474.jpg",
-              "article-link": "https:\/\/www.menshealth.com\/grooming\/g31134888\/best-body-wash-for-men\/"
-            }
           }
         },
         "block_order": [
-          "1fc48a04-30ee-436f-98f6-4e282879f2b8",
           "6d0bfced-685d-42d8-ae7c-e077904e1824",
           "b897efa4-e93d-4b08-a7e5-d75b2530c032",
           "3ead3ea2-22ba-4c06-8e9e-bf37f1459447",
