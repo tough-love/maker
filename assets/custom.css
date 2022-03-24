@@ -943,8 +943,9 @@ flex-wrap: wrap;
 	top: 50px;
 }
 .bottom-link {
-    margin-left: auto;
-    margin-right: auto;
+  	position: absolute;
+  	bottom:50px;
+	right:20px;
 }
 .bg-layer {
 	position: absolute;
