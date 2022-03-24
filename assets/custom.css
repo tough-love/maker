@@ -943,7 +943,7 @@ flex-wrap: wrap;
 	top: 50px;
 }
 .bottom-link {
-  	position: absolute;
+  	position: relative;
   	bottom:50px;
 	right:20px;
 }
