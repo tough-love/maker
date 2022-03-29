@@ -88,35 +88,35 @@
           {% if section.settings.location3_title != blank %} 
                   {{ section.settings.location3_title }}
                   {% else %}
-                  TORONTO
+                  VANCOUVER
                   {% endif %}
         </h4>
         
           {% if section.settings.location3_subtitle != blank %} 
                   {{ section.settings.location3_subtitle }}
                   {% else %}
-                  Ride Cycle Club King Street West 
+                  TURF Kitsilano Vancouver 
                   {% endif %}
     
         <a class="area-link" href="{% if section.settings.location3_url != blank %} 
                   {{ section.settings.location3_url }}
                   {% else %}
-                  www.ridecycleclub.com 
+                  www.ourturf.com
                   {% endif %}">{% if section.settings.location3_url != blank %} 
                   {{ section.settings.location3_url }}
                   {% else %}
-                  www.ridecycleclub.com 
+                  www.ourturf.com
                   {% endif %}</a>
         <a class="get-direction-api" href="{% if section.settings.location3_get_direction != blank %} 
                   {{ section.settings.location3_get_direction }}
                   {% else %}
-                  https://www.google.com/maps/dir//435+King+St+W,+Toronto,+ON+M5V+3M4,+Canada/@43.6452035,-79.3976441,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x882b34d965d165f7:0xff56aff1a55375e2!2m2!1d-79.3954554!2d43.6451996 
+                  https://www.google.com/maps/place/2041+W+4th+Ave,+Vancouver,+BC+V6J+1N3/@49.2690583,-123.1515424,18.5z/data=!4m5!3m4!1s0x548673b432e6b063:0x420e0bf1dde680d6!8m2!3d49.2683677!4d-123.1515767 
                   {% endif %}">Get direction</a>
                   <div class="address-box">
                       {% if section.settings.location3_address != blank %} 
                   {{ section.settings.location3_address }}
                   {% else %}
-                  435 King St W, Toronto, ON M5V 3M4 
+                  101 - 2041 W 4th Avenue, Vancouver, BC V6J 1N3 
                   {% endif %}
                   </div>
       </div>
@@ -233,13 +233,13 @@
     "id": "location3_title",
     "type":"text",
     "label": "Location 3 Title",
-    "default": "TORONTO"
+    "default": "VANCOUVER"
     },
     {
     "id": "location3_subtitle",
     "type":"richtext",
     "label": "Location 3 Subtitle",
-    "default": "<p>Ride Cycle Club King Street West</p>"
+    "default": "<p>TURF Kitsilano Vancouver</p>"
     },
     {
     "id": "location3_url",
@@ -255,7 +255,7 @@
     "id": "location3_address",
     "type":"richtext",
     "label": "Location 3 Address",
-    "default":"<p>435 King St W, Toronto, ON M5V 3M4</p>"
+    "default":"<p>101 - 2041 W 4th Avenue, Vancouver, BC V6J 1N3</p>"
     },
     {
     "id": "location4_title",
