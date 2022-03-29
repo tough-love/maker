@@ -120,6 +120,43 @@
                   {% endif %}
                   </div>
       </div>
+       <div class="direction-card">
+        <h4>
+          {% if section.settings.location4_title != blank %} 
+                  {{ section.settings.location4_title }}
+                  {% else %}
+                  TORONTO
+                  {% endif %}
+        </h4>
+        
+          {% if section.settings.location4_subtitle != blank %} 
+                  {{ section.settings.location4_subtitle }}
+                  {% else %}
+                  Ride Cycle Club King Street West 
+                  {% endif %}
+    
+        <a class="area-link" href="{% if section.settings.location4_url != blank %} 
+                  {{ section.settings.location4_url }}
+                  {% else %}
+                  www.ridecycleclub.com 
+                  {% endif %}">{% if section.settings.location4_url != blank %} 
+                  {{ section.settings.location4_url }}
+                  {% else %}
+                  www.ridecycleclub.com 
+                  {% endif %}</a>
+        <a class="get-direction-api" href="{% if section.settings.location4_get_direction != blank %} 
+                  {{ section.settings.location4_get_direction }}
+                  {% else %}
+                  https://www.google.com/maps/dir//435+King+St+W,+Toronto,+ON+M5V+3M4,+Canada/@43.6452035,-79.3976441,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x882b34d965d165f7:0xff56aff1a55375e2!2m2!1d-79.3954554!2d43.6451996 
+                  {% endif %}">Get direction</a>
+                  <div class="address-box">
+                      {% if section.settings.location4_address != blank %} 
+                  {{ section.settings.location4_address }}
+                  {% else %}
+                  435 King St W, Toronto, ON M5V 3M4 
+                  {% endif %}
+                  </div>
+      </div>
     </div>
   </div>
 </div>
@@ -218,6 +255,34 @@
     "id": "location3_address",
     "type":"richtext",
     "label": "Location 3 Address",
+    "default":"<p>435 King St W, Toronto, ON M5V 3M4</p>"
+    },
+    {
+    "id": "location4_title",
+    "type":"text",
+    "label": "Location 4 Title",
+    "default": "TORONTO"
+    },
+    {
+    "id": "location4_subtitle",
+    "type":"richtext",
+    "label": "Location 4 Subtitle",
+    "default": "<p>Ride Cycle Club King Street West</p>"
+    },
+    {
+    "id": "location4_url",
+    "type":"url",
+    "label": "Location 4 URL"
+    },
+    {
+    "id": "location4_get_direction",
+    "type":"url",
+    "label": "Location 4 Get Direction"
+    },
+    {
+    "id": "location4_address",
+    "type":"richtext",
+    "label": "Location 4 Address",
     "default":"<p>435 King St W, Toronto, ON M5V 3M4</p>"
     }
   ],
