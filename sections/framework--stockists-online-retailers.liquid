@@ -67,6 +67,26 @@
           {% endif %}
         </a>
       </div>
+      <div class="direction-card">
+        <h5>
+          {% if section.settings.retailer4_title != blank %} 
+          {{ section.settings.retailer4_title }}
+          {% else %}
+          DOPKIT
+          {% endif %}
+        </h5>
+        <a class="area-link" href="{% if section.settings.retailer4_link != blank %} 
+          {{ section.settings.retailer4_link }}
+          {% else %}
+          https://www.dopkit.co
+          {% endif %}">
+          {% if section.settings.retailer4_link != blank %} 
+          {{ section.settings.retailer4_link }}
+          {% else %}
+          https://www.dopkit.co
+          {% endif %}
+        </a>
+      </div>
     </div>
   </div>
 </div>
@@ -115,6 +135,17 @@
     "id": "retailer3_link",
     "type":"url",
     "label": "Retailer 3 Link"
+    },
+    {
+    "id": "retailer4_title",
+    "type":"text",
+    "label": "Retailer 4 Title",
+    "default": "DOPKIT"
+    },
+    {
+    "id": "retailer4_link",
+    "type":"url",
+    "label": "Retailer 4 Link"
     }
   ],
   "presets": [
