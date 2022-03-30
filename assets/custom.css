@@ -984,6 +984,9 @@ flex-wrap: wrap;
   	color: #fff;
 	font-size: 14px;
 }
+.how-to-use-section {
+  	text-align: center;
+}
 .top-content {
   	position: relative;
   	margin: 250px auto 50px;
