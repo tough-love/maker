@@ -939,8 +939,10 @@ flex-wrap: wrap;
 }
 .top-content {
 	position: absolute;
-	left:10px;
-	top: 50px;
+	left: 50%;
+	top: 50%;
+  	max-width: 560px;
+  	margin-left: -280px;
 }
 .bottom-link {
   	position: absolute;
@@ -1495,8 +1497,8 @@ body .skincare-home-section .top-content p,
   line-height:140px;
 }
 .top-content {
-	left: 174px;
-	top: 93px;
+  	max-width: 990px;
+  	margin-left: -445px;
 }
 .bottom-link {
 	bottom: 100px;
