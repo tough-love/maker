@@ -943,7 +943,7 @@ flex-wrap: wrap;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	height:900px;
+	height:400px;
 	max-height: 1004px;
   position: relative;
 }
@@ -952,7 +952,7 @@ flex-wrap: wrap;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	height:900px;
+	height:400px;
 	max-height: 1004px;
   position: relative;
 }
@@ -1529,6 +1529,14 @@ body .skincare-home-section .top-content p,
 }
 .skincare-home-section {
 	height:700px;
+}
+.shop-suppliments-section {
+  	height:900px;
+	max-height: 1004px;
+}
+.skincare-performance-section {
+  	height:900px;
+	max-height: 1004px;
 }
 
 .ticker-content.ticker ul li a{
