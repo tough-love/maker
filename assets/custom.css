@@ -1474,6 +1474,7 @@ body .skincare-home-section .top-content p,
 	font-size: 17px;
 }
 .skincare-home-section {
+  	overflow: hidden;
 	height:700px;
 }
 
