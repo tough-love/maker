@@ -1578,7 +1578,9 @@ body .product-design-section .centered-content p {
   	font-size: 45px;
 }
 .product-design-caption p {
-  font-size: 24px;
+ 	width: 800px;
+  	margin: 0 auto;
+  	font-size: 24px;
 }
   .you-may-also p {
 	font-size: 17px;
