@@ -1578,10 +1578,9 @@ body .product-design-section .centered-content p {
 .product-design-caption h2 {
   	margin: 0 auto 60px;
   	font-size: 56px;
-  	line-height: 100%;
+  	line-height: 150%;
 }
 .product-design-caption p {
-  	margin: 0 auto;
   	font-size: 30px;
   	line-height: 100%;
 }
