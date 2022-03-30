@@ -965,7 +965,8 @@ flex-wrap: wrap;
 	background-color: rgba(0,0,0,0.2);
 }
 body .skincare-home-section .top-content p,
- body .skincare-home-section .bottom-link a {
+body .skincare-home-section .bottom-link a,
+body .shop-suppliments-section .bottom-link a {
 	color: #fff;
 	font-size:24px;
 	font-weight: 700;
@@ -1477,7 +1478,8 @@ text-align: center;
 	padding-bottom: 100px;
 }
 body .skincare-home-section .top-content p,
- body .skincare-home-section .bottom-link a {
+ body .skincare-home-section .bottom-link a,
+ body .shop-suppliments-section .bottom-link a {
 	font-size:45px;
 }
   .you-may-also p {
