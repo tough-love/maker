@@ -1576,11 +1576,13 @@ body .product-design-section .centered-content p {
   	width: 1000px;
   	margin: 0 auto 60px;
   	font-size: 45px;
+  	line-height: 100%;
 }
 .product-design-caption p {
  	width: 800px;
   	margin: 0 auto;
   	font-size: 36px;
+  	line-height: 100%;
 }
   .you-may-also p {
 	font-size: 17px;
