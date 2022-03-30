@@ -142,7 +142,7 @@
         "settings": {
           "enabled": true,
           "home-page-only": false,
-          "text": "JOIN REYAL NOW AND GET 15% OFF YOUR FIRST ORDER \/ FREE SHIPPING ON ORDERS OVER $125",
+          "text": "FREE SHIPPING OVER $125 | FREE RETURNS & SATISFACTION GUARANTEE",
           "link": "\/#shopify-section-framework--newsletter-section"
         }
       },
@@ -1285,6 +1285,16 @@
           "retailer2_link": "https:\/\/www.lemec.co",
           "retailer3_title": "HUCKBERRY",
           "retailer3_link": "https:\/\/www.huckberry.com"
+        }
+      },
+      "framework-skin-performance-supplements-section": {
+        "type": "framework-skin-performance-supplements-section",
+        "settings": {
+        }
+      },
+      "framework--join-team-reyal": {
+        "type": "framework--join-team-reyal",
+        "settings": {
         }
       }
     },
