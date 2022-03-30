@@ -1519,7 +1519,9 @@ text-align: center;
 }
 body .skincare-home-section .top-content p,
  body .skincare-home-section .bottom-link a,
- body .shop-suppliments-section .bottom-link a {
+ body .shop-suppliments-section .bottom-link a,
+ body .skincare-performance-section .bottom-link p,
+ body .skincare-performance-section .bottom-link a {
 	font-size:45px;
 }
   .you-may-also p {
