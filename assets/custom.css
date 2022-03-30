@@ -940,7 +940,7 @@ flex-wrap: wrap;
 }
 .top-content {
   	position: relative;
-  	margin: 250px auto 0;
+  	margin: 250px auto 50px;
   	text-align: center;
 }
 .bottom-link {
