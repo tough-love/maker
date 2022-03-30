@@ -1570,9 +1570,10 @@ body .product-design-section .centered-content p {
 }
 
 .product-design-caption {
-  	padding: 90px 200px;
+  	padding: 90px 0;
 }
 .product-design-caption h2 {
+  	width: 640px;
   	margin-bottom: 60px;
   	font-size: 45px;
 }
