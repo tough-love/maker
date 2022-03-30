@@ -929,7 +929,7 @@ flex-wrap: wrap;
   font-weight: bold;
 	color: #000000;
 }
-.skincare-home-section {
+.skincare-home-section, .shop-suppliments-section {
   	overflow: hidden;
 	background-size: cover;
 	background-repeat: no-repeat;
