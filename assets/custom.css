@@ -977,7 +977,7 @@ flex-wrap: wrap;
 .shop-suppliments-section .bottom-link, .skincare-performance-section .bottom-link {
   	position: absolute;
   	left: 50%;
-  	bottom: 90px;
+  	bottom: 60px;
   	width: 600px;
   	margin-left: -300px;
 }
