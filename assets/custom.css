@@ -972,12 +972,14 @@ flex-wrap: wrap;
   	text-align: center;
 }
 .product-design-caption h2 {
+  	width: 80%;
   	margin-bottom: 30px;
   	color: #000;
   	font-size: 24px;
   	font-weight: 800;
 }
 .product-design-caption p {
+  	width: 70%;
   	color: #fff;
 	font-size: 14px;
 }
@@ -1573,13 +1575,11 @@ body .product-design-section .centered-content p {
   	padding: 90px 0;
 }
 .product-design-caption h2 {
-  	width: 80%;
   	margin: 0 auto 60px;
   	font-size: 56px;
   	line-height: 100%;
 }
 .product-design-caption p {
- 	width: 70%;
   	margin: 0 auto;
   	font-size: 30px;
   	line-height: 100%;
