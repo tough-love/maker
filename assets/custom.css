@@ -965,7 +965,7 @@ flex-wrap: wrap;
   	position: relative;
   	text-align: center;
 }
-.shop-suppliments-section .bottom-link {
+.shop-suppliments-section .bottom-link, .skincare-performance-section .bottom-link {
   	position: absolute;
   	left: 50%;
   	bottom: 100px;
@@ -980,13 +980,20 @@ flex-wrap: wrap;
 	height: 100%;
 	background-color: rgba(0,0,0,0.2);
 }
-.shop-suppliments-section .bg-layer {
+.shop-suppliments-section .bg-layer, .skincare-performance-section .bg-layer {
 	background-color: transparent;
 }
 body .skincare-home-section .top-content p,
 body .skincare-home-section .bottom-link a,
-body .shop-suppliments-section .bottom-link a {
+body .shop-suppliments-section .bottom-link a{
 	color: #fff;
+	font-size:24px;
+	font-weight: 700;
+	font-family: aktiv-grotesk, sans-serif;
+  line-height: 100%;
+}
+body .skincare-performance-section .bottom-link a {
+	color: #000;
 	font-size:24px;
 	font-weight: 700;
 	font-family: aktiv-grotesk, sans-serif;
