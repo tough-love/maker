@@ -1538,6 +1538,12 @@ body .skincare-home-section .top-content p,
   	height:900px;
 	max-height: 1004px;
 }
+.bottom-content {
+  	bottom: 90px;
+}
+.shop-suppliments-section .bottom-link, .skincare-performance-section .bottom-link {
+  	bottom: 30px;
+}
 
 .ticker-content.ticker ul li a{
   font-size: 17px;
