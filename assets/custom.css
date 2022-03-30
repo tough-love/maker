@@ -988,6 +988,7 @@ flex-wrap: wrap;
   	text-align: center;
 }
 .centered-content p {
+  	color: #fff;
   	font-size: 24px;
 	font-weight: 700;
 	font-family: aktiv-grotesk, sans-serif;
