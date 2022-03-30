@@ -959,9 +959,9 @@ flex-wrap: wrap;
 .shop-suppliments-section .bottom-link {
   	position: absolute;
   	left: 50%;
-  	bottom: 24px;
-  	width: 100px;
-  	margin-left: -50px;
+  	bottom: 100px;
+  	width: 600px;
+  	margin-left: -300px;
 }
 .bg-layer {
 	position: absolute;
@@ -970,6 +970,9 @@ flex-wrap: wrap;
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0,0,0,0.2);
+}
+.shop-suppliments-section .bg-layer {
+	background-color: none;
 }
 body .skincare-home-section .top-content p,
 body .skincare-home-section .bottom-link a,
