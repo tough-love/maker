@@ -968,6 +968,8 @@ flex-wrap: wrap;
   	width: 600px;
   	margin-left: -300px;
   	text-align: center;
+}
+.bottom-content p {
   	font-size: 24px;
 	font-weight: 700;
 	font-family: aktiv-grotesk, sans-serif;
