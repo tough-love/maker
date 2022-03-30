@@ -930,6 +930,7 @@ flex-wrap: wrap;
 	color: #000000;
 }
 .skincare-home-section {
+  	overflow: hidden;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -1474,7 +1475,6 @@ body .skincare-home-section .top-content p,
 	font-size: 17px;
 }
 .skincare-home-section {
-  	overflow: hidden;
 	height:700px;
 }
 
