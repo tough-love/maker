@@ -1574,7 +1574,7 @@ body .product-design-section .centered-content p {
 }
 .product-design-caption h2 {
   	width: 640px;
-  	margin-bottom: 60px;
+  	margin: 0 auto 60px;
   	font-size: 45px;
 }
 .product-design-caption p {
