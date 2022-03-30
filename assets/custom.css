@@ -944,9 +944,8 @@ flex-wrap: wrap;
   	text-align: center;
 }
 .bottom-link {
-  	position: absolute;
-  	bottom:50px;
-	right:20px;
+  	position: relative;
+  	text-align: center;
 }
 .bg-layer {
 	position: absolute;
@@ -1499,8 +1498,6 @@ body .skincare-home-section .top-content p,
 	margin: 300px auto 0;
 }
 .bottom-link {
-	bottom: 100px;
-  	right: 302px;
 }
 .template--index .newsletter--heading {
 	font-size: 45px;
