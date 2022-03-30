@@ -967,6 +967,8 @@ flex-wrap: wrap;
   	bottom: 120px;
   	width: 600px;
   	margin-left: -300px;
+  	text-align: center;
+  	font-size: 24px;
 }
 .bottom-link {
   	position: relative;
