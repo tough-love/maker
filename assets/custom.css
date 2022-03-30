@@ -1575,6 +1575,9 @@ body .product-design-section .centered-content p {
   	margin-top: -68px;
   	margin-left: -495px;
 }
+.product-design-section .centered-content {
+  margin-top: -108px;
+}
 .bottom-content {
   	bottom: 120px;
 }
