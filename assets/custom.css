@@ -972,7 +972,7 @@ flex-wrap: wrap;
 	background-color: rgba(0,0,0,0.2);
 }
 .shop-suppliments-section .bg-layer {
-	background-color: none;
+	background-color: transparent;
 }
 body .skincare-home-section .top-content p,
 body .skincare-home-section .bottom-link a,
