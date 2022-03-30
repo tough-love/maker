@@ -956,8 +956,7 @@ flex-wrap: wrap;
   	position: relative;
   	text-align: center;
 }
-.shop-suppliments-section
-.bottom-link {
+.shop-suppliments-section .bottom-link {
   	position: absolute;
   	left: 50%;
   	bottom: 24px;
