@@ -938,7 +938,16 @@ flex-wrap: wrap;
 	max-height: 1004px;
   position: relative;
 }
-.shop-suppliments-section, .skincare-performance-section {
+.shop-suppliments-section {
+  	overflow: hidden;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height:900px;
+	max-height: 1004px;
+  position: relative;
+}
+.skincare-performance-section {
   	overflow: hidden;
 	background-size: cover;
 	background-repeat: no-repeat;
