@@ -1246,7 +1246,7 @@
       "framework--stockists-banner-section": {
         "type": "framework--stockists-banner-section",
         "settings": {
-          "banner_image": "shopify:\/\/shop_images\/stockists-banner.jpg"
+          "banner_image": "shopify:\/\/shop_images\/REYALBONUS3.jpg"
         }
       },
       "framework--stockists-brick-and-mortar": {
@@ -1284,7 +1284,9 @@
           "retailer2_title": "LE MEC",
           "retailer2_link": "https:\/\/www.lemec.co",
           "retailer3_title": "HUCKBERRY",
-          "retailer3_link": "https:\/\/www.huckberry.com"
+          "retailer3_link": "https:\/\/www.huckberry.com",
+          "retailer4_title": "DOPKIT",
+          "retailer4_link": ""
         }
       },
       "framework-skin-performance-supplements-section": {
