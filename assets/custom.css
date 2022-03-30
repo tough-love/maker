@@ -654,7 +654,7 @@ position: relative;
 }
 body .newsletter-popup .form-head h2 {
 	font-size:30px;
-	color: #99D7E4;
+	color: #E0D2AE;
 	font-weight: 700;
 	line-height: 100%;
 	margin: 17px auto;
@@ -691,10 +691,10 @@ text-align: left;
 	flex-basis: 35%;
 	margin: 0;
 	height:40px;
-	background-color: #99D7E4;
+	background-color: #E0D2AE;
 	color: #fff;
 	font-weight: 700;
-	border: 1px solid #99D7E4;
+	border: 1px solid #E0D2AE;
 	text-decoration: none;
   border-radius: 0px;
 
@@ -1020,7 +1020,7 @@ body .skincare-home-section .top-content p,
   color: #fff !important;
 }
 .template--index .news-letter-section {
-	background-color: #99D7E4;
+	background-color: #E0D2AE;
 	padding: 90px 20px 95px;
 }
 .news-letter-section .newsletter--container {
