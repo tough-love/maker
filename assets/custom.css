@@ -961,6 +961,13 @@ flex-wrap: wrap;
   	margin: 250px auto 50px;
   	text-align: center;
 }
+.bottom-content {
+  	position: absolute;
+  	left: 50%;
+  	bottom: 120px;
+  	width: 600px;
+  	margin-left: -300px;
+}
 .bottom-link {
   	position: relative;
   	text-align: center;
@@ -968,7 +975,7 @@ flex-wrap: wrap;
 .shop-suppliments-section .bottom-link, .skincare-performance-section .bottom-link {
   	position: absolute;
   	left: 50%;
-  	bottom: 100px;
+  	bottom: 90px;
   	width: 600px;
   	margin-left: -300px;
 }
