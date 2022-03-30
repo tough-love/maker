@@ -970,6 +970,15 @@ flex-wrap: wrap;
   	margin: 250px auto 50px;
   	text-align: center;
 }
+.centered-content {
+	position: absolute;
+  	left: 50%;
+  	top: 50%;
+  	width: 600px;
+  	margin-top: -24px;
+  	margin-left: -300px;
+  	text-align: center;
+}
 .bottom-content {
   	position: absolute;
   	left: 50%;
@@ -977,6 +986,12 @@ flex-wrap: wrap;
   	width: 600px;
   	margin-left: -300px;
   	text-align: center;
+}
+.centered-content p {
+  	font-size: 24px;
+	font-weight: 700;
+	font-family: aktiv-grotesk, sans-serif;
+  	line-height: 100%;
 }
 .bottom-content p {
   	font-size: 24px;
