@@ -968,13 +968,14 @@ flex-wrap: wrap;
 .product-design-caption {
   	overflow: hidden;
 	background-color: #E0D2AE;
-  	padding: 0 60px 0;
+  	padding: 60px 0;
   	text-align: center;
 }
 .product-design-caption h2 {
   	margin-bottom: 30px;
   	color: #000;
   	font-size: 24px;
+  	font-weight: 800;
 }
 .product-design-caption p {
   	color: #fff;
@@ -1569,7 +1570,7 @@ body .product-design-section .centered-content p {
 }
 
 .product-design-caption {
-  	padding: 0 90px 0;
+  	padding: 90px 0;
 }
 .product-design-caption h2 {
   	margin-bottom: 60px;
