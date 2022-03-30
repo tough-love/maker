@@ -939,6 +939,7 @@ flex-wrap: wrap;
   position: relative;
 }
 .top-content {
+  	position: relative;
   	margin: 250px auto 0;
   	text-align: center;
 }
