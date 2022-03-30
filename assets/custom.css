@@ -956,6 +956,15 @@ flex-wrap: wrap;
 	max-height: 1004px;
   position: relative;
 }
+.shop-suppliments-section {
+  	overflow: hidden;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height:400px;
+	max-height: 1004px;
+  position: relative;
+}
 .top-content {
   	position: relative;
   	margin: 250px auto 50px;
