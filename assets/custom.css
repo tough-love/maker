@@ -973,12 +973,13 @@ flex-wrap: wrap;
 }
 .product-design-caption h2 {
   	width: 80%;
-  	margin-bottom: 30px;
+  	margin: 0 auto 30px;
   	color: #000;
   	font-size: 24px;
   	font-weight: 800;
 }
 .product-design-caption p {
+  	margin: 0 auto;
   	width: 70%;
   	color: #fff;
 	font-size: 14px;
