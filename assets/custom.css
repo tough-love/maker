@@ -929,12 +929,21 @@ flex-wrap: wrap;
   font-weight: bold;
 	color: #000000;
 }
-.skincare-home-section, .shop-suppliments-section {
+.skincare-home-section {
   	overflow: hidden;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 	height:400px;
+	max-height: 1004px;
+  position: relative;
+}
+.shop-suppliments-section {
+  	overflow: hidden;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height:700px;
 	max-height: 1004px;
   position: relative;
 }
