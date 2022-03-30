@@ -965,6 +965,21 @@ flex-wrap: wrap;
 	max-height: 1004px;
   position: relative;
 }
+.product-design-caption {
+  	overflow: hidden;
+	background-color: #E0D2AE;
+  	padding: 0 60px 0;
+  	text-align: center;
+}
+.product-design-caption h2 {
+  	margin-bottom: 30px;
+  	color: #000;
+  	font-size: 24px;
+}
+.product-design-caption p {
+  	color: #fff;
+	font-size: 14px;
+}
 .top-content {
   	position: relative;
   	margin: 250px auto 50px;
@@ -1551,6 +1566,17 @@ body .skincare-home-section .top-content p,
 }
 body .product-design-section .centered-content p {
   font-size: 100px;  
+}
+
+.product-design-caption {
+  	padding: 0 90px 0;
+}
+.product-design-caption h2 {
+  	margin-bottom: 60px;
+  	font-size: 45px;
+}
+.product-design-caption p {
+  font-size: 24px;
 }
   .you-may-also p {
 	font-size: 17px;
