@@ -1546,9 +1546,11 @@ body .skincare-home-section .top-content p,
  body .skincare-home-section .bottom-link a,
  body .shop-suppliments-section .bottom-link a,
  body .skincare-performance-section .bottom-content p,
- body .skincare-performance-section .bottom-link a,
-  body .product-design-section .centered-content p {
+ body .skincare-performance-section .bottom-link a {
 	font-size:45px;
+}
+body .product-design-section .centered-content p {
+  font-size: 72px;  
 }
   .you-may-also p {
 	font-size: 17px;
