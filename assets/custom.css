@@ -956,6 +956,13 @@ flex-wrap: wrap;
   	position: relative;
   	text-align: center;
 }
+.shop-suppliments-section
+.bottom-link {
+  	position: absolute;
+  	bottom: 24px;
+  	width: 100px;
+  	margin-left: -50px;
+}
 .bg-layer {
 	position: absolute;
 	top: 0;
