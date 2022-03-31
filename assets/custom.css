@@ -1031,6 +1031,14 @@ flex-wrap: wrap;
   	margin-left: -300px;
   	text-align: center;
 }
+.bottom-content-subtitle {
+  	position: absolute;
+  	left: 50%;
+  	bottom: 60px;
+  	width: 600px;
+  	margin-left: -300px;
+  	text-align: center;
+}
 .centered-content p {
   	color: #fff;
   	font-size: 30px;
@@ -1039,6 +1047,12 @@ flex-wrap: wrap;
   	line-height: 125%;
 }
 .bottom-content p {
+  	font-size: 24px;
+	font-weight: 700;
+	font-family: aktiv-grotesk, sans-serif;
+  	line-height: 100%;
+}
+.bottom-content-subtitle p {
   	font-size: 24px;
 	font-weight: 700;
 	font-family: aktiv-grotesk, sans-serif;
