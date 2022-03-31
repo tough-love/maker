@@ -1048,7 +1048,15 @@ flex-wrap: wrap;
   	position: relative;
   	text-align: center;
 }
-.shop-suppliments-section .bottom-link, .skincare-performance-section .bottom-link {
+.shop-suppliments-section .bottom-link {
+  	position: absolute;
+  	left: 50%;
+  	bottom: 30px;
+  	width: 600px;
+  	margin-left: -300px;
+}
+
+.skincare-performance-section .bottom-link {
   	position: absolute;
   	left: 50%;
   	bottom: 30px;
