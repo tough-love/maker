@@ -1643,7 +1643,8 @@ body .product-design-section .centered-content p {
   margin-top: -100px;
 }
 .how-to-use-section {
-  	padding: 80px 0;
+  background: #000;	
+  padding: 80px 0;
 }
 .how-to-use-section img {
   	margin: 0 auto 40px;
