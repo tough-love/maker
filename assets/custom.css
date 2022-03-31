@@ -1026,7 +1026,7 @@ flex-wrap: wrap;
 .bottom-content {
   	position: absolute;
   	left: 50%;
-  	bottom: 60px;
+  	bottom: 80px;
   	width: 600px;
   	margin-left: -300px;
   	text-align: center;
