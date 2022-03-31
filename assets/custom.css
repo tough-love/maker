@@ -1073,14 +1073,21 @@ body .shop-suppliments-section .bottom-link a{
 	font-family: aktiv-grotesk, sans-serif;
   line-height: 100%;
 }
-body .skincare-performance-section .bottom-link a,
-body .how-to-use-section .bottom-link a {
+body .skincare-performance-section .bottom-link a {
 	color: #000;
 	font-size:24px;
 	font-weight: 700;
 	font-family: aktiv-grotesk, sans-serif;
   line-height: 100%;
+} 
+body .how-to-use-section .bottom-link a {
+	color: #FFFFFF;
+	font-size:24px;
+	font-weight: 700;
+	font-family: aktiv-grotesk, sans-serif;
+  line-height: 100%;
 }
+    
 .bottom-link a:hover, .bottom-link a:focus {
 	color: #fff !important;
 }
