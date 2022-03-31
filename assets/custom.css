@@ -930,6 +930,7 @@ flex-wrap: wrap;
 	color: #000000;
 }
 .skincare-home-section {
+  padding: 0 24px;
   	overflow: hidden;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1106,7 +1107,7 @@ body .how-to-use-section .bottom-link a {
   line-height: 100%;
 }
 .bottom-link a:hover, .bottom-link a:focus {
-	color: #E0D2AE !important;
+	color: #fff !important;
 }
 .bg-image {
 	background-size: cover;
