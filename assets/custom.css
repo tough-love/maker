@@ -1034,7 +1034,7 @@ flex-wrap: wrap;
 .bottom-content-subtitle {
   	position: absolute;
   	left: 50%;
-  	bottom: 60px;
+  	bottom: 30px;
   	width: 600px;
   	margin-left: -300px;
   	text-align: center;
