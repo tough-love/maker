@@ -999,6 +999,9 @@ flex-wrap: wrap;
 	font-size: 20px;
   	font-weight: 500;
 }
+.product-design-caption .bottom-link {
+	padding-top: 12px;
+}
 .product-design-caption .bottom-link a {
 	color: #fff;
 	font-size: 18px;
