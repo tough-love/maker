@@ -998,7 +998,8 @@ flex-wrap: wrap;
 	font-size: 14px;
 }
 .how-to-use-section {
-  	overflow: hidden;
+	background: #ececec;  	
+	overflow: hidden;
   	padding: 60px 0;
   	text-align: center;
 }
