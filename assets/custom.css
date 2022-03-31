@@ -1091,7 +1091,8 @@ flex-wrap: wrap;
 }
 body .skincare-home-section .top-content p,
 body .skincare-home-section .bottom-link a,
-body .shop-suppliments-section .bottom-link a{
+body .shop-suppliments-section .bottom-link a,
+body .product-design-section .bottom-link a {
 	color: #fff;
 	font-size:24px;
 	font-weight: 800;
