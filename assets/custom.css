@@ -1654,8 +1654,11 @@ body .product-design-section .centered-content p {
 .bottom-content {
   	bottom: 130px;
 }
-.shop-suppliments-section .bottom-link, .skincare-performance-section .bottom-link {
+.shop-suppliments-section .bottom-link {
   	bottom: 150px;
+}
+.skincare-performance-section .bottom-link {
+  bottom: 80px;
 }
 
 .ticker-content.ticker ul li a{
