@@ -1616,7 +1616,8 @@ body .skincare-home-section .top-content p,
  body .shop-suppliments-section .bottom-link a,
  body .skincare-performance-section .bottom-content p,
  body .skincare-performance-section .bottom-link a,
- body .how-to-use-section .bottom-link a {
+ body .how-to-use-section .bottom-link a,
+ body .product-design .bottom-link a {
 	font-size:45px;
 }
 body .product-design-section .centered-content p {
