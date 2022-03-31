@@ -1009,6 +1009,9 @@ flex-wrap: wrap;
 	font-family: aktiv-grotesk, sans-serif;
   	line-height: 100%;
 }
+.product-design-caption .bottom-link a:hover {
+  	color: #000;
+}
 .how-to-use-section {
 	background: #ececec;  	
 	overflow: hidden;
