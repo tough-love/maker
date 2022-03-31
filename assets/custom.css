@@ -1624,7 +1624,7 @@ body .product-design-section .centered-content p {
 	max-height: 1004px;
 }
 .shop-suppliments-caption {
-  	padding: 80px 0;
+  	padding: 80px -500px;
 }
 .shop-suppliments-caption p {
   	margin: 0 auto 30px;
