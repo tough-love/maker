@@ -83,7 +83,7 @@
             "type": "about",
             "settings": {
               "about-title": "",
-              "text": "<p>REYAL CREATES PERFORMANCE SKINCARE AND SUPPLEMENTS THAT WORK TO FUEL, STRENGTHEN AND PROTECT. BE GENTLE, MAN.<br\/><br\/>Vancouver, Canada<\/p>",
+              "text": "<p>REYAL CREATES PERFORMANCE SKINCARE AND SUPPLEMENTS THAT WORK TO FUEL, STRENGTHEN AND PROTECT. BE GENTLE, MAN™.<br\/><br\/>Vancouver, Canada<\/p>",
               "subscribe--show-social-icons": true
             }
           },
@@ -1296,6 +1296,28 @@
       },
       "framework--join-team-reyal": {
         "type": "framework--join-team-reyal",
+        "settings": {
+        }
+      },
+      "framework-homebanner-bodywash": {
+        "type": "framework-homebanner-bodywash",
+        "settings": {
+          "url": "",
+          "height": 600
+        }
+      },
+      "framework--shop-supplements-section": {
+        "type": "framework--shop-supplements-section",
+        "settings": {
+        }
+      },
+      "framework-skin-performance-kits-section": {
+        "type": "framework-skin-performance-kits-section",
+        "settings": {
+        }
+      },
+      "framework-product-design-section": {
+        "type": "framework-product-design-section",
         "settings": {
         }
       }
