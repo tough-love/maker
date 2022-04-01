@@ -1104,7 +1104,9 @@ flex-wrap: wrap;
 }
 body .skincare-home-section .top-content p,
 body .skincare-home-section .bottom-link a:link,
-body .shop-suppliments-section .bottom-link a:link {
+body .shop-suppliments-section .bottom-link a:link,
+body .skincare-home-section .bottom-link a:visited,
+body .shop-suppliments-section .bottom-link a:visited {
 	color: #fff;
 	font-size:24px;
 	font-weight: 800;
@@ -1112,7 +1114,9 @@ body .shop-suppliments-section .bottom-link a:link {
   line-height: 100%;
 }
 body .skincare-performance-section .bottom-link a:link,
-body .how-to-use-section .bottom-link a:link {
+body .how-to-use-section .bottom-link a:link,
+body .skincare-performance-section .bottom-link a:visited,
+body .how-to-use-section .bottom-link a:visited {
 	color: #000;
 	font-size:24px;
 	font-weight: 700;
@@ -1628,7 +1632,11 @@ body .skincare-home-section .top-content p,
  body .shop-suppliments-section .bottom-link a:link,
  body .skincare-performance-section .bottom-content p,
  body .skincare-performance-section .bottom-link a:link,
- body .how-to-use-section .bottom-link a:link {
+ body .how-to-use-section .bottom-link a:link,
+ body .skincare-home-section .bottom-link a:visited,
+ body .shop-suppliments-section .bottom-link a:visited,
+ body .skincare-performance-section .bottom-link a:visited,
+ body .how-to-use-section .bottom-link a:visited {
 	font-size:45px;
 }
 body .product-design-section .centered-content p {
@@ -1650,7 +1658,7 @@ body .product-design-section .centered-content p {
 body .product-design-caption .bottom-link {
 	padding-top: 30px;
 }
-body .product-design-caption .bottom-link a:link {
+body .product-design-caption .bottom-link a:link, body .product-design-caption .bottom-link a:visited {
 	font-size: 36px;
 }
   .you-may-also p {
