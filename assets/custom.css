@@ -1002,7 +1002,7 @@ flex-wrap: wrap;
 .product-design-caption .bottom-link {
 	padding-top: 12px;
 }
-.product-design-caption .bottom-link a:link, .product-design-caption .bottom-link a:visited {
+.product-design-caption .bottom-link a {
 	color: #fff;
 	font-size: 18px;
 	font-weight: 800;
@@ -1103,20 +1103,16 @@ flex-wrap: wrap;
 	background-color: transparent;
 }
 body .skincare-home-section .top-content p,
-body .skincare-home-section .bottom-link a:link,
-body .shop-suppliments-section .bottom-link a:link,
-body .skincare-home-section .bottom-link a:visited,
-body .shop-suppliments-section .bottom-link a:visited {
+body .skincare-home-section .bottom-link a,
+body .shop-suppliments-section .bottom-link a {
 	color: #fff;
 	font-size:24px;
 	font-weight: 800;
 	font-family: aktiv-grotesk, sans-serif;
   line-height: 100%;
 }
-body .skincare-performance-section .bottom-link a:link,
-body .how-to-use-section .bottom-link a:link,
-body .skincare-performance-section .bottom-link a:visited,
-body .how-to-use-section .bottom-link a:visited {
+body .skincare-performance-section .bottom-link a,
+body .how-to-use-section .bottom-link a {
 	color: #000;
 	font-size:24px;
 	font-weight: 700;
@@ -1625,15 +1621,11 @@ text-align: center;
 	padding-bottom: 100px;
 }
 body .skincare-home-section .top-content p,
- body .skincare-home-section .bottom-link a:link,
- body .shop-suppliments-section .bottom-link a:link,
+ body .skincare-home-section .bottom-link a,
+ body .shop-suppliments-section .bottom-link a,
  body .skincare-performance-section .bottom-content p,
- body .skincare-performance-section .bottom-link a:link,
- body .how-to-use-section .bottom-link a:link,
- body .skincare-home-section .bottom-link a:visited,
- body .shop-suppliments-section .bottom-link a:visited,
- body .skincare-performance-section .bottom-link a:visited,
- body .how-to-use-section .bottom-link a:visited {
+ body .skincare-performance-section .bottom-link a,
+ body .how-to-use-section .bottom-link a {
 	font-size:45px;
 }
 body .product-design-section .centered-content p {
@@ -1655,7 +1647,7 @@ body .product-design-section .centered-content p {
 body .product-design-caption .bottom-link {
 	padding-top: 30px;
 }
-body .product-design-caption .bottom-link a:link, body .product-design-caption .bottom-link a:visited {
+body .product-design-caption .bottom-link a {
 	font-size: 36px;
 }
   .you-may-also p {
