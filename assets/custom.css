@@ -1123,9 +1123,6 @@ body .how-to-use-section .bottom-link a:visited {
 	font-family: aktiv-grotesk, sans-serif;
   line-height: 100%;
 }
-.bottom-link a:hover, .bottom-link a:focus {
-	color: #E0D2AE;
-}
 .bg-image {
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1734,7 +1731,9 @@ body .product-design-caption .bottom-link a:link, body .product-design-caption .
   width: 990px;
   margin-left: -495px;
 }
-.bottom-link {
+
+.bottom-link a:hover, .bottom-link a:focus {
+	color: #E0D2AE;
 }
 .template--index .newsletter--heading {
 	font-size: 45px;
