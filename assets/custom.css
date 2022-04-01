@@ -1628,11 +1628,7 @@ body .skincare-home-section .top-content p,
  body .shop-suppliments-section .bottom-link a:link,
  body .skincare-performance-section .bottom-content p,
  body .skincare-performance-section .bottom-link a:link,
- body .how-to-use-section .bottom-link a:link,
- body .skincare-home-section .bottom-link a:visited,
- body .shop-suppliments-section .bottom-link a:visited,
- body .skincare-performance-section .bottom-link a:visited,
- body .how-to-use-section .bottom-link a:visited {
+ body .how-to-use-section .bottom-link a:link {
 	font-size:45px;
 }
 body .product-design-section .centered-content p {
@@ -1654,7 +1650,7 @@ body .product-design-section .centered-content p {
 body .product-design-caption .bottom-link {
 	padding-top: 30px;
 }
-body .product-design-caption .bottom-link a:link, body .product-design-caption .bottom-link a:visited {
+body .product-design-caption .bottom-link a:link {
 	font-size: 36px;
 }
   .you-may-also p {
