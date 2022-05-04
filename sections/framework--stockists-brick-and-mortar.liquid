@@ -11,43 +11,6 @@
     <div class="row directions">
       <div class="direction-card">
         <h4>
-          {% if section.settings.location1_title != blank %} 
-                  {{ section.settings.location1_title }}
-                  {% else %}
-                  VANCOUVER
-                  {% endif %}
-        </h4>
-        
-          {% if section.settings.location1_subtitle != blank %} 
-                  {{ section.settings.location1_subtitle }}
-                  {% else %}
-                  Ride Cycle Club Kitsilano Vancouver 
-                  {% endif %}
-        
-        <a class="area-link" href="{% if section.settings.location1_url != blank %} 
-                  {{ section.settings.location1_url }}
-                  {% else %}
-                  www.ridecycleclub.com
-                  {% endif %}">{% if section.settings.location1_url != blank %} 
-                  {{ section.settings.location1_url }}
-                  {% else %}
-                  www.ridecycleclub.com
-                  {% endif %}</a>
-        <a class="get-direction-api" href="{% if section.settings.location1_get_direction != blank %} 
-                  {{ section.settings.location1_get_direction }}
-                  {% else %}
-                  https://www.google.com/maps/dir//2173+W+4th+Ave,+Vancouver,+BC+V6K+1N7,+Canada/@49.2683967,-123.1565068,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x548673b46a6d19b5:0x105aa70c8f3f9f38!2m2!1d-123.1543181!2d49.2683932 
-                  {% endif %}">Get direction</a>
-        <div class="address-box">
-          {% if section.settings.location1_address != blank %} 
-                  {{ section.settings.location1_address }}
-                  {% else %}
-                  2173 W 4th Ave, Vancouver, BC V6K 1N7 
-                  {% endif %}
-        </div>
-      </div>
-      <div class="direction-card">
-        <h4>
           {% if section.settings.location2_title != blank %} 
                   {{ section.settings.location2_title }}
                   {% else %}
