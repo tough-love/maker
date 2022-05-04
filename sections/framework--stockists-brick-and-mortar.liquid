@@ -11,6 +11,43 @@
     <div class="row directions">
       <div class="direction-card">
         <h4>
+          {% if section.settings.location1_title != blank %} 
+                  {{ section.settings.location1_title }}
+                  {% else %}
+                  VANCOUVER
+                  {% endif %}
+        </h4>
+        
+          {% if section.settings.location1_subtitle != blank %} 
+                  {{ section.settings.location1_subtitle }}
+                  {% else %}
+                  MASC Yaletown Vancouver 
+                  {% endif %}
+      
+        <a class="area-link" href="{% if section.settings.location1_url != blank %} 
+                  {{ section.settings.location1_url }}
+                  {% else %}
+                  https://shopmasc.com
+                  {% endif %}">{% if section.settings.location1_url != blank %} 
+                  {{ section.settings.location1_url }}
+                  {% else %}
+                  https://shopmasc.com
+                  {% endif %}</a>
+        <a class="get-direction-api" href="{% if section.settings.location1_get_direction != blank %} 
+                  {{ section.settings.location1_get_direction }}
+                  {% else %}
+                  https://www.google.com/maps/dir//433+Davie+St,+Vancouver,+BC+V6B+2G2,+Canada/@49.2755537,-123.1254198,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x548673d69586aaf7:0xe036e884655704ff!2m2!1d-123.1232311!2d49.2755502 
+                  {% endif %}">Get direction</a>
+        <di class="address-box">
+          {% if section.settings.location1_address != blank %} 
+                  {{ section.settings.location1_address }}
+                  {% else %}
+                  433 Davie St, Vancouver, BC V6B 2G2 
+                  {% endif %}
+        </di>
+      </div>
+      <div class="direction-card">
+        <h4>
           {% if section.settings.location2_title != blank %} 
                   {{ section.settings.location2_title }}
                   {% else %}
@@ -21,63 +58,26 @@
           {% if section.settings.location2_subtitle != blank %} 
                   {{ section.settings.location2_subtitle }}
                   {% else %}
-                  MASC Yaletown Vancouver 
+                  TURF Kitsilano Vancouver 
                   {% endif %}
-      
+    
         <a class="area-link" href="{% if section.settings.location2_url != blank %} 
                   {{ section.settings.location2_url }}
                   {% else %}
-                  https://shopmasc.com
+                  www.ourturf.com
                   {% endif %}">{% if section.settings.location2_url != blank %} 
                   {{ section.settings.location2_url }}
                   {% else %}
-                  https://shopmasc.com
+                  www.ourturf.com
                   {% endif %}</a>
         <a class="get-direction-api" href="{% if section.settings.location2_get_direction != blank %} 
                   {{ section.settings.location2_get_direction }}
                   {% else %}
-                  https://www.google.com/maps/dir//433+Davie+St,+Vancouver,+BC+V6B+2G2,+Canada/@49.2755537,-123.1254198,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x548673d69586aaf7:0xe036e884655704ff!2m2!1d-123.1232311!2d49.2755502 
-                  {% endif %}">Get direction</a>
-        <di class="address-box">
-          {% if section.settings.location2_address != blank %} 
-                  {{ section.settings.location2_address }}
-                  {% else %}
-                  433 Davie St, Vancouver, BC V6B 2G2 
-                  {% endif %}
-        </di>
-      </div>
-      <div class="direction-card">
-        <h4>
-          {% if section.settings.location3_title != blank %} 
-                  {{ section.settings.location3_title }}
-                  {% else %}
-                  VANCOUVER
-                  {% endif %}
-        </h4>
-        
-          {% if section.settings.location3_subtitle != blank %} 
-                  {{ section.settings.location3_subtitle }}
-                  {% else %}
-                  TURF Kitsilano Vancouver 
-                  {% endif %}
-    
-        <a class="area-link" href="{% if section.settings.location3_url != blank %} 
-                  {{ section.settings.location3_url }}
-                  {% else %}
-                  www.ourturf.com
-                  {% endif %}">{% if section.settings.location3_url != blank %} 
-                  {{ section.settings.location3_url }}
-                  {% else %}
-                  www.ourturf.com
-                  {% endif %}</a>
-        <a class="get-direction-api" href="{% if section.settings.location3_get_direction != blank %} 
-                  {{ section.settings.location3_get_direction }}
-                  {% else %}
                   https://www.google.com/maps/place/2041+W+4th+Ave,+Vancouver,+BC+V6J+1N3/@49.2690583,-123.1515424,18.5z/data=!4m5!3m4!1s0x548673b432e6b063:0x420e0bf1dde680d6!8m2!3d49.2683677!4d-123.1515767 
                   {% endif %}">Get direction</a>
                   <div class="address-box">
-                      {% if section.settings.location3_address != blank %} 
-                  {{ section.settings.location3_address }}
+                      {% if section.settings.location2_address != blank %} 
+                  {{ section.settings.location2_address }}
                   {% else %}
                   101 - 2041 W 4th Avenue, Vancouver, BC V6J 1N3 
                   {% endif %}
@@ -100,6 +100,34 @@
     "default": "BRICK AND MORTAR"
     },
     {
+    "id": "location1_title",
+    "type":"text",
+    "label": "Location 1 Title",
+    "default": "VANCOUVER"
+    },
+    {
+    "id": "location1_subtitle",
+    "type":"richtext",
+    "label": "Location 1 Subtitle",
+    "default": "<p>MASC Yaletown Vancouver</p>"
+    },
+    {
+    "id": "location1_url",
+    "type":"url",
+    "label": "Location 1 URL"
+    },
+    {
+    "id": "location1_get_direction",
+    "type":"url",
+    "label": "Location 1 Get Direction"
+    },
+    {
+    "id": "location1_address",
+    "type":"richtext",
+    "label": "Location 1 Address",
+    "default":"<p>433 Davie St, Vancouver, BC V6B 2G2</p>"
+    },
+    {
     "id": "location2_title",
     "type":"text",
     "label": "Location 2 Title",
@@ -109,7 +137,7 @@
     "id": "location2_subtitle",
     "type":"richtext",
     "label": "Location 2 Subtitle",
-    "default": "<p>MASC Yaletown Vancouver</p>"
+    "default": "<p>TURF Kitsilano Vancouver</p>"
     },
     {
     "id": "location2_url",
@@ -125,34 +153,6 @@
     "id": "location2_address",
     "type":"richtext",
     "label": "Location 2 Address",
-    "default":"<p>433 Davie St, Vancouver, BC V6B 2G2</p>"
-    },
-    {
-    "id": "location3_title",
-    "type":"text",
-    "label": "Location 3 Title",
-    "default": "VANCOUVER"
-    },
-    {
-    "id": "location3_subtitle",
-    "type":"richtext",
-    "label": "Location 3 Subtitle",
-    "default": "<p>TURF Kitsilano Vancouver</p>"
-    },
-    {
-    "id": "location3_url",
-    "type":"url",
-    "label": "Location 3 URL"
-    },
-    {
-    "id": "location3_get_direction",
-    "type":"url",
-    "label": "Location 3 Get Direction"
-    },
-    {
-    "id": "location3_address",
-    "type":"richtext",
-    "label": "Location 3 Address",
     "default":"<p>101 - 2041 W 4th Avenue, Vancouver, BC V6J 1N3</p>"
     }
   ],
