@@ -1166,13 +1166,6 @@
       "framework--newsroom-article": {
         "type": "framework--newsroom-article",
         "blocks": {
-          "e0c3b7b6-1a58-4ce9-8237-ed06a0e2fdc2": {
-            "type": "image",
-            "settings": {
-              "article-image": "shopify:\/\/shop_images\/Rectangle_474.jpg",
-              "article-link": "https:\/\/www.menshealth.com\/grooming\/g31134888\/best-body-wash-for-men\/"
-            }
-          },
           "6d0bfced-685d-42d8-ae7c-e077904e1824": {
             "type": "image",
             "settings": {
@@ -1193,13 +1186,28 @@
               "article-image": "shopify:\/\/shop_images\/article4.png",
               "article-link": "https:\/\/robbreport.com\/style\/grooming\/best-grooming-products-of-the-year-1234653630\/"
             }
+          },
+          "e0c3b7b6-1a58-4ce9-8237-ed06a0e2fdc2": {
+            "type": "image",
+            "settings": {
+              "article-image": "shopify:\/\/shop_images\/Rectangle_474.jpg",
+              "article-link": "https:\/\/www.menshealth.com\/grooming\/g31134888\/best-body-wash-for-men\/"
+            }
+          },
+          "4404387f-a19e-4624-8af5-c4cc5d1c6d94": {
+            "type": "image",
+            "settings": {
+              "article-image": "shopify:\/\/shop_images\/REYAL_-_GQ.jpg",
+              "article-link": "https:\/\/www.gq.com\/story\/habits-to-prevent-acne"
+            }
           }
         },
         "block_order": [
           "6d0bfced-685d-42d8-ae7c-e077904e1824",
           "b897efa4-e93d-4b08-a7e5-d75b2530c032",
           "3ead3ea2-22ba-4c06-8e9e-bf37f1459447",
-          "e0c3b7b6-1a58-4ce9-8237-ed06a0e2fdc2"
+          "e0c3b7b6-1a58-4ce9-8237-ed06a0e2fdc2",
+          "4404387f-a19e-4624-8af5-c4cc5d1c6d94"
         ],
         "settings": {
         }
@@ -1262,17 +1270,7 @@
           "location2_subtitle": "<p>MASC<\/p><p>Yaletown Vancouver<\/p>",
           "location2_url": "https:\/\/shopmasc.com",
           "location2_get_direction": "https:\/\/www.google.com\/maps\/dir\/\/433+Davie+St,+Vancouver,+BC+V6B+2G2,+Canada\/@49.2755537,-123.1254198,17z\/data=!4m8!4m7!1m0!1m5!1m1!1s0x548673d69586aaf7:0xe036e884655704ff!2m2!1d-123.1232311!2d49.2755502",
-          "location2_address": "<p>433 Davie St, Vancouver,<\/p><p>BC V6B 2G2<\/p>",
-          "location3_title": "VANCOUVER",
-          "location3_subtitle": "<p>TURF<br\/>Kitsilano Vancouver<\/p>",
-          "location3_url": "https:\/\/www.ourturf.com\/",
-          "location3_get_direction": "https:\/\/www.google.com\/maps\/place\/2041+W+4th+Ave,+Vancouver,+BC+V6J+1N3\/@49.2690583,-123.1515424,18.5z\/data=!4m5!3m4!1s0x548673b432e6b063:0x420e0bf1dde680d6!8m2!3d49.2683677!4d-123.1515767",
-          "location3_address": "<p>101 - 2041 W 4th Avenue, Vancouver, BC V6J 1N3<\/p>",
-          "location4_title": "TORONTO",
-          "location4_subtitle": "<p>Ride Cycle Club King Street West<\/p>",
-          "location4_url": "",
-          "location4_get_direction": "",
-          "location4_address": "<p>435 King St W, Toronto, ON M5V 3M4<\/p>"
+          "location2_address": "<p>433 Davie St, Vancouver,<\/p><p>BC V6B 2G2<\/p>"
         }
       },
       "framework--stockists-online-retailers": {
