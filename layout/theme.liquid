@@ -213,11 +213,9 @@
     ttq.track('ViewContent')
   
   {% if template == 'product' %}
-  
-  $(document).on('submit', '.product-form--root', function(e) {
-  ttq.track('AddToCart');
+    $(document).on('submit', '.product-form--root', function(e) {
+	ttq.track('AddToCart');
   });
-  
   {% endif %}
  
   ttq.track('InitiateCheckout')
