@@ -84,6 +84,43 @@
                   </div>
               </div>
       
+       <div class="direction-card">
+        <h4>
+          {% if section.settings.location3_title != blank %} 
+                  {{ section.settings.location3_title }}
+                  {% else %}
+                  NORTH VANCOUVER
+                  {% endif %}
+        </h4>
+        
+          {% if section.settings.location3_subtitle != blank %} 
+                  {{ section.settings.location3_subtitle }}
+                  {% else %}
+                  Delish General Store + Jar Bar Refillery
+                  {% endif %}
+    
+        <a class="area-link" href="{% if section.settings.location3_url != blank %} 
+                  {{ section.settings.location3_url }}
+                  {% else %}
+                  www.delishgeneralstore.com
+                  {% endif %}">{% if section.settings.location3_url != blank %} 
+                  {{ section.settings.location3_url }}
+                  {% else %}
+                  www.delishgeneralstore.com
+                  {% endif %}</a>
+        <a class="get-direction-api" href="{% if section.settings.location3_get_direction != blank %} 
+                  {{ section.settings.location3_get_direction }}
+                  {% else %}
+                  https://www.google.com/maps/place/Delish+General+Store/@49.3387432,-123.102957,15z/data=!4m2!3m1!1s0x0:0x9b0678c73e70f5ab?sa=X&ved=2ahUKEwi0tqO9pe73AhWBHzQIHWWQAmwQ_BJ6BAhYEAU 
+                  {% endif %}">Get direction</a>
+                  <div class="address-box">
+                      {% if section.settings.location3_address != blank %} 
+                  {{ section.settings.location3_address }}
+                  {% else %}
+                  101 - 3246 Connaught Crescent, North Vancouver, BC V7R 0A7 
+                  {% endif %}
+                  </div>
+         </div>
     </div>
   </div>
 </div>
@@ -155,6 +192,34 @@
     "type":"richtext",
     "label": "Location 2 Address",
     "default":"<p>2041 - 101 W 4th Avenue, Vancouver, BC V6J 1N3</p>"
+    },
+    {
+    "id": "location3_title",
+    "type":"text",
+    "label": "Location 3 Title",
+    "default": "NORTH VANCOUVER"
+    },
+    {
+    "id": "location3_subtitle",
+    "type":"richtext",
+    "label": "Location 3 Subtitle",
+    "default": "<p>Delish General Store + Jar Bar Refillery</p>"
+    },
+    {
+    "id": "location3_url",
+    "type":"url",
+    "label": "Location 3 URL"
+    },
+    {
+    "id": "location3_get_direction",
+    "type":"url",
+    "label": "Location 3 Get Direction"
+    },
+    {
+    "id": "location3_address",
+    "type":"richtext",
+    "label": "Location 3 Address",
+    "default":"<p>101 - 3246 Connaught Crescent, North Vancouver, BC V7R 0A7</p>"
     }
   ],
   "presets": [
