@@ -1,7 +1,159 @@
+
+<div class="brick-and-mortar coming-soon">
+  <div class="container">
+    <div class="brick-section-title">
+      <h3>{% if section.settings.section_title != blank %} 
+                  {{ section.settings.section_title }}
+                  {% else %}
+                  COMING SOON
+                  {% endif %}</h3>
+    </div>
+    <div class="row directions">
+      <div class="direction-card">
+        <h5>
+          {% if section.settings.retailer1_title != blank %} 
+          {{ section.settings.retailer1_title }}
+          {% else %}
+          RAY RICKBURN
+          {% endif %}
+        </h5>
+        <a class="area-link" href="{% if section.settings.retailer1_link != blank %} 
+          {{ section.settings.retailer1_link }}
+          {% else %}
+          https://www.rayrickburn.com
+          {% endif %}">{% if section.settings.retailer1_link != blank %} 
+          {{ section.settings.retailer1_link }}
+          {% else %}
+          https://www.rayrickburn.com
+          {% endif %}
+        </a>
+      </div>
+      <div class="direction-card">
+        <h5>
+          {% if section.settings.retailer2_title != blank %} 
+          {{ section.settings.retailer2_title }}
+          {% else %}
+          HILLS OF KERRISDALE
+          {% endif %}
+        </h5>
+        <a class="area-link" href="{% if section.settings.retailer2_link != blank %} 
+          {{ section.settings.retailer2_link }}
+          {% else %}
+          https://www.hillsofkerrisdale.com/
+          {% endif %}">{% if section.settings.retailer2_link != blank %} 
+          {{ section.settings.retailer2_link }}
+          {% else %}
+          https://www.hillsofkerrisdale.com
+          {% endif %}
+        </a>
+      </div>
+      <div class="direction-card">
+        <h5>
+          {% if section.settings.retailer3_title != blank %} 
+          {{ section.settings.retailer3_title }}
+          {% else %}
+          SSSENSE
+          {% endif %}
+        </h5>
+        <a class="area-link" href="{% if section.settings.retailer3_link != blank %} 
+          {{ section.settings.retailer3_link }}
+          {% else %}
+          https://www.ssense.com/
+          {% endif %}">
+          {% if section.settings.retailer3_link != blank %} 
+          {{ section.settings.retailer3_link }}
+          {% else %}
+          https://www.ssense.com
+          {% endif %}
+        </a>
+      </div>
+      <div class="direction-card">
+        <h5>
+          {% if section.settings.retailer4_title != blank %} 
+          {{ section.settings.retailer4_title }}
+          {% else %}
+          HOLT RENFREW
+          {% endif %}
+        </h5>
+        <a class="area-link" href="{% if section.settings.retailer4_link != blank %} 
+          {{ section.settings.retailer4_link }}
+          {% else %}
+          https://www.holtrenfrew.com/
+          {% endif %}">
+          {% if section.settings.retailer4_link != blank %} 
+          {{ section.settings.retailer4_link }}
+          {% else %}
+          https://www.holtrenfrew.com
+          {% endif %}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Online Retailers",
+    "settings": [
+    {
+    "id": "section_title",
+    "type":"text",
+    "label": "Section Title",
+    "default": "ONLINE RETAILERS"
+    },
+    {
+    "id": "retailer1_title",
+    "type":"text",
+    "label": "Retailer 1 Title",
+    "default": "RAY RICKBURN"
+    },
+    {
+    "id": "retailer1_link",
+    "type":"url",
+    "label": "Retailer 1 Link"
+    },
+   {
+    "id": "retailer2_title",
+    "type":"text",
+    "label": "Retailer 2 Title",
+    "default": "HILLS OF KERRISDALE"
+    },
+    {
+    "id": "retailer2_link",
+    "type":"url",
+    "label": "Retailer 2 Link"
+    },
+    {
+    "id": "retailer3_title",
+    "type":"text",
+    "label": "Retailer 3 Title",
+    "default": "SSENSE"
+    },
+    {
+    "id": "retailer3_link",
+    "type":"url",
+    "label": "Retailer 3 Link"
+    },
+    {
+    "id": "retailer4_title",
+    "type":"text",
+    "label": "Retailer 4 Title",
+    "default": "HOLT RENFREW"
+    },
+    {
+    "id": "retailer4_link",
+    "type":"url",
+    "label": "Retailer 4 Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "custom-text",
+      "category": "Custom"
+    }
+  ]
   }
 {% endschema %}
 
