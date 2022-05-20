@@ -203,6 +203,21 @@
     (window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
 
+<script>
+ 
+  ttq.track('ViewContent')
+  
+  {% if template == 'product' %}
+  
+  $(document).on('submit', '.product-form-pproduct-template', function(e) {
+  ttq.track('AddToCart')
+  });
+  
+  {% endif %}
+ 
+</script>
+  
+  
 </body>
 
 </html>
