@@ -1262,15 +1262,15 @@
         "settings": {
           "section_title": "BRICK AND MORTAR",
           "location1_title": "VANCOUVER",
-          "location1_subtitle": "<p>Ride Cycle Club<\/p><p>Kitsilano Vancouver <\/p>",
-          "location1_url": "https:\/\/www.ridecycleclub.com",
-          "location1_get_direction": "https:\/\/www.google.com\/maps\/dir\/\/2173+W+4th+Ave,+Vancouver,+BC+V6K+1N7,+Canada\/@49.2683967,-123.1565068,17z\/data=!4m8!4m7!1m0!1m5!1m1!1s0x548673b46a6d19b5:0x105aa70c8f3f9f38!2m2!1d-123.1543181!2d49.2683932",
-          "location1_address": "<p>2173 W 4th Ave, Vancouver,<\/p><p>BC V6K 1N7<\/p>",
+          "location1_subtitle": "<p>MASC<\/p><p>Yaletown Vancouver <\/p>",
+          "location1_url": "https:\/\/shopmasc.com\/",
+          "location1_get_direction": "https:\/\/www.google.com\/maps\/dir\/\/433+Davie+St,+Vancouver,+BC+V6B+2G2,+Canada\/@49.2755537,-123.1254198,17z\/data=!4m8!4m7!1m0!1m5!1m1!1s0x548673d69586aaf7:0xe036e884655704ff!2m2!1d-123.1232311!2d49.2755502",
+          "location1_address": "<p>433 Davie St, Vancouver,<\/p><p>BC V6B 2G2<\/p>",
           "location2_title": "VANCOUVER",
-          "location2_subtitle": "<p>MASC<\/p><p>Yaletown Vancouver<\/p>",
-          "location2_url": "https:\/\/shopmasc.com",
-          "location2_get_direction": "https:\/\/www.google.com\/maps\/dir\/\/433+Davie+St,+Vancouver,+BC+V6B+2G2,+Canada\/@49.2755537,-123.1254198,17z\/data=!4m8!4m7!1m0!1m5!1m1!1s0x548673d69586aaf7:0xe036e884655704ff!2m2!1d-123.1232311!2d49.2755502",
-          "location2_address": "<p>433 Davie St, Vancouver,<\/p><p>BC V6B 2G2<\/p>"
+          "location2_subtitle": "<p>TurF<\/p><p>Kitsilano Vancouver<\/p>",
+          "location2_url": "https:\/\/www.ourturf.com\/",
+          "location2_get_direction": "https:\/\/www.google.com\/search?q=turf%20vancouver&rlz=1C1VDKB_enCA939CA939&oq=turf+vancouver&aqs=chrome..69i57j0i512l5j46i175i199i512j0i512l2j0i390.1580j0j4&sourceid=chrome&ie=UTF-8&tbs=lf:1,lf_ui:2&tbm=lcl&sxsrf=ALiCzsawobikYNsFTRfBJiHvNgU8J30Okg:1653056726342&rflfq=1&num=10&rldimm=4047405274168544179&lqi=Cg50dXJmIHZhbmNvdXZlckj2va3G8ayAgAhaFhAAGAAYASIOdHVyZiB2YW5jb3V2ZXKSAQpyZXN0YXVyYW50mgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVU5KTmkwMmRuTjNSUkFCqgEMEAEqCCIEdHVyZigA&ved=2ahUKEwiFh96XpO73AhXzLX0KHSW9CWcQvS56BAgJEAE&sa=X&rlst=f#rlfi=hd:;si:4047405274168544179,l,Cg50dXJmIHZhbmNvdXZlckj2va3G8ayAgAhaFhAAGAAYASIOdHVyZiB2YW5jb3V2ZXKSAQpyZXN0YXVyYW50mgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVU5KTmkwMmRuTjNSUkFCqgEMEAEqCCIEdHVyZigA;mv:[[49.2782668,-122.969197],[49.1987155,-123.218541]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!2m4!1e17!4m2!17m1!1e2!3sIAE,lf:1,lf_ui:2",
+          "location2_address": "<p>2041 W 4th Ave, Vancouver,<\/p><p>BC V6J 1N3<\/p>"
         }
       },
       "framework--stockists-online-retailers": {
