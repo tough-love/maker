@@ -87,6 +87,46 @@
           {% endif %}
         </a>
       </div>
+            <div class="direction-card">
+        <h5>
+          {% if section.settings.retailer5_title != blank %} 
+          {{ section.settings.retailer5_title }}
+          {% else %}
+          HOLT RENFREW
+          {% endif %}
+        </h5>
+        <a class="area-link" href="{% if section.settings.retailer5_link != blank %} 
+          {{ section.settings.retailer5_link }}
+          {% else %}
+          https://www.holtrenfrew.com/
+          {% endif %}">
+          {% if section.settings.retailer5_link != blank %} 
+          {{ section.settings.retailer5_link }}
+          {% else %}
+          COMING SOON
+          {% endif %}
+        </a>
+      </div>
+            <div class="direction-card">
+        <h5>
+          {% if section.settings.retailer6_title != blank %} 
+          {{ section.settings.retailer6_title }}
+          {% else %}
+          SSENSE
+          {% endif %}
+        </h5>
+        <a class="area-link" href="{% if section.settings.retailer6_link != blank %} 
+          {{ section.settings.retailer6_link }}
+          {% else %}
+          https://www.ssense.com/
+          {% endif %}">
+          {% if section.settings.retailer6_link != blank %} 
+          {{ section.settings.retailer6_link }}
+          {% else %}
+          COMING SOON
+          {% endif %}
+        </a>
+      </div>
     </div>
   </div>
 </div>
