@@ -204,8 +204,13 @@
 </script>
 
 <script>
- 
-  ttq.track('ViewContent')
+  {% if customer %}
+    ttq.identify({
+    email: '{{customer.email}}',
+    phone_number: '{{customer.phone}}',
+  })
+  {% endif %}
+    ttq.track('ViewContent')
   
   {% if template == 'product' %}
   
