@@ -312,7 +312,7 @@
                   </div>
          </div>
       
-        <div class="direction-card">
+      <div class="direction-card">
         <h4>
           {% if section.settings.location9_title != blank %} 
                   {{ section.settings.location9_title }}
@@ -324,26 +324,102 @@
           {% if section.settings.location9_subtitle != blank %} 
                   {{ section.settings.location9_subtitle }}
                   {% else %}
-                  Delish General Store + Jar Bar Refillery
+                  Ray Rickburn
                   {% endif %}
     
         <a class="area-link" href="{% if section.settings.location9_url != blank %} 
                   {{ section.settings.location9_url }}
                   {% else %}
-                  www.delishgeneralstore.com
+                  https://www.rayrickburn.com
                   {% endif %}">{% if section.settings.location9_url != blank %} 
                   {{ section.settings.location9_url }}
                   {% else %}
-                  https://www.delishgeneralstore.com/
+                  https://https://www.rayrickburn.com/
                   {% endif %}</a>
         <a class="get-direction-api" href="{% if section.settings.location9_get_direction != blank %} 
                   {{ section.settings.location9_get_direction }}
                   {% else %}
-                  https://www.google.com/maps/place/Delish+General+Store/@49.3387432,-123.102957,15z/data=!4m2!3m1!1s0x0:0x9b0678c73e70f5ab?sa=X&ved=2ahUKEwi0tqO9pe73AhWBHzQIHWWQAmwQ_BJ6BAhYEAU 
+                  https://www.google.com/maps/place/Ray+Rickburn/@49.26802,-123.1529592,15z/data=!4m5!3m4!1s0x0:0x8879c8e406da272!8m2!3d49.2680088!4d-123.1529598 
                   {% endif %}">Get direction</a>
                   <div class="address-box">
                       {% if section.settings.location9_address != blank %} 
                   {{ section.settings.location9_address }}
+                  {% else %}
+                  2100 W 4th Ave, Vancouver, BC V6K 1N6 
+                  {% endif %}
+                  </div>
+         </div>
+      
+      <div class="direction-card">
+        <h4>
+          {% if section.settings.location10_title != blank %} 
+                  {{ section.settings.location10_title }}
+                  {% else %}
+                  VANCOUVER
+                  {% endif %}
+        </h4>
+        
+          {% if section.settings.location10_subtitle != blank %} 
+                  {{ section.settings.location10_subtitle }}
+                  {% else %}
+                  Hills of Kerrisdale
+                  {% endif %}
+    
+        <a class="area-link" href="{% if section.settings.location10_url != blank %} 
+                  {{ section.settings.location10_url }}
+                  {% else %}
+                  https://www.hillsofkerrisdale.com
+                  {% endif %}">{% if section.settings.location10_url != blank %} 
+                  {{ section.settings.location10_url }}
+                  {% else %}
+                  https://https://www.hillsofkerrisdale.com/
+                  {% endif %}</a>
+        <a class="get-direction-api" href="{% if section.settings.location10_get_direction != blank %} 
+                  {{ section.settings.location10_get_direction }}
+                  {% else %}
+                  https://www.google.com/maps/place/Hill's+Of+Kerrisdale/@49.2348397,-123.156086,15z/data=!4m2!3m1!1s0x0:0x2cacca65945bc08c?sa=X&ved=2ahUKEwiXt977tO73AhVFGDQIHcw0Ad0Q_BJ6BAhXEAU 
+                  {% endif %}">Get direction</a>
+                  <div class="address-box">
+                      {% if section.settings.location10_address != blank %} 
+                  {{ section.settings.location10_address }}
+                  {% else %}
+                  2125 W 41st Ave, Vancouver, BC V6M 1Z3 
+                  {% endif %}
+                  </div>
+         </div>
+      
+        <div class="direction-card">
+        <h4>
+          {% if section.settings.location11_title != blank %} 
+                  {{ section.settings.location11_title }}
+                  {% else %}
+                  VANCOUVER
+                  {% endif %}
+        </h4>
+        
+          {% if section.settings.location11_subtitle != blank %} 
+                  {{ section.settings.location11_subtitle }}
+                  {% else %}
+                  Delish General Store + Jar Bar Refillery
+                  {% endif %}
+    
+        <a class="area-link" href="{% if section.settings.location11_url != blank %} 
+                  {{ section.settings.location11_url }}
+                  {% else %}
+                  www.delishgeneralstore.com
+                  {% endif %}">{% if section.settings.location11_url != blank %} 
+                  {{ section.settings.location11_url }}
+                  {% else %}
+                  https://www.delishgeneralstore.com/
+                  {% endif %}</a>
+        <a class="get-direction-api" href="{% if section.settings.location11_get_direction != blank %} 
+                  {{ section.settings.location11_get_direction }}
+                  {% else %}
+                  https://www.google.com/maps/place/Delish+General+Store/@49.3387432,-123.102957,15z/data=!4m2!3m1!1s0x0:0x9b0678c73e70f5ab?sa=X&ved=2ahUKEwi0tqO9pe73AhWBHzQIHWWQAmwQ_BJ6BAhYEAU 
+                  {% endif %}">Get direction</a>
+                  <div class="address-box">
+                      {% if section.settings.location11_address != blank %} 
+                  {{ section.settings.location11_address }}
                   {% else %}
                   101 - 3246 Connaught Crescent, North Vancouver, BC V7R 0A7 
                   {% endif %}
@@ -599,7 +675,7 @@
     "id": "location9_subtitle",
     "type":"richtext",
     "label": "Location 9 Subtitle",
-	"default": "<p>Delish General Store + Jar Bar Refillery</p>"
+	"default": "<p>Ray Rickburn</p>"
     },
     {
     "id": "location9_url",
@@ -615,6 +691,62 @@
     "id": "location9_address",
     "type":"richtext",
     "label": "Location 9 Address",
+	"default":"<p>2100 W 4th Ave, Vancouver, BC V6K 1N6</p>"
+    },
+    {
+    "id": "location10_title",
+    "type":"text",
+    "label": "Location 10 Title",
+    "default": "COMING UP"
+    },
+    {
+    "id": "location10_subtitle",
+    "type":"richtext",
+    "label": "Location 10 Subtitle",
+	"default": "<p>Hill's of Kerrisdale</p>"
+    },
+    {
+    "id": "location10_url",
+    "type":"url",
+    "label": "Location 10 URL"
+    },
+    {
+    "id": "location10_get_direction",
+    "type":"url",
+    "label": "Location 10 Get Direction"
+    },
+    {
+    "id": "location10_address",
+    "type":"richtext",
+    "label": "Location 10 Address",
+	"default":"<p>2125 W 41st Ave, Vancouver, BC V6M 1Z3</p>"
+    },
+    {
+    "id": "location11_title",
+    "type":"text",
+    "label": "Location 11 Title",
+    "default": "COMING UP"
+    },
+    {
+    "id": "location11_subtitle",
+    "type":"richtext",
+    "label": "Location 11 Subtitle",
+	"default": "<p>Delish General Store + Jar Bar Refillery</p>"
+    },
+    {
+    "id": "location11_url",
+    "type":"url",
+    "label": "Location 11 URL"
+    },
+    {
+    "id": "location11_get_direction",
+    "type":"url",
+    "label": "Location 11 Get Direction"
+    },
+    {
+    "id": "location11_address",
+    "type":"richtext",
+    "label": "Location 11 Address",
 	"default":"<p>101 - 3246 Connaught Crescent, North Vancouver, BC V7R 0A7</br></br><i>*Supreme Body Wash refills*</i></p>"
     }
   ],
