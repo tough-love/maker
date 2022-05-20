@@ -89,7 +89,7 @@
           {% if section.settings.location3_title != blank %} 
                   {{ section.settings.location3_title }}
                   {% else %}
-                  NORTH VANCOUVER
+                  VANCOUVER
                   {% endif %}
         </h4>
         
@@ -121,6 +121,45 @@
                   {% endif %}
                   </div>
          </div>
+      
+        <div class="direction-card">
+        <h4>
+          {% if section.settings.location4_title != blank %} 
+                  {{ section.settings.location4_title }}
+                  {% else %}
+                  VANCOUVER
+                  {% endif %}
+        </h4>
+        
+          {% if section.settings.location4_subtitle != blank %} 
+                  {{ section.settings.location4_subtitle }}
+                  {% else %}
+                  Holt Renfrew
+                  {% endif %}
+    
+        <a class="area-link" href="{% if section.settings.location4_url != blank %} 
+                  {{ section.settings.location4_url }}
+                  {% else %}
+                  www.holtrenfrew.com/
+                  {% endif %}">{% if section.settings.location4_url != blank %} 
+                  {{ section.settings.location4_url }}
+                  {% else %}
+                  https://www.holtrenfrew.com/
+                  {% endif %}</a>
+        <a class="get-direction-api" href="{% if section.settings.location4_get_direction != blank %} 
+                  {{ section.settings.location4_get_direction }}
+                  {% else %}
+                  https://www.google.com/search?q=holt%20renfrew%20vancouver&rlz=1C1VDKB_enCA939CA939&oq=HOLT+RENFREW+VANCOUVER&aqs=chrome.0.0i20i131i263i433i512j0i512l3j46i175i199i512l2j0i20i263i512j0i512l3.3981j0j7&sourceid=chrome&ie=UTF-8&tbs=lf:1,lf_ui:4&tbm=lcl&sxsrf=ALiCzsY1fddl9naYtnNpyLUbGVUIjmNt2g:1653058867173&rflfq=1&num=10&rldimm=13229558662963440388&lqi=ChZob2x0IHJlbmZyZXcgdmFuY291dmVyIgOIAQFInrnW5rmugIAIWioQABABGAAYARgCIhZob2x0IHJlbmZyZXcgdmFuY291dmVyKgYIAhAAEAGSARBkZXBhcnRtZW50X3N0b3JlqgEUEAEqECIMaG9sdCByZW5mcmV3KAA&ved=2ahUKEwiI98eUrO73AhUvJTQIHaWnAckQvS56BAgCEAE&sa=X&rlst=f#rlfi=hd:;si:13229558662963440388,l,ChZob2x0IHJlbmZyZXcgdmFuY291dmVyIgOIAQFInrnW5rmugIAIWioQABABGAAYARgCIhZob2x0IHJlbmZyZXcgdmFuY291dmVyKgYIAhAAEAGSARBkZXBhcnRtZW50X3N0b3JlqgEUEAEqECIMaG9sdCByZW5mcmV3KAA;mv:[[49.28478260000001,-123.11634350000001],[49.2839713,-123.1166079]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:4 
+                  {% endif %}">Get direction</a>
+                  <div class="address-box">
+                      {% if section.settings.location4_address != blank %} 
+                  {{ section.settings.location4_address }}
+                  {% else %}
+                  737 Dunsmuir St, Vancouver, BC V7Y 1E4 
+                  {% endif %}
+                  </div>
+         </div>
+      
     </div>
   </div>
 </div>
@@ -220,6 +259,34 @@
     "type":"richtext",
     "label": "Location 3 Address",
 	"default":"<p>101 - 3246 Connaught Crescent, North Vancouver, BC V7R 0A7</br></br><i>*Supreme Body Wash refills*</i></p>"
+    },
+    {
+    "id": "location4_title",
+    "type":"text",
+    "label": "Location 4 Title",
+    "default": "COMING UP"
+    },
+    {
+    "id": "location4_subtitle",
+    "type":"richtext",
+    "label": "Location 4 Subtitle",
+	"default": "<p>Holt Renfrew</p>"
+    },
+    {
+    "id": "location4_url",
+    "type":"url",
+    "label": "Location 4 URL"
+    },
+    {
+    "id": "location4_get_direction",
+    "type":"url",
+    "label": "Location 4 Get Direction"
+    },
+    {
+    "id": "location4_address",
+    "type":"richtext",
+    "label": "Location 4 Address",
+	"default":"<p>737 Dunsmuir St, Vancouver, BC V7Y 1E4</p>"
     }
   ],
   "presets": [
