@@ -1270,7 +1270,17 @@
           "location2_subtitle": "<p>TurF<\/p><p>Kitsilano Vancouver<\/p>",
           "location2_url": "https:\/\/www.ourturf.com\/",
           "location2_get_direction": "https:\/\/www.google.com\/search?q=turf%20vancouver&rlz=1C1VDKB_enCA939CA939&oq=turf+vancouver&aqs=chrome..69i57j0i512l5j46i175i199i512j0i512l2j0i390.1580j0j4&sourceid=chrome&ie=UTF-8&tbs=lf:1,lf_ui:2&tbm=lcl&sxsrf=ALiCzsawobikYNsFTRfBJiHvNgU8J30Okg:1653056726342&rflfq=1&num=10&rldimm=4047405274168544179&lqi=Cg50dXJmIHZhbmNvdXZlckj2va3G8ayAgAhaFhAAGAAYASIOdHVyZiB2YW5jb3V2ZXKSAQpyZXN0YXVyYW50mgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVU5KTmkwMmRuTjNSUkFCqgEMEAEqCCIEdHVyZigA&ved=2ahUKEwiFh96XpO73AhXzLX0KHSW9CWcQvS56BAgJEAE&sa=X&rlst=f#rlfi=hd:;si:4047405274168544179,l,Cg50dXJmIHZhbmNvdXZlckj2va3G8ayAgAhaFhAAGAAYASIOdHVyZiB2YW5jb3V2ZXKSAQpyZXN0YXVyYW50mgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVU5KTmkwMmRuTjNSUkFCqgEMEAEqCCIEdHVyZigA;mv:[[49.2782668,-122.969197],[49.1987155,-123.218541]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!2m4!1e17!4m2!17m1!1e2!3sIAE,lf:1,lf_ui:2",
-          "location2_address": "<p>2041 W 4th Ave, Vancouver,<\/p><p>BC V6J 1N3<\/p>"
+          "location2_address": "<p>2041 W 4th Ave, Vancouver,<\/p><p>BC V6J 1N3<\/p>",
+          "location3_title": "COMING UP",
+          "location3_subtitle": "<p>Holt Renfrew<\/p><p>Vancouver<\/p>",
+          "location3_url": "",
+          "location3_get_direction": "",
+          "location3_address": "<p>737 Dunsmuir St, Vancouver, BC V7Y 1E4<\/p>",
+          "location4_title": "COMING UP",
+          "location4_subtitle": "<p>Delish General Store + Jar Bar Refillery<\/p>",
+          "location4_url": "",
+          "location4_get_direction": "",
+          "location4_address": "<p>101 - 3246 Connaught Crescent, North Vancouver, BC V7R 0A7<br\/><br\/><em>*Supreme Body Wash refills*<\/em><\/p>"
         }
       },
       "framework--stockists-online-retailers": {
