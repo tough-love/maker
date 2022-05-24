@@ -1227,9 +1227,9 @@
           "featured_image_2": "shopify:\/\/shop_images\/robb.png",
           "featured_link_2": "https:\/\/robbreport.com\/style\/grooming\/best-grooming-products-of-the-year-1234653630\/",
           "featured_text2": "<p>“Definitely coming to 2022 with us”<\/p>",
-          "featured_image_3": "shopify:\/\/shop_images\/nuvo.png",
+          "featured_image_3": "shopify:\/\/shop_images\/GQ_Logo.png",
           "featured_link_3": "https:\/\/nuvomagazine.com\/beauty\/mens-grooming-and-skin-care-guide-for-fathers-day",
-          "featured_text3": "<p>“Built for active men”<\/p>",
+          "featured_text3": "<p>“Post Workout Protocol”<\/p>",
           "featured_image_4": "shopify:\/\/shop_images\/Men_s_Health.png",
           "featured_link_4": "https:\/\/vancouversun.com\/life\/fashion-beauty\/style-qa-canadian-brand-celebrates-the-softer-and-gentler-side-of-masculinity",
           "featured_text4": "<p>“Leaving your body feeling smooth and fresh”<\/p>"
@@ -1362,6 +1362,13 @@
       "framework-product-design-section": {
         "type": "framework-product-design-section",
         "settings": {
+        }
+      },
+      "framework-homebanner-fathersday": {
+        "type": "framework-homebanner-fathersday",
+        "settings": {
+          "url": "",
+          "height": 600
         }
       }
     },
