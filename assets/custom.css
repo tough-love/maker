@@ -1025,7 +1025,7 @@ flex-wrap: wrap;
 }
 .top-content {
   	position: relative;
-  	margin: 170px auto 100px;
+  	margin: 170px auto 20px;
   	text-align: center;
 }
 .centered-content {
