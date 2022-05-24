@@ -1,12 +1,35 @@
+<div class="skincare-home-section" style="background-image: url('https://cdn.shopify.com/s/files/1/0268/0356/8822/files/REYAL_Hero.jpg?v=1648612232');">
+  <div class="bg-layer"></div>
+    <div class="top-content">
+      <p>THE ONLY BODY WASH YOU'LL EVER NEED.</p>
+    </div>
+    <div  class="bottom-link">
+     <a href="https://www.reyalperformance.com/collections/mens-skincare/products/supreme-body-wash">[SHOP NOW]</a>
+    </div>
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Skincare Section",
+    "settings": [
+      {
+        "type": "url",
+        "id": "url",
+        "label": "SHOP NOW"
+      },
+      {
+        "type": "number",
+        "id": "height",
+        "label": "Height",
+        "info": "will be applied between 0px to 992px",
+		"default": 600
+      }
+    ],
+    "presets": [
+      {
+        "name": "Skincare Section",
+        "category": "Skincare section"
+      }
+    ]
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
