@@ -212,8 +212,10 @@
 {% endif %}
   
 {% if template == 'checkout' %}
+<script>
   ttq.track('InitiateCheckout');
   ttq.track('AddPaymentInfo');
+</script>
 {% endif %}
   
   
