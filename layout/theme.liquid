@@ -214,13 +214,11 @@
 <script>
 	ttq.track('ViewContent')
     
-    {% if template == 'product' %}
     
     $(document).on ('submit', '.product-form--container', function(e) {
       ttq.track('AddToCart');
     });
-    
-    {% endif %}
+  
 </script>
   
   
