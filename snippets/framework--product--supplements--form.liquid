@@ -97,7 +97,7 @@
                   {% else %}
                     data-item='button'
                   {% endif %}>
-                <button class="product-form--add-to-cart btn text-center">
+                <button id="product-form--cart-track" class="product-form--add-to-cart btn text-center">
                   <span class="product-form--text">{{ add_to_cart_t }} {{ current_variant.price | money }}</span>
                   <span class="fw--loading_animation tiny" data-js-class="FrameworkLoadingAnimation"></span>
                 </button>
