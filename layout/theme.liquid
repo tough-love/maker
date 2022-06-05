@@ -213,13 +213,8 @@
   
 <script>
 	ttq.track('ViewContent')
-    
-    
-    $(document).on('submit', '.product-form--container', function(e) {
-      ttq.track('AddToCart');
-    });
   
-  document.getElementById("add_to_cart_btn").onclick = function(){
+  document.getElementById("productAddToCart").onclick = function(){
     ttq.track('AddToCart');
  }
   
