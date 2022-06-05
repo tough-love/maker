@@ -212,7 +212,15 @@
 {% endif %}
   
 <script>
-	ttq.track('ViewContent')  
+	ttq.track('ViewContent')
+    
+    {% if template == 'product' %}
+    
+    $(document).on ('submit' , '.product-form-product-template', function(e) {
+      ttq.track('AddToCart')
+    })
+    
+    {% endif %}
 </script>
   
   
