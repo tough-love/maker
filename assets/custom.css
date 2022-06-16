@@ -654,7 +654,7 @@ position: relative;
 }
 body .newsletter-popup .form-head h2 {
 	font-size:30px;
-	color: #E0D2AE;
+	color: #EFD349;
 	font-weight: 700;
 	line-height: 100%;
 	margin: 17px auto;
@@ -691,10 +691,10 @@ text-align: left;
 	flex-basis: 35%;
 	margin: 0;
 	height:40px;
-	background-color: #E0D2AE;
+	background-color: #EFD349;
 	color: #000000;
 	font-weight: 700;
-	border: 1px solid #E0D2AE;
+	border: 1px solid #EFD349;
 	text-decoration: none;
   border-radius: 0px;
 
@@ -916,7 +916,7 @@ flex-wrap: wrap;
 	font-size: 14px !important;
 	font-family: aktiv-grotesk,sans-serif;
 	font-weight: 700;
-	color: #E0D2AE;
+	color: #EFD349;
 	width: max-content;
 	margin-bottom: 0;
 	display:inline-block;
@@ -981,7 +981,7 @@ flex-wrap: wrap;
 }
 .product-design-caption {
   	overflow: hidden;
-	background-color: #E0D2AE;
+	background-color: #EFD349;
   	padding: 60px 0;
   	text-align: center;
 }
@@ -1170,10 +1170,10 @@ body .how-to-use-section .bottom-link a {
   width: 80%;
 }
 .even-lift-section .bulk-now a:hover, .even-lift-section .bulk-now a:focus, .even-lift-section .fancy-supplement a:hover, .even-lift-section .fancy-supplement a:focus{
-  color: #E0D2AE !important;
+  color: #EFD349 !important;
 }
 .template--index .news-letter-section {
-	background-color: #E0D2AE;
+	background-color: #EFD349;
 	padding: 90px 20px 95px;
 }
 .news-letter-section .newsletter--container {
@@ -1227,7 +1227,7 @@ input#newsletter-email::placeholder{
 	background-color: #ffff;
 	border: 1px solid #fff;
 	height: 70px;
-	color: #E0D2AE;
+	color: #EFD349;
 	padding: 0px;
 	font-size: 16px;
 	font-weight:300;
