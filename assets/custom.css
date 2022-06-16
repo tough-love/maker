@@ -1217,7 +1217,7 @@ input#newsletter-email::placeholder{
 }
 
 #newsletter-email::placeholder {
-    font-size: 22px;
+    font-size: 16px;
     color: #fff;
     opacity: 1;
     font-weight: 500;
