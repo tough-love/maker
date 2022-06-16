@@ -1106,7 +1106,7 @@ body .skincare-home-section .top-content p,
 body .skincare-home-section .bottom-link a,
 body .shop-suppliments-section .bottom-link a {
 	color: #EFD349;
-	font-size:5px;
+	font-size:24px;
 	font-weight: 800;
 	font-family: aktiv-grotesk, sans-serif;
   line-height: 100%;
@@ -1625,7 +1625,7 @@ text-align: center;
  body .skincare-performance-section .bottom-content p,
  body .skincare-performance-section .bottom-link a,
  body .how-to-use-section .bottom-link a {
-	font-size:45px;
+	font-size:36px;
 }
 
 body .skincare-home-section .top-content p
