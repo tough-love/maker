@@ -1207,7 +1207,7 @@ input#newsletter-email::placeholder{
 	width: 60%;
 	background-color: transparent;
 	border: 1px solid #ffff;
-	height: 69px;
+	height: 60px;
 	font-size: 16px;
 	color: #fff;
 	padding: 0px 30px;
@@ -1226,7 +1226,7 @@ input#newsletter-email::placeholder{
 	width: 40%;
 	background-color: #ffff;
 	border: 1px solid #fff;
-	height: 50px;
+	height: 60px;
 	color: #EFD349;
 	padding: 0px;
 	font-size: 16px;
