@@ -1019,8 +1019,8 @@ flex-wrap: wrap;
   	text-align: center;
 }
 .how-to-use-section img {
-  	margin: 0 auto 520px;
- 	width: 100%;
+  	margin: 0 auto 20px;
+ 	width: 80%;
   	height: auto;
 }
 .top-content {
