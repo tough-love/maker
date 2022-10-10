@@ -424,6 +424,42 @@
                   101 - 3246 Connaught Crescent, North Vancouver, BC V7R 0A7 
                   {% endif %}
                   </div>
+          <div class="direction-card">
+        <h4>
+          {% if section.settings.location11_title != blank %} 
+                  {{ section.settings.location11_title }}
+                  {% else %}
+                  VANCOUVER
+                  {% endif %}
+        </h4>
+        
+          {% if section.settings.location11_subtitle != blank %} 
+                  {{ section.settings.location11_subtitle }}
+                  {% else %}
+                  Delish General Store + Jar Bar Refillery
+                  {% endif %}
+    
+        <a class="area-link" href="{% if section.settings.location11_url != blank %} 
+                  {{ section.settings.location11_url }}
+                  {% else %}
+                  www.delishgeneralstore.com
+                  {% endif %}">{% if section.settings.location11_url != blank %} 
+                  {{ section.settings.location11_url }}
+                  {% else %}
+                  https://www.delishgeneralstore.com/
+                  {% endif %}</a>
+        <a class="get-direction-api" href="{% if section.settings.location11_get_direction != blank %} 
+                  {{ section.settings.location11_get_direction }}
+                  {% else %}
+                  https://www.google.com/maps/place/Delish+General+Store/@49.3387432,-123.102957,15z/data=!4m2!3m1!1s0x0:0x9b0678c73e70f5ab?sa=X&ved=2ahUKEwi0tqO9pe73AhWBHzQIHWWQAmwQ_BJ6BAhYEAU 
+                  {% endif %}">Get direction</a>
+                  <div class="address-box">
+                      {% if section.settings.location11_address != blank %} 
+                  {{ section.settings.location11_address }}
+                  {% else %}
+                  101 - 3246 Connaught Crescent, North Vancouver, BC V7R 0A7 
+                  {% endif %}
+                  </div>
          </div>
     </div>
   </div>
@@ -747,6 +783,12 @@
     "id": "location11_address",
     "type":"richtext",
     "label": "Location 11 Address",
+	"default":"<p>101 - 3246 Connaught Crescent, North Vancouver, BC V7R 0A7</br></br><i>*Supreme Body Wash refills*</i></p>"
+    },
+    {
+    "id": "location12_address",
+    "type":"richtext",
+    "label": "Location 12 Address",
 	"default":"<p>101 - 3246 Connaught Crescent, North Vancouver, BC V7R 0A7</br></br><i>*Supreme Body Wash refills*</i></p>"
     }
   ],
