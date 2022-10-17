@@ -1,7 +1,27 @@
+
+<div class="founders-banner" style="background-image:url('https://cdn.shopify.com/s/files/1/0268/0356/8822/files/REYALBONUS3.jpg?v=1648611364');">
+  <div class="founders-page-title">
+    <h1>{{page.title}}</h1>
+  </div>
+</div>
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Banner Section",
+    "settings": [
+    {
+    "id": "banner_image",
+    "type":"image_picker",
+    "label": "Banner Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "custom-text",
+      "category": "Custom"
+    }
+  ]
   }
 {% endschema %}
 
