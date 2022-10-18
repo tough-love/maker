@@ -688,6 +688,7 @@ margin-bottom: 17px;
 }
 .founders-image img {
 	display: block;
+    margin: 0 auto;
 	max-height: 650px;
 	opacity: 1;
 	-webkit-transition: opacity .3s ease;
