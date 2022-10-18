@@ -1774,7 +1774,7 @@ body .founders-home-section .top-content {
 }
 
 @media (max-width: 767px) {
-  body .founders-home-section .top-content {
+  .founders-home-section .top-content {
     margin-top: 30px;
   }
 }
