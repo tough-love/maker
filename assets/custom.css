@@ -1772,9 +1772,10 @@ body .skincare-home-section .top-content p
     line-height: 105%;
 }
 
-body .founders-section .top-content p
+body .founders-home-section .top-content p
  {
 	font-size:80px;  
+    color: #fff;
     line-height: 105%;
 }
 
