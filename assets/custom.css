@@ -621,14 +621,14 @@ position: relative;
 .founders-main .founders-part {
 	padding-left:20px;
 }
-
-@media (max-width: 767px) {
-  .founders-main .founders-content { padding: 0 30px 0; }
-}
   
 .founders-main .founders-content {
   padding: 0 30px 0 0;
   text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .founders-main .founders-content { padding: 0 30px 0; }
 }
   
 .founders-section .row{
