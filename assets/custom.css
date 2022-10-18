@@ -1462,6 +1462,11 @@ text-align: center;
    .skincare-home-section {
 	height:500px;
 }
+  
+@media (min-width: 576px) { 
+   .founders-home-section {
+	height:500px;
+}
 /*Featured section CSS  */
   body .feature-title h5 p{
 		font-size: 12px;
