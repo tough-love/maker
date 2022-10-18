@@ -1772,6 +1772,10 @@ body .skincare-home-section .top-content p
     line-height: 105%;
 }
 
+body .founders-home-section .top-content {
+  padding: 0;
+}
+  
 body .founders-home-section .top-content p
  {
 	font-size: 72px;
