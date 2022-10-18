@@ -1958,6 +1958,11 @@ padding-bottom: 0px;
 	justify-content: center;
 	padding-left: 122px;
 }
+
+.founders-section .one-half.about-left-part {
+  padding-left: 0;
+}
+  
 .overlay-text h3{
   font-size: 50px;
   line-height: 60px;
