@@ -595,6 +595,118 @@ position: relative;
 	width: auto;
 }
   /* End About Us page css */
+
+   /* Founders Page */
+.page--about-reyal-performance-performance-skincare-amp-supplements #main-content {
+	padding: 0;
+}
+.prod-name-row.you-know-slider {
+	padding: 25px 0px !important;
+}
+  .page--founders .layout--main-content {
+    padding: 0 !important;
+}
+  .founders-main .founders-section .bg-image {
+	/* height: 952px; */
+	background-position: unset;
+}
+.founders-main .founders-right-part {
+	align-items: center;
+}
+.founders-main .founders-part {
+	padding-left:20px;
+}
+.founders-main .founders-content {
+	width: 100%;
+	max-width: 659px;
+  padding-right: 20px;
+  padding-top: 30px;
+padding-bottom: 30px;
+}
+.founders-section .row{
+  align-items: center;
+}
+.founders-content p {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 500;
+	color: #000;
+	font-family: 'helvetica';
+  text-align:left;
+}
+.one-half.founders-left-part {
+	align-items: center;
+}
+.founders-main .founders-left-part .founders-content {
+	width: 100%;
+	max-width: 639px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.one-half.founders-left-part {
+	align-items: center;
+	padding-right:0px;
+  order: 1;
+}
+.founders-main .overlay-text {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	width: 95%;
+	max-width:610px;
+	margin: 0px auto;
+}
+.overlay-text h3{
+  font-size: 35px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+.founders-main .shop-btn-position {
+	margin-top:30px;
+width: 100%;
+text-align: center;
+}
+.founders-section .row {
+	margin-bottom: 75px;
+}
+body .founders-main .shop-btn-position a{
+font-size: 18px;
+line-height: 32px;
+color: #000;
+font-weight:700;
+}
+body .founders-main .founders-content h4{
+  font-size: 24px;
+line-height: 32px;
+color: #000;
+font-weight:700;
+margin-bottom: 17px;
+}
+.founders-image{
+  padding-top: 106%;
+height: 100%;
+max-width: 100%;
+position: relative;
+}
+.founders-image img {
+	display: block;
+	height: 100%;
+	left: 0;
+	opacity: 1;
+	position: absolute;
+	top: 0;
+	-webkit-transition: opacity .3s ease;
+	transition: opacity .3s ease;
+	visibility: visible;
+	/* max-width: auto; */
+	width: auto;
+}
+  /* End Founders page css */
+  
   .footer--menu {
 	width: 100%;
 	box-sizing: border-box;
