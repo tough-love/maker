@@ -2098,3 +2098,11 @@ line-height: 32px;
 #shopify-section-framework--evenlift-section .even-lift-section .bg-image {
   height: 100vh !important;
 }
+
+.founders-home-section .top-content p
+{
+	font-size: 72px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 105%;
+}
