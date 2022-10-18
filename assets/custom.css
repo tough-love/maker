@@ -2001,6 +2001,11 @@ line-height: 32px;
     height: 1004px;
   }
   
+@media (min-width:1680px) {  
+    .founders-home-section {
+    height: 1004px;
+  }
+  
 .even-lift-section .content-box h2{
   font-size:172px;
   line-height:300px;
