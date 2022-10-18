@@ -1774,7 +1774,8 @@ body .skincare-home-section .top-content p
 
 body .founders-home-section .top-content p
  {
-	font-size:80px;  
+	font-size: 72px;
+    font-weight: 600;
     color: #fff;
     line-height: 105%;
 }
