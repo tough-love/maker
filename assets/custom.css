@@ -685,21 +685,13 @@ font-weight:700;
 margin-bottom: 17px;
 }
 .founders-image{
-  padding-top: 106%;
-height: 100%;
-max-width: 100%;
-position: relative;
 }
 .founders-image img {
 	display: block;
 	max-height: 650px;
-	left: 0;
 	opacity: 1;
-	position: absolute;
-	top: 0;
 	-webkit-transition: opacity .3s ease;
 	transition: opacity .3s ease;
-	visibility: visible;
 	/* max-width: auto; */
 	width: auto !important;
 }
