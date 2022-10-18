@@ -577,8 +577,8 @@ margin-bottom: 17px;
 }
 .about-image{
   padding-top: 106%;
-height: 50%;
-max-width: 50%;
+height: 100%;
+max-width: 100%;
 position: relative;
 }
 .about-image img {
