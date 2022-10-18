@@ -622,7 +622,7 @@ position: relative;
 	padding-left:20px;
 }
 .founders-main .founders-content {
-  padding: 0 30px;
+  padding: 0 30px 0 0;
   text-transform: uppercase;
 }
 .founders-section .row{
@@ -639,12 +639,6 @@ position: relative;
 }
 .one-half.founders-left-part {
 	align-items: center;
-}
-.founders-main .founders-left-part .founders-content {
-	width: 100%;
-	max-width: 639px;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 .one-half.founders-left-part {
 	align-items: center;
