@@ -606,6 +606,11 @@ position: relative;
   .page--founders .layout--main-content {
     padding: 0 !important;
 }
+
+.founders-main {
+  margin: 90px 0 60px;
+}
+  
   .founders-main .founders-section .bg-image {
 	/* height: 952px; */
 	background-position: unset;
