@@ -690,7 +690,7 @@ margin-bottom: 17px;
   padding-top: 106%;
 height: 100%;
 max-width: 100%;
-position: relative;
+position: absolute;
 }
 .founders-image img {
 	display: block;
