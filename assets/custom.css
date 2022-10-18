@@ -1051,6 +1051,16 @@ flex-wrap: wrap;
 	max-height: 740px;
   position: relative;
 }
+.founders-home-section {
+  padding: 0 24px;
+  	overflow: hidden;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height:400px;
+	max-height: 740px;
+  position: relative;
+}
 .shop-suppliments-section {
   	overflow: hidden;
 	background-size: cover;
