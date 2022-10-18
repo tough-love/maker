@@ -623,7 +623,7 @@ position: relative;
 }
 
 @media (max-width: 767px) {
-  padding: 0 30px 0;
+  .founders-main .founders-content { padding: 0 30px 0; }
 }
   
 .founders-main .founders-content {
