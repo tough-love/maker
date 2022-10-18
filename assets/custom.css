@@ -703,7 +703,7 @@ position: relative;
 	transition: opacity .3s ease;
 	visibility: visible;
 	/* max-width: auto; */
-	width: 50px;
+	width: auto;
 }
   /* End Founders page css */
   
