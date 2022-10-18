@@ -688,13 +688,13 @@ margin-bottom: 17px;
 }
 .founders-image{
   padding-top: 106%;
-height: 50%;
-max-width: 50%;
+height: 60%;
+max-width: 60%;
 position: relative;
 }
 .founders-image img {
 	display: block;
-	height: 50%;
+	height: 60%;
 	left: 0;
 	opacity: 1;
 	position: absolute;
