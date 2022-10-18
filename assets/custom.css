@@ -1751,7 +1751,7 @@ body .skincare-home-section .top-content p
 
 body .founders-section .top-content p
  {
-	font-size:30px;  
+	font-size:80px;  
     line-height: 105%;
 }
 
@@ -1783,6 +1783,9 @@ body .product-design-caption .bottom-link a {
 .skincare-home-section {
 	height:700px;
 }
+.founders-home-section {
+	height:700px;
+}  
 .shop-suppliments-section {
   	height:900px;
 	max-height: 1004px;
