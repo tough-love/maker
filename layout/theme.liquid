@@ -276,3 +276,11 @@ var afterpay_js_snippet_version = '1.1.1';
 <!-- Afterpay disabled: {{ cart.currency.iso_code }} != {{ shop.currency }} -->
 {% endif %}
 <!-- End Shopify-Afterpay JavaScript Snippet (v1.1.1) -->
+<!-- Begin Shopify-Afterpay JavaScript Snippet (v1.0.1) -->
+<script type="text/javascript">
+  // Liquid variables:
+  var afterpay_product = {{ product | json }};
+  var afterpay_product_variant = {{ product.selected_or_first_available_variant | json }};
+  var afterpay_cart_total_price = {{ cart.total_price | json }};
+</script>
+<!-- End Shopify-Afterpay JavaScript Snippet (v1.0.1) -->
