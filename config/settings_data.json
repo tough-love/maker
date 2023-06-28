@@ -543,7 +543,6 @@
       "161049443034369103": {
         "type": "instafeed",
         "settings": {
-          "heading_font": "helvetica_n4",
           "heading_size": 10,
           "feed_width": 100,
           "html_area": ""
@@ -707,7 +706,7 @@
           "image_left": "shopify:\/\/shop_images\/resized-pic1_cropped.jpg",
           "left_product_name": "LAYER 003 SUPER DAY MOISTURIZER",
           "left_product_price": 36,
-          "url_right": "shopify:\/\/products\/supreme-body-wash",
+          "url_right": "shopify:\/\/products\/supreme-sport-cleansing-body-wash",
           "image_right": "shopify:\/\/shop_images\/resized-pic2_cropped.jpg",
           "right_product_name": "SUPREME BODY WASH",
           "right_product_price": 60
@@ -1245,7 +1244,6 @@
       "instafeed": {
         "type": "instafeed",
         "settings": {
-          "heading_font": "helvetica_n4",
           "heading_size": 20,
           "feed_width": 100,
           "html_area": ""
