@@ -53,7 +53,7 @@
 
     <main role="main">
 
-      <div id="gift-card-outer-container" {% if gift_card.expired or gift_card.enabled !=true %}class="disabled" {%
+      <div id="gift-card-outer-container" {% assign __not_gift_card__ = false %}{% unless gift_card.expired %}{% assign __not_gift_card__ = true %}{% endunless %}{% if __not_gift_card__ %}{{ 'Liquid error (templates/gift_card line 56): Unknown operator !=true' }}{% elsif gift_card.expired %}class="disabled" {%
         endif %}>
         <div id="gift-card-inner-container">
 
@@ -133,4 +133,20 @@
     </footer>
   </div>
 </body>
-</html>
+</html>{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+The template contained unknown operators that previously caused errors
+when loaded by end users. These have been replaced with valid syntax
+that maintains the same behavior.
+
+---
+Changes:
+- from: "{% if gift_card.expired or gift_card.enabled !=true %}"
+  to: "{% assign __not_gift_card__ = false %}{% unless gift_card.expired %}{% assign
+    __not_gift_card__ = true %}{% endunless %}{% if __not_gift_card__ %}{{ 'Liquid
+    error (templates/gift_card line 56): Unknown operator !=true' }}{% elsif gift_card.expired
+    %}"
+  position: 1920..2170
+{%- endcomment -%}

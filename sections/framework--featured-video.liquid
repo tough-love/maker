@@ -38,11 +38,7 @@
 
       {% if thumbnail %}
         <div class="feature-video--thumbnail">
-          {%
-            render 'framework--image',
-            image: thumbnail | img_url,
-            full_width: true
-          %}
+          {% render 'framework--image', image: thumbnail, full_width: true %}
         </div>
 
         <div class="feature-video--play-mobile">
@@ -201,3 +197,14 @@
     ]
   }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%\r\n            render 'framework--image',\r\n            image: thumbnail
+    | img_url,\r\n            full_width: true\r\n          %}"
+  to: "{% render 'framework--image', image: thumbnail, full_width: true %}"
+  position: 1546..1613
+{% endcomment %}
